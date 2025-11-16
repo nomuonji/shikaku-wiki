@@ -95,20 +95,22 @@ const config: Config = {
             content: 'rgb(37, 194, 160)',
           },
         ],
-        manifest: {
-          name: 'Shikaku Wiki',
-          short_name: 'Shikaku',
-          start_url: '/',
-          background_color: '#ffffff',
-          theme_color: '#25c2a0',
-          display: 'standalone',
-          icons: [
-            {
-              src: 'img/logo.svg',
-              sizes: 'any',
-              type: 'image/svg+xml',
-            },
-          ],
+        pwa: {
+          manifest: {
+            name: 'Shikaku Wiki',
+            short_name: 'Shikaku',
+            start_url: '/',
+            background_color: '#ffffff',
+            theme_color: '#25c2a0',
+            display: 'standalone',
+            icons: [
+              {
+                src: 'img/logo.svg',
+                sizes: 'any',
+                type: 'image/svg+xml',
+              },
+            ],
+          },
         },
       },
     ],
