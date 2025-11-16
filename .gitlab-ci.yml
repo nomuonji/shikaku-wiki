@@ -1,0 +1,19 @@
+image: node:20
+
+cache:
+  paths:
+    - node_modules/
+
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+    # Docusaurusのビルド出力は 'build' ディレクトリなので、
+    # GitLab Pagesが期待する 'public' ディレクトリに移動または名前を変更します。
+    - mv build public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
