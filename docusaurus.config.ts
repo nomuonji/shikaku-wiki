@@ -68,6 +68,52 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/logo.svg',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+        ],
+        manifest: {
+          name: 'Shikaku Wiki',
+          short_name: 'Shikaku',
+          start_url: '/',
+          background_color: '#ffffff',
+          theme_color: '#25c2a0',
+          display: 'standalone',
+          icons: [
+            {
+              src: 'img/logo.svg',
+              sizes: 'any',
+              type: 'image/svg+xml',
+            },
+          ],
+        },
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
