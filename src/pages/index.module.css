@@ -4,10 +4,46 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 8rem 0 6rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* Formal Navy Gradient */
+  background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%);
+  color: white;
+}
+
+[data-theme='dark'] .heroBanner {
+  background: radial-gradient(circle at center, #172554 0%, #020617 100%);
+}
+
+/* Pentagon (Gokaku = Success) Pattern */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 50% 50%, transparent 0%, transparent 95%, rgba(255, 255, 255, 0.03) 95.5%, rgba(255, 255, 255, 0.03) 100%),
+    linear-gradient(72deg, transparent 48%, rgba(255, 255, 255, 0.03) 48.5%, rgba(255, 255, 255, 0.03) 51.5%, transparent 52%),
+    linear-gradient(-72deg, transparent 48%, rgba(255, 255, 255, 0.03) 48.5%, rgba(255, 255, 255, 0.03) 51.5%, transparent 52%);
+  background-size: 60px 60px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Sakura Particles Container */
+.sakuraContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
 }
 
 @media screen and (max-width: 996px) {

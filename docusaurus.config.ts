@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '資格Wiki',
+  tagline: 'あらゆる資格情報を網羅する',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -107,9 +107,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: '資格Wiki',
       logo: {
-        alt: 'My Site Logo',
+        alt: '資格Wiki Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -117,9 +117,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '📚 資格一覧',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: '📝 ブログ', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -131,36 +131,27 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '資格カテゴリー',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'ビジネス',
+              to: '/docs/business',
+            },
+            {
+              label: 'IT・技術',
+              to: '/docs/technology',
+            },
+            {
+              label: 'ライフスタイル',
+              to: '/docs/lifestyle',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'コミュニティ',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
+              label: 'ブログ',
               to: '/blog',
             },
             {
@@ -169,8 +160,21 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'その他',
+          items: [
+            {
+              label: '医療・福祉',
+              to: '/docs/medical-welfare',
+            },
+            {
+              label: '安全・環境',
+              to: '/docs/safety-environment',
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 資格Wiki. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
