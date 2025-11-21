@@ -1,6 +1,9 @@
 {
-    "label": "ビジネス",
-    "position": 1,
-    "collapsible": true,
-    "collapsed": false
+  "label": "ビジネス・実務",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "経営、事務、秘書検定など、ビジネスシーンで即戦力となる資格群です。",
+    "slug": "/business"
+  }
 }

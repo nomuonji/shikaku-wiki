@@ -1,6 +1,9 @@
 {
-    "label": "技術・IT",
-    "position": 2,
-    "collapsible": true,
-    "collapsed": false
+  "label": "IT・情報技術",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "基本情報技術者、AWS、プログラミングなど、IT業界で必須の資格です。",
+    "slug": "/technology"
+  }
 }

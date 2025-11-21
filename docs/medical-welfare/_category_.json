@@ -1,6 +1,9 @@
 {
-    "label": "医療・福祉",
-    "position": 5,
-    "collapsible": true,
-    "collapsed": false
+  "label": "医療・福祉",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "看護師、薬剤師、介護福祉士など、医療や介護の現場で活躍する資格です。",
+    "slug": "/medical-welfare"
+  }
 }
