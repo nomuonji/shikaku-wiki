@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: '資格Wiki',
   tagline: 'あらゆる資格情報を網羅する',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -82,7 +82,7 @@ const config: Config = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/logo.svg',
+            href: '/img/logo.png',
           },
           {
             tagName: 'link',
@@ -102,7 +102,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -110,7 +110,7 @@ const config: Config = {
       title: '資格Wiki',
       logo: {
         alt: '資格Wiki Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -119,10 +119,15 @@ const config: Config = {
           position: 'left',
           label: '📚 資格一覧',
         },
-        {to: '/blog', label: '📝 ブログ', position: 'left'},
+        { to: '/blog', label: '📝 ブログ', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://x.com/shikaku_catalog',
+          label: 'X (Twitter)',
+          position: 'right',
+        },
+        {
+          href: 'https://www.threads.com/@certifications_catalog',
+          label: 'Threads',
           position: 'right',
         },
       ],
@@ -155,8 +160,12 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'X (Twitter)',
+              href: 'https://x.com/shikaku_catalog',
+            },
+            {
+              label: 'Threads',
+              href: 'https://www.threads.com/@certifications_catalog',
             },
           ],
         },
