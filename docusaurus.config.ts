@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '資格Wiki',
+  title: '資格カタログ',
   tagline: 'あらゆる資格情報を網羅する',
   favicon: 'img/favicon.png',
 
@@ -15,7 +15,8 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  // Set the production url of your site here
+  url: 'https://shikaku-wiki.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -95,21 +96,25 @@ const config: Config = {
             content: 'rgb(37, 194, 160)',
           },
         ],
-
       },
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/logo.png',
+    image: 'img/mos-qualification-hero.png',
+    metadata: [
+      { name: 'keywords', content: '資格, 検定, 試験, 勉強法, 難易度, 過去問, 独学, キャリアアップ, 転職, 就職' },
+      { name: 'description', content: '資格カタログは、あらゆる資格・検定試験の情報を網羅する総合情報サイトです。難易度、合格率、勉強法、試験日程など、資格取得に役立つ最新情報を提供します。' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '資格Wiki',
+      title: '資格カタログ',
       logo: {
-        alt: '資格Wiki Logo',
+        alt: '資格カタログ Logo',
         src: 'img/logo.png',
       },
       items: [
@@ -183,7 +188,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 資格Wiki. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 資格カタログ. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

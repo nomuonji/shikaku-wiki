@@ -23,3 +23,11 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+editor:
+  name: 資格カタログ編集部
+  title: 資格カタログ運営チーム
+  url: https://github.com/nomuonji
+  image_url: /img/qualification-catalog-icon.png
+  page: true
+
