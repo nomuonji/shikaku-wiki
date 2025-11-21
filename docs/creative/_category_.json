@@ -1,6 +1,9 @@
 {
-    "label": "クリエイティブ",
-    "position": 8,
-    "collapsible": true,
-    "collapsed": false
+  "label": "クリエイティブ・芸術",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "デザイン、インテリア、色彩検定など、感性と技術を証明する資格です。",
+    "slug": "/creative"
+  }
 }

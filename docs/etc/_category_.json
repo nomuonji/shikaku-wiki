@@ -1,6 +1,9 @@
 {
-    "label": "その他",
-    "position": 9,
-    "collapsible": true,
-    "collapsed": false
+  "label": "その他・教養",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "語学、漢字検定、ご当地検定など、幅広い分野の知識を問う資格です。",
+    "slug": "/etc"
+  }
 }

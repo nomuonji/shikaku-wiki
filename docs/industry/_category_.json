@@ -1,6 +1,9 @@
 {
-    "label": "産業・製造",
-    "position": 4,
-    "collapsible": true,
-    "collapsed": false
+  "label": "工業・技術",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "電気工事士、危険物取扱者など、現場や技術職で求められる資格です。",
+    "slug": "/industry"
+  }
 }

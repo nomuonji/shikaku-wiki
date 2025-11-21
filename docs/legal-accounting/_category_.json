@@ -1,6 +1,9 @@
 {
-    "label": "法律・会計",
-    "position": 7,
-    "collapsible": true,
-    "collapsed": false
+  "label": "法律・会計",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "弁護士、税理士、簿記など、法律やお金に関する専門資格です。",
+    "slug": "/legal-accounting"
+  }
 }
