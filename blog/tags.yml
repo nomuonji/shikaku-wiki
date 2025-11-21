@@ -17,3 +17,14 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+mos:
+  label: MOS (Microsoft Office Specialist)
+  permalink: /mos
+  description: マイクロソフトオフィススペシャリストに関する記事
+
+qualification:
+  label: 資格全般
+  permalink: /qualification
+  description: 資格取得に関する総合情報
+
