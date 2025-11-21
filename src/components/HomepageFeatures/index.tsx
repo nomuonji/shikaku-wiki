@@ -11,32 +11,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '網羅的なデータベース',
+    title: '意外な資格との出会い',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        ビジネス、IT、語学、医療など、あらゆるジャンルの資格情報を体系的に整理。
-        必要な情報にすぐにアクセスできます。
+        「BBQインストラクター」「チョコレート検定」「ねこ検定」...
+        え、こんな資格があるの!? という驚きと発見がここに。
+        あなたの新しい趣味が見つかるかも！
       </>
     ),
   },
   {
-    title: '効率的な学習',
+    title: '遊び心満載のガチャ機能',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        試験の概要、難易度、合格率から、おすすめの学習方法や参考書まで。
-        合格への最短ルートをサポートします。
+        何を勉強しようか迷ったら、運命の資格ガチャを回してみよう！
+        AI(ランダム)があなたにぴったりの資格を提案します。
+        思わぬ出会いが、新しい人生の扉を開くかも？
       </>
     ),
   },
   {
-    title: 'コミュニティ主導',
+    title: '真面目な資格も完全網羅',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        実際の受験者や合格者の声を反映。
-        最新の試験傾向や実務での活用事例など、生きた情報が集まります。
+        もちろん、ITパスポート、FP、簿記など、
+        キャリアアップに役立つ定番資格も充実。
+        遊びも学びも、すべてがここに揃っています！
       </>
     ),
   },

@@ -1,15 +1,32 @@
-import type { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import QualificationGacha from '@site/src/components/QualificationGacha';
+import RandomQualificationCarousel from '@site/src/components/RandomQualificationCarousel';
+import CategoryShowcase from '@site/src/components/CategoryShowcase';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const triviaList = [
+    "「ねこ検定」という資格があるのを知っていますか？",
+    "「BBQインストラクター」になれば、ヒーローになれるかも？",
+    "「チョコレート検定」で、甘い知識を深めよう！",
+    "「掃除能力検定」で、お部屋も心もピカピカに。",
+    "「夜景観光士検定」なんてロマンチックな資格も！",
+    "資格は、新しい自分へのパスポート。",
+  ];
+  const [trivia, setTrivia] = React.useState("");
+
+  React.useEffect(() => {
+    setTrivia(triviaList[Math.floor(Math.random() * triviaList.length)]);
+  }, []);
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={styles.sakuraContainer}>
@@ -31,6 +48,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={styles.heroTrivia}>💡 {trivia}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -52,6 +70,9 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <RandomQualificationCarousel />
+        <QualificationGacha />
+        <CategoryShowcase />
         <HomepageFeatures />
       </main>
     </Layout>
