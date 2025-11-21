@@ -194,6 +194,14 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    announcementBar: {
+      id: 'support_us',
+      content:
+        '⭐️ 記事の更新や資格コラムをSNSで発信中！ <a target="_blank" rel="noopener noreferrer" href="https://x.com/shikaku_catalog">X (Twitter)</a> と <a target="_blank" rel="noopener noreferrer" href="https://www.threads.com/@certifications_catalog">Threads</a> をフォローしてね！ ⭐️',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
   } satisfies Preset.ThemeConfig,
 };
 
