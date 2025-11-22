@@ -1,0 +1,9 @@
+{
+  "label": "ライフスタイル・趣味",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "アロマ、料理、旅行など、生活を豊かにする趣味や教養の資格です。",
+    "slug": "/lifestyle"
+  }
+}
