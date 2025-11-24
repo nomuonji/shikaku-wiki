@@ -1,17 +1,45 @@
 ---
-title: "Adobe Certified Professional After Effects"
+title: "Adobe Certified Professional (After Effects)"
 ---
 
-# Adobe Certified Professional After Effects
+# Adobe Certified Professional (After Effects)
 
 ## 概要
+Adobe Certified Professional (After Effects) は、Adobe After Effects の使用に関する専門的なスキルを証明する国際認定資格です。
+モーション・グラフィックス、ビジュアル・エフェクト（VFX）の制作における実務的な知識と操作技術が問われます。
+アドビが公認する唯一の資格であり、合格すると「Adobe Certified Professional」の称号が得られ、デジタルバッジが付与されます。
+映像編集者、モーションデザイナー、VFXアーティストを目指す人に適しています。
 
-【After Effects 認定】短い動画やテロップ作成に強い。PR動画の説得力UP。
+## 試験詳細
+
+| 項目 | 内容 |
+| --- | --- |
+| 試験時間 | 50分 |
+| 問題数 | 約30問（選択式および実技形式） |
+| 合格ライン | 700点 / 1000点満点（目安） |
+| 受験料 | 一般：10,780円（税込）、学生・教職員：8,580円（税込） ※オデッセイコミュニケーションズ価格 |
+| 受験資格 | なし（誰でも受験可能） |
+| 有効期限 | 3年間（資格取得から3年で失効するため、再受験が必要） |
+| 試験方式 | CBT（コンピュータベースの試験、テストセンターまたは自宅受験） |
+
+## 学習範囲・シラバス
+試験は「Visual Effects & Motion Graphics Using Adobe After Effects」という科目名で実施されます。
+
+1.  **業界の知識**: 映像制作のワークフロー、著作権、用語（フレームレート、アスペクト比など）
+2.  **プロジェクトのセットアップ**: コンポジション設定、アセットのインポートと整理
+3.  **インターフェースの操作**: パネル、ワークスペース、タイムラインの管理
+4.  **ビジュアル要素の整理**: レイヤー管理、マスク、トラックマット、ブレンドモード
+5.  **ビジュアル要素の作成と変更**: テキストアニメーション、シェイプレイヤー、3D空間、エフェクト、プリセット
+6.  **パブリッシュ**: レンダリング設定、書き出し形式（Media Encoder連携など）
+
+## 難易度・勉強時間目安
+- **難易度**: 中級
+    - 基本的な操作だけでなく、実務で必要な効率的なワークフローやトラブルシューティングの知識も問われます。
+    - アプリケーション内での実技操作が含まれるため、実際にソフトを使える能力が必須です。
+- **勉強時間**:
+    - 経験者: 20〜30時間（試験対策中心）
+    - 初学者: 150時間程度（実務経験やハンズオン学習を含む推奨時間）
 
 ## 公式情報
-
-- [公式サイト](https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview)
-
-## ハッシュタグ
-
-- #資格 #AfterEffects #映像
+- [Adobe Certified Professional (Adobe公式サイト)](https://certifiedprofessional.adobe.com/after-effects)
+- [オデッセイ コミュニケーションズ (日本での試験実施運営)](https://aeb.odyssey-com.co.jp/)

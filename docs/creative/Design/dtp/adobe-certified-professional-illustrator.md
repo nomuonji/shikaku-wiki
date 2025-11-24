@@ -1,17 +1,45 @@
 ---
-title: "Adobe Certified Professional Illustrator"
+title: "Adobe Certified Professional (Illustrator)"
 ---
 
-# Adobe Certified Professional Illustrator
+# Adobe Certified Professional (Illustrator)
 
 ## 概要
+Adobe Certified Professional (Illustrator) は、Adobe Illustrator の使用に関する専門的なスキルを証明する国際認定資格です。
+以前は「Adobe Certified Associate (ACA)」と呼ばれていましたが、名称が変更されました。
+グラフィックデザイン、イラストレーション、ロゴ作成などにおける実務的な知識と操作技術が問われます。
+アドビが公認する唯一の資格であり、合格すると「Adobe Certified Professional」の称号が得られ、デジタルバッジが付与されます。
 
-【Illustrator 認定】ロゴや図をきれいに作成。入稿トラブルが減る。
+## 試験詳細
+
+| 項目 | 内容 |
+| --- | --- |
+| 試験時間 | 50分 |
+| 問題数 | 約30問（選択式および実技形式） |
+| 合格ライン | 700点 / 1000点満点（目安） |
+| 受験料 | 一般：10,780円（税込）、学生・教職員：8,580円（税込） ※オデッセイコミュニケーションズ価格 |
+| 受験資格 | なし（誰でも受験可能） |
+| 有効期限 | 3年間（資格取得から3年で失効するため、再受験が必要） |
+| 試験方式 | CBT（コンピュータベースの試験、テストセンターまたは自宅受験） |
+
+## 学習範囲・シラバス
+試験は「Graphic Design & Illustration Using Adobe Illustrator」という科目名で実施されます。
+
+1.  **業界の知識**: グラフィックデザインの基礎用語、著作権、プロジェクト管理
+2.  **プロジェクトのセットアップ**: アートボードの設定、カラーモード（CMYK/RGB）、解像度
+3.  **インターフェースの操作**: ツールパネル、プロパティパネル、レイヤー、ワークスペースの管理
+4.  **グラフィックの作成と変更**: ペンツール、シェイプ形成、パスファインダー、テキストの書式設定、画像のトレース
+5.  **グラフィックの整理**: グループ化、整列、変形、マスク、シンボル
+6.  **パブリッシュ**: Web用・印刷用の書き出し設定、パッケージ機能
+
+## 難易度・勉強時間目安
+- **難易度**: 中級
+    - アプリケーション内での実技操作が含まれるため、知識だけでなく実際に手を動かして制作できる能力が必須です。
+    - 「プロジェクト要件に基づき、コンテンツを制作する」という実践的な課題が出題されます。
+- **勉強時間**:
+    - 経験者: 20〜30時間（試験対策中心）
+    - 初学者: 150時間程度（実務経験やハンズオン学習を含む推奨時間）
 
 ## 公式情報
-
-- [公式サイト](https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview)
-
-## ハッシュタグ
-
-- #資格 #Illustrator #DTP
+- [Adobe Certified Professional (Adobe公式サイト)](https://certifiedprofessional.adobe.com/illustrator)
+- [オデッセイ コミュニケーションズ (日本での試験実施運営)](https://aeb.odyssey-com.co.jp/)
