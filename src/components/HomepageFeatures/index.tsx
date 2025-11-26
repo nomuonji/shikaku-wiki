@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '真面目な資格も完全網羅',
+    title: '真面目な資格も多数掲載',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
