@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: '資格カタログ',
-  tagline: 'あらゆる資格情報を網羅する',
+  tagline: 'さまざまな資格情報を掲載する',
   favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -105,7 +105,7 @@ const config: Config = {
     image: 'img/mos-qualification-hero.png',
     metadata: [
       { name: 'keywords', content: '資格, 検定, 試験, 勉強法, 難易度, 過去問, 独学, キャリアアップ, 転職, 就職' },
-      { name: 'description', content: '資格カタログは、あらゆる資格・検定試験の情報を網羅する総合情報サイトです。難易度、合格率、勉強法、試験日程など、資格取得に役立つ最新情報を提供します。' },
+      { name: 'description', content: '資格カタログは、さまざまな資格・検定試験の情報を提供する総合情報サイトです。難易度、合格率、勉強法、試験日程など、資格取得に役立つ最新情報を提供します。' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     colorMode: {
