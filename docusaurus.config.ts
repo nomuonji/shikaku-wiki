@@ -15,8 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  // Set the production url of your site here
-  url: 'https://shikaku-wiki.com',
+  url: 'https://shikaku.antonbase.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
