@@ -62,6 +62,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
+          customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
@@ -91,7 +92,7 @@ const config: Config = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: 'rgb(31, 58, 95)',
           },
         ],
       },
