@@ -98,6 +98,16 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-PTXZKSKY58',
+      async: true,
+    },
+    {
+      src: 'https://shikaku.antonbase.com/gtag-init.js',
+    },
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/mos-qualification-hero.png',
