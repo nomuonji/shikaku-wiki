@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: '資格カタログ',
-  tagline: 'さまざまな資格情報を掲載する',
+  tagline: '難易度・合格率・勉強法がわかる、資格・検定の総合情報サイト',
   favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -111,11 +111,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/mos-qualification-hero.png',
+    image: 'img/og-default.png',
     metadata: [
-      { name: 'keywords', content: '資格, 検定, 試験, 勉強法, 難易度, 過去問, 独学, キャリアアップ, 転職, 就職' },
+      { name: 'keywords', content: '資格, 検定, 試験, 勉強法, 難易度, 合格率, 過去問, 独学, キャリアアップ, 転職, 就職' },
       { name: 'description', content: '資格カタログは、さまざまな資格・検定試験の情報を提供する総合情報サイトです。難易度、合格率、勉強法、試験日程など、資格取得に役立つ最新情報を提供します。' },
       { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@shikaku_catalog' },
+      { name: 'twitter:creator', content: '@shikaku_catalog' },
     ],
     colorMode: {
       respectPrefersColorScheme: true,
@@ -134,6 +136,11 @@ const config: Config = {
           label: '📚 資格一覧',
         },
         { to: '/blog', label: '📝 ブログ', position: 'left' },
+        {
+          href: 'https://job.antonbase.com',
+          label: '🧭 しごと図鑑',
+          position: 'left',
+        },
         {
           href: 'https://x.com/shikaku_catalog',
           label: 'X (Twitter)',
@@ -172,6 +179,10 @@ const config: Config = {
             {
               label: 'ブログ',
               to: '/blog',
+            },
+            {
+              label: '🧭 しごと図鑑（資格が活きる仕事）',
+              href: 'https://job.antonbase.com',
             },
             {
               label: 'X (Twitter)',
