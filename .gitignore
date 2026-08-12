@@ -15,6 +15,11 @@
 .env.test.local
 .env.production.local
 
+# SNS bot の認証情報（コミット禁止。Gist経由で管理）
+sns-bot/.env
+sns-bot/*.local.json
+sns-bot/.credentials.local.json
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

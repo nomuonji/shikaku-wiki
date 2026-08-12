@@ -1,0 +1,620 @@
+{"exam": "ITパスポート（iパス）", "tweet": "【ITパスポート】社会人・学生のIT入門に最適。情報セキュリティ/ネットワーク/業務プロセスの基礎を横断的に学べる国家試験。CBTで随時受験OK。最初の一歩に👍", "category": "IT/デジタル", "official_url": "https://www3.jitec.ipa.go.jp/JitesCbt/", "hashtags": "#資格 #IT #勉強垢"}
+{"exam": "基本情報技術者（FE）", "tweet": "【基本情報技術者】アルゴリズム/データベース/ネットワーク/セキュリティを体系的に。CBT化で受けやすく、エンジニアの登竜門的ポジション。就活・転職の“共通語”に。", "category": "IT/デジタル", "official_url": "https://www.ipa.go.jp/shiken/kubun/fe.html", "hashtags": "#資格 #エンジニア #FE"}
+{"exam": "応用情報技術者（AP）", "tweet": "【応用情報】要件定義～運用/プロマネ/経営戦略まで“広く深く”。設計・マネジメント寄りのスキル証明に。秋春の年2回実施で計画的に狙える。", "category": "IT/デジタル", "official_url": "https://www.ipa.go.jp/shiken/kubun/ap.html", "hashtags": "#資格 #IT #AP"}
+{"exam": "情報セキュリティマネジメント（SG）", "tweet": "【SG】“全員が知っておくべき”サイバーリスクの基礎を証明。社内のISMS/情報資産管理の共通言語に。CBTで随時受験でき、非エンジニアにもおすすめ。", "category": "IT/デジタル", "official_url": "https://www.ipa.go.jp/shiken/kubun/sg.html", "hashtags": "#資格 #セキュリティ #情報管理"}
+{"exam": "日商簿記（2級/3級/1級）", "tweet": "【日商簿記】“数字で語れる人”になる王道資格。3級で会計の読み方、2級で実務力、1級で専門性。経理/営業/企画すべてに効く基礎体力に。", "category": "法律・会計/会計", "official_url": "https://www.kentei.ne.jp/bookkeeping", "hashtags": "#資格 #簿記 #会計"}
+{"exam": "FP技能士（3級/2級/1級）", "tweet": "【FP技能士】家計/保険/投資/税金/不動産/相続の6分野を横断。2・3級はCBTで随時受験OK。実生活にも超役立つ“お金の地図”。", "category": "金融/不動産", "official_url": "https://www.jafp.or.jp/", "hashtags": "#資格 #お金の勉強 #FP"}
+{"exam": "宅地建物取引士（宅建士）", "tweet": "【宅建】不動産業界の“必携”。売買・賃貸の実務で強みを発揮。法令/権利関係/宅建業法などを網羅。独学×過去問戦略で合格を狙える！", "category": "金融/不動産", "official_url": "https://www.retio.or.jp/exam/", "hashtags": "#資格 #宅建 #不動産"}
+{"exam": "行政書士", "tweet": "【行政書士】許認可/契約/相続・遺言など、身近な法務手続きを支える法律系国家資格。独立も視野に入る“街の法律家”。", "category": "法律・会計/士業", "official_url": "https://gyosei-shiken.or.jp/", "hashtags": "#資格 #法律 #行政書士"}
+{"exam": "社会保険労務士（社労士）", "tweet": "【社労士】労務・社会保険のプロ。就業規則/給与/労働法対応で企業を支える。人事のキャリアアップ＆独立の王道ルート。", "category": "法律・会計/士業", "official_url": "https://www.sharosi-siken.or.jp/", "hashtags": "#資格 #人事 #労務"}
+{"exam": "中小企業診断士", "tweet": "【中小企業診断士】経営戦略/財務/運営/IT/法務/マーケを横断する“ビジネスの総合格闘技”。企業支援やコンサルの入口に。", "category": "ビジネス/経営", "official_url": "https://www.j-smeca.jp/contents/010_shindanshi/", "hashtags": "#資格 #経営 #コンサル"}
+{"exam": "ビジネス実務法務検定", "tweet": "【ビジ法】ビジネス現場で“法務の地雷”を避ける実践力を証明。契約・債権・知財・労務まで幅広く押さえられる。", "category": "ビジネス/法律", "official_url": "https://kentei.tokyo-cci.or.jp/houmu/", "hashtags": "#資格 #法務 #コンプラ"}
+{"exam": "メンタルヘルス・マネジメント検定", "tweet": "【メンタルヘルス検定】セルフケア/ラインケア/制度設計の3コース。“折れないチーム”づくりの共通言語に。", "category": "ビジネス/人事", "official_url": "https://www.mental-health.ne.jp/", "hashtags": "#資格 #メンタルヘルス #人事"}
+{"exam": "秘書技能検定", "tweet": "【秘書検定】ビジネスマナー/言葉遣い/来客対応など“感じの良さ”を定量化。新社会人の最初の1枚に。", "category": "ビジネス/一般", "official_url": "https://jitsumu-kentei.jp/HS/index", "hashtags": "#資格 #ビジネスマナー #秘書検定"}
+{"exam": "サービス接遇検定", "tweet": "【サービス接遇】接客の所作/敬語/クレーム対応まで。販売/観光/医療受付など“対人業務”の強化に。", "category": "ビジネス/接客", "official_url": "https://jitsumu-ginou-kentei.jp/", "hashtags": "#資格 #接客 #サービス業"}
+{"exam": "色彩検定", "tweet": "【色彩検定】配色理論/色彩心理/光と色…デザイン/商品企画/ファッションに直結する実践知。1〜3級で段階的に。", "category": "クリエイティブ/クリエイティブ", "official_url": "https://www.aft.or.jp/", "hashtags": "#資格 #色彩検定 #デザイン"}
+{"exam": "日本化粧品検定", "tweet": "【化粧品検定】成分/肌理論/法規まで“正しい美容知識”を体系化。美容部員/インフルエンサーの信頼度アップに。", "category": "その他/ライフ", "official_url": "https://cosme-ken.org/", "hashtags": "#資格 #美容 #コスメ"}
+{"exam": "Python 3 エンジニア認定", "tweet": "【Python認定】文法/標準ライブラリ/データ分析の基礎を客観証明。AI/自動化/データ活用の入口に最適。", "category": "IT/デジタル", "official_url": "https://www.pythonic-exam.com/", "hashtags": "#資格 #Python #データ分析"}
+{"exam": "JDLA G検定（ジェネラリスト）", "tweet": "【G検定】AI/深層学習の“使いどころ”を理解するための教養資格。企画/DX推進/PdMにも相性◎。", "category": "IT/AI", "official_url": "https://www.jdla.org/certificate/general/", "hashtags": "#資格 #AI #G検定"}
+{"exam": "JDLA E資格（エンジニア）", "tweet": "【E資格】ディープラーニング実装力を証明。前提講座→受験の流れで、理論と実装の“橋渡し”を形に。", "category": "IT/AI", "official_url": "https://www.jdla.org/certificate/engineer/", "hashtags": "#資格 #AI #機械学習"}
+{"exam": "統計検定", "tweet": "【統計検定】データの読み解き/仮説検定/回帰…意思決定の“再現性”を上げる統計リテラシーを証明。", "category": "データ/分析", "official_url": "https://www.toukei-kentei.jp/", "hashtags": "#資格 #統計 #データ分析"}
+{"exam": "QC検定（品質管理検定）", "tweet": "【QC検定】現場改善/品質保証の共通言語。製造業はもちろん、サービス品質向上にも効く“地力”。", "category": "製造/品質", "official_url": "https://webdesk.jsa.or.jp/common/W10K0500/index/qc/", "hashtags": "#資格 #品質管理 #改善"}
+{"exam": "eco検定（環境社会検定）", "tweet": "【eco検定】環境法/SDGs/ESGの基礎を体系化。企業のサステナ対応の共通土台づくりに。", "category": "環境/サステナ", "official_url": "https://kentei.tokyo-cci.or.jp/eco/", "hashtags": "#資格 #SDGs #サステナ"}
+{"exam": "貿易実務検定", "tweet": "【貿易実務検定】インコタームズ/船積/通関/決済…“輸出入の実務”を現場目線で証明。C→B→Aで段階的に。", "category": "その他/物流", "official_url": "https://www.boujitsu.com/", "hashtags": "#資格 #貿易 #ロジスティクス"}
+{"exam": "通関士", "tweet": "【通関士】輸出入申告のスペシャリスト。関税法/手続に精通し、商社・フォワーダーで強みを発揮。", "category": "その他/物流", "official_url": "https://www.customs.go.jp/tsukan/", "hashtags": "#資格 #通関士 #国際物流"}
+{"exam": "旅行業務取扱管理者（総合/国内）", "tweet": "【旅行業務取扱管理者】旅行商品の企画/販売に必須の国交大臣認定資格。観光・インバウンドの基礎体力に。", "category": "その他/ホスピタリティ", "official_url": "https://www.mlit.go.jp/kankocho/shisaku/soshiki/ryokogyomu.html", "hashtags": "#資格 #旅行 #観光"}
+{"exam": "危険物取扱者", "tweet": "【危険物取扱者】化学/法令/物理の基礎をもとに、製造・物流の安全を守る資格。工場/SS/倉庫で即戦力。", "category": "安全・防災/化学", "official_url": "https://www.shoubo-shiken.or.jp/kikenbutsu/", "hashtags": "#資格 #安全管理 #化学"}
+{"exam": "第二種電気工事士", "tweet": "【第二種電工】住宅・小規模店舗の電気工事に必須。工具/配線/図記号…“現場で使う力”を形に。", "category": "その他/設備", "official_url": "https://www.shiken.or.jp/denko/", "hashtags": "#資格 #電気工事士 #ものづくり"}
+{"exam": "施工管理技士（1級/2級）", "tweet": "【施工管理技士】現場の品質/工程/安全を統括。土木/建築/管/電気工事など専攻別でキャリアに直結。", "category": "建設/インフラ", "official_url": "https://www.jctc.or.jp/guidance/construction-management/", "hashtags": "#資格 #建設 #施工管理"}
+{"exam": "衛生管理者（第一種/二種）", "tweet": "【衛生管理者】労働安全衛生の要。職場の健康リスクを法令に基づき管理する“人事×安全”の中核資格。", "category": "安全・防災/人事", "official_url": "https://www.exam.or.jp/", "hashtags": "#資格 #労働安全衛生 #人事"}
+{"exam": "運行管理者（貨物/旅客）", "tweet": "【運行管理者】物流/バス/タクシーの安全運行を担う専門家。拘束時間・点呼・法令遵守の実務力を証明。", "category": "その他/交通", "official_url": "https://www.unkou-center.or.jp/", "hashtags": "#資格 #物流 #安全管理"}
+{"exam": "気象予報士", "tweet": "【気象予報士】学科＋実技で“空を読む”国家資格。防災/メディア/建設計画など応用先が広い専門性。", "category": "科学・教育/防災", "official_url": "https://www.jma.go.jp/jma/kishou/minkan/yohoushi.html", "hashtags": "#資格 #気象予報士 #防災"}
+{"exam": "全国通訳案内士", "tweet": "【全国通訳案内士】訪日観光のプロガイド。語学＋日本文化/地理/歴史の総合力でおもてなしを形に。", "category": "その他/語学", "official_url": "https://www.jnto.go.jp/", "hashtags": "#資格 #通訳案内士 #インバウンド"}
+{"exam": "日本語教育能力検定", "tweet": "【日本語教育能力検定】言語学/教授法/測定評価など“教える日本語”の基礎力を証明。海外/国内での指導に。", "category": "科学・教育/語学", "official_url": "https://www.jees.or.jp/jltct/", "hashtags": "#資格 #日本語教師 #教育"}
+{"exam": "マンション管理士", "tweet": "【マン管】区分所有法/管理規約/建物・設備の知見で管理組合を支援。トラブル予防と資産価値維持に直結。", "category": "不動産/管理", "official_url": "https://www.mankan.org/", "hashtags": "#資格 #マンション管理士 #不動産"}
+{"exam": "管理業務主任者", "tweet": "【管業】マンション管理会社に配置が義務付けられる国家資格。重要事項説明/契約締結の実務を担う。", "category": "不動産/管理", "official_url": "https://www.kanrikyo.or.jp/kanri/siken.html", "hashtags": "#資格 #管理業務主任者 #不動産"}
+{"exam": "登録販売者", "tweet": "【登録販売者】一般用医薬品の販売・情報提供に必要。ドラッグストア業界でのキャリアの入口に。", "category": "医療/流通", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000068334.html", "hashtags": "#資格 #登録販売者 #医薬品"}
+{"exam": "保育士（国家試験）", "tweet": "【保育士】子どもの発達・保育原理・家庭支援を体系的に。社会的意義が高く、安定した需要も魅力。", "category": "福祉/教育", "official_url": "https://www.hoyokyo.or.jp/exam/", "hashtags": "#資格 #保育士 #福祉"}
+{"exam": "知的財産管理技能検定", "tweet": "【知財管理技能検定】特許/商標/著作権の実務力を証明。法務×企画×R&Dの橋渡し人材に。", "category": "ビジネス/法務", "official_url": "https://www.kentei-infoipc.jp/", "hashtags": "#資格 #知財 #知的財産"}
+{"exam": "Webデザイン技能検定", "tweet": "【Webデザイン技能検定】国家検定で“Web制作の基礎力”を客観証明。UI/コーディング/画像/法規まで。", "category": "IT/デザイン", "official_url": "https://www.webdesign.gr.jp/", "hashtags": "#資格 #Webデザイン #フロントエンド"}
+{"exam": "電気通信工事担任者", "tweet": "【電気通信工事担任者】光回線/宅内配線の工事・接続に関する国家資格。通信インフラの“最後の1m”を支える。", "category": "インフラ・設備/インフラ", "official_url": "https://www.dekyo.or.jp/shiken/", "hashtags": "#資格 #通信 #インフラ"}
+{"exam": "販売士（リテールマーケティング検定）", "tweet": "【販売士】小売・流通の実務力を証明。MD/販促/接客/店舗運営まで“売れる仕組み”を体系化。", "category": "ビジネス/販売", "official_url": "https://www.kentei.ne.jp/", "hashtags": "#資格 #小売 #マーケティング"}
+{"exam": "ビジネス実務法務検定（1〜3級）", "tweet": "【ビジ法（再掲）】企業法務の基礎を“資格のかたち”で。内部統制/契約/知財/個人情報の共通言語に。", "category": "ビジネス/法律", "official_url": "https://kentei.tokyo-cci.or.jp/houmu/", "hashtags": "#資格 #コンプライアンス #法務"}
+{"exam": "OSS-DB Silver", "tweet": "【OSS-DB Silver】PostgreSQLの運用基礎を証明。社内ツールやDWHの保守で、障害切り分けが速くなる。小さなDBでも信頼を得やすい。", "category": "IT/データベース", "official_url": "https://oss-db.jp/", "hashtags": "#資格 #DB #PostgreSQL"}
+{"exam": "LinuC Level1", "tweet": "【LinuC Lv1】Linuxの基本操作とネットワーク。開発環境の構築やサーバ調査で頼られる人に。クラウド時代の下地づくり。", "category": "IT/インフラ", "official_url": "https://linuc.org/linuc1/", "hashtags": "#資格 #Linux #インフラ"}
+{"exam": "Oracle Master Bronze", "tweet": "【Oracle Bronze】業務システムで根強いOracleの基礎を証明。老舗基幹の保守案件で会話が通じるように。", "category": "IT/データベース", "official_url": "https://www.oracle.com/jp/education/oracle-master/", "hashtags": "#資格 #Oracle #情シス"}
+{"exam": "AWS認定 ソリューションアーキテクト アソシエイト", "tweet": "【AWS SAA】要件をクラウド設計に落とし込む力を証明。小規模移行でも構成図が一発で通る。", "category": "IT/クラウド", "official_url": "https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/", "hashtags": "#資格 #AWS #クラウド"}
+{"exam": "Google Cloud Associate Cloud Engineer", "tweet": "【GCP ACE】GCPの基本運用に強くなる。FirebaseやBigQueryの連携提案がしやすい。", "category": "IT/クラウド", "official_url": "https://cloud.google.com/learn/certification/associate-cloud-engineer?hl=ja", "hashtags": "#資格 #GCP #クラウド"}
+{"exam": "Azure Fundamentals", "tweet": "【Azure F】Microsoft製品と親和性の高いAzure入門。社内ADやM365連携の話が早い。", "category": "IT/クラウド", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-fundamentals/", "hashtags": "#資格 #Azure #クラウド"}
+{"exam": "CCNA", "tweet": "【CCNA】ネットワークの基礎体力。拠点間VPNやL2トラブルで現場復旧が速くなる。", "category": "IT/ネットワーク", "official_url": "https://www.cisco.com/c/ja_jp/training-events/training-certifications/certifications/associate/ccna.html", "hashtags": "#資格 #CCNA #ネットワーク"}
+{"exam": "情報処理安全確保支援士", "tweet": "【SC】セキュリティ専門国家資格。脆弱性診断の提案やISMS運用の説得力が段違い。", "category": "IT/セキュリティ", "official_url": "https://www.ipa.go.jp/shiken/kubun/sc.html", "hashtags": "#資格 #セキュリティ #IPA"}
+{"exam": "ネットワークスペシャリスト", "tweet": "【NWスペ】大規模ネットワーク設計の知見。冗長構成やBGPの議論で主導権を握れる。", "category": "IT/ネットワーク", "official_url": "https://www.ipa.go.jp/shiken/kubun/nw.html", "hashtags": "#資格 #ネットワーク #IPA"}
+{"exam": "データベーススペシャリスト", "tweet": "【DBスペ】正規化から性能設計まで。既存SQLのボトルネック特定が速くなる。", "category": "IT/データベース", "official_url": "https://www.ipa.go.jp/shiken/kubun/db.html", "hashtags": "#資格 #DB #IPA"}
+{"exam": "プロジェクトマネージャ", "tweet": "【PM】見積とリスクを数字で語れる。炎上前に舵を切る根拠が増える。", "category": "IT/マネジメント", "official_url": "https://www.ipa.go.jp/shiken/kubun/pm.html", "hashtags": "#資格 #PM #IPA"}
+{"exam": "ITストラテジスト", "tweet": "【ITストラテジスト】経営とITの橋渡し。投資対効果の説明で役員決裁を通しやすい。", "category": "IT/経営", "official_url": "https://www.ipa.go.jp/shiken/kubun/st.html", "hashtags": "#資格 #DX #IPA"}
+{"exam": "Web解析士（ベーシック）", "tweet": "【Web解析士】GA4を軸に施策の優先度を判断。広告費カットの提案に説得力が出る。", "category": "マーケティング/データ", "official_url": "https://www.waca.or.jp/course/wac/", "hashtags": "#資格 #Web解析 #マーケ"}
+{"exam": "データサイエンティスト検定（リテラシー）", "tweet": "【DS検定】統計とデータ利活用の共通言語。現場の数字を意思決定に繋げやすい。", "category": "データ/分析", "official_url": "https://www.datascientist.or.jp/dscertification/", "hashtags": "#資格 #統計 #データ"}
+{"exam": "Tableau Desktop Specialist", "tweet": "【Tableau DS】ダッシュボードをサクッと形に。現場に刺さる可視化で打ち合わせが前進。", "category": "データ/BI", "official_url": "https://trailheadacademy.salesforce.com/ja/credentials/certifications/tabledes", "hashtags": "#資格 #Tableau #可視化"}
+{"exam": "Power BI Data Analyst", "tweet": "【Power BI】Excel資産を活かして可視化。部門内の自走分析文化を作りやすい。", "category": "データ/BI", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/power-bi-data-analyst-associate/", "hashtags": "#資格 #PowerBI #データ活用"}
+{"exam": "G検定（JDLA）", "tweet": "【G検定】AIの使いどころを理解。PoCの現実的な落とし所を示せる。", "category": "その他/企画", "official_url": "https://www.jdla.org/certificate/general/", "hashtags": "#資格 #AI #DX"}
+{"exam": "E資格（JDLA）", "tweet": "【E資格】深層学習の実装筋力。モデル選定や学習設計で無駄打ちが減る。", "category": "その他/実装", "official_url": "https://www.jdla.org/certificate/engineer/", "hashtags": "#資格 #機械学習 #DeepLearning"}
+{"exam": "情報セキュリティマネジメント", "tweet": "【SG】非エンジニアのセキュリティ教養。社内ルール設計の説得力が増す。", "category": "IT/セキュリティ", "official_url": "https://www.ipa.go.jp/shiken/kubun/sg.html", "hashtags": "#資格 #情報セキュリティ"}
+{"exam": "ビジネス著作権検定", "tweet": "【ビジ著】画像・音源の権利判断に強くなる。炎上と損害を未然に回避。", "category": "ビジネス/法律", "official_url": "https://www.sartrics.or.jp/bcc/", "hashtags": "#資格 #著作権 #コンプラ"}
+{"exam": "個人情報保護士", "tweet": "【個人情報保護士】個人情報の実務運用を体系化。委託先管理やPマーク運用で頼られる。", "category": "ビジネス/法律", "official_url": "https://www.joho-gakushu.or.jp/pi/", "hashtags": "#資格 #個人情報 #セキュリティ"}
+{"exam": "マイナンバー実務検定", "tweet": "【マイナンバー検】収集保管の実務ルールを整理。年末調整や委託時の不安が消える。", "category": "ビジネス/法律", "official_url": "https://www.joho-gakushu.or.jp/mynumber/", "hashtags": "#資格 #コンプラ #人事"}
+{"exam": "知的財産管理技能士 3級", "tweet": "【知財3級】商標や著作の基本線を理解。新サービスのネーミングで地雷回避。", "category": "ビジネス/知財", "official_url": "https://www.kentei-info-ip-edu.org/", "hashtags": "#資格 #知財 #IP"}
+{"exam": "DCプランナー", "tweet": "【DCプランナー】企業型DCやiDeCoの制度設計を理解。福利厚生の見直し提案に強い。", "category": "金融/年金", "official_url": "https://www.kinzai.or.jp/dcp/", "hashtags": "#資格 #年金 #資産形成"}
+{"exam": "証券外務員 二種", "tweet": "【外務員二種】投資商品の基本を説明できる。窓口やIFAの信頼形成に直結。", "category": "金融/証券", "official_url": "https://www.jsda.or.jp/gaimuin/shiken.html", "hashtags": "#資格 #金融 #投資"}
+{"exam": "貸金業務取扱主任者", "tweet": "【貸金主任者】与信と債権管理の実務力。審査フローの設計や法令対応で即戦力。", "category": "金融/与信", "official_url": "https://www.j-fsa.or.jp/chief/", "hashtags": "#資格 #与信 #法令"}
+{"exam": "不動産証券化マスター", "tweet": "【不動産証券化】REITやSPCの理解が深まる。投資家向け説明資料の説得力が上がる。", "category": "不動産/ファイナンス", "official_url": "https://www.ares.or.jp/master/", "hashtags": "#資格 #REIT #不動産"}
+{"exam": "ビル経営管理士", "tweet": "【ビル経営管理士】テナント誘致から設備更新まで。空室対策の議論が具体化。", "category": "不動産/PM", "official_url": "https://www.building.or.jp/bk/bk01.html", "hashtags": "#資格 #ビル経営 #不動産"}
+{"exam": "建設業経理士 2級", "tweet": "【建設業経理士】工事原価の勘所を押さえる。現場と経理の会話が噛み合う。", "category": "法律・会計/建設", "official_url": "https://www.kensetsu-kikin.or.jp/keiri/kentei/", "hashtags": "#資格 #建設 #原価管理"}
+{"exam": "宅地建物取引士", "tweet": "【宅建】契約や重要事項の説明に強くなる。賃貸仲介や売買の現場で即効性。", "category": "不動産/法務", "official_url": "https://www.retio.or.jp/exam/", "hashtags": "#資格 #宅建 #不動産"}
+{"exam": "賃貸不動産経営管理士", "tweet": "【賃貸不動産経営管理士】賃貸管理の実務に直結。原状回復やトラブル対応で強み。", "category": "不動産/管理", "official_url": "https://www.chintaikanrishi.jp/", "hashtags": "#資格 #賃貸管理 #不動産"}
+{"exam": "海事代理士", "tweet": "【海事代理士】船舶登録や各種届出のプロ。海運やマリンレジャーの手続きがスムーズ。", "category": "法律・会計/運輸", "official_url": "https://www.mlit.go.jp/about/file000049.html", "hashtags": "#資格 #海事 #手続"}
+{"exam": "司法書士", "tweet": "【司法書士】登記と法律事務の要。相続や商業登記で企業と個人を支える。", "category": "法律・会計/士業", "official_url": "https://www.moj.go.jp/shikaku_saiyo_index3.html", "hashtags": "#資格 #登記 #法律"}
+{"exam": "建築物環境衛生管理技術者（ビル管）", "tweet": "【ビル管】衛生と空調のプロ。大型施設の管理委託で指名が来やすい。", "category": "インフラ・設備/ビルメン", "official_url": "https://www.jahmec.or.jp/kokka/", "hashtags": "#資格 #ビルメン #空調"}
+{"exam": "第一種電気工事士", "tweet": "【一種電工】大規模施設の電気工事を担える。昇圧や幹線改修の提案が通りやすい。", "category": "インフラ・設備/電気", "official_url": "https://www.shiken.or.jp/", "hashtags": "#資格 #電気 #施工"}
+{"exam": "第三種電気主任技術者", "tweet": "【電験三種】受電設備の保安監督。省エネと劣化診断の改善提案が刺さる。", "category": "インフラ・設備/電気", "official_url": "https://www.shiken.or.jp/", "hashtags": "#資格 #電験 #設備保全"}
+{"exam": "第二種冷凍機械責任者", "tweet": "【冷凍二種】冷凍空調の保安要。冷ケースやチラーの更新提案に強い。", "category": "インフラ・設備/冷凍空調", "official_url": "https://www.khk.or.jp/qualification/national_qualification/examination/examination_about.html", "hashtags": "#資格 #冷凍空調 #ビルメン"}
+{"exam": "二級ボイラー技士", "tweet": "【ボイラー2級】熱源設備の運転管理。蒸気トラブルの一次対応で頼られる。", "category": "インフラ・設備/熱源", "official_url": "https://www.exam.or.jp/", "hashtags": "#資格 #ボイラー #設備保全"}
+{"exam": "公害防止管理者（水質）", "tweet": "【公害防止 水質】排水基準の要点を押さえる。製造現場の法令対応が安心。", "category": "環境/法令", "official_url": "https://www.jemai.or.jp/", "hashtags": "#資格 #公害防止 #環境"}
+{"exam": "エネルギー管理士", "tweet": "【エネ管】省エネ計画の主担当に。更新投資の回収計算で役員を説得しやすい。", "category": "環境/省エネ", "official_url": "https://www.eccj.or.jp/", "hashtags": "#資格 #省エネ #脱炭素"}
+{"exam": "環境計量士（濃度）", "tweet": "【環境計量士 濃度】測定データの信頼性を担保。報告書の説得力が上がる。", "category": "環境/計量", "official_url": "https://www.meti.go.jp/information/license/data/c250620aj.html", "hashtags": "#資格 #環境 #計量"}
+{"exam": "危険物取扱者 乙種4類", "tweet": "【危険物 乙4】ガソリンや灯油等を扱う現場で必須。SSや工場で即活躍。", "category": "安全・防災/化学", "official_url": "https://www.shoubo-shiken.or.jp/", "hashtags": "#資格 #危険物 #安全"}
+{"exam": "消防設備士 甲種4類", "tweet": "【消防設備士 甲4】自火報の点検と工事に携われる。改修提案で売上に直結。", "category": "安全・防災/防災", "official_url": "https://www.shoubo-shiken.or.jp/", "hashtags": "#資格 #消防設備 #防災"}
+{"exam": "高圧ガス製造保安責任者（乙種化学）", "tweet": "【高圧ガス 乙化】ガス設備の保安に必須。化学工場での安全体制が強化。", "category": "安全・防災/化学", "official_url": "https://www.khk.or.jp/", "hashtags": "#資格 #高圧ガス #安全衛生"}
+{"exam": "クレーン・デリック運転士", "tweet": "【クレーン運転士】荷役現場の主戦力。重機工程の安全と段取りが格段に上がる。", "category": "建設/重機", "official_url": "https://www.exam.or.jp/", "hashtags": "#資格 #クレーン #現場力"}
+{"exam": "電気通信主任技術者（伝送交換）", "tweet": "【通主任】通信設備の設計保守を牽引。拠点新設の通信要件がスムーズ。", "category": "インフラ・設備/インフラ", "official_url": "https://www.dekyo.or.jp/shiken/chief/", "hashtags": "#資格 #通信 #NW"}
+{"exam": "電気通信工事担任者（AI・DD総合種）", "tweet": "【工担 総合種】宅内配線からONUまで。FTTH工事の品質が安定。", "category": "インフラ・設備/宅内", "official_url": "https://www.dekyo.or.jp/", "hashtags": "#資格 #通信工事 #FTTH"}
+{"exam": "建設機械施工技士 2級", "tweet": "【建機施工 2級】施工計画の精度が上がる。重機オペとの意思疎通が滑らか。", "category": "建設/施工", "official_url": "https://jcmanet-shiken.jp/", "hashtags": "#資格 #建設 #施工管理"}
+{"exam": "1級土木施工管理技士", "tweet": "【土木施工1級】品質・工程・安全を統括。大型案件の現場で指揮が執れる。", "category": "建設/施工", "official_url": "https://www.jctc.jp/exam/doboku-1/", "hashtags": "#資格 #施工管理 #土木"}
+{"exam": "配管技能士 2級", "tweet": "【配管技能士】配管図の読み解きと加工が早い。改修現場での即断即決に。", "category": "建設/設備", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #配管 #設備"}
+{"exam": "溶接技能者（JIS）", "tweet": "【溶接技能者】溶接部の品質証明。強度と外観の両立で信頼を獲得。", "category": "製造/溶接", "official_url": "https://www.jwes.or.jp/", "hashtags": "#資格 #溶接 #製造業"}
+{"exam": "コンクリート技士", "tweet": "【コンクリ技士】配合や打設の勘所を押さえる。品質トラブルの予防に効く。", "category": "建設/材料", "official_url": "https://www.jci-net.or.jp/j/exam/gishi/index.html", "hashtags": "#資格 #コンクリート #品質"}
+{"exam": "地質調査技士", "tweet": "【地質調査技士】地盤調査の要。土質や湧水の評価で設計が安定する。", "category": "建設/地盤", "official_url": "https://www.zenchiren.or.jp/geo_comp/", "hashtags": "#資格 #地質 #インフラ"}
+{"exam": "第一種衛生管理者", "tweet": "【衛生管理者】職場の健康と安全の要。労災リスクの未然防止に直結。", "category": "ビジネス/安全衛生", "official_url": "https://www.exam.or.jp/introduction/h_shokai502/", "hashtags": "#資格 #安全衛生 #人事"}
+{"exam": "メンタルヘルス・マネジメント検定 II種", "tweet": "【メンタル検定 II種】ラインケアの実務。早期相談の導線作りが上手くなる。", "category": "ビジネス/健康", "official_url": "https://www.mental-health.ne.jp/", "hashtags": "#資格 #メンタルヘルス #人事"}
+{"exam": "防災士", "tweet": "【防災士】地域/職場の備えを体系化。避難所運営やBCPの議論が進む。", "category": "安全・防災/地域", "official_url": "https://bousaisi.jp/", "hashtags": "#資格 #防災 #減災"}
+{"exam": "防犯設備士", "tweet": "【防犯設備士】カメラや入退室の設計最適化。被害額を減らす提案ができる。", "category": "安全・防災/セキュリティ", "official_url": "https://www.ssaj.or.jp/security_officer/", "hashtags": "#資格 #防犯 #セキュリティ"}
+{"exam": "産業カウンセラー", "tweet": "【産業カウンセラー】傾聴と面接の基礎を習得。人事面談の質が上がる。", "category": "ビジネス/メンタル", "official_url": "https://www.counselor.or.jp/", "hashtags": "#資格 #カウンセリング #人事"}
+{"exam": "キャリアコンサルタント", "tweet": "【キャリコン】キャリア面談を科学する。1on1で行動変容を促しやすい。", "category": "ビジネス/キャリア", "official_url": "https://www.career-shiken.org/", "hashtags": "#資格 #キャリア #面談"}
+{"exam": "旅行業務取扱管理者（国内）", "tweet": "【旅行管理者 国内】旅行商品の企画販売に必須。地域ツアー造成が捗る。", "category": "その他/旅行", "official_url": "https://www.anta.or.jp/exam/", "hashtags": "#資格 #旅行 #観光"}
+{"exam": "診療報酬請求事務能力認定（医科）", "tweet": "【医療事務 認定】レセプトの精度UP。返戻や算定漏れを抑えられる。", "category": "医療/事務", "official_url": "https://www.iryojimu.or.jp/exam/", "hashtags": "#資格 #医療事務 #レセプト"}
+{"exam": "医療情報技師", "tweet": "【医療情報技師】医療×ITの橋渡し。電子カルテ更改の要件定義がスムーズ。", "category": "医療/IT", "official_url": "https://www.hcit.or.jp/standard/about/", "hashtags": "#資格 #医療IT #病院システム"}
+{"exam": "介護福祉士", "tweet": "【介護福祉士】介護の専門性を証明。チームケアの中心として信頼を得る。", "category": "福祉/介護", "official_url": "https://www.sssc.or.jp/", "hashtags": "#資格 #介護 #ケア"}
+{"exam": "介護支援専門員（ケアマネ）", "tweet": "【ケアマネ】介護サービス計画の要。多職種連携のハブ役に。", "category": "福祉/介護", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/hoken/jissi.html", "hashtags": "#資格 #ケアマネ #地域包括"}
+{"exam": "福祉住環境コーディネーター 2級", "tweet": "【福祉住環境】住宅改修の提案力が上がる。手すり位置や段差解消の根拠を示せる。", "category": "福祉/住環境", "official_url": "https://kentei.tokyo-cci.or.jp/fukushi/", "hashtags": "#資格 #バリアフリー #住まい"}
+{"exam": "社会福祉士", "tweet": "【社会福祉士】相談援助の専門家。制度と生活をつなぐ支援ができる。", "category": "福祉/相談支援", "official_url": "https://www.sssc.or.jp/", "hashtags": "#資格 #福祉 #ソーシャルワーク"}
+{"exam": "世界遺産検定 2級", "tweet": "【世界遺産検定】観光記事やツアー造成でネタが湧く。プレゼンが一段と面白く。", "category": "ライフスタイル/観光", "official_url": "https://www.sekaken.jp/", "hashtags": "#資格 #世界遺産 #観光"}
+{"exam": "天文宇宙検定 2級", "tweet": "【天文検定】星空イベントの解説が捗る。子ども向けワークショップで映える。", "category": "科学・教育/教養", "official_url": "https://www.astro-test.org/", "hashtags": "#資格 #宇宙 #星空"}
+{"exam": "フォトマスター検定 準1級", "tweet": "【フォトマスター】写真理論と機材運用に強くなる。物撮りや取材で差が出る。", "category": "クリエイティブ/クリエイティブ", "official_url": "https://www.pm-kentei.com/", "hashtags": "#資格 #写真 #カメラ"}
+{"exam": "カラーコーディネーター検定 2級", "tweet": "【カラーコーディネーター】商品企画やVMDで配色の根拠を示せる。", "category": "クリエイティブ/色彩", "official_url": "https://kentei.tokyo-cci.or.jp/color/", "hashtags": "#資格 #カラー #VMD"}
+{"exam": "パーソナルカラー検定 モジュール1", "tweet": "【パーソナルカラー】似合う色を理論で提案。撮影や接客の説得力が増す。", "category": "その他/色彩", "official_url": "https://www.p-color.jp/certification/apply/module1/", "hashtags": "#資格 #パーソナルカラー #美容"}
+{"exam": "整理収納アドバイザー 2級", "tweet": "【整理収納】片付けを再現可能な手順に。賃貸内見や引越しサポートで喜ばれる。", "category": "ライフスタイル/住まい", "official_url": "https://housekeeping.or.jp/about_license/grade2/", "hashtags": "#資格 #整理収納 #片付け"}
+{"exam": "手話検定（全国手話検定試験） 4級", "tweet": "【手話検定】基本の会話ができる。接客や地域活動でコミュニケーションの幅が広がる。", "category": "語学/福祉", "official_url": "https://kentei.com-sagano.com/", "hashtags": "#資格 #手話 #インクルーシブ"}
+{"exam": "温泉ソムリエ", "tweet": "【温泉ソムリエ】泉質と入浴法をわかりやすく解説。観光ブログや旅企画で人気に。", "category": "その他/温泉", "official_url": "https://onsen-s.com/", "hashtags": "#資格 #温泉 #旅行"}
+{"exam": "チーズプロフェッショナル", "tweet": "【チーズプロ】熟成や産地の話で料理提案が深まる。飲食メニューに差がつく。", "category": "食/飲料", "official_url": "https://www.cheese-professional.com/info/qualification_kentei.php", "hashtags": "#資格 #チーズ #グルメ"}
+{"exam": "きき酒師", "tweet": "【きき酒師】日本酒の味わいを言語化。酒販や飲食で提案が刺さる。", "category": "食/飲料", "official_url": "https://kikisake-shi.jp/", "hashtags": "#資格 #日本酒 #外食"}
+{"exam": "焼酎きき酒師", "tweet": "【焼酎きき酒師】原料や製法の違いを説明。郷土料理とのペアリングが楽しくなる。", "category": "食/飲料", "official_url": "https://kikisake-shi.jp/", "hashtags": "#資格 #焼酎 #ペアリング"}
+{"exam": "ワインエキスパート", "tweet": "【ワインEX】品種と産地の知識が接客力に直結。輸入ワインの販促にも強い。", "category": "食/飲料", "official_url": "https://www.sommelier.jp/exam/exam_guidance.html", "hashtags": "#資格 #ワイン #ソムリエ"}
+{"exam": "コーヒーインストラクター 2級", "tweet": "【コーヒー2級】抽出の理論で味を再現。カフェ開業やECで説得力アップ。", "category": "食/飲料", "official_url": "https://kentei.jcqa.org/", "hashtags": "#資格 #コーヒー #カフェ"}
+{"exam": "パンシェルジュ検定 2級", "tweet": "【パンシェルジュ】製法と素材の理解でレビューが深まる。ベーカリー巡りが楽しい。", "category": "食/飲料", "official_url": "https://www.kentei-uketsuke.com/pancierge/", "hashtags": "#資格 #パン #食の検定"}
+{"exam": "スパイス&ハーブ検定 2級", "tweet": "【スパイス検】香りの理屈が分かる。料理提案やレシピ開発の幅が広がる。", "category": "食/飲料", "official_url": "https://www.kentei-uketsuke.com/s-herb/", "hashtags": "#資格 #スパイス #料理"}
+{"exam": "食品表示検定 中級", "tweet": "【食品表示】ラベルチェックが正確に。ECの表記トラブルを減らせる。", "category": "食/法令", "official_url": "https://www.shokuhyoji.jp/", "hashtags": "#資格 #食品表示 #コンプラ"}
+{"exam": "野菜ソムリエ", "tweet": "【野菜ソムリエ】旬と栄養を言語化。販促や献立提案で信頼を得やすい。", "category": "食/健康", "official_url": "https://www.vege-fru.com/", "hashtags": "#資格 #野菜 #栄養"}
+{"exam": "インテリアコーディネーター", "tweet": "【インテリアC】家具配置と照明計画の提案力。モデルルームや賃貸提案に強い。", "category": "ライフスタイル/デザイン", "official_url": "https://www.interior.or.jp/examination-ic/", "hashtags": "#資格 #インテリア #住まい"}
+{"exam": "建築CAD検定 2級", "tweet": "【建築CAD】図面の読み書きがスムーズ。小規模改修のやり取りが楽に。", "category": "建設/設計", "official_url": "https://www.aacl.gr.jp/", "hashtags": "#資格 #CAD #設計"}
+{"exam": "CAD利用技術者試験 2級", "tweet": "【CAD利用技術者】図面データのやり取りが正確。DXF地獄からの脱出。", "category": "製造/設計", "official_url": "https://www.acsp.jp/cad/", "hashtags": "#資格 #CAD #製造業"}
+{"exam": "Webデザイン技能検定 2級", "tweet": "【Webデザイン技能】UIと法令を押さえた制作ができる。アクセシビリティの提案が通る。", "category": "IT/デザイン", "official_url": "https://www.webdesign.gr.jp/", "hashtags": "#資格 #Webデザイン #UI"}
+{"exam": "貿易実務検定 B級", "tweet": "【貿易実務】インコタームズを実務に落とせる。輸送条件交渉がスムーズ。", "category": "その他/物流", "official_url": "https://www.boujitsu.com/", "hashtags": "#資格 #貿易 #物流"}
+{"exam": "ロジスティクス検定 2級", "tweet": "【ロジ検】在庫と輸配送の最適化。倉庫の作業動線が改善する。", "category": "その他/SCM", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #ロジスティクス #在庫"}
+{"exam": "小型船舶操縦士 2級", "tweet": "【小型船舶2級】ボート操船の基本。マリンレジャーの幅が一気に広がる。", "category": "スポーツ・レジャー/レジャー", "official_url": "https://www.jmra.or.jp/", "hashtags": "#資格 #船舶 #マリン"}
+{"exam": "特殊小型船舶（水上オートバイ）", "tweet": "【特殊小型】ジェットの操縦に必要。安全に海遊びを楽しめる。", "category": "スポーツ・レジャー/レジャー", "official_url": "https://www.mlit.go.jp/maritime/maritime_mn10_000006.html", "hashtags": "#資格 #マリンスポーツ #船舶"}
+{"exam": "第三級陸上特殊無線技士", "tweet": "【三陸特】無線マイクや特定小電力の運用に。イベント現場で重宝。", "category": "インフラ・設備/イベント", "official_url": "https://www.nichimu.or.jp/kshiken/", "hashtags": "#資格 #無線 #イベント"}
+{"exam": "第二級海上特殊無線技士", "tweet": "【二海特】マリンVHFの運用に。海上での連絡がクリアに。", "category": "インフラ・設備/海", "official_url": "https://www.nichimu.or.jp/", "hashtags": "#資格 #無線 #船舶"}
+{"exam": "アマチュア無線技士 4級", "tweet": "【アマ無線4級】非常時の通信手段を確保。趣味の幅も広がる。", "category": "インフラ・設備/防災", "official_url": "https://www.nichimu.or.jp/kshiken/", "hashtags": "#資格 #アマ無線 #防災"}
+{"exam": "無人航空機操縦者 二等", "tweet": "【ドローン二等】レベル4時代の基礎。測量や点検の副業案件に繋がる。", "category": "交通・運輸/点検", "official_url": "https://www.mlit.go.jp/koku/drone/", "hashtags": "#資格 #ドローン #測量"}
+{"exam": "防災センター要員（自衛消防業務講習）", "tweet": "【自衛消防】初動対応の中核。大規模施設の安全運用で信頼を得られる。", "category": "安全・防災/施設", "official_url": "https://www.tfd.metro.tokyo.lg.jp/sk/kousyu4.html", "hashtags": "#資格 #消防 #安全"}
+{"exam": "消防設備点検資格者 甲種", "tweet": "【点検資格者】法定点検の主力に。更新提案がしやすい。", "category": "安全・防災/設備", "official_url": "https://www.jfeii.or.jp/", "hashtags": "#資格 #消防設備 #点検"}
+{"exam": "英検準1級", "tweet": "【英検準1】高度な読解と発信。商談や海外顧客対応がスムーズ。", "category": "語学/英語", "official_url": "https://www.eiken.or.jp/eiken/grades/grade_pre1/", "hashtags": "#資格 #英語 #学習"}
+{"exam": "TOEIC L&R 800+", "tweet": "【TOEIC800+】実務英語の即戦力。メールと会議のストレスが激減。", "category": "語学/英語", "official_url": "https://www.iibc-global.org/toeic/test/lr.html", "hashtags": "#資格 #TOEIC #英語学習"}
+{"exam": "ビジネス会計検定 2級", "tweet": "【ビジ会】財務三表の読みが深まる。非経理職でも数字で語れる。", "category": "法律・会計/ビジネス", "official_url": "https://www.b-accounting.jp/", "hashtags": "#資格 #会計 #財務"}
+{"exam": "ファイナンシャル・プランナー 2級", "tweet": "【FP2級】保険・資産運用・相続の基礎。家計相談や福利厚生で強い。", "category": "金融/ライフ", "official_url": "https://www.jafp.or.jp/exam/", "hashtags": "#資格 #FP #お金の勉強"}
+{"exam": "年金アドバイザー 3級", "tweet": "【年金ADV】年金制度の要点を整理。退職前相談で頼られる。", "category": "金融/年金", "official_url": "https://www.kentei.org/", "hashtags": "#資格 #年金 #ライフプラン"}
+{"exam": "統計検定 2級", "tweet": "【統計2級】仮説検定と回帰を理解。ABテストの設計が論理的に。", "category": "データ/統計", "official_url": "https://www.toukei-kentei.jp/", "hashtags": "#資格 #統計 #データ分析"}
+{"exam": "QC検定 2級", "tweet": "【QC2級】品質改善の手順を標準化。現場のバラつきが減る。", "category": "製造/品質", "official_url": "https://www.jsa.or.jp/education/qc-kentei/", "hashtags": "#資格 #QC検定 #改善"}
+{"exam": "HACCPコーディネーター（民間）", "tweet": "【HACCP】衛生管理計画を仕組みに。飲食や食品工場の監査で強い。", "category": "食/衛生", "official_url": "https://www.haccp.or.jp/", "hashtags": "#資格 #HACCP #衛生管理"}
+{"exam": "愛玩動物飼養管理士 2級", "tweet": "【愛玩動物】ペットの飼育指導に役立つ。保護活動や店頭相談で信頼感。", "category": "その他/ペット", "official_url": "https://www.jpc.or.jp/kanrishi/", "hashtags": "#資格 #ペット #動物福祉"}
+{"exam": "トリマー（民間認定）", "tweet": "【トリマー】カットとケアの専門職。個人開業や副業にも相性◎。", "category": "その他/ケア", "official_url": "https://www.jkc.or.jp/qualifications/trimmer/", "hashtags": "#資格 #トリマー #ペット"}
+{"exam": "スポーツ指導者（JATI-ATI）", "tweet": "【JATI-ATI】トレーニング理論を実務に。パーソナル指導の説得力が増す。", "category": "その他/指導", "official_url": "https://www.jati.jp/", "hashtags": "#資格 #トレーナー #運動"}
+{"exam": "健康運動実践指導者", "tweet": "【健康運動】高齢者や生活習慣病予防の現場で活躍。介護予防教室に強い。", "category": "その他/運動", "official_url": "https://www.health-net.or.jp/shikaku/shidousya/index.html", "hashtags": "#資格 #健康 #運動指導"}
+{"exam": "食生活アドバイザー 2級", "tweet": "【食アド】栄養とライフスタイルを提案。量販やECの販促にも効く。", "category": "食/生活", "official_url": "https://flanet.jp/juken/", "hashtags": "#資格 #栄養 #食育"}
+{"exam": "ビオトープ管理士 2級", "tweet": "【ビオトープ】生態系配慮の工事計画に。里山整備や公園管理で活躍。", "category": "環境/生態", "official_url": "https://www.ecosys.or.jp/", "hashtags": "#資格 #ビオトープ #環境"}
+{"exam": "森林インストラクター", "tweet": "【森林インスト】自然解説の達人。教育旅行やエコツアーで価値発揮。", "category": "環境/教育", "official_url": "https://www.shinrin-instructor.org/", "hashtags": "#資格 #森林 #自然"}
+{"exam": "危機管理リーダー（民間）", "tweet": "【危機管理】BCPと初動判断の型を身につける。社内訓練で頼られる。", "category": "安全・防災/BCP", "official_url": "https://jiem.jp/kikikanri", "hashtags": "#資格 #危機管理 #BCP"}
+{"exam": "応急手当普及員", "tweet": "【応急手当普及員】一次救命の指導ができる。地域や企業の安全文化に貢献。", "category": "安全・防災/教育", "official_url": "https://www.fdma.go.jp/", "hashtags": "#資格 #救命 #安全"}
+{"exam": "防災介助士（民間）", "tweet": "【防災介助士】災害弱者の支援に焦点。避難所運営の実践で活躍。", "category": "安全・防災/福祉", "official_url": "https://www.carefit.org/bousai/flow.php", "hashtags": "#資格 #防災 #共助"}
+{"exam": "ビジネス統計スペシャリスト（エクセル分析ベーシック）", "tweet": "【ビジ統】Excelで統計を回す。現場の課題をデータで語れる。", "category": "データ/実務", "official_url": "https://www.odyssey-com.co.jp/statistics/", "hashtags": "#資格 #統計 #Excel"}
+{"exam": "Google 広告認定（検索広告）", "tweet": "【Google広告】入札と品質を理解。少額運用でも効果を出しやすい。", "category": "マーケティング/広告", "official_url": "https://skillshop.withgoogle.com/intl/ja_ALL/googleads/", "hashtags": "#資格 #リスティング #運用型広告"}
+{"exam": "SNSエキスパート検定（上級）", "tweet": "【SNS検定】運用設計と炎上回避の型。中小企業のSNS立ち上げに強い。", "category": "マーケティング/SNS", "official_url": "https://sns-expert.or.jp/", "hashtags": "#資格 #SNS運用 #広報"}
+{"exam": "ITパスポート", "tweet": "【iパス】非エンジニアのIT教養。部署横断の会話がスムーズに。", "category": "IT/基礎", "official_url": "https://www.ipa.go.jp/shiken/kubun/ip.html", "hashtags": "#資格 #ITパスポート #DX"}
+{"exam": "ビルクリーニング技能士 2級", "tweet": "【ビルクリ】清掃工程の品質が安定。ホテルや病院で信頼アップ。", "category": "インフラ・設備/清掃", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #ビルメン #清掃"}
+{"exam": "産業衛生管理士（民間）", "tweet": "【産業衛生】化学物質や騒音の対策が具体化。現場の体調不良を減らす。", "category": "ビジネス/安全衛生", "official_url": "https://www.exam.or.jp/introduction/h_shokaieisei/", "hashtags": "#資格 #産業衛生 #労働安全"}
+{"exam": "Scrum Master（CSM）", "tweet": "【CSM】アジャイルの実践力。開発チームの自己組織化を促せる。", "category": "IT/アジャイル", "official_url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster", "hashtags": "#資格 #Scrum #Agile"}
+{"exam": "フォークリフト運転技能講習 修了", "tweet": "【フォークリフト】倉庫現場の即戦力。荷役事故のリスクを抑える。", "category": "その他/現場", "official_url": "https://anzeninfo.mhlw.go.jp/", "hashtags": "#資格 #フォークリフト #安全"}
+{"exam": "玉掛け技能講習 修了", "tweet": "【玉掛け】吊り荷の合図と安全が徹底。重機現場の信頼が増す。", "category": "建設/安全", "official_url": "https://anzeninfo.mhlw.go.jp/", "hashtags": "#資格 #玉掛け #現場安全"}
+{"exam": "第一級陸上無線技術士", "tweet": "【一陸技】無線設備の最高峰。放送局や携帯基地局の要。", "category": "インフラ・設備/通信", "official_url": "https://www.nichimu.or.jp/", "hashtags": "#資格 #無線 #通信インフラ"}
+{"exam": "危険物取扱者 甲種", "tweet": "【危険物 甲】全類を扱える。化学プラントの保安体制の核に。", "category": "安全・防災/化学", "official_url": "https://www.shoubo-shiken.or.jp/", "hashtags": "#資格 #危険物 #保安"}
+{"exam": "公害防止管理者（大気）", "tweet": "【公害防止 大気】ばいじんやSOxの管理を実務に。設備更新の根拠が示せる。", "category": "環境/法令", "official_url": "https://www.jemai.or.jp/polconman/", "hashtags": "#資格 #環境 #法令"}
+{"exam": "エネルギー診断プロフェッショナル（民間）", "tweet": "【エネ診断】電気と熱の見える化。省エネ補助金提案が通りやすい。", "category": "環境/省エネ", "official_url": "https://www.eccj.or.jp/bldg-practice/", "hashtags": "#資格 #省エネ #補助金"}
+{"exam": "JIS Z 2305 非破壊検査技術者 PT2", "tweet": "【非破壊 PT2】浸透探傷の資格。溶接部の欠陥検出で品質保証を強化。", "category": "製造/品質", "official_url": "https://www.jsndi.jp/qualification/", "hashtags": "#資格 #非破壊検査 #品質保証"}
+{"exam": "ボイラー整備士", "tweet": "【ボイラー整備士】点検整備の専門職。熱交換器の性能回復で省エネ。", "category": "インフラ・設備/熱源", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/anzen/anzeneisei22/index.html", "hashtags": "#資格 #ボイラー #保全"}
+{"exam": "危険予知訓練トレーナー（KYT・民間）", "tweet": "【KYTトレーナー】ヒヤリハットを仕組みに。現場の事故ゼロ文化を育てる。", "category": "安全・防災/教育", "official_url": "https://www.jisha.or.jp/kanto/seminar/c4320_kyt_toreken_2d.html", "hashtags": "#資格 #安全 #KYT"}
+{"exam": "Google UX Design Certificate", "tweet": "【UX Cert】ユーザー中心設計の型を習得。プロトタイプ検証が速い。", "category": "IT/UX", "official_url": "https://grow.google/intl/ALL_au/ux-design-certified-course/", "hashtags": "#資格 #UX #デザイン"}
+{"exam": "世界遺産検定 1級", "tweet": "【世界遺産1級】文化観光の専門性。地域PRや教育企画で強い。", "category": "ライフスタイル/観光", "official_url": "https://www.sekaken.jp/", "hashtags": "#資格 #世界遺産 #地域創生"}
+{"exam": "江戸文化歴史検定 2級", "tweet": "【江戸検定】歴史をネタに企画が生まれる。街歩きイベントで大活躍。", "category": "ライフスタイル/歴史", "official_url": "https://www.shogakukan.co.jp/books/series/A10024", "hashtags": "#資格 #江戸 #歴史"}
+{"exam": "日本さかな検定 2級", "tweet": "【とと検】魚の知識で食の提案が楽しい。飲食メニューにストーリーを。", "category": "食/文化", "official_url": "https://www.totoken.com/", "hashtags": "#資格 #魚 #グルメ"}
+{"exam": "ビール検定 2級", "tweet": "【びあけん】ビールのスタイルが語れる。ペアリング提案が刺さる。", "category": "食/飲料", "official_url": "https://beerken.jp/", "hashtags": "#資格 #ビール #クラフトビール"}
+{"exam": "紅茶アナリスト（民間）", "tweet": "【紅茶】茶葉と抽出の理論で接客が映える。ティーサロン企画に。", "category": "食/飲料", "official_url": "https://teaanalyst.com/", "hashtags": "#資格 #紅茶 #ティータイム"}
+{"exam": "オリーブオイルソムリエ", "tweet": "【オリーブ】産地と品種を語れる。物販やレシピ提案で信頼度UP。", "category": "食/飲料", "official_url": "https://www.oliveoil.or.jp/", "hashtags": "#資格 #オリーブオイル #グルメ"}
+{"exam": "日本化粧品検定 2級", "tweet": "【化粧品検定】成分と肌理論の基礎。美容接客やSNS発信で説得力。", "category": "その他/コスメ", "official_url": "https://cosme-ken.org/", "hashtags": "#資格 #コスメ #美容知識"}
+{"exam": "JNAネイリスト技能検定 2級", "tweet": "【ネイリスト】衛生と技術の基礎。サロンワークで即戦力。", "category": "その他/ネイル", "official_url": "https://www.nail-kentei.or.jp/", "hashtags": "#資格 #ネイル #美容"}
+{"exam": "理容師・美容師国家試験", "tweet": "【理美容師】ヘアケアのプロ。提案と再現性で指名が増える。", "category": "その他/ヘア", "official_url": "http://www.rbc.or.jp/", "hashtags": "#資格 #美容師 #理容師"}
+{"exam": "日本漢字能力検定 準1級", "tweet": "【漢検準1】言葉の精度が上がる。広報・編集で表現が洗練。", "category": "語学/国語", "official_url": "https://www.kanken.or.jp/kanken/", "hashtags": "#資格 #漢検 #語彙力"}
+{"exam": "実用数学技能検定 準1級", "tweet": "【数検準1】数量感覚が武器に。見積や統計の直感が磨かれる。", "category": "科学・教育/教養", "official_url": "https://www.su-gaku.net/exam/", "hashtags": "#資格 #数学 #思考力"}
+{"exam": "システムアーキテクト", "tweet": "【システムアーキテクト】あいまいな要望を図や計画にまとめる力。古いシステムの作り直しや大きな社内プロジェクトで中心役になれる。", "category": "IT/アーキテクチャ", "official_url": "https://www.ipa.go.jp/shiken/kubun/sa.html", "hashtags": "#資格 #設計 #IT"}
+{"exam": "ITサービスマネージャ", "tweet": "【ITサービスマネージャ】トラブル対応から改善までの流れを作れる。問い合わせ対応や外部委託の管理がスムーズに。", "category": "IT/運用", "official_url": "https://www.ipa.go.jp/shiken/kubun/sm.html", "hashtags": "#資格 #ITIL #運用"}
+{"exam": "システム監査技術者", "tweet": "【システム監査】システムがルール通り動いているかを第三者目線でチェック。ムダやリスクを見つけて改善につなげる。", "category": "IT/監査", "official_url": "https://www.ipa.go.jp/shiken/kubun/au.html", "hashtags": "#資格 #監査 #ガバナンス"}
+{"exam": "エンベデッドシステムスペシャリスト", "tweet": "【組込みスペシャリスト】機械を動かすソフトの設計が得意。車や家電で“止まらない”仕組みを作れる。", "category": "IT/組込み", "official_url": "https://www.ipa.go.jp/shiken/kubun/es.html", "hashtags": "#資格 #組込み #制御"}
+{"exam": "LinuC Level2", "tweet": "【LinuC Lv2】Linuxサーバの設定と運用の基本がしっかり。社内サーバの故障対応に強くなる。", "category": "IT/インフラ", "official_url": "https://linuc.org/linuc2/", "hashtags": "#資格 #Linux #サーバ"}
+{"exam": "LinuC Level3", "tweet": "【LinuC Lv3】安全性と止まりにくさを設計で確保。大きな社内システムの標準づくりに役立つ。", "category": "IT/インフラ", "official_url": "https://linuc.org/linuc3/", "hashtags": "#資格 #Linux #アーキ"}
+{"exam": "LPIC-1", "tweet": "【LPIC-1】Linuxの基本操作を証明。情シスやサーバ担当の入り口にぴったり。", "category": "IT/インフラ", "official_url": "https://www.lpi.org/our-certifications/lpic-1-overview", "hashtags": "#資格 #LPIC #Linux"}
+{"exam": "LPIC-2", "tweet": "【LPIC-2】ネットワークや故障対応の力を強化。原因探しがうまくなる。", "category": "IT/インフラ", "official_url": "https://www.lpi.org/our-certifications/lpic-2-overview", "hashtags": "#資格 #LPIC #サーバ"}
+{"exam": "RHCSA", "tweet": "【RHCSA】Red Hat系Linuxの実務スキル。サーバ移行や日々の運用が安心。", "category": "IT/インフラ", "official_url": "https://www.redhat.com/en/services/certification/rhcsa", "hashtags": "#資格 #RHEL #Linux"}
+{"exam": "RHCE", "tweet": "【RHCE】自動化とセキュリティまで含めた上級運用。設定のミスやムダを減らせる。", "category": "IT/インフラ", "official_url": "https://www.redhat.com/en/services/certification/rhce", "hashtags": "#資格 #RHEL #Ansible"}
+{"exam": "CCNP Enterprise", "tweet": "【CCNP Enterprise】会社の拠点どうしをつなぐネット設計に強い。回線が切れても止まりにくい仕組みを作れる。", "category": "IT/ネットワーク", "official_url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-enterprise.html", "hashtags": "#資格 #CCNP #NW"}
+{"exam": "CCNP Security", "tweet": "【CCNP Security】社内ネットを守る設定に詳しい。迷惑通信や不正アクセスを防ぎやすくなる。", "category": "IT/セキュリティ", "official_url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-security.html", "hashtags": "#資格 #CCNP #セキュリティ"}
+{"exam": "Fortinet NSE 4", "tweet": "【NSE4】FortiGateの設定と運用の基本が分かる。拠点のネットを安全に保てる。", "category": "IT/セキュリティ", "official_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-infrastructure", "hashtags": "#資格 #Fortinet #FW"}
+{"exam": "Palo Alto Networks PCNSE", "tweet": "【PCNSE】高性能ファイアウォールを正しく設定できる。業務の通信を守りつつ快適さも両立。", "category": "IT/セキュリティ", "official_url": "https://www.paloaltonetworks.com/services/education/certification", "hashtags": "#資格 #PaloAlto #NGFW"}
+{"exam": "Juniper JNCIA-Junos", "tweet": "【JNCIA】Juniper機器の基本操作を理解。メーカーが混ざる現場でも困りにくい。", "category": "IT/ネットワーク", "official_url": "https://www.juniper.net/us/en/training/certification/tracks/junos/jncia-junos.html", "hashtags": "#資格 #Juniper #NW"}
+{"exam": "JNCIS-ENT", "tweet": "【JNCIS-ENT】社内ネットやデータセンターの作り方の基礎。大きめのネット構築に役立つ。", "category": "IT/ネットワーク", "official_url": "https://www.juniper.net/us/en/training/certification/tracks/enterprise-routing-switching/jncis-ent.html", "hashtags": "#資格 #Juniper #DC"}
+{"exam": "CKA", "tweet": "【CKA】Kubernetesの運用力を実技で証明。サービスが止まった時に素早く戻せる。", "category": "IT/クラウドネイティブ", "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/", "hashtags": "#資格 #Kubernetes #CKA"}
+{"exam": "CKAD", "tweet": "【CKAD】Kubernetes上でアプリを動かす力。更新作業が落ち着いてできる。", "category": "IT/クラウドネイティブ", "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/", "hashtags": "#資格 #Kubernetes #Dev"}
+{"exam": "CKS", "tweet": "【CKS】Kubernetesの守り方に強い。大事な情報の扱い方や権限設定を安全にできる。", "category": "IT/セキュリティ", "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/", "hashtags": "#資格 #Kubernetes #Sec"}
+{"exam": "HashiCorp Terraform Associate", "tweet": "【Terraform】設定を“コード化”して同じ環境を何度でも作れる。引き継ぎや監査がラク。", "category": "IT/クラウド", "official_url": "https://www.hashicorp.com/certification/terraform-associate", "hashtags": "#資格 #IaC #Terraform"}
+{"exam": "VMware VCP-DCV", "tweet": "【VCP-DCV】仮想サーバ基盤を安定運用。台数が増えても管理しやすい仕組みを作れる。", "category": "IT/仮想化", "official_url": "https://www.broadcom.com/support/education/vmware/certification/vcp-dcv", "hashtags": "#資格 #VMware #DC"}
+{"exam": "AWS Developer Associate", "tweet": "【AWS DVA】クラウドに強い開発者へ。サーバを用意せずに動く仕組みを作れる。", "category": "IT/クラウド", "official_url": "https://aws.amazon.com/jp/certification/certified-developer-associate/", "hashtags": "#資格 #AWS #開発"}
+{"exam": "AWS SysOps Administrator", "tweet": "【AWS SOA】クラウドの見張りと節約が得意。ムダな費用やトラブルを減らせる。", "category": "IT/クラウド", "official_url": "https://aws.amazon.com/jp/certification/certified-sysops-admin-associate/", "hashtags": "#資格 #AWS #運用"}
+{"exam": "AWS Solutions Architect Professional", "tweet": "【AWS SAP】複雑な要望を形にする上級設計。大規模サービスの地図を描ける。", "category": "IT/クラウド", "official_url": "https://aws.amazon.com/jp/certification/certified-solutions-architect-professional/", "hashtags": "#資格 #AWS #設計"}
+{"exam": "AWS Security Specialty", "tweet": "【AWS セキュリティ】鍵管理や監視のコツが分かる。監査や社内ルール対応がスムーズ。", "category": "IT/セキュリティ", "official_url": "https://aws.amazon.com/jp/certification/certified-security-specialty/", "hashtags": "#資格 #AWS #Security"}
+{"exam": "AWS Data Analytics Specialty", "tweet": "【AWS データ分析】大量データの集め方・まとめ方を理解。レポート作りが速くなる。", "category": "データ/クラウド", "official_url": "https://aws.amazon.com/jp/certification/certified-data-analytics-specialty/", "hashtags": "#資格 #AWS #データ分析"}
+{"exam": "Azure Administrator (AZ-104)", "tweet": "【AZ-104】Azureの毎日の運用が分かる。権限・ネット・監視をきちんと回せる。", "category": "IT/クラウド", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-administrator/", "hashtags": "#資格 #Azure #運用"}
+{"exam": "Azure Solutions Architect Expert (AZ-305)", "tweet": "【AZ-305】社内とクラウドをつなぐ設計に強い。災害対策の計画も立てられる。", "category": "IT/クラウド", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-solutions-architect/", "hashtags": "#資格 #Azure #設計"}
+{"exam": "Azure Security Engineer (AZ-500)", "tweet": "【AZ-500】Azureの守りを仕組みに。怪しい動きを見つけて止められる。", "category": "IT/セキュリティ", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-security-engineer/", "hashtags": "#資格 #Azure #Security"}
+{"exam": "Google Professional Cloud Architect", "tweet": "【GCP アーキテクト】止まりにくく費用も抑えた設計ができる。運用のしやすさも両立。", "category": "IT/クラウド", "official_url": "https://cloud.google.com/learn/certification/cloud-architect", "hashtags": "#資格 #GCP #設計"}
+{"exam": "Google Professional Data Engineer", "tweet": "【GCP データエンジニア】集める・ためる・分析するの流れを設計できる。数字で意思決定がしやすくなる。", "category": "データ/クラウド", "official_url": "https://cloud.google.com/learn/certification/data-engineer", "hashtags": "#資格 #GCP #データ"}
+{"exam": "Google Professional Cloud Security Engineer", "tweet": "【GCP セキュリティ】権限やネットの守りを設計。社外への情報漏れを防ぎやすい。", "category": "IT/セキュリティ", "official_url": "https://cloud.google.com/learn/certification/cloud-security-engineer", "hashtags": "#資格 #GCP #Security"}
+{"exam": "Snowflake SnowPro Core", "tweet": "【SnowPro】クラウドDWHの基本設計ができる。重い集計がサクサク進む。", "category": "データ/基盤", "official_url": "https://www.snowflake.com/en/certifications/snowpro-core/", "hashtags": "#資格 #Snowflake #DWH"}
+{"exam": "Databricks Machine Learning Associate", "tweet": "【Databricks ML】学習の流れと管理のコツが分かる。小さく作って早く試せる。", "category": "データ/ML", "official_url": "https://www.databricks.com/learn/certification/machine-learning-associate", "hashtags": "#資格 #機械学習 #MLOps"}
+{"exam": "Microsoft Fabric Analytics Engineer (DP-600)", "tweet": "【Fabric】バラバラのデータを1つにまとめて分析。部署間のやり取りが速くなる。", "category": "データ/BI", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/fabric-analytics-engineer-associate/", "hashtags": "#資格 #Fabric #PowerBI"}
+{"exam": "Google Analytics Individual Qualification (GAIQ)", "tweet": "【GAIQ】Webの数字の見方を理解。ムダな広告や施策を減らせる。", "category": "マーケティング/分析", "official_url": "https://skillshop.withgoogle.com/", "hashtags": "#資格 #GA4 #マーケ"}
+{"exam": "HubSpot Inbound Marketing", "tweet": "【インバウンド】集客→育成→成約の流れを作れる。長く使われる仕組みづくりに強い。", "category": "マーケティング/CRM", "official_url": "https://academy.hubspot.com/courses/inbound-marketing", "hashtags": "#資格 #HubSpot #CRM"}
+{"exam": "Meta Digital Marketing Associate", "tweet": "【Meta広告入門】SNS広告の基本を理解。少ない予算でも成果を出しやすい。", "category": "マーケティング/広告", "official_url": "https://www.facebook.com/business/learn/certification/exams/100-101-digital-marketing-associate", "hashtags": "#資格 #SNS広告 #運用"}
+{"exam": "Salesforce 認定アドミニストレーター", "tweet": "【Salesforce 管理】権限・自動化・レポートを整える。入力が楽になり活用が進む。", "category": "IT/CRM", "official_url": "https://trailhead.salesforce.com/credentials/administrator/", "hashtags": "#資格 #Salesforce #CRM"}
+{"exam": "Salesforce Platform App Builder", "tweet": "【App Builder】コード少なめで業務アプリを作成。現場の要望に素早く対応。", "category": "IT/CRM", "official_url": "https://trailhead.salesforce.com/credentials/platformappbuilder/", "hashtags": "#資格 #Salesforce #開発"}
+{"exam": "Salesforce Sales Cloud Consultant", "tweet": "【Sales Cloud】商談の見える化と予実管理に強い。営業会議が前に進む。", "category": "IT/CRM", "official_url": "https://trailhead.salesforce.com/credentials/salescloudconsultant/", "hashtags": "#資格 #Salesforce #SFA"}
+{"exam": "ServiceNow Certified System Administrator", "tweet": "【ServiceNow 管理】申請〜承認の流れを仕組み化。待ち時間と手戻りを減らせる。", "category": "IT/業務改善", "official_url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=208e1d77dbc27f40de3cdb85ca961987&id=amap_detail", "hashtags": "#資格 #ServiceNow #ワークフロー"}
+{"exam": "Professional Scrum Master I (PSM I)", "tweet": "【PSM I】スクラムを正しく回す基礎。短いサイクルで学びと改善を回せる。", "category": "IT/アジャイル", "official_url": "https://www.scrum.org/professional-scrum-master-i-certification", "hashtags": "#資格 #Scrum #Agile"}
+{"exam": "Professional Scrum Product Owner I (PSPO I)", "tweet": "【PSPO I】“何を先に作るか”を決める力。限られた時間で効果を最大に。", "category": "IT/アジャイル", "official_url": "https://www.scrum.org/professional-scrum-product-owner-i-certification", "hashtags": "#資格 #プロダクト #Scrum"}
+{"exam": "SAFe Agilist (Leading SAFe)", "tweet": "【SAFe】大人数でのアジャイルの共通ルール。部署またぎの仕事が進みやすい。", "category": "IT/アジャイル", "official_url": "https://scaledagile.com/certification/safe-agilist/", "hashtags": "#資格 #SAFe #組織変革"}
+{"exam": "PMI-ACP", "tweet": "【PMI-ACP】アジャイル手法を横断的に理解。現場に合うやり方を選んで混ぜられる。", "category": "IT/PM", "official_url": "https://www.pmi.org/certifications/agile-acp", "hashtags": "#資格 #アジャイル #PM"}
+{"exam": "PRINCE2 Foundation", "tweet": "【PRINCE2 F】決められた手順でプロジェクトを進める基本。海外案件で通じる。", "category": "IT/PM", "official_url": "https://www.peoplecert.org/browse-certifications/project-programme-management/PRINCE2", "hashtags": "#資格 #PRINCE2 #PM"}
+{"exam": "PRINCE2 Practitioner", "tweet": "【PRINCE2 実践】状況に合わせて手順を調整できる。複雑な案件でも迷いにくい。", "category": "IT/PM", "official_url": "https://www.peoplecert.org/browse-certifications/project-programme-management/PRINCE2", "hashtags": "#資格 #PRINCE2 #PM"}
+{"exam": "Kanban Management Professional (KMP)", "tweet": "【KMP】作業の“詰まり”を見える化。待ち時間を減らして流れを良くする。", "category": "IT/改善", "official_url": "https://kanban.university/kanban-development-path/kmp-credential/", "hashtags": "#資格 #カンバン #改善"}
+{"exam": "HCD-Net 認定専門家", "tweet": "【HCD 専門家】調査から検証までを主導。意思決定にユーザー視点を通せる。", "category": "その他/リサーチ", "official_url": "https://www.hcdnet.org/certified/", "hashtags": "#資格 #UX #HCD"}
+{"exam": "IAAP WAS", "tweet": "【WAS】Webのアクセシビリティを実装・改善できる。監査対応も安心。", "category": "その他/アクセシビリティ", "official_url": "https://www.accessibilityassociation.org/was-exam", "hashtags": "#資格 #a11y #Web"}
+{"exam": "ITコーディネータ（ITC）", "tweet": "【ITC】経営とITの橋渡し役。中小企業のデジタル化を現実的に進められる。", "category": "IT/経営", "official_url": "https://www.itc.or.jp/", "hashtags": "#資格 #DX #コンサル"}
+{"exam": "IoT検定 レベル1", "tweet": "【IoT検定】センサーからクラウドまでのつながりを理解。小さな実験を回しやすい。", "category": "IT/IoT", "official_url": "https://www.iotcert.org/", "hashtags": "#資格 #IoT #DX"}
+{"exam": "MOS PowerPoint Associate", "tweet": "【MOS PowerPoint】見やすいスライドの型が分かる。提案が通りやすい。", "category": "ビジネス/実務", "official_url": "https://mos.odyssey-com.co.jp/", "hashtags": "#資格 #MOS #資料作成"}
+{"exam": "VBAエキスパート（Excel スタンダード）", "tweet": "【VBA 標準】繰り返し作業をボタン1つに。月末の手作業を減らせる。", "category": "ビジネス/自動化", "official_url": "https://www.vba-ex.jp/", "hashtags": "#資格 #VBA #自動化"}
+{"exam": "VBAエキスパート（Excel エキスパート）", "tweet": "【VBA 上級】エラーに強いツール設計。複数ファイル連携も安心。", "category": "ビジネス/自動化", "official_url": "https://www.vba-ex.jp/", "hashtags": "#資格 #VBA #業務改善"}
+{"exam": "Adobe Certified Professional Photoshop", "tweet": "【Photoshop 認定】写真補正や合成が上手に。ECやSNSの画像がぐっと良くなる。", "category": "クリエイティブ/画像", "official_url": "https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview", "hashtags": "#資格 #Photoshop #デザイン"}
+{"exam": "Adobe Certified Professional Illustrator", "tweet": "【Illustrator 認定】ロゴや図をきれいに作成。入稿トラブルが減る。", "category": "クリエイティブ/DTP", "official_url": "https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview", "hashtags": "#資格 #Illustrator #DTP"}
+{"exam": "Adobe Certified Professional After Effects", "tweet": "【After Effects 認定】短い動画やテロップ作成に強い。PR動画の説得力UP。", "category": "クリエイティブ/動画", "official_url": "https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview", "hashtags": "#資格 #AfterEffects #映像"}
+{"exam": "JCSQE（ソフトウェア品質技術者）", "tweet": "【JCSQE】品質計画とレビューの型を学ぶ。バグの作り込みを減らせる。", "category": "IT/品質", "official_url": "https://www.juse.jp/jcsqe/", "hashtags": "#資格 #品質保証 #テスト"}
+{"exam": "ISMS審査員補（IRCA）", "tweet": "【ISMS審査員補】情報セキュリティの管理が正しいかを確認できる。運用の底上げに。", "category": "IT/セキュリティ", "official_url": "https://www.quality.org/irca/iso-iec-27001-information-security-management-systems", "hashtags": "#資格 #ISMS #ISO27001"}
+{"exam": "ISO 9001 審査員補（IRCA）", "tweet": "【QMS審査員補】品質管理の仕組みをチェック。現場の改善が続きやすくなる。", "category": "製造/品質", "official_url": "https://www.quality.org/irca/iso-9001-quality-management-systems", "hashtags": "#資格 #ISO9001 #QMS"}
+{"exam": "ISO 14001 審査員補（IRCA）", "tweet": "【環境審査員補】環境配慮の仕組みづくりを支援。脱炭素の説明がしやすい。", "category": "環境/マネジメント", "official_url": "https://www.quality.org/irca/iso-14001-environmental-management-systems", "hashtags": "#資格 #ISO14001 #環境"}
+{"exam": "CISA", "tweet": "【CISA】国際的に通じるシステム監査資格。ITのリスクを整理して伝えられる。", "category": "IT/監査", "official_url": "https://www.isaca.org/credentialing/cisa", "hashtags": "#資格 #CISA #監査"}
+{"exam": "CISM", "tweet": "【CISM】セキュリティ運用の責任者向け。リスクとコストの説明が明確に。", "category": "IT/セキュリティ", "official_url": "https://www.isaca.org/credentialing/cism", "hashtags": "#資格 #CISM #Sec"}
+{"exam": "CISSP", "tweet": "【CISSP】セキュリティを広く深く学ぶ。会社の守り全体を設計できる。", "category": "IT/セキュリティ", "official_url": "https://www.isc2.org/certifications/cissp", "hashtags": "#資格 #CISSP #Security"}
+{"exam": "SSCP", "tweet": "【SSCP】現場寄りのセキュリティ基礎。運用チームの力を底上げ。", "category": "IT/セキュリティ", "official_url": "https://www.isc2.org/certifications/sscp", "hashtags": "#資格 #SSCP #BlueTeam"}
+{"exam": "CEH", "tweet": "【CEH】攻撃の考え方を学んで守りに活かす。危険性を分かりやすく説明できる。", "category": "IT/セキュリティ", "official_url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/", "hashtags": "#資格 #CEH #RedTeam"}
+{"exam": "OpenJS Node.js Application Developer (JSNAD)", "tweet": "【JSNAD】Node.jsでAPIやツールを正しく作れる。動くものの質が安定する。", "category": "IT/開発", "official_url": "https://training.linuxfoundation.org/certification/jsnad/", "hashtags": "#資格 #NodeJS #JavaScript"}
+{"exam": "Oracle Java SE 11 Silver", "tweet": "【Java Silver】文法と基本をしっかり。新人教育や配属の目安に。", "category": "IT/開発", "official_url": "https://www.oracle.com/jp/education/certification/java/", "hashtags": "#資格 #Java #SE11"}
+{"exam": "Oracle Java SE 11 Gold", "tweet": "【Java Gold】設計も意識した実装ができる。レビューの指摘が的確に。", "category": "IT/開発", "official_url": "https://www.oracle.com/jp/education/certification/java/", "hashtags": "#資格 #Java #SE11"}
+{"exam": "Oracle Master Silver (DBA)", "tweet": "【Oracle Silver】データベース運用の基礎を証明。古い基幹システムでも安心。", "category": "IT/データベース", "official_url": "https://www.oracle.com/jp/education/oracle-master/", "hashtags": "#資格 #Oracle #DBA"}
+{"exam": "Oracle Master Gold (DBA)", "tweet": "【Oracle Gold】性能やバックアップの設計に強い。移行プロジェクトで頼られる。", "category": "IT/データベース", "official_url": "https://www.oracle.com/jp/education/oracle-master/", "hashtags": "#資格 #Oracle #DBA"}
+{"exam": "OSS-DB Gold", "tweet": "【OSS-DB Gold】PostgreSQLの高度運用に対応。大きなデータでも安定。", "category": "IT/データベース", "official_url": "https://oss-db.jp/", "hashtags": "#資格 #PostgreSQL #DBA"}
+{"exam": "MySQL 8.0 Database Administrator", "tweet": "【MySQL DBA】複製・性能・権限管理を整える。Webサービスを安定稼働。", "category": "IT/データベース", "official_url": "https://education.oracle.com/mysql/", "hashtags": "#資格 #MySQL #DBA"}
+{"exam": "MongoDB Associate Developer", "tweet": "【MongoDB AD】柔らかいデータの設計が分かる。ログやイベント処理に強い。", "category": "IT/データベース", "official_url": "https://www.mongodb.com/certifications", "hashtags": "#資格 #MongoDB #NoSQL"}
+{"exam": "Red Hat Specialist in OpenShift", "tweet": "【OpenShift】企業向けコンテナ基盤の運用に強い。リリース作業が安定。", "category": "IT/クラウドネイティブ", "official_url": "https://www.redhat.com/en/services/training-and-certification/certifications", "hashtags": "#資格 #OpenShift #K8s"}
+{"exam": "Kubernetes and Cloud Native Associate (KCNA)", "tweet": "【KCNA】クラウドネイティブの用語と全体像を理解。学びの出発点に最適。", "category": "IT/クラウドネイティブ", "official_url": "https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-associate-kcna/", "hashtags": "#資格 #K8s #CloudNative"}
+{"exam": "GitLab Certified Associate", "tweet": "【GitLab CA】課題管理から自動テストまで一気通貫。待ち時間が減って開発が進む。", "category": "IT/DevOps", "official_url": "https://about.gitlab.com/services/education/certifications/", "hashtags": "#資格 #GitLab #DevOps"}
+{"exam": "Atlassian Jira Project Administrator", "tweet": "【Jira 管理】権限とワークフローを整える。現場の混乱が減り、相談が減る。", "category": "IT/運用設計", "official_url": "https://university.atlassian.com/credentials/certifications", "hashtags": "#資格 #Jira #アジャイル"}
+{"exam": "Google Professional Collaboration Engineer", "tweet": "【PCE】Google Workspaceの設定と運用に強い。大人数でもルールが守れる。", "category": "IT/コラボ", "official_url": "https://cloud.google.com/learn/certification/cloud-collaboration-engineer", "hashtags": "#資格 #GoogleWorkspace #Admin"}
+{"exam": "公認会計士", "tweet": "【公認会計士】会社の数字を正しくチェックするプロ。上場企業の信頼に直結。", "category": "法律・会計/監査", "official_url": "https://www.fsa.go.jp/cpaaob/kouninkaikeishi-shiken/index.html", "hashtags": "#資格 #監査 #会計"}
+{"exam": "税理士", "tweet": "【税理士】税金の専門家。節税や申告の不安を減らす相談役。", "category": "法律・会計/会計", "official_url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/zeirishi.htm", "hashtags": "#資格 #税理士 #税務"}
+{"exam": "USCPA", "tweet": "【USCPA】海外基準の会計に強い。外資や海外取引の実務で活躍。", "category": "法律・会計/国際", "official_url": "https://nasba.org/exams/cpaexam/", "hashtags": "#資格 #USCPA #IFRS"}
+{"exam": "BATIC（国際会計検定）", "tweet": "【BATIC】英語で会計を扱う基礎力。海外取引の経理がラクに。", "category": "法律・会計/国際", "official_url": "https://kentei.tokyo-cci.or.jp/batic/", "hashtags": "#資格 #英文会計 #BATIC"}
+{"exam": "証券アナリスト（CMA）", "tweet": "【CMA】企業分析のプロ。投資先の良し悪しを数字で説明できる。", "category": "金融/投資", "official_url": "https://www.saa.or.jp/cma_program/", "hashtags": "#資格 #証券アナリスト #投資"}
+{"exam": "CFA", "tweet": "【CFA】世界で通じる投資の資格。運用や分析の王道スキル。", "category": "金融/投資", "official_url": "https://www.cfainstitute.org/programs/cfa-program", "hashtags": "#資格 #CFA #Finance"}
+{"exam": "FRM", "tweet": "【FRM】金融リスクを横断的に学ぶ。“何が危ないか”を説明できる。", "category": "金融/リスク", "official_url": "https://www.garp.org/frm", "hashtags": "#資格 #FRM #Risk"}
+{"exam": "CFP", "tweet": "【CFP】家計相談の上級資格。複雑な相続や住宅資金も安心対応。", "category": "金融/ライフ", "official_url": "https://www.jafp.or.jp/aim/cfp/cfp_exam/", "hashtags": "#資格 #CFP #FP"}
+{"exam": "不動産鑑定士", "tweet": "【不動産鑑定士】不動産の“正しい価格”を評価するプロ。再開発やM&Aで必須。", "category": "不動産/評価", "official_url": "https://www.mlit.go.jp/totikensangyo/kanteishi/shiken.html", "hashtags": "#資格 #不動産 #鑑定"}
+{"exam": "弁理士", "tweet": "【弁理士】特許や商標の専門家。アイデアを権利で守り、事業を支える。", "category": "法律・会計/知財", "official_url": "https://www.jpo.go.jp/news/benrishi/index.html", "hashtags": "#資格 #弁理士 #IP"}
+{"exam": "司法試験合格（弁護士）", "tweet": "【弁護士】紛争解決と予防のプロ。交渉や契約で強い味方になる。", "category": "法律・会計/士業", "official_url": "https://www.moj.go.jp/shikaku_saiyo_index1.html", "hashtags": "#資格 #司法試験 #法律"}
+{"exam": "ビジネス会計検定 1級", "tweet": "【ビジ会1級】会社の数字を深く読み解く力。会議で根拠ある発言ができる。", "category": "法律・会計/分析", "official_url": "https://www.b-accounting.jp/", "hashtags": "#資格 #会計 #財務"}
+{"exam": "日商ビジネス英語検定 2級", "tweet": "【ビジ英2級】英語メールや契約のやり取りがスムーズ。海外顧客対応に安心。", "category": "語学/ビジネス", "official_url": "https://www.kentei.ne.jp/english", "hashtags": "#資格 #英語 #ビジネス英語"}
+{"exam": "IFRS検定", "tweet": "【IFRS】国際会計基準の理解を証明。連結や開示の話が通じやすい。", "category": "法律・会計/国際", "official_url": "https://www.ifrs-kentei.com/", "hashtags": "#資格 #IFRS #会計"}
+{"exam": "知的財産管理技能士 2級", "tweet": "【知財2級】商標や著作権の実務に強い。商品名やロゴの守りが固くなる。", "category": "法律・会計/知財", "official_url": "https://www.kentei-info-ip-edu.org/", "hashtags": "#資格 #知財 #商標"}
+{"exam": "知的財産管理技能士 1級", "tweet": "【知財1級】契約や争いまで見すえた運用。上流から知財戦略を作れる。", "category": "法律・会計/知財", "official_url": "https://www.kentei-info-ip-edu.org/", "hashtags": "#資格 #知財 #IP"}
+{"exam": "ビジネス実務マナー検定 2級", "tweet": "【マナー検定】報連相・文書・来客対応の型を習得。新人育成がスムーズに。", "category": "ビジネス/マナー", "official_url": "https://jitsumu-ginou-kentei.jp/BZ/", "hashtags": "#資格 #マナー #新社会人"}
+{"exam": "マナー・プロトコール検定 2級", "tweet": "【プロトコール】国際的な作法の基礎。VIP対応や海外ゲストにも安心。", "category": "ビジネス/接遇", "official_url": "https://www.manner-protocol.jp/", "hashtags": "#資格 #マナー #プロトコール"}
+{"exam": "電話応対技能検定（もしもし検定）2級", "tweet": "【電話応対2級】クレームにも落ち着いて対応。最初の一言から好印象に。", "category": "ビジネス/接客", "official_url": "https://www.jtua.or.jp/education/moshimoshi_kentei/", "hashtags": "#資格 #電話応対 #CS"}
+{"exam": "一級建築士", "tweet": "【一級建築士】デザイン・構造・法律を横断。大きな建物の要となる資格。", "category": "建設/設計", "official_url": "https://www.jaeic.or.jp/", "hashtags": "#資格 #建築士 #設計"}
+{"exam": "二級建築士", "tweet": "【二級建築士】住宅や小規模建物の設計に直結。地域の案件で頼られる。", "category": "建設/設計", "official_url": "https://www.jaeic.or.jp/", "hashtags": "#資格 #建築士 #住宅"}
+{"exam": "木造建築士", "tweet": "【木造建築士】木造住宅の設計に強い。戸建てやリノベで活躍。", "category": "建設/設計", "official_url": "https://www.jaeic.or.jp/", "hashtags": "#資格 #木造 #設計"}
+{"exam": "2級土木施工管理技士", "tweet": "【土木2級】品質・工程・安全を現場で管理。小さな工事のまとめ役に。", "category": "建設/施工", "official_url": "https://www.jctc.jp/exam/", "hashtags": "#資格 #施工管理 #土木"}
+{"exam": "1級建築施工管理技士", "tweet": "【建築施工1級】安全・工程・費用を統括。大規模現場のリーダーに。", "category": "建設/施工", "official_url": "https://www.kensetsu-kikin.or.jp/work/examination/", "hashtags": "#資格 #施工管理 #建築"}
+{"exam": "1級電気工事施工管理技士", "tweet": "【電気施工1級】受変電から弱電まで管理。更新工事や省エネ提案に強い。", "category": "建設/設備", "official_url": "https://www.kensetsu-kikin.or.jp/work/examination/", "hashtags": "#資格 #施工管理 #電気"}
+{"exam": "1級管工事施工管理技士", "tweet": "【管工事1級】空調・水回りの工事を管理。改修の段取りが上手くなる。", "category": "建設/設備", "official_url": "https://www.jctc.jp/exam/", "hashtags": "#資格 #施工管理 #配管"}
+{"exam": "1級電気通信工事施工管理技士", "tweet": "【電通施工1級】光回線・LAN・無線の現場を統括。オフィス移転で大活躍。", "category": "建設/通信", "official_url": "https://www.jctc.jp/exam/dentsu-1/", "hashtags": "#資格 #施工管理 #通信"}
+{"exam": "1級舗装施工管理技術者", "tweet": "【舗装1級】道路の品質を数値で管理。公共工事で信頼を得やすい。", "category": "建設/土木", "official_url": "https://www.dohkenkyo.or.jp/pavement/", "hashtags": "#資格 #舗装 #品質"}
+{"exam": "1級造園施工管理技士", "tweet": "【造園1級】植栽・景観・維持管理をトータル管理。街の緑を長持ちさせる。", "category": "建設/造園", "official_url": "https://www.jctc.jp/exam/zouen-1/", "hashtags": "#資格 #造園 #まちづくり"}
+{"exam": "測量士", "tweet": "【測量士】土地を正確に測って図にするプロ。用地や設計の精度が上がる。", "category": "建設/測量", "official_url": "https://www.gsi.go.jp/", "hashtags": "#資格 #測量 #インフラ"}
+{"exam": "測量士補", "tweet": "【測量士補】測量の基礎力を証明。ドローン測量の導入にも役立つ。", "category": "建設/測量", "official_url": "https://www.gsi.go.jp/", "hashtags": "#資格 #測量 #ドローン"}
+{"exam": "土地家屋調査士", "tweet": "【土地家屋調査士】境界や建物の表示を専門に扱う。相続や売買で頼られる。", "category": "法律・会計/不動産", "official_url": "https://www.moj.go.jp/shikaku_saiyo_index5.html", "hashtags": "#資格 #登記 #不動産"}
+{"exam": "建築積算士", "tweet": "【建築積算士】材料と費用を正確に見積もる。コストの話が通りやすい。", "category": "建設/積算", "official_url": "https://www.bsij.or.jp/", "hashtags": "#資格 #積算 #コスト"}
+{"exam": "インテリアプランナー", "tweet": "【インテリアプランナー】内装の提案力が上がる。色や素材で体験を変えられる。", "category": "建設/内装", "official_url": "https://www.jaeic.or.jp/smph/shiken/ip/index.html", "hashtags": "#資格 #インテリア #設計"}
+{"exam": "造園技能士 1級", "tweet": "【造園技能士1級】庭づくりの腕前を証明。入札や指名で有利に。", "category": "建設/造園", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #技能士 #造園"}
+{"exam": "左官技能士 2級", "tweet": "【左官2級】壁や床の仕上げが美しく。改修現場で指名が増える。", "category": "建設/仕上げ", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #左官"}
+{"exam": "型枠施工技能士 2級", "tweet": "【型枠2級】丈夫で正確なコンクリの“型”を作る。工期短縮に貢献。", "category": "建設/型枠", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #施工"}
+{"exam": "鉄筋施工技能士 2級", "tweet": "【鉄筋2級】図面通りに鉄筋を組める。建物の強さを支える仕事。", "category": "建設/構造", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #鉄筋"}
+{"exam": "建築板金技能士 2級", "tweet": "【板金2級】屋根や外壁の納まりがきれい。雨漏りトラブルを減らす。", "category": "建設/外装", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #板金"}
+{"exam": "防水施工技能士 2級", "tweet": "【防水2級】雨水の侵入を防ぐプロ。建物の寿命をのばせる。", "category": "建設/防水", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #防水"}
+{"exam": "塗装技能士 2級", "tweet": "【塗装2級】下地づくりと塗り重ねを正確に。見た目と耐久性がアップ。", "category": "建設/仕上げ", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #塗装"}
+{"exam": "内装仕上げ施工技能士 2級", "tweet": "【内装2級】ボード貼りやクロス仕上げが正確。短工期でも品質キープ。", "category": "建設/内装", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #内装"}
+{"exam": "石材施工技能士 2級", "tweet": "【石材2級】外構や石の施工を丁寧に。割れやズレのトラブルを減らす。", "category": "建設/外構", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #石材"}
+{"exam": "とび技能士 2級", "tweet": "【とび2級】足場やクレーン合図が安全に。現場の動きが早くなる。", "category": "建設/仮設", "official_url": "https://www.javada.or.jp/", "hashtags": "#資格 #技能士 #足場"}
+{"exam": "技術士（建設部門）", "tweet": "【技術士 建設】道路や橋の計画～設計をリード。公共工事で説得力が高い。", "category": "建設/コンサル", "official_url": "https://www.engineer.or.jp/sub02/", "hashtags": "#資格 #技術士 #インフラ"}
+{"exam": "技術士（電気電子部門）", "tweet": "【技術士 電気】受変電や配電の高度設計に強い。エネルギー案件で活躍。", "category": "インフラ・設備/コンサル", "official_url": "https://www.engineer.or.jp/sub02/", "hashtags": "#資格 #技術士 #電気"}
+{"exam": "技術士（機械部門）", "tweet": "【技術士 機械】設備や熱の計算に強い。工場の更新計画で頼られる。", "category": "インフラ・設備/コンサル", "official_url": "https://www.engineer.or.jp/sub02/", "hashtags": "#資格 #技術士 #機械"}
+{"exam": "技術士（情報工学部門）", "tweet": "【技術士 情報】大規模システムの上流設計を担当。公共ITの要。", "category": "IT/コンサル", "official_url": "https://www.engineer.or.jp/sub02/", "hashtags": "#資格 #技術士 #IT"}
+{"exam": "技術士（環境部門）", "tweet": "【技術士 環境】環境影響の評価と対策を設計。開発と自然保護の両立に貢献。", "category": "環境/コンサル", "official_url": "https://www.engineer.or.jp/sub02/", "hashtags": "#資格 #技術士 #環境"}
+{"exam": "電験二種", "tweet": "【電験二種】高圧設備の管理ができる。省エネや更新計画の提案に強い。", "category": "インフラ・設備/保安", "official_url": "https://www.shiken.or.jp/", "hashtags": "#資格 #電験 #設備"}
+{"exam": "電験一種", "tweet": "【電験一種】電力分野の最上位。発電・変電の現場で指名される人材に。", "category": "インフラ・設備/保安", "official_url": "https://www.shiken.or.jp/", "hashtags": "#資格 #電験 #電力"}
+{"exam": "認定電気工事従事者", "tweet": "【認定従事者】扱える電気工事の範囲が広がる。特殊な工事にも対応。", "category": "インフラ・設備/工事", "official_url": "https://www.eei.or.jp/approval/", "hashtags": "#資格 #電気工事 #施工"}
+{"exam": "冷凍機械責任者 一種", "tweet": "【冷凍1種】大型の冷凍設備を安全に管理。物流倉庫や食品工場で価値が高い。", "category": "インフラ・設備/冷凍", "official_url": "https://www.khk.or.jp/qualification/books-and-courses/kouza-chapter6/", "hashtags": "#資格 #冷凍機械 #保安"}
+{"exam": "冷凍機械責任者 三種", "tweet": "【冷凍3種】店舗やビルの冷凍機を安全運用。現場の即戦力に。", "category": "インフラ・設備/冷凍", "official_url": "https://www.khk.or.jp/qualification/books-and-courses/kouza-chapter6/", "hashtags": "#資格 #冷凍 #ビルメン"}
+{"exam": "一級ボイラー技士", "tweet": "【ボイラー1級】大きな熱源を安全・効率よく運転。燃料代のムダを減らす。", "category": "インフラ・設備/熱源", "official_url": "https://www.exam.or.jp/exmn/H_shiken.htm", "hashtags": "#資格 #ボイラー #省エネ"}
+{"exam": "放射線取扱主任者 第一種", "tweet": "【放取1】放射線施設の責任者。安全管理とルール順守を徹底できる。", "category": "安全・防災/放射線", "official_url": "https://www.nustec.or.jp/radiation/chief-supervisor/outline/", "hashtags": "#資格 #放射線 #保安"}
+{"exam": "放射線取扱主任者 第二種", "tweet": "【放取2】医療や研究での放射線管理に対応。測定や遮へいの基礎が身につく。", "category": "安全・防災/放射線", "official_url": "https://www.nustec.or.jp/radiation/chief-supervisor/outline/", "hashtags": "#資格 #放射線 #安全"}
+{"exam": "作業環境測定士 第一種", "tweet": "【作業環境1種】粉じん・溶剤など職場の空気を測って評価。安全な職場づくりに貢献。", "category": "安全・防災/環境", "official_url": "https://www.jawe.or.jp/licensing/", "hashtags": "#資格 #作業環境 #測定"}
+{"exam": "作業環境測定士 第二種", "tweet": "【作業環境2種】測定の実務担当として活躍。法令対応がスムーズに。", "category": "安全・防災/環境", "official_url": "https://www.jawe.or.jp/", "hashtags": "#資格 #作業環境 #安全"}
+{"exam": "公害防止管理者（騒音・振動）", "tweet": "【騒音・振動】周辺への影響を管理。苦情やトラブルを事前に防ぎやすい。", "category": "環境/法令", "official_url": "https://www.jemai.or.jp/", "hashtags": "#資格 #公害防止 #環境"}
+{"exam": "公害防止管理者（ダイオキシン類）", "tweet": "【ダイオキシン】焼却などの設備を安全に管理。行政対応も安心。", "category": "環境/法令", "official_url": "https://www.jemai.or.jp/", "hashtags": "#資格 #公害防止 #法令"}
+{"exam": "甲種防火管理者", "tweet": "【防火管理 甲】大きな施設の防火責任者。避難計画や点検を回せる。", "category": "安全・防災/施設", "official_url": "https://www.n-bouka.or.jp/boukanin/", "hashtags": "#資格 #防火 #安全"}
+{"exam": "乙種防火管理者", "tweet": "【防火管理 乙】中小規模施設の防火体制を整える。訓練が計画通りに進む。", "category": "安全・防災/施設", "official_url": "https://www.n-bouka.or.jp/boukanin/", "hashtags": "#資格 #防火 #訓練"}
+{"exam": "有機溶剤作業主任者", "tweet": "【有機溶剤 主任】換気・保護具・健康管理を徹底。事故を未然に防ぐ。", "category": "安全・防災/化学", "official_url": "https://anzeninfo.mhlw.go.jp/gino/meishou.html", "hashtags": "#資格 #安全 #化学"}
+{"exam": "特定化学物質及び四アルキル鉛等作業主任者", "tweet": "【特化則 主任】危険な化学物質の作業を安全に進める責任者。法令順守の要。", "category": "安全・防災/化学", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=74136010&dataType=0&pageNo=1", "hashtags": "#資格 #労働安全 #法令"}
+{"exam": "足場の組立て等作業主任者", "tweet": "【足場 主任】高所作業の安全を守る。落下事故を未然に防げる。", "category": "安全・防災/建設", "official_url": "https://www.jaish.gr.jp/", "hashtags": "#資格 #足場 #安全"}
+{"exam": "高所作業車運転技能講習 修了", "tweet": "【高所作業車】安全に高い場所で作業できる。点検や取付工事で力を発揮。", "category": "建設/安全", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000157098.html", "hashtags": "#資格 #高所作業車 #技能"}
+{"exam": "小型移動式クレーン運転技能講習 修了", "tweet": "【小型クレーン】狭い場所での吊り作業が安全に。事故リスクを下げられる。", "category": "建設/安全", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=74030510&dataType=0&pageNo=1", "hashtags": "#資格 #クレーン #技能"}
+{"exam": "床上操作式クレーン運転技能講習 修了", "tweet": "【床上クレーン】倉庫や工場での荷役を安全・効率よく。現場の信頼UP。", "category": "製造/安全", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=74030510&dataType=0&pageNo=1", "hashtags": "#資格 #クレーン #荷役"}
+{"exam": "アーク溶接 特別教育 修了", "tweet": "【アーク溶接】小さな補修にすぐ対応。設備保全の幅が広がる。", "category": "製造/保全", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=74085000&dataType=0&pageNo=1", "hashtags": "#資格 #溶接 #保全"}
+{"exam": "第一級陸上特殊無線技士", "tweet": "【一陸特】イベントや業務無線を正しく運用。現場の連携がクリアに。", "category": "インフラ・設備/通信", "official_url": "https://www.nichimu.or.jp/", "hashtags": "#資格 #無線 #通信"}
+{"exam": "第二級陸上特殊無線技士", "tweet": "【二陸特】身近な業務無線の運用に対応。現場のやり取りがスムーズ。", "category": "インフラ・設備/通信", "official_url": "https://www.nichimu.or.jp/", "hashtags": "#資格 #無線 #現場"}
+{"exam": "第一級海上特殊無線技士", "tweet": "【一海特】海での通信を安全に。マリンレジャーや業務で安心。", "category": "インフラ・設備/海", "official_url": "https://www.nichimu.or.jp/", "hashtags": "#資格 #無線 #船舶"}
+{"exam": "航空無線通信士", "tweet": "【航空無線】空港や航空機との通信を担当。航空分野で働く基礎に。", "category": "インフラ・設備/航空", "official_url": "https://www.nichimu.or.jp/kshiken/", "hashtags": "#資格 #航空 #無線"}
+{"exam": "第一級総合無線通信士", "tweet": "【一総通】海・空・衛星まで幅広く対応できる最高峰。通信のプロとして活躍。", "category": "インフラ・設備/通信", "official_url": "https://www.nichimu.or.jp/kshiken/", "hashtags": "#資格 #無線 #通信士"}
+{"exam": "第二級アマチュア無線技士", "tweet": "【アマ無線2級】非常時の通信手段としても心強い。ものづくり趣味も広がる。", "category": "インフラ・設備/防災", "official_url": "https://www.nichimu.or.jp/kshiken/", "hashtags": "#資格 #アマ無線 #防災"}
+{"exam": "第三級アマチュア無線技士", "tweet": "【アマ無線3級】電波の基礎を実践で学べる。地域イベントの運営でも活躍。", "category": "インフラ・設備/地域", "official_url": "https://www.nichimu.or.jp/kshiken/", "hashtags": "#資格 #アマ無線 #ボランティア"}
+{"exam": "潜水士", "tweet": "【潜水士】水中での点検・作業の国家資格。調査やレジャーの安全に直結。", "category": "スポーツ・レジャー/安全", "official_url": "https://www.exam.or.jp/introduction/h_shokai611/", "hashtags": "#資格 #潜水士 #水中"}
+{"exam": "運行管理者（旅客）", "tweet": "【運行管理 旅客】バス・タクシーの安全運行を管理。事故と違反を減らせる。", "category": "交通・運輸/安全", "official_url": "https://www.unkan.or.jp/", "hashtags": "#資格 #運行管理 #安全"}
+{"exam": "物流技術管理士（JILS）", "tweet": "【物流管理士】在庫・輸送・情報の流れを整える。コストと納期のバランスが良くなる。", "category": "その他/SCM", "official_url": "https://www1.logistics.or.jp/education/clm/", "hashtags": "#資格 #物流 #SCM"}
+{"exam": "二級自動車整備士（ガソリン・ジーゼル）", "tweet": "【自整2級】車の点検・故障診断の基本を習得。車検対応が安心。", "category": "交通・運輸/整備", "official_url": "https://wwwtb.mlit.go.jp/chubu/seibi/seido.html", "hashtags": "#資格 #整備士 #車"}
+{"exam": "大型自動車免許", "tweet": "【大型免許】大型トラックが運転可能。物流や工事で即戦力。", "category": "交通・運輸/運転", "official_url": "https://www.npa.go.jp/bureau/traffic/menkyo/index.html", "hashtags": "#資格 #大型免許 #物流"}
+{"exam": "けん引免許", "tweet": "【けん引】トレーラーを安全に運べる。港や工事現場で活躍。", "category": "交通・運輸/運転", "official_url": "https://www.npa.go.jp/bureau/traffic/menkyo/index.html", "hashtags": "#資格 #けん引 #物流"}
+{"exam": "管理栄養士", "tweet": "【管理栄養士】病院や介護で食事計画を担当。健康づくりの要。", "category": "医療/栄養", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/kanrieiyoushi/", "hashtags": "#資格 #栄養 #健康"}
+{"exam": "栄養士", "tweet": "【栄養士】献立と衛生の基本を担当。学校や給食の現場で即戦力に。", "category": "医療/栄養", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=78317000&dataType=0&pageNo=1", "hashtags": "#資格 #栄養士 #食"}
+{"exam": "調理師", "tweet": "【調理師】衛生と調理の基礎を証明。お店運営の信用度が上がる。", "category": "食/調理", "official_url": "https://www.mhlw.go.jp/stf/newpage_11843.html", "hashtags": "#資格 #調理師 #外食"}
+{"exam": "ふぐ調理師", "tweet": "【ふぐ調理】危険部位を正しく扱う資格。安全に提供して指名が増える。", "category": "食/調理", "official_url": "https://www.mhlw.go.jp/stf/newpage_11843.html", "hashtags": "#資格 #ふぐ #衛生"}
+{"exam": "製菓衛生師", "tweet": "【製菓衛生師】お菓子作りの衛生と品質管理に強い。お店の要となる人材。", "category": "食/製菓", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000065164.html", "hashtags": "#資格 #製菓 #衛生"}
+{"exam": "菓子製造技能士 2級", "tweet": "【菓子技能士2級】同じ味を安定して作れる。量産やECでも品質がブレない。", "category": "食/技能", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #技能士 #製菓"}
+{"exam": "パン製造技能士 2級", "tweet": "【パン技能士2級】発酵と焼成を数値で管理。人気商品の味が安定する。", "category": "食/技能", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #技能士 #パン"}
+{"exam": "食品衛生責任者", "tweet": "【食衛責】お店の衛生管理の責任者。保健所の指導にも落ち着いて対応。", "category": "食/衛生", "official_url": "https://www.mhlw.go.jp/content/11130500/000586453.pdf", "hashtags": "#資格 #衛生管理 #飲食"}
+{"exam": "診療情報管理士", "tweet": "【診療情報管理士】カルテや統計を正しく整理。病院の情報の要に。", "category": "医療/情報", "official_url": "https://jha-e.jp/", "hashtags": "#資格 #医療 #情報管理"}
+{"exam": "医療経営士 2級", "tweet": "【医療経営士】病院経営の数字に強い。収益改善の提案がしやすい。", "category": "医療/経営", "official_url": "https://www.jmmpa.jp/examination/cat3/", "hashtags": "#資格 #医療経営 #病院"}
+{"exam": "臨床検査技師", "tweet": "【臨床検査技師】採血や検査データで診断を支える専門職。正確さが命。", "category": "医療/検査", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rinshoukensagishi/", "hashtags": "#資格 #医療 #検査"}
+{"exam": "診療放射線技師", "tweet": "【放射線技師】レントゲンやCTを担当。安全に配慮して鮮明な画像を撮る。", "category": "医療/放射線", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/shinryouhoushasengishi/", "hashtags": "#資格 #医療 #放射線"}
+{"exam": "臨床工学技士", "tweet": "【臨床工学技士】医療機器の運用と保守を担当。ICUや透析室で頼られる。", "category": "医療/工学", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rinshoukougakugishi/", "hashtags": "#資格 #医療機器 #CE"}
+{"exam": "理学療法士", "tweet": "【理学療法士】動く・歩くを取り戻すリハビリのプロ。運動計画が立てられる。", "category": "医療/リハビリ", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rigakuryouhoushi/", "hashtags": "#資格 #リハビリ #PT"}
+{"exam": "作業療法士", "tweet": "【作業療法士】着替えや家事など“日常動作”を支えるリハビリの専門職。", "category": "医療/リハビリ", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/sagyouryouhoushi/", "hashtags": "#資格 #OT #介護"}
+{"exam": "看護師", "tweet": "【看護師】体調の変化にいち早く気づける。病院や訪問看護で“安心なケア”を届けられる。", "category": "医療/看護", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/kangoshi/", "hashtags": "#資格 #看護師 #医療"}
+{"exam": "保健師", "tweet": "【保健師】健康相談のプロ。会社や学校で“病気になる前の対策”を広げられる。", "category": "医療/公衆衛生", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/hokenshi/", "hashtags": "#資格 #保健師 #予防"}
+{"exam": "助産師", "tweet": "【助産師】妊娠・出産・育児をそばで支える。母子の不安をやわらげる存在に。", "category": "医療/母子", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/josanpu/", "hashtags": "#資格 #助産師 #出産"}
+{"exam": "薬剤師", "tweet": "【薬剤師】薬の飲み合わせをチェック。副作用の心配を減らし、安全に使えるようにする。", "category": "医療/薬", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/yakuzaishi-kokkashiken/index.html", "hashtags": "#資格 #薬剤師 #医療安全"}
+{"exam": "精神保健福祉士", "tweet": "【精神保健福祉士】こころの病と暮らしをつなぐ支援。通院や就労の不安を軽くする。", "category": "福祉/精神", "official_url": "https://www.sssc.or.jp/", "hashtags": "#資格 #精神保健福祉士 #リカバリー"}
+{"exam": "介護職員初任者研修", "tweet": "【初任者研修】介護の基本から学べる。未経験でも現場デビューしやすい。", "category": "福祉/介護", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/AA10K-0000054119.html", "hashtags": "#資格 #介護 #入門"}
+{"exam": "保育士", "tweet": "【保育士】遊びと学びで成長を支える。保護者の悩み相談にも頼られる。", "category": "福祉/子ども", "official_url": "https://www.hoyokyo.or.jp/exam/", "hashtags": "#資格 #保育士 #子育て"}
+{"exam": "旅行業務取扱管理者（総合）", "tweet": "【旅取 総合】海外旅行まで担当OK。航空・ホテルの手配力がグッと上がる。", "category": "その他/旅行", "official_url": "https://www.jata-net.or.jp/seminar/", "hashtags": "#資格 #総合旅行業務取扱管理者 #旅行"}
+{"exam": "衛生管理者 第一種", "tweet": "【衛生管理者 一種】製造やオフィスなど幅広い職場で安全と健康を見守る要。", "category": "安全・防災/労働衛生", "official_url": "https://www.exam.or.jp/introduction/h_shokai502/", "hashtags": "#資格 #衛生管理者 #労務"}
+{"exam": "衛生管理者 第二種", "tweet": "【衛生管理者 二種】オフィス中心の職場で活躍。事故や体調不良を未然に防ぐ。", "category": "安全・防災/労働衛生", "official_url": "https://www.exam.or.jp/introduction/h_shokai502/", "hashtags": "#資格 #衛生管理者 #安全"}
+{"exam": "消防設備士 甲種1類（スプリンクラー）", "tweet": "【消防設備士 甲1】スプリンクラーの設計・工事に必須。火災時の“最後の砦”。", "category": "安全・防災/設備", "official_url": "https://www.shoubo-shiken.or.jp/shoubou/", "hashtags": "#資格 #消防設備士 #スプリンクラー"}
+{"exam": "防災管理者（講習修了）", "tweet": "【防災管理者】テナント全体の避難計画づくりを担当。非常時も迷わない。", "category": "安全・防災/施設", "official_url": "https://www.bouka-bousai.jp/", "hashtags": "#資格 #防災管理者 #安全"}
+{"exam": "毒物劇物取扱責任者", "tweet": "【毒劇物 責任者】薬品の受入・保管・使用を正しく管理。事故を未然に防ぐ。", "category": "安全・防災/化学", "official_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/nanomaterial_00002.html", "hashtags": "#資格 #毒物劇物 #安全"}
+{"exam": "品質管理検定（QC検定）2級", "tweet": "【QC2級】不良の原因を数字で見抜く。製造・サービスのムダが減る。", "category": "その他/改善", "official_url": "https://www.jsa.or.jp/education/qc-kentei/", "hashtags": "#資格 #QC検定 #品質管理"}
+{"exam": "医療事務技能審査試験（メディカルクラーク）", "tweet": "【医療事務】受付・会計・レセプトの基本。病院の“見えない支え”になれる。", "category": "医療/事務", "official_url": "https://www.jme.or.jp/exam/mc/index.html", "hashtags": "#資格 #医療事務 #病院"}
+{"exam": "HTML5プロフェッショナル認定 レベル1", "tweet": "【HTML5 Lv1】Webの基本が分かる。社内サイトの直しや簡単なLP作成で即活躍。", "category": "IT/WEB", "official_url": "https://www.lpi.or.jp/html5/", "hashtags": "#資格 #Web制作 #HTML5"}
+{"exam": "HTML5プロフェッショナル認定 レベル2", "tweet": "【HTML5 Lv2】レスポンシブや高速化に強い。スマホで見やすいページ作りに◎", "category": "IT/WEB", "official_url": "https://www.lpi.or.jp/html5/", "hashtags": "#資格 #コーディング #フロントエンド"}
+{"exam": "PHP技術者認定 初級", "tweet": "【PHP初級】フォームや簡単なAPIが作れる。小さな社内ツール作成に役立つ。", "category": "IT/開発", "official_url": "https://www.phpexam.jp/summary", "hashtags": "#資格 #PHP #プログラミング"}
+{"exam": "PHP技術者認定 上級", "tweet": "【PHP上級】設計やテストまで意識できる。中～大規模サイトの保守が安心。", "category": "IT/開発", "official_url": "https://www.phpexam.jp/summary", "hashtags": "#資格 #PHP #設計"}
+{"exam": "Ruby技術者認定 Silver", "tweet": "【Ruby Silver】Railsの土台が身につく。社内業務の自動化にサッと効く。", "category": "IT/開発", "official_url": "https://www.ruby.or.jp/ja/certification/examination/", "hashtags": "#資格 #Ruby #Rails"}
+{"exam": "Ruby技術者認定 Gold", "tweet": "【Ruby Gold】設計力と読み解く力を証明。他人のコードも怖くない。", "category": "IT/開発", "official_url": "https://www.ruby.or.jp/ja/certification/examination/", "hashtags": "#資格 #Ruby #設計"}
+{"exam": "JavaScriptエンジニア認定 初級", "tweet": "【JS初級】動くWebの入門。ボタンの動きや簡単なバリデーションが作れる。", "category": "IT/WEB", "official_url": "https://www.js-certificate.com/", "hashtags": "#資格 #JavaScript #Web"}
+{"exam": "JavaScriptエンジニア認定 上級", "tweet": "【JS上級】非同期や設計の考え方まで。フロントの不具合が減る。", "category": "IT/WEB", "official_url": "https://www.js-certificate.com/", "hashtags": "#資格 #JavaScript #設計"}
+{"exam": "Pythonデータ分析試験", "tweet": "【Pythonデータ分析】Excelの限界を超えたい人に。集計と可視化が速くなる。", "category": "IT/データ", "official_url": "https://www.pythonic-exam.com/data/", "hashtags": "#資格 #Python #データ分析"}
+{"exam": "UiPath RPA Associate", "tweet": "【RPA Associate】単純作業をロボに任せる力。月末のルーチンが一気に時短。", "category": "IT/自動化", "official_url": "https://www.uipath.com/learning/certification", "hashtags": "#資格 #RPA #業務効率化"}
+{"exam": "UiPath RPA Advanced", "tweet": "【RPA Advanced】例外対応まで設計できる。止まりにくい自動化が作れる。", "category": "IT/自動化", "official_url": "https://www.uipath.com/learning/certification", "hashtags": "#資格 #RPA #自動化設計"}
+{"exam": "CKA（Kubernetes Admin）", "tweet": "【CKA】Kubernetesの運用入門。落ちたサービスを素早く戻せる。", "category": "IT/クラウド", "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/", "hashtags": "#資格 #Kubernetes #SRE"}
+{"exam": "CKAD（Kubernetes App Dev）", "tweet": "【CKAD】K8s上でアプリを動かす力。デプロイが怖くなくなる。", "category": "IT/クラウド", "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/", "hashtags": "#資格 #Kubernetes #Dev"}
+{"exam": "CKS（Kubernetes Security）", "tweet": "【CKS】K8sの守り方を理解。権限や秘密情報の扱いが安全に。", "category": "IT/クラウド", "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/", "hashtags": "#資格 #Kubernetes #Security"}
+{"exam": "Terraform Associate", "tweet": "【Terraform】設定を“コード化”。環境の作り直しが一発でできる。", "category": "IT/クラウド", "official_url": "https://www.hashicorp.com/certification/terraform-associate", "hashtags": "#資格 #IaC #Terraform"}
+{"exam": "SnowPro Core", "tweet": "【SnowPro】クラウドDWHの基本が分かる。大量データの集計がサクサク。", "category": "データ/基盤", "official_url": "https://www.snowflake.com/en/certifications/snowpro-core/", "hashtags": "#資格 #Snowflake #DWH"}
+{"exam": "Microsoft DP-900（Data基礎）", "tweet": "【DP-900】データの基本を広く学べる。用語の壁がなくなる。", "category": "IT/データ", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-data-fundamentals/", "hashtags": "#資格 #Azure #データ"}
+{"exam": "Microsoft AI-900（AI基礎）", "tweet": "【AI-900】AIの仕組みと使いどころが分かる。社内提案に説得力。", "category": "IT/AI", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-fundamentals/", "hashtags": "#資格 #Azure #AI"}
+{"exam": "HTML5アクセシビリティ基礎（民間）", "tweet": "【Webアクセシビリティ基礎】誰でも見やすい画面作りに。CVロスが減る。", "category": "IT/WEB", "official_url": "https://www.lpi.or.jp/html5/", "hashtags": "#資格 #アクセシビリティ #UIUX"}
+{"exam": "Webディレクション検定 初級", "tweet": "【Webディレ初級】工程と役割が分かる。進行管理がスムーズに。", "category": "IT/WEB", "official_url": "https://webken.jp/", "hashtags": "#資格 #Web制作 #進行管理"}
+{"exam": "SEO検定 2級", "tweet": "【SEO2級】検索で見つけてもらう基本。記事の直し方が分かる。", "category": "マーケティング/SEO", "official_url": "https://www.ajsa.or.jp/kentei/", "hashtags": "#資格 #SEO #コンテンツ"}
+{"exam": "GAIQ（Googleアナリティクス）", "tweet": "【GAIQ】数字の見方が分かる。ムダ広告を減らせる。", "category": "マーケティング/分析", "official_url": "https://skillshop.exceedlms.com/student/catalog/list?category_ids=53-google-analytics", "hashtags": "#資格 #GA4 #マーケティング"}
+{"exam": "Yahoo!広告 認定資格（検索）", "tweet": "【Yahoo!広告】少額でも効果を出すコツが分かる。中小向けに強い。", "category": "マーケティング/広告", "official_url": "https://ads-promo.yahoo.co.jp/support/certification/", "hashtags": "#資格 #リスティング #運用型広告"}
+{"exam": "YouTube認定（Content Growth）", "tweet": "【YouTube認定】伸びる動画の基本が分かる。企画と運用が回しやすい。", "category": "クリエイティブ/運用", "official_url": "https://support.google.com/youtube/topic/9257893", "hashtags": "#資格 #YouTube #コンテンツ"}
+{"exam": "Salesforce 認定アドミン", "tweet": "【SFA管理】権限や自動化を整えられる。入力がラクになり定着が進む。", "category": "IT/CRM", "official_url": "https://trailhead.salesforce.com/credentials/administrator/", "hashtags": "#資格 #Salesforce #SFA"}
+{"exam": "ServiceNow CSA", "tweet": "【Now管理】申請～承認の流れを見直せる。ムダな待ち時間が減る。", "category": "IT/業務改善", "official_url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?achievement_id=208e1d77dbc27f40de3cdb85ca961987&id=amap_detail", "hashtags": "#資格 #ServiceNow #DX"}
+{"exam": "VBAエキスパート（スタンダード）", "tweet": "【VBA標準】繰り返し作業をワンクリックに。月末の手作業が消える。", "category": "ビジネス/自動化", "official_url": "https://www.vba-ex.jp/", "hashtags": "#資格 #VBA #時短"}
+{"exam": "Adobe Photoshop ACP", "tweet": "【Ps認定】写真の補正が上手くなる。EC画像がグッと良く見える。", "category": "クリエイティブ/画像", "official_url": "https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview", "hashtags": "#資格 #Photoshop #デザイン"}
+{"exam": "Adobe Illustrator ACP", "tweet": "【Ai認定】ロゴや図がきれいに作れる。資料の見栄えが上がる。", "category": "クリエイティブ/DTP", "official_url": "https://certiport.pearsonvue.com/Certifications/Adobe/ACP/Overview", "hashtags": "#資格 #Illustrator #デザイン"}
+{"exam": "日商PC検定（データ活用）2級", "tweet": "【日商PCデータ】表とグラフで伝わる資料に。会議が早く終わる。", "category": "ビジネス/実務", "official_url": "https://www.kentei.ne.jp/pc", "hashtags": "#資格 #データ活用 #日商PC"}
+{"exam": "日商PC検定（文書作成）2級", "tweet": "【日商PC文書】読みやすい社内文書が作れる。依頼が通りやすい。", "category": "ビジネス/実務", "official_url": "https://www.kentei.ne.jp/pc", "hashtags": "#資格 #文書作成 #日商PC"}
+{"exam": "日商電子会計実務検定 2級", "tweet": "【電子会計】会計ソフトの入力が正確に。月次の締めがスムーズ。", "category": "法律・会計/実務", "official_url": "https://www.kentei.ne.jp/kaikei", "hashtags": "#資格 #会計 #日商"}
+{"exam": "不動産コンサルティングマスター", "tweet": "【不動産コンサル】購入・売却の悩みを整理。損しにくい選び方が分かる。", "category": "不動産/コンサル", "official_url": "https://www.bookpc.jp/", "hashtags": "#資格 #不動産 #投資"}
+{"exam": "住宅ローンアドバイザー", "tweet": "【住宅ローン】金利や返済の不安を整理。無理のない計画づくりに。", "category": "金融/住宅", "official_url": "https://www.loan-adviser.jp/", "hashtags": "#資格 #住宅ローン #家計"}
+{"exam": "既存住宅状況調査技術者", "tweet": "【住宅診断】中古住宅の“傷み”をチェック。買う前の不安を減らせる。", "category": "不動産/診断", "official_url": "https://www.kenchikushikai.or.jp/koshukai/kizonjyutakujyokyochosa.html", "hashtags": "#資格 #ホームインスペクター #住宅"}
+{"exam": "相続診断士", "tweet": "【相続診断】家族のもめ事を減らす話し合いのきっかけ作りに。", "category": "法律・会計/ライフ", "official_url": "https://souzokushindan.com/", "hashtags": "#資格 #相続 #終活"}
+{"exam": "ホームステージャー 2級", "tweet": "【ホームステージャー】部屋を“売れる見せ方”に。内見の印象が上がる。", "category": "不動産/演出", "official_url": "https://homestaging.or.jp/2nd-class-schedule/", "hashtags": "#資格 #不動産 #インテリア"}
+{"exam": "石綿作業主任者", "tweet": "【石綿主任】アスベスト作業の安全管理。改修工事で頼られる。", "category": "建設/安全", "official_url": "https://anzeninfo.mhlw.go.jp/gino/meishou.html", "hashtags": "#資格 #アスベスト #安全管理"}
+{"exam": "酸素欠乏・硫化水素危険作業主任者", "tweet": "【酸欠・硫化水素】危ない場所での作業を安全に進める要の人。", "category": "建設/安全", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=74105000&dataType=0&pageNo=1", "hashtags": "#資格 #労働安全 #現場"}
+{"exam": "石綿含有建材調査者", "tweet": "【石綿調査】事前調査で“見落とし”を防ぐ。発注者の安心につながる。", "category": "建設/調査", "official_url": "https://www.ishiwata.mhlw.go.jp/investigator", "hashtags": "#資格 #アスベスト #調査"}
+{"exam": "フルハーネス特別教育 修了", "tweet": "【フルハーネス】高所作業の基本を学ぶ。転落事故をぐっと減らす。", "category": "建設/安全", "official_url": "https://www.mhlw.go.jp/stf/houdou/0000212834.html", "hashtags": "#資格 #安全教育 #高所作業"}
+{"exam": "職長・安全衛生責任者教育 修了", "tweet": "【職長教育】現場リーダーの入門。ケガなく早く終わる現場に。", "category": "建設/安全", "official_url": "https://www.jisha.or.jp/kinki/seminar/e5120_shokucho_anseki.html", "hashtags": "#資格 #現場管理 #安全"}
+{"exam": "産業廃棄物管理責任者（講習）", "tweet": "【産廃責任者】廃棄のルールを守れる。監査で慌てない。", "category": "環境/法令", "official_url": "https://www.zensanpairen.or.jp/", "hashtags": "#資格 #産業廃棄物 #コンプラ"}
+{"exam": "環境計量士（騒音・振動 予備知識）民間講習", "tweet": "【騒音・振動の基礎】近隣トラブルを事前に防ぐ提案ができる。", "category": "環境/騒音", "official_url": "https://www.meti.go.jp/information/license/data/c250620aj.html", "hashtags": "#資格 #環境 #近隣対策"}
+{"exam": "G空間情報技術認定（一般）", "tweet": "【GIS認定】地図データの扱い方が分かる。防災や配送計画で役立つ。", "category": "IT/GIS", "official_url": "https://www.jsurvey.jp/3-1.htm", "hashtags": "#資格 #GIS #地図"}
+{"exam": "イベント業務管理士 2級", "tweet": "【イベント2級】安全と段取りの基本。混雑やトラブルを減らせる。", "category": "その他/運営", "official_url": "https://www.jace.or.jp/activity/examination/", "hashtags": "#資格 #イベント #運営"}
+{"exam": "舞台機構調整技能士 2級", "tweet": "【舞台機構2級】照明・音の段取りが分かる。公演を安全に回せる。", "category": "クリエイティブ/技術", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #舞台 #技術"}
+{"exam": "サービス介助士", "tweet": "【サービス介助士】高齢者や障がいのある方への接客が上手くなる。", "category": "ビジネス/介助", "official_url": "https://www.carefit.org/", "hashtags": "#資格 #ユニバーサルデザイン #接客"}
+{"exam": "ユニバーサルマナー検定 2級", "tweet": "【ユニバーサルマナー】“さりげない配慮”ができる。クレームも減る。", "category": "ビジネス/マナー", "official_url": "https://universal-manners.jp/", "hashtags": "#資格 #マナー #接客"}
+{"exam": "H検（ホテルビジネス）2級", "tweet": "【H検】フロントや予約の基本が分かる。新人研修にぴったり。", "category": "その他/ホテル", "official_url": "https://www.jec-jp.org/hken/overview/", "hashtags": "#資格 #ホテル #観光"}
+{"exam": "旅程管理主任者（国内）", "tweet": "【旅程管理 国内】団体ツアーを安全に案内。トラブル時も落ち着いて対応。", "category": "その他/添乗", "official_url": "https://www.jata-net.or.jp/membership/page-46377/page-11165/page-2369/", "hashtags": "#資格 #旅行 #添乗"}
+{"exam": "旅程管理主任者（総合）", "tweet": "【旅程管理 総合】海外ツアーの強い味方。空港やホテルの手配に強い。", "category": "その他/添乗", "official_url": "https://www.jata-net.or.jp/membership/page-46377/page-11165/page-2369/", "hashtags": "#資格 #海外旅行 #添乗"}
+{"exam": "地理能力検定 2級", "tweet": "【地理検定】地図と地形が読める。防災や物流の会話がしやすい。", "category": "ライフスタイル/地理", "official_url": "https://www.chirikentei.jp/", "hashtags": "#資格 #地理 #地図"}
+{"exam": "司書", "tweet": "【司書】探している情報を見つける達人。学びのサポートができる。", "category": "科学・教育/情報", "official_url": "https://www.mext.go.jp/a_menu/shougai/gakugei/shisyo/index.htm", "hashtags": "#資格 #図書館 #司書"}
+{"exam": "学芸員", "tweet": "【学芸員】展示の企画や保存の基本。地域の博物館で活躍できる。", "category": "ライフスタイル/教育", "official_url": "https://www.bunka.go.jp/seisaku/bijutsukan_hakubutsukan/shinko/about/shikaku/", "hashtags": "#資格 #博物館 #展示"}
+{"exam": "JTF翻訳検定 3級", "tweet": "【翻訳3級】分かりやすい訳文の作り方が分かる。副業の土台に。", "category": "語学/翻訳", "official_url": "https://www.jtf.jp/", "hashtags": "#資格 #翻訳 #言語"}
+{"exam": "日本語検定 2級", "tweet": "【日本語検定2級】言葉の使い分けに強くなる。文章が読みやすくなる。", "category": "語学/国語", "official_url": "https://www.nihongokentei.jp/", "hashtags": "#資格 #日本語 #文章力"}
+{"exam": "HSK 4級（中国語）", "tweet": "【HSK4】日常会話がスムーズに。中国出張の不安が減る。", "category": "語学/中国語", "official_url": "https://www.hskj.jp/", "hashtags": "#資格 #中国語 #HSK"}
+{"exam": "中国語検定 3級", "tweet": "【中検3級】基礎会話と文法を証明。接客や貿易の現場で便利。", "category": "語学/中国語", "official_url": "https://www.chuken.gr.jp/", "hashtags": "#資格 #中国語 #中検"}
+{"exam": "TOPIK II（韓国語）4級", "tweet": "【TOPIK4】韓国ドラマの台詞がぐっと分かる。観光や接客にも◎", "category": "語学/韓国語", "official_url": "https://www.topik.or.jp/", "hashtags": "#資格 #韓国語 #TOPIK"}
+{"exam": "仏検（フランス語）準2級", "tweet": "【仏検準2】旅行や仕事で使える会話力。料理やワインの話も広がる。", "category": "語学/フランス語", "official_url": "https://apefdapf.org/", "hashtags": "#資格 #フランス語 #仏検"}
+{"exam": "DELE B1（スペイン語）", "tweet": "【DELE B1】ゆっくりの会話ならOKに。中南米の出張で役立つ。", "category": "語学/スペイン語", "official_url": "https://examenes.cervantes.es/es/dele/que-es", "hashtags": "#資格 #スペイン語 #DELE"}
+{"exam": "ゲーテB1（ドイツ語）", "tweet": "【Goethe B1】基本会話と読み書きが可能に。出張のやりとりが楽。", "category": "語学/ドイツ語", "official_url": "https://www.goethe.de/ins/jp/ja/spr/prf.html", "hashtags": "#資格 #ドイツ語 #Goethe"}
+{"exam": "イタリア語検定 3級", "tweet": "【伊検3級】旅行や食の会話が楽しめる。レストランでの注文も安心。", "category": "語学/イタリア語", "official_url": "https://www.iken.gr.jp/", "hashtags": "#資格 #イタリア語 #伊検"}
+{"exam": "TOEFL iBT 80+", "tweet": "【TOEFL80+】海外の資料が読めるレベル。留学や外資への一歩に。", "category": "語学/英語", "official_url": "https://www.ets.org/jp/toefl/test-takers/ibt.html", "hashtags": "#資格 #TOEFL #英語学習"}
+{"exam": "IELTS 6.0+", "tweet": "【IELTS6.0】海外大の出願ラインに届く。英語での会議もこなせる。", "category": "語学/英語", "official_url": "https://www.ielts.org/", "hashtags": "#資格 #IELTS #留学"}
+{"exam": "医療秘書技能検定 2級", "tweet": "【医療秘書】病院の受付や会計で頼られる。言葉づかいも身につく。", "category": "医療/事務", "official_url": "https://jitsumu-ginou-kentei.jp/HS/", "hashtags": "#資格 #医療事務 #病院"}
+{"exam": "認定心理士", "tweet": "【認定心理士】人の気持ちの基本を学べる。面談や相談の場で役立つ。", "category": "その他/教育", "official_url": "https://psych.or.jp/qualification/", "hashtags": "#資格 #心理学 #コミュニケーション"}
+{"exam": "認知症ケア専門士", "tweet": "【認知症ケア】声かけや環境作りのコツが分かる。家族にも優しい支援。", "category": "福祉/介護", "official_url": "https://www.dcq-ex.net/", "hashtags": "#資格 #認知症 #介護"}
+{"exam": "福祉住環境コーディネーター 3級", "tweet": "【住環境3級】段差や手すりの配慮が分かる。高齢者の暮らしが楽に。", "category": "福祉/住まい", "official_url": "https://kentei.tokyo-cci.or.jp/fukushi/", "hashtags": "#資格 #バリアフリー #住環境"}
+{"exam": "福祉用具専門相談員（講習）", "tweet": "【福祉用具】車いすやベッドの選び方を提案。介護の負担が軽くなる。", "category": "福祉/用具", "official_url": "https://www.mhlw.go.jp/file/05-Shingikai-12301000-Roukenkyoku-Soumuka/0000052706.pdf", "hashtags": "#資格 #福祉用具 #介護"}
+{"exam": "歯科衛生士", "tweet": "【歯科衛生士】予防のプロ。クリーニングと指導で笑顔を守る。", "category": "医療/歯科", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/shikaeiseishi/", "hashtags": "#資格 #歯科衛生士 #予防歯科"}
+{"exam": "歯科技工士", "tweet": "【歯科技工士】入れ歯や被せ物を作るプロ。手先の器用さを活かせる。", "category": "医療/歯科", "official_url": "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/shikagikoushi/", "hashtags": "#資格 #歯科技工士 #ものづくり"}
+{"exam": "救急救命士", "tweet": "【救急救命士】命の現場で働く国家資格。救急車内での処置が可能。", "category": "医療/救急", "official_url": "https://qqzaidan.jp/siken/", "hashtags": "#資格 #救急救命士 #医療"}
+{"exam": "愛玩動物飼養管理士 1級", "tweet": "【愛玩動物1級】ペットの飼い方を広く学べる。里親活動や接客で信頼UP。", "category": "その他/ペット", "official_url": "https://www.jpc.or.jp/kanrishi/", "hashtags": "#資格 #ペット #動物福祉"}
+{"exam": "ドッグトレーナー（民間）2級", "tweet": "【ドッグトレーナー】問題行動の直し方を学ぶ。家庭犬の相談に強い。", "category": "その他/指導", "official_url": "https://pet-bunka.net/dogtrainner/", "hashtags": "#資格 #犬 #しつけ"}
+{"exam": "ペットシッター士", "tweet": "【ペットシッター】留守中のケアと見守り。安心して出張や旅行へ。", "category": "その他/ケア", "official_url": "https://www.pet2211.com/", "hashtags": "#資格 #ペット #シッター"}
+{"exam": "自転車技士", "tweet": "【自転車技士】安全に組み立て・整備ができる。販売店で頼られる。", "category": "交通・運輸/整備", "official_url": "https://jvia.or.jp/g-index.html", "hashtags": "#資格 #自転車 #整備"}
+{"exam": "自転車安全整備士", "tweet": "【安全整備士】点検のプロ。ライトやブレーキの不安を解消。", "category": "交通・運輸/整備", "official_url": "https://www.tmt.or.jp/safety/", "hashtags": "#資格 #自転車 #安全"}
+{"exam": "自動車検査員", "tweet": "【自動車検査員】車検の要。安全なクルマを世に送り出す役目。", "category": "交通・運輸/検査", "official_url": "https://www.mlit.go.jp/jidosha/ninshoutoshiteinochigai.html", "hashtags": "#資格 #車検 #整備"}
+{"exam": "1級小型自動車整備士", "tweet": "【自整1級】電装やハイブリッドにも強い。最新車のトラブルに対応。", "category": "交通・運輸/整備", "official_url": "https://www.mlit.go.jp/jidosha/jidosha_tk9_000011.html", "hashtags": "#資格 #整備士 #車"}
+{"exam": "大型特殊免許", "tweet": "【大型特殊】建機の運転ができる。工事現場や農作業で即戦力。", "category": "交通・運輸/建機", "official_url": "https://www.npa.go.jp/bureau/traffic/menkyo/", "hashtags": "#資格 #大型特殊 #現場"}
+{"exam": "普通二種免許（タクシー）", "tweet": "【二種免許】人を乗せて運べる免許。観光タクシーや送迎で活躍。", "category": "交通・運輸/旅客", "official_url": "https://www.npa.go.jp/bureau/traffic/menkyo/index.html", "hashtags": "#資格 #二種免許 #タクシー"}
+{"exam": "大型二種免許（バス）", "tweet": "【大型二種】観光・路線バスの運転に。安全運転が一番の信用。", "category": "交通・運輸/旅客", "official_url": "https://www.npa.go.jp/bureau/traffic/menkyo/", "hashtags": "#資格 #大型二種 #バス"}
+{"exam": "無人航空機操縦者 一等", "tweet": "【ドローン一等】より難しい場所で飛ばせる。点検や測量の仕事に直結。", "category": "交通・運輸/点検", "official_url": "https://www.mlit.go.jp/koku/drone/", "hashtags": "#資格 #ドローン #国家資格"}
+{"exam": "DPA ドローン安全運航管理者", "tweet": "【安全運航管理】チームの飛行計画と安全チェックを担える。", "category": "交通・運輸/運航", "official_url": "https://d-pa.or.jp/", "hashtags": "#資格 #ドローン #安全"}
+{"exam": "第二級陸上無線技術士", "tweet": "【二陸技】無線設備の運用に強い。ビルの無線設備保守で頼られる。", "category": "インフラ・設備/通信", "official_url": "https://www.nichimu.or.jp/", "hashtags": "#資格 #無線 #通信"}
+{"exam": "施設警備業務検定 2級", "tweet": "【施設警備2級】ビルや商業施設の見回りが安心・安全にできる。", "category": "安全・防災/施設", "official_url": "https://www.npa.go.jp/laws/notification/seian/seiki/kentei.pdf", "hashtags": "#資格 #警備 #安全"}
+{"exam": "交通誘導警備業務検定 2級", "tweet": "【交通誘導2級】工事の誘導がスムーズ。事故を未然に防げる。", "category": "安全・防災/道路", "official_url": "https://www.npa.go.jp/laws/notification/seian/seiki/kentei.pdf", "hashtags": "#資格 #警備 #交通安全"}
+{"exam": "雑踏警備業務検定 2級", "tweet": "【雑踏警備2級】イベントの混雑を安全にさばける。", "category": "安全・防災/イベント", "official_url": "https://www.npa.go.jp/laws/notification/seian/seiki/kentei.pdf", "hashtags": "#資格 #警備 #イベント"}
+{"exam": "貴重品運搬警備業務検定 2級", "tweet": "【貴重品2級】運搬ルートと守り方の基本。安心して任せてもらえる。", "category": "安全・防災/輸送", "official_url": "https://www.npa.go.jp/laws/notification/seian/seiki/kentei.pdf", "hashtags": "#資格 #警備 #セキュリティ"}
+{"exam": "色彩検定 UC級", "tweet": "【色彩UC】見え方の差に配慮した配色ができる。誰にとっても見やすい資料に。", "category": "クリエイティブ/色", "official_url": "https://www.aft.or.jp/", "hashtags": "#資格 #色彩 #ユニバーサルデザイン"}
+{"exam": "照明コンサルタント", "tweet": "【照明コンサル】明かりで空間の印象を変えられる。店舗の売場改善に◎", "category": "その他/照明", "official_url": "https://www.ieij.or.jp/", "hashtags": "#資格 #照明 #インテリア"}
+{"exam": "ジュエリーコーディネーター 2級", "tweet": "【JC2級】宝石の基本と提案のコツ。接客で信頼されやすい。", "category": "ビジネス/宝飾", "official_url": "https://jja.ne.jp/coordinator/jctest.html", "hashtags": "#資格 #ジュエリー #接客"}
+{"exam": "眼鏡作製技能士 2級", "tweet": "【眼鏡技能士2級】度数合わせと加工の基本。フィット感の良い眼鏡に。", "category": "製造/医療", "official_url": "https://www.megane-joa.jp/", "hashtags": "#資格 #眼鏡 #技能"}
+{"exam": "クリーニング師", "tweet": "【クリーニング師】洗いと仕上げのプロ。衣類トラブルの相談に強い。", "category": "ライフスタイル/衛生", "official_url": "https://www.mhlw.go.jp/bunya/kenkou/seikatsu-eisei21/08-05.html", "hashtags": "#資格 #クリーニング #衛生"}
+{"exam": "クリーニング技能士 2級", "tweet": "【クリーニング技能士】生地に合う処理が分かる。風合い良く仕上がる。", "category": "ライフスタイル/技能", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #技能士 #クリーニング"}
+{"exam": "食品表示検定 初級", "tweet": "【食品表示 初級】ラベルの読み書きが正確に。ECのトラブルを防げる。", "category": "食/法令", "official_url": "https://www.shokuhinhyojikentei.jp/", "hashtags": "#資格 #食品表示 #EC"}
+{"exam": "フードアナリスト 3級", "tweet": "【フードアナリスト】味や香りを言葉にできる。食レポや商品開発に◎", "category": "食/評価", "official_url": "https://www.foodanalyst.jp/", "hashtags": "#資格 #グルメ #食育"}
+{"exam": "コムラード・オブ・チーズ（検定）", "tweet": "【チーズ検定】基本の種類と食べ方が分かる。メニュー提案が楽しい。", "category": "食/乳製品", "official_url": "https://cheese-professional.com/cc/", "hashtags": "#資格 #チーズ #食の検定"}
+{"exam": "SAKE DIPLOMA", "tweet": "【SAKE DIPLOMA】日本酒の深い知識を証明。飲食店のペアリング提案に。", "category": "食/飲料", "official_url": "https://www.sommelier.jp/exam/sakediploma/", "hashtags": "#資格 #日本酒 #ソムリエ"}
+{"exam": "ウイスキー検定 2級", "tweet": "【ウイスキー2級】香りの表現が上手くなる。バーでの会話が弾む。", "category": "食/飲料", "official_url": "https://whiskykentei.com/", "hashtags": "#資格 #ウイスキー #お酒"}
+{"exam": "発酵検定", "tweet": "【発酵検定】味噌・醤油・麹の基本が分かる。健康や料理の話に強い。", "category": "食/健康", "official_url": "https://www.kentei-uketsuke.com/hakko/", "hashtags": "#資格 #発酵 #食育"}
+{"exam": "パーソナルカラリスト検定 2級", "tweet": "【カラリスト2級】似合う色を説明できる。撮影や買い物の助言に◎", "category": "その他/色", "official_url": "https://www.japca.or.jp/", "hashtags": "#資格 #パーソナルカラー #美容"}
+{"exam": "コスメコンシェルジュ", "tweet": "【コスメコンシェルジュ】成分と肌の基礎が分かる。SNS発信の説得力UP。", "category": "その他/コスメ", "official_url": "https://cosme-ken.org/", "hashtags": "#資格 #化粧品 #美容知識"}
+{"exam": "NSCA-CPT（パーソナルトレーナー）", "tweet": "【NSCA-CPT】安全に運動を教えられる。ケガ予防のポイントが語れる。", "category": "その他/指導", "official_url": "https://nsca-japan.or.jp/certification/exam/nsca-cpt/", "hashtags": "#資格 #トレーナー #運動"}
+{"exam": "NESTA-PFT", "tweet": "【NESTA-PFT】体づくりの基本を分かりやすく教えられる。初心者に優しい指導。", "category": "その他/指導", "official_url": "https://www.nesta-gfj.com/pft", "hashtags": "#資格 #フィットネス #健康"}
+{"exam": "JFA サッカー審判員 3級", "tweet": "【審判3級】地域の試合を安全に運営。ルールを正しく伝えられる。", "category": "その他/審判", "official_url": "https://www.jfa.jp/referee/system/", "hashtags": "#資格 #サッカー #審判"}
+{"exam": "日本スポーツ協会コーチングアシスタント", "tweet": "【コーチ補】練習の回し方を学べる。少年団や部活の支えに。", "category": "その他/指導", "official_url": "https://www.japan-sports.or.jp/coach/tabid58.html", "hashtags": "#資格 #コーチング #指導"}
+{"exam": "銀行業務検定（財務）3級", "tweet": "【銀検 財務3級】数字の読みが分かる。融資の会話がスムーズに。", "category": "金融/実務", "official_url": "https://www.kinzai.or.jp/kentei/3b2.html", "hashtags": "#資格 #銀行 #財務"}
+{"exam": "銀行業務検定（法務）3級", "tweet": "【銀検 法務3級】契約の基本がつかめる。リスクの説明がしやすい。", "category": "金融/実務", "official_url": "https://www.kinzai.or.jp/kentei/3b1.html", "hashtags": "#資格 #銀行 #法務"}
+{"exam": "建設業経理士 1級", "tweet": "【建設業経理士1級】工事原価の見える化。現場と数字がつながる。", "category": "法律・会計/建設", "official_url": "https://www.keiri-kentei.jp/", "hashtags": "#資格 #建設 #原価管理"}
+{"exam": "機械保全技能士（機械系）2級", "tweet": "【機械保全2級】異音や振動の原因に気づける。止まらない工場へ。", "category": "製造/保全", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #機械保全 #製造業"}
+{"exam": "機械保全技能士（電気系）2級", "tweet": "【保全 電気2級】電気の故障を素早く発見。ライン停止を短くできる。", "category": "製造/保全", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #電気 #保全"}
+{"exam": "プラスチック成形技能士 2級", "tweet": "【成形2級】不良の原因に気づける。歩留まりが上がる。", "category": "製造/成形", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #技能士 #製造"}
+{"exam": "金型製作技能士 2級", "tweet": "【金型2級】精度の高いもの作りができる。納期と品質が安定。", "category": "製造/金型", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #技能士 #工場"}
+{"exam": "機械検査技能士 2級", "tweet": "【機械検査2級】測定と合否が正確に。品質トラブルが減る。", "category": "製造/検査", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #品質 #測定"}
+{"exam": "JIS非破壊検査 技術者 MT2", "tweet": "【非破壊 MT2】磁粉探傷で欠陥を見抜く。安全な製品づくりに貢献。", "category": "製造/品質", "official_url": "https://www.jsndi.jp/qualification/", "hashtags": "#資格 #非破壊検査 #品質"}
+{"exam": "HACCP管理者（民間）", "tweet": "【HACCP】衛生管理を仕組みにできる。監査や指導に強い。", "category": "食/衛生", "official_url": "https://jafps.smoosy.atlas.jp/ja/haccp_02", "hashtags": "#資格 #HACCP #衛生管理"}
+{"exam": "サウナ・スパ健康アドバイザー", "tweet": "【サウナ・スパ】安全な入り方を伝えられる。整うためのコツも◎", "category": "その他/温浴", "official_url": "https://sauna.or.jp/licences/adviser/", "hashtags": "#資格 #サウナ #健康"}
+{"exam": "パンシェルジュ検定 1級", "tweet": "【パン1級】小麦と発酵の違いを語れる。商品の魅力が伝わる。", "category": "食/パン", "official_url": "https://www.kentei-uketsuke.com/pancierge/", "hashtags": "#資格 #パン #食の検定"}
+{"exam": "コーヒーインストラクター 1級", "tweet": "【コーヒー1級】豆と抽出を深く理解。お店の味が安定する。", "category": "食/飲料", "official_url": "https://kentei.jcqa.org/", "hashtags": "#資格 #コーヒー #バリスタ"}
+{"exam": "フォトマスター検定 1級", "tweet": "【フォト1級】光の扱いが上手くなる。人物も物撮りもワンランクUP。", "category": "クリエイティブ/技術", "official_url": "https://www.pm-kentei.com/", "hashtags": "#資格 #写真 #カメラ"}
+{"exam": "温泉観光実践士", "tweet": "【温泉実践士】泉質の違いを分かりやすく説明。観光企画が濃くなる。", "category": "その他/温泉", "official_url": "https://www.onsenhyakkaten.com/jissenshi/", "hashtags": "#資格 #温泉 #観光"}
+{"exam": "HBAバーテンダー資格（民間）", "tweet": "【バーテンダー】定番カクテルを正しく作れる。接客の所作も身につく。", "category": "食/バー", "official_url": "https://www.hotel-barmen-hba.or.jp/license", "hashtags": "#資格 #カクテル #接客"}
+{"exam": "日本フードコーディネーター 3級", "tweet": "【フードコーディネーター】盛りつけと提案の基本。写真が映える。", "category": "食/企画", "official_url": "https://www.fcaj.or.jp/exam", "hashtags": "#資格 #料理 #スタイリング"}
+{"exam": "BBQインストラクター 初級", "tweet": "【BBQ初級】火おこしと焼き方のコツが分かる。外遊びの主役に。", "category": "ライフスタイル/食", "official_url": "https://jbbqa.org/kentei/", "hashtags": "#資格 #BBQ #アウトドア"}
+{"exam": "AWS Cloud Practitioner", "tweet": "【AWSクラウド入門】クラウドの考え方が分かる。社内の“クラウド化しよう”にすぐ話が合わせられる。", "category": "IT/クラウド", "official_url": "https://aws.amazon.com/jp/certification/certified-cloud-practitioner/", "hashtags": "#資格 #AWS #クラウド"}
+{"exam": "Azure Fundamentals（AZ-900）", "tweet": "【Azure入門】クラウドの基本と用語をざっくり理解。Microsoft製品と一緒に使うイメージが持てる。", "category": "IT/クラウド", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/azure-fundamentals/", "hashtags": "#資格 #Azure #基礎"}
+{"exam": "Google Cloud Digital Leader", "tweet": "【GCP入門】どんな場面でクラウドが役立つかを学べる。企画や提案の会話がスムーズに。", "category": "IT/クラウド", "official_url": "https://cloud.google.com/learn/certification/cloud-digital-leader?hl=ja", "hashtags": "#資格 #GCP #DX"}
+{"exam": "Oracle Cloud Infrastructure Foundations", "tweet": "【OCI基礎】Oracleのクラウドの全体像を理解。基幹システムの移行相談に強くなる。", "category": "IT/クラウド", "official_url": "https://www.oracle.com/cloud/oci/certification/", "hashtags": "#資格 #Oracle #クラウド"}
+{"exam": "SAP S/4HANA Associate", "tweet": "【SAP入門】在庫や会計など“会社の流れ”をシステムでどう回すか学べる。導入プロジェクトで会話が通る。", "category": "IT/業務システム", "official_url": "https://training.sap.com/content/sap-s4hana-training-overview", "hashtags": "#資格 #SAP #業務改善"}
+{"exam": "LPI Linux Essentials", "tweet": "【Linux入門】コマンドの基本が分かる。サーバや開発環境で“とりあえず触れる”自信がつく。", "category": "IT/インフラ", "official_url": "https://www.lpi.org/our-certifications/linux-essentials-overview", "hashtags": "#資格 #Linux #入門"}
+{"exam": "Cisco DevNet Associate", "tweet": "【DevNet】ネットワークを“コードで管理”する考え方を理解。ちょい自動化ができる人に。", "category": "IT/ネットワーク", "official_url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/devnet-associate.html", "hashtags": "#資格 #Cisco #DevNet"}
+{"exam": "Microsoft PL-900（Power Platform）", "tweet": "【ノーコード入門】Power Apps等で“ちょい便利ツール”が作れる。現場の手作業を時短。", "category": "IT/業務自動化", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/power-platform-fundamentals/", "hashtags": "#資格 #PowerPlatform #ノーコード"}
+{"exam": "Microsoft SC-900（セキュリティ基礎）", "tweet": "【守りの基礎】IDや情報保護の基本を理解。社内のセキュリティ相談に落ち着いて対応できる。", "category": "IT/セキュリティ", "official_url": "https://learn.microsoft.com/ja-jp/credentials/certifications/security-compliance-and-identity-fundamentals/", "hashtags": "#資格 #セキュリティ #基礎"}
+{"exam": "Google 広告 認定（計測）", "tweet": "【広告の“見える化”】成果の測り方が分かる。ムダ配信を減らし、予算を活かせる。", "category": "マーケティング/広告", "official_url": "https://skillshop.withgoogle.com/intl/ja_ALL/googleads/", "hashtags": "#資格 #Google広告 #計測"}
+{"exam": "Meta Media Buying Professional", "tweet": "【SNS広告の買い方】配信の基本と設計が学べる。少額でも“効く”運用に近づく。", "category": "マーケティング/広告", "official_url": "https://www.facebook.com/business/learn/certification", "hashtags": "#資格 #SNS広告 #Meta"}
+{"exam": "CompTIA Project+", "tweet": "【小さなPJの回し方】計画→実行→ふりかえりの型が分かる。社内改善の進みが速くなる。", "category": "IT/PM", "official_url": "https://www.comptia.org/certifications/project", "hashtags": "#資格 #プロジェクト #実務"}
+{"exam": "JSTQB Advanced Test Analyst", "tweet": "【テスト上級】どこを優先してテストするか判断できる。納期前の“抜け漏れ”が減る。", "category": "IT/品質", "official_url": "https://jstqb.jp/", "hashtags": "#資格 #テスト #品質保証"}
+{"exam": "Professional Scrum Master II", "tweet": "【スクラム上級】チームの自走を後押し。会議が短く、成果は太く。", "category": "IT/アジャイル", "official_url": "https://www.scrum.org/professional-scrum-master-ii-certification", "hashtags": "#資格 #Scrum #Agile"}
+{"exam": "Professional Scrum Product Owner II", "tweet": "【PO上級】“何を先に作るか”を決める力。限られた時間で効果を最大に。", "category": "IT/アジャイル", "official_url": "https://www.scrum.org/professional-scrum-product-owner-ii-certification", "hashtags": "#資格 #プロダクト #Scrum"}
+{"exam": "Linux Foundation Certified Sysadmin（LFCS）", "tweet": "【Linux運用】ユーザー/サービス/ログの基本対応ができる。落ち着いて復旧できる人に。", "category": "IT/インフラ", "official_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/", "hashtags": "#資格 #Linux #運用"}
+{"exam": "Oracle Java Bronze", "tweet": "【Java入門】文法と基礎が分かる。研修や独学のスタートに最適。", "category": "IT/開発", "official_url": "https://www.oracle.com/jp/education/certification/java/", "hashtags": "#資格 #Java #入門"}
+{"exam": "Cisco CyberOps Associate", "tweet": "【SOC入門】アラートの見方や初動が分かる。“怪しい通信”に慌てない。", "category": "IT/セキュリティ", "official_url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/cyberops-associate.html", "hashtags": "#資格 #BlueTeam #SOC"}
+{"exam": "AWS Machine Learning Specialty", "tweet": "【AWSでML】予測モデルの作り方を理解。需要予測やレコメンドの提案に強い。", "category": "IT/データ", "official_url": "https://aws.amazon.com/jp/certification/certified-machine-learning-specialty/", "hashtags": "#資格 #AWS #機械学習"}
+{"exam": "Google Professional Cloud Developer", "tweet": "【GCP開発】サーバレスやAPI設計を実務に。負荷に強いアプリを作りやすい。", "category": "IT/開発", "official_url": "https://cloud.google.com/learn/certification/cloud-developer", "hashtags": "#資格 #GCP #サーバレス"}
+{"exam": "秘書技能検定 準1級", "tweet": "【丁寧な所作】言葉づかいと段取りがレベルアップ。社内外の信頼が増える。", "category": "ビジネス/マナー", "official_url": "https://jitsumu-ginou-kentei.jp/HS/", "hashtags": "#資格 #秘書検定 #ビジネス"}
+{"exam": "サービス接遇検定 準1級", "tweet": "【接客上級】クレーム対応の言い回しが身につく。現場の空気が落ち着く。", "category": "ビジネス/サービス", "official_url": "https://jitsumu-ginou-kentei.jp/SV/", "hashtags": "#資格 #接客 #サービス"}
+{"exam": "ビジネス実務法務検定 3級", "tweet": "【法務の地図】“やっていい/ダメ”の基本が分かる。契約の読みが安心。", "category": "ビジネス/法律", "official_url": "https://www.kentei.org/houmu/", "hashtags": "#資格 #法務 #コンプラ"}
+{"exam": "マーケティング・ビジネス実務検定 B級", "tweet": "【売れる仕組み】市場調査→企画→販促の流れを学べる。小さく試して改善ができる。", "category": "マーケティング/企画", "official_url": "https://www.marke.jp/", "hashtags": "#資格 #マーケティング #実務"}
+{"exam": "文章読解・作成能力検定 2級", "tweet": "【伝わる文章】要点のまとめと書き分けが上手に。メールの誤解が減る。", "category": "ビジネス/文章", "official_url": "https://www.kanken.or.jp/bunshouken/", "hashtags": "#資格 #文章力 #ライティング"}
+{"exam": "給与計算実務能力検定 2級", "tweet": "【給与のキホン】控除や社会保険の流れを理解。締め日に焦らない。", "category": "ビジネス/労務", "official_url": "https://www.kinmu.jp/kyuyo/index.html", "hashtags": "#資格 #給与計算 #人事"}
+{"exam": "購買・調達検定 ベーシック", "tweet": "【買い物上手な会社へ】見積比較や交渉の型を学ぶ。コストと品質のバランスが取れる。", "category": "ビジネス/調達", "official_url": "https://cpp.jma.or.jp/", "hashtags": "#資格 #購買 #調達"}
+{"exam": "P検（ICTプロフィシエンシー）2級", "tweet": "【PC実務】ファイル共有や表作成など“毎日の操作”が確実に。新人教育にも◎", "category": "IT/基礎", "official_url": "https://www.pken.com/select/", "hashtags": "#資格 #パソコン #実務"}
+{"exam": "ビジネス実務マナー検定 3級", "tweet": "【社会人の基礎】電話/来客/文書の基本。初めての職場でも安心。", "category": "ビジネス/マナー", "official_url": "https://jitsumu-ginou-kentei.jp/BZ/", "hashtags": "#資格 #マナー #新社会人"}
+{"exam": "校正技能検定 初級", "tweet": "【誤字を見抜く目】資料のミスを早く見つけられる。信用度が上がる。", "category": "クリエイティブ/校正", "official_url": "https://www.editor.co.jp/exam/", "hashtags": "#資格 #校正 #編集"}
+{"exam": "日本語校正検定 2級", "tweet": "【読みやすい日本語】てにをは・表記ゆれを整えられる。提案書がスッと入る。", "category": "クリエイティブ/校正", "official_url": "https://www.editor.co.jp/exam/", "hashtags": "#資格 #日本語 #校正"}
+{"exam": "Webライティング技能検定 2級", "tweet": "【ネット向け文章】見出しと構成のコツが分かる。検索で読まれやすく。", "category": "IT/ライティング", "official_url": "https://crowd-kentei.or.jp/", "hashtags": "#資格 #ライティング #SEO"}
+{"exam": "SNSエキスパート検定 初級", "tweet": "【安全な運用】基本の投稿設計と炎上回避。小さく始めて続けられる。", "category": "マーケティング/SNS", "official_url": "https://sns-expert.or.jp/", "hashtags": "#資格 #SNS運用 #広報"}
+{"exam": "情報セキュリティ管理士（民間）", "tweet": "【守りの基本線】パスワード/持ち出し/共有の“やるべき”が整理できる。", "category": "ビジネス/セキュリティ", "official_url": "https://www.joho-gakushu.or.jp/security_m/", "hashtags": "#資格 #情報セキュリティ #ISMS"}
+{"exam": "個人情報保護実務検定 2級", "tweet": "【個人情報の扱い】“取る・使う・捨てる”のルールを実務で守れる。", "category": "ビジネス/法律", "official_url": "https://www.joho-gakushu.or.jp/pipl/", "hashtags": "#資格 #個人情報 #コンプラ"}
+{"exam": "BCAO 事業継続初級管理者", "tweet": "【もしもの備え】災害や障害時の動き方を会社で決められる。訓練の質が上がる。", "category": "安全・防災/BCP", "official_url": "https://www.bcao.jp/shiken/index.html", "hashtags": "#資格 #BCP #防災"}
+{"exam": "レストランサービス技能士 2級", "tweet": "【サービスの所作】注文/提供/会計がスムーズ。お店の満足度が上がる。", "category": "食/サービス", "official_url": "https://hrs.or.jp/restaurant/index.html", "hashtags": "#資格 #接客 #レストラン"}
+{"exam": "コーヒーマイスター", "tweet": "【コーヒーの先生】豆選びと淹れ方の提案ができる。お店やECで信頼感UP。", "category": "食/飲料", "official_url": "https://scaj.org/meister/about-meister", "hashtags": "#資格 #コーヒー #バリスタ"}
+{"exam": "ティーインストラクター 初級", "tweet": "【紅茶入門】茶葉と抽出の基本が分かる。カフェや物販の説明が伝わる。", "category": "食/飲料", "official_url": "https://www.tea-a.gr.jp/instructor_training/apply/", "hashtags": "#資格 #紅茶 #ティー"}
+{"exam": "中国茶アドバイザー 初級", "tweet": "【中国茶の入口】烏龍・普洱の違いを楽しく紹介。試飲販売で役立つ。", "category": "食/飲料", "official_url": "https://cha-tea.org/qualification/chinesetea_adviser/", "hashtags": "#資格 #中国茶 #お茶"}
+{"exam": "チョコレート検定 中級", "tweet": "【カカオの世界】産地や風味を語れる。ギフト提案がぐっと楽しい。", "category": "食/菓子", "official_url": "https://www.kentei-uketsuke.com/chocolate/", "hashtags": "#資格 #チョコレート #スイーツ"}
+{"exam": "スパイス＆ハーブ検定 1級", "tweet": "【香りの使い方】料理や商品開発で“もう一味”の提案ができる。", "category": "食/調味", "official_url": "https://www.kentei-uketsuke.com/s-herb/", "hashtags": "#資格 #スパイス #料理"}
+{"exam": "食品表示検定 上級", "tweet": "【ラベルの番人】表記ミスを防げる。ECや店頭のトラブルを未然に。", "category": "食/法令", "official_url": "https://www.shokuhinhyojikentei.jp/", "hashtags": "#資格 #食品表示 #コンプラ"}
+{"exam": "パンシェルジュ検定 3級", "tweet": "【パン入門】種類と製法の基本。レビューや接客の説明がうまくなる。", "category": "食/パン", "official_url": "https://www.kentei-uketsuke.com/pancierge/", "hashtags": "#資格 #パン #食の検定"}
+{"exam": "お肉検定 2級", "tweet": "【お肉の基礎】部位と調理の相性が分かる。メニュー提案が広がる。", "category": "食/食材", "official_url": "https://www.nikuken.com/", "hashtags": "#資格 #肉 #グルメ"}
+{"exam": "野菜検定 2級", "tweet": "【旬と栄養】買い方と保存のコツが分かる。献立提案がしやすい。", "category": "食/健康", "official_url": "https://www.kentei-uketsuke.com/yasai/", "hashtags": "#資格 #野菜 #食育"}
+{"exam": "だしソムリエ 2級", "tweet": "【味の土台】だしの取り方と使い分けができる。和食の説明が楽しく。", "category": "食/和食", "official_url": "https://www.dashi.style/", "hashtags": "#資格 #だし #料理"}
+{"exam": "健康管理士 一般指導員", "tweet": "【健康の基礎知識】睡眠/食事/運動の整え方を学べる。社内セミナーにも◎", "category": "その他/予防", "official_url": "https://healthcare.or.jp/", "hashtags": "#資格 #健康 #生活習慣"}
+{"exam": "上級救命講習 修了", "tweet": "【いのちを守る初動】心肺蘇生やAEDの使い方を学ぶ。職場と家庭で安心。", "category": "安全・防災/安全", "official_url": "https://www.fdma.go.jp/relocation/kyukyukikak.../02jokyu/01oukyuteate-manabi/02_01_00.html", "hashtags": "#資格 #救命 #AED"}
+{"exam": "熱中症予防指導員", "tweet": "【夏の安全】水分/塩分/休憩の目安を伝えられる。現場や部活で役立つ。", "category": "その他/安全", "official_url": "https://www.kensaibou.or.jp/seminar/head008.html?page=1", "hashtags": "#資格 #熱中症 #予防"}
+{"exam": "フードスペシャリスト", "tweet": "【食の幅広い知識】食品/栄養/流通を横断。商品企画や広報で説得力。", "category": "食/専門", "official_url": "https://www.food-specialist.or.jp/qualification/", "hashtags": "#資格 #食の知識 #企画"}
+{"exam": "NR・サプリメントアドバイザー", "tweet": "【サプリの選び方】成分と注意点を説明できる。売場や相談で信頼される。", "category": "その他/栄養", "official_url": "https://www.nrca.or.jp/nrsa/", "hashtags": "#資格 #サプリ #栄養"}
+{"exam": "スポーツ栄養プランナー（民間）", "tweet": "【運動×食事】目標に合わせた食べ方を提案。部活やジムで喜ばれる。", "category": "その他/栄養", "official_url": "https://www.u-can.co.jp/course/data/in_html/1500/", "hashtags": "#資格 #栄養 #スポーツ"}
+{"exam": "普通救命講習 修了", "tweet": "【身近な救命】119通報や胸骨圧迫を体で覚える。いざという時に強い。", "category": "安全・防災/安全", "official_url": "https://www.fdma.go.jp/relocation/kyukyukikaku/oukyu/", "hashtags": "#資格 #救急 #防災"}
+{"exam": "メンタルヘルス・マネジメント検定 III種", "tweet": "【自分を守るケア】ストレスの気づき方と相談先を学ぶ。無理しすぎない職場へ。", "category": "ビジネス/健康", "official_url": "https://www.mental-health.jp/", "hashtags": "#資格 #メンタルヘルス #セルフケア"}
+{"exam": "子育て支援員（研修修了）", "tweet": "【地域の子育てを支える】保育の基本と安全を学ぶ。放課後や子ども食堂で活躍。", "category": "福祉/子育て", "official_url": "https://www.cfa.go.jp/policies/kosodateshien/kosodateshien-kyozai", "hashtags": "#資格 #子育て #地域"}
+{"exam": "放課後児童支援員（研修修了）", "tweet": "【学童のプロ】遊びと宿題の見守り、安全管理の基礎を身につける。", "category": "福祉/子育て", "official_url": "https://www.cfa.go.jp/policies/kosodateshien/houkago-jidou", "hashtags": "#資格 #学童 #見守り"}
+{"exam": "コンテンツ法務検定 初級", "tweet": "【権利の基本】画像/音源/引用の“やっていい”を理解。炎上と損害を回避。", "category": "ビジネス/法律", "official_url": "https://www.sikaku.gr.jp/bc/", "hashtags": "#資格 #著作権 #コンプラ"}
+{"exam": "第三級海上無線通信士", "tweet": "【船の通信】海での安全なやり取りの基礎。マリンレジャーや業務で安心。", "category": "インフラ・設備/海", "official_url": "https://www.nichimu.or.jp/exam/maritime/third-class-radiotelegraphy-operator/", "hashtags": "#資格 #無線 #船舶"}
+{"exam": "DJI CAMP スペシャリスト", "tweet": "【ドローン実務の入口】基本操作と安全が身につく。点検や撮影の現場で信頼。", "category": "交通・運輸/運用", "official_url": "https://djicamp.jp/", "hashtags": "#資格 #ドローン #安全"}
+{"exam": "JUIDA 無人航空機操縦技能", "tweet": "【操縦の基礎】手順と安全を学ぶ。空撮・点検の副業にもつながる。", "category": "交通・運輸/操縦", "official_url": "https://uas-japan.org/license/qualification/", "hashtags": "#資格 #ドローン #操縦"}
+{"exam": "JUIDA 安全運航管理者", "tweet": "【チーム運航の要】飛行計画とリスク管理を整理。事故ゼロ運用に貢献。", "category": "交通・運輸/運航", "official_url": "https://uas-japan.org/license/qualification/", "hashtags": "#資格 #安全 #運航管理"}
+{"exam": "空き家管理士", "tweet": "【空き家の困りごと解決】見回りや手入れのポイントを学ぶ。地域課題のビジネス化に。", "category": "不動産/管理", "official_url": "https://www.akiyakanrishi.org/", "hashtags": "#資格 #空き家 #地域活性"}
+{"exam": "住宅収納スペシャリスト", "tweet": "【片づく家の作り方】“しまう場所”から考える。引越し提案やリフォーム相談で役立つ。", "category": "ライフスタイル/収納", "official_url": "https://housekeeping.or.jp/about_license/house-sp/", "hashtags": "#資格 #整理収納 #住まい"}
+{"exam": "リフォームスタイリスト 2級", "tweet": "【暮らし目線の提案】色・素材・動線の基本。小規模改修の相談がしやすい。", "category": "ライフスタイル/リフォーム", "official_url": "https://www.lifestyle.or.jp/reform/about.html", "hashtags": "#資格 #リフォーム #インテリア"}
+{"exam": "増改築相談員（講習修了）", "tweet": "【トラブル回避】契約や設計の注意点を学ぶ。安心して工事を進められる。", "category": "ライフスタイル/リフォーム", "official_url": "https://www.chord.or.jp/course/extension_renovation/index.html", "hashtags": "#資格 #住宅 #相談"}
+{"exam": "建築物省エネ法 登録講習 修了（設計）", "tweet": "【省エネの考え方】断熱や設備の基本が分かる。光熱費を下げる設計に役立つ。", "category": "建設/省エネ", "official_url": "https://www.ibecs.or.jp/", "hashtags": "#資格 #省エネ #建築"}
+{"exam": "樹木医", "tweet": "【木のドクター】樹木の健康診断と治療。公園や街路樹の維持に貢献。", "category": "環境/緑化", "official_url": "https://www.jpgreen.or.jp/treedoctor/", "hashtags": "#資格 #樹木医 #まちづくり"}
+{"exam": "第二種冷媒フロン類取扱技術者", "tweet": "【冷媒の安全】機器の点検・回収の基本を学ぶ。エアコン工事で信頼度UP。", "category": "インフラ・設備/環境", "official_url": "https://www.jreco.or.jp/2shu_shikaku.html", "hashtags": "#資格 #フロン #設備保全"}
+{"exam": "冷媒回収技術者", "tweet": "【環境配慮の作業】フロン回収の実務を身につける。更新工事で安心。", "category": "インフラ・設備/環境", "official_url": "https://www.rrc-net.jp/archives/505", "hashtags": "#資格 #フロン回収 #環境"}
+{"exam": "給水装置工事主任技術者", "tweet": "【水まわりの要】安全な配管工事の責任者。水トラブルに強い会社に。", "category": "インフラ・設備/給排水", "official_url": "https://www.kyuukou.or.jp/shiken/", "hashtags": "#資格 #配管 #水道"}
+{"exam": "浄化槽管理士", "tweet": "【生活を支える裏方】浄化槽の点検・清掃のプロ。におい・詰まりを防ぐ。", "category": "環境/水処理", "official_url": "https://www.jeces.or.jp/pages/154/", "hashtags": "#資格 #浄化槽 #環境"}
+{"exam": "下水道管理技術認定（管路）", "tweet": "【見えないインフラ守る】下水管の点検と修繕の基本を学ぶ。道路工事の品質UP。", "category": "インフラ・設備/維持管理", "official_url": "https://www.jswa.go.jp/kentei/", "hashtags": "#資格 #下水道 #点検"}
+{"exam": "消防設備士 乙種6類（消火器）", "tweet": "【消火器のプロ】点検・整備の要点を理解。店舗やビルの安全に直結。", "category": "安全・防災/設備", "official_url": "https://www.shoubo-shiken.or.jp/shoubou/", "hashtags": "#資格 #消防設備 #防災"}
+{"exam": "消防設備士 乙種7類（漏電火災警報器）", "tweet": "【電気火災の見張り役】警報器の点検で“もしも”に備える。", "category": "安全・防災/設備", "official_url": "https://www.shoubo-shiken.or.jp/shoubou/", "hashtags": "#資格 #消防設備 #安全"}
+{"exam": "低圧電気取扱 特別教育 修了", "tweet": "【感電を防ぐ基本】ブレーカーや配線に触れる前の必修。安全第一で作業できる。", "category": "安全・防災/電気", "official_url": "https://shop.jisha.or.jp/products/23318", "hashtags": "#資格 #安全教育 #電気"}
+{"exam": "小型車両系建設機械（特別教育）", "tweet": "【小さな重機を安全に】ミニショベル等の基本操作と危険予知を学ぶ。", "category": "建設/安全", "official_url": "https://www.mhlw.go.jp/content/11300000/001401838.pdf", "hashtags": "#資格 #重機 #安全"}
+{"exam": "フォークリフト（特別教育 1t未満）修了", "tweet": "【軽い荷物の運搬に】小規模倉庫での安全運転を学ぶ。現場で頼られる人に。", "category": "その他/安全", "official_url": "https://www.mhlw.go.jp/content/11300000/000628483.pdf", "hashtags": "#資格 #フォークリフト #倉庫"}
+{"exam": "玉掛け（特別教育 1t未満）修了", "tweet": "【吊り荷の基本】安全な掛け方と合図を学ぶ。事故を未然に防ぐ。", "category": "建設/安全", "official_url": "https://www.mhlw.go.jp/content/11300000/crane_00_Japanese_210210.pdf", "hashtags": "#資格 #玉掛け #現場安全"}
+{"exam": "研削といし取替え等 特別教育 修了", "tweet": "【現場のケガ防止】砥石交換の手順とチェックを習得。作業品質も安定。", "category": "製造/安全", "official_url": "https://www.mhlw.go.jp/web/t_doc?dataId=74085000&dataType=0&pageNo=1", "hashtags": "#資格 #安全 #工具"}
+{"exam": "土壌医検定 3級", "tweet": "【土を知る】酸度や肥料の考え方を学ぶ。家庭菜園や農業支援に◎", "category": "環境/農業", "official_url": "https://doiken.or.jp/", "hashtags": "#資格 #土壌 #農業"}
+{"exam": "ビオトープ管理士 1級", "tweet": "【生き物と共生】水辺や公園の計画・管理を主導。自然再生プロジェクトで活躍。", "category": "環境/生態", "official_url": "https://www.biotop-kanrishi.org/", "hashtags": "#資格 #ビオトープ #環境"}
+{"exam": "造園施工管理技士 2級", "tweet": "【庭づくりの現場力】工程と品質を管理。小〜中規模案件で即戦力。", "category": "建設/造園", "official_url": "https://www.jctc.jp/exam/", "hashtags": "#資格 #造園 #施工管理"}
+{"exam": "園芸装飾技能士 2級", "tweet": "【花の演出】会場装飾や店舗ディスプレイの基本が身につく。", "category": "クリエイティブ/フラワー", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #フラワー #装飾"}
+{"exam": "グリーンアドバイザー（家庭園芸）", "tweet": "【家庭の園芸相談役】苗/土/水やりの基本を分かりやすく伝えられる。", "category": "ライフスタイル/生活", "official_url": "https://www.kateiengei.or.jp/greenadviser/", "hashtags": "#資格 #園芸 #ガーデニング"}
+{"exam": "オーガニックコーディネーター（民間）", "tweet": "【やさしい暮らし】オーガニック商品の選び方や表示が分かる。売場提案に◎", "category": "食/ライフ", "official_url": "https://fos.or.jp/shikaku/oc/", "hashtags": "#資格 #オーガニック #暮らし"}
+{"exam": "野菜ソムリエプロ", "tweet": "【食の伝え手】生産者と食卓をつなぐ説明力。イベントや商品開発で信頼。", "category": "食/専門", "official_url": "https://www.vege-fru.com/contents/hp0008/?CNo=8&No=146", "hashtags": "#資格 #野菜 #プロ"}
+{"exam": "惣菜管理士 2級", "tweet": "【お惣菜の品質管理】衛生と味の安定化。バックヤードのムダが減る。", "category": "食/製造", "official_url": "https://www.nsouzai-kyoukai.or.jp/training/rmm/", "hashtags": "#資格 #惣菜 #衛生管理"}
+{"exam": "日本さかな検定 1級", "tweet": "【魚の達人】旬や産地を語れる。メニューや観光記事に深みが出る。", "category": "食/文化", "official_url": "https://www.totoken.com/", "hashtags": "#資格 #魚 #グルメ"}
+{"exam": "専門調理師（日本料理）", "tweet": "【和食のプロ】だし・包丁・盛り付けの理論を体系化。お店の看板に。", "category": "食/調理", "official_url": "https://www.mhlw.go.jp/stf/newpage_11843.html", "hashtags": "#資格 #和食 #調理"}
+{"exam": "麺類製造技能士 2級", "tweet": "【麺の再現性】粉と水のバランスを数値で管理。味がブレない。", "category": "食/製造", "official_url": "https://www.javada.or.jp/jigyou/gino/giken.html", "hashtags": "#資格 #麺 #技能士"}
+{"exam": "日本城郭検定 2級", "tweet": "【お城を語れる】構造や歴史のツボを理解。旅の案内が面白くなる。", "category": "ライフスタイル/歴史", "official_url": "https://www.kentei-uketsuke.com/shiro/", "hashtags": "#資格 #城 #歴史"}
+{"exam": "歴史能力検定 日本史 2級", "tweet": "【流れでわかる日本史】年号暗記に頼らず説明できる。ガイドや教育にも◎", "category": "ライフスタイル/歴史", "official_url": "https://www.rekiken.gr.jp/", "hashtags": "#資格 #日本史 #教養"}
+{"exam": "美術検定 2級", "tweet": "【アートの見方】作品の背景を語れる。展覧会のレビューが深くなる。", "category": "ライフスタイル/美術", "official_url": "https://www.bijutsukentei.com/", "hashtags": "#資格 #美術 #アート"}
+{"exam": "きもの文化検定 3級", "tweet": "【きものの基本】格や季節の合わせ方が分かる。着付や販売の説明に役立つ。", "category": "ライフスタイル/和装", "official_url": "https://www.kimono-kentei.com/", "hashtags": "#資格 #着物 #和文化"}
+{"exam": "硬筆書写技能検定 2級", "tweet": "【読みやすい字】メモや掲示がぐっと見やすく。第一印象もUP。", "category": "ライフスタイル/書写", "official_url": "https://www.nihon-shosha.or.jp/", "hashtags": "#資格 #字がきれい #書写"}
+{"exam": "色彩検定 3級", "tweet": "【色の入門】配色のルールが分かる。資料やSNSが見やすくなる。", "category": "クリエイティブ/色彩", "official_url": "https://www.aft.or.jp/", "hashtags": "#資格 #色彩検定 #デザイン"}
+{"exam": "カラーコーディネーター検定 3級", "tweet": "【色で伝える】商品や空間の“らしさ”を作れる。売場提案が楽しい。", "category": "クリエイティブ/色彩", "official_url": "https://kentei.tokyo-cci.or.jp/color/", "hashtags": "#資格 #カラー #VMD"}
+{"exam": "パソコン整備士 3級", "tweet": "【PCの困ったを解決】起動しない/遅いの初期対応ができる。情シスの頼れる味方。", "category": "IT/サポート", "official_url": "https://www.it-seibishi.or.jp/pc-seibishi/", "hashtags": "#資格 #パソコン #トラブル対応"}
+{"exam": "電卓検定 1級", "tweet": "【計算の速さと正確さ】見積や売上の確認がキビキビ進む。", "category": "ビジネス/実務", "official_url": "https://zenkei.or.jp/exam/deskcal", "hashtags": "#資格 #電卓 #事務"}
+{"exam": "証券外務員 一種", "tweet": "【金融商品の説明力】投資信託や債券の注意点を伝えられる。顧客対応が安心。", "category": "金融/実務", "official_url": "https://www.jsda.or.jp/gaimuin/shiken.html", "hashtags": "#資格 #証券外務員 #金融"}
+{"exam": "生命保険募集人 一般課程", "tweet": "【保険の入口】基本的な仕組みと説明の注意点を学ぶ。顧客との会話がスムーズ。", "category": "金融/保険", "official_url": "https://www.seiho.or.jp/exam/cbt/", "hashtags": "#資格 #生命保険 #営業"}
+{"exam": "損害保険募集人（基礎）", "tweet": "【もしもの備えを説明】自動車・火災などの基本を理解。契約時の不安を減らせる。", "category": "金融/保険", "official_url": "https://www.sonpo-dairiten.jp/ippan/", "hashtags": "#資格 #損保 #基礎"}
+{"exam": "クレジット業務検定 初級", "tweet": "【カードの仕組み】与信や不正対策の基本を学ぶ。店頭やコールセンターで役立つ。", "category": "金融/与信", "official_url": "https://www.j-credit.or.jp/license/exam/creditor.html", "hashtags": "#資格 #クレジット #与信管理"}
+{"exam": "知的資産経営認定士", "tweet": "【“見えない資産”を可視化】強みやノウハウを言語化して伝えられる。補助金申請にも◎", "category": "ビジネス/経営", "official_url": "https://www.jiam.or.jp/iabm_Academy/", "hashtags": "#資格 #知的資産 #経営"}
+{"exam": "国連英検 B級", "tweet": "【ニュース英語に強く】国際情勢の英文が読みやすくなる。外資や留学準備に。", "category": "語学/英語", "official_url": "https://www.kokureneiken.jp/", "hashtags": "#資格 #英語 #国連英検"}
+{"exam": "観光英語検定 2級", "tweet": "【観光で使える英語】道案内やチェックインの会話が安心。インバウンド接客に◎", "category": "語学/観光", "official_url": "https://kanko.zgb.gr.jp/", "hashtags": "#資格 #英語 #観光"}
+{"exam": "工業英検 3級", "tweet": "【技術の英語】図面や取説の英語が読みやすく。製造や品質の現場で活躍。", "category": "語学/技術", "official_url": "https://jstc.jma.or.jp/", "hashtags": "#資格 #英語 #工業英検"}
+{"exam": "日本語教師 養成講座420時間 修了", "tweet": "【教える日本語の基礎】授業の進め方と評価の基本。海外/国内どちらでも役立つ。", "category": "科学・教育/語学", "official_url": "https://www.bunka.go.jp/seisaku/kokugo_nihongo/kyoiku/kyoin_kenshu/index.html", "hashtags": "#資格 #日本語教師 #教育"}
+{"exam": "Illustratorクリエイター能力認定 スタンダード", "tweet": "【図やロゴをきれいに】入稿トラブルが減る。資料も見栄えUP。", "category": "クリエイティブ/DTP", "official_url": "https://www.sikaku.gr.jp/creative/il/", "hashtags": "#資格 #Illustrator #デザイン"}
+{"exam": "Photoshopクリエイター能力認定 スタンダード", "tweet": "【画像補正の基本】明るさ/切抜き/合成が思い通り。ECの写真が見違える。", "category": "クリエイティブ/画像", "official_url": "https://www.sikaku.gr.jp/creative/ps/", "hashtags": "#資格 #Photoshop #画像編集"}
+{"exam": "Webクリエイター能力認定 エキスパート", "tweet": "【サイト制作の型】HTML/CSSで“崩れない”ページを作れる。", "category": "IT/Web制作", "official_url": "https://www.sikaku.gr.jp/web/wc/", "hashtags": "#資格 #Web制作 #コーディング"}
+{"exam": "Javaプログラミング能力認定 2級", "tweet": "【Java応用】クラス設計や例外処理の基本が固まる。現場のコードが読みやすくなる。", "category": "IT/開発", "official_url": "https://www.sikaku.gr.jp/js/cpjv/jv/introduction/", "hashtags": "#資格 #Java #プログラミング"}
+{"exam": "統計検定 3級", "tweet": "【数字の読み方入門】平均・ばらつき・相関の考え方。資料づくりが論理的に。", "category": "データ/統計", "official_url": "https://www.toukei-kentei.jp/", "hashtags": "#資格 #統計 #データ分析"}

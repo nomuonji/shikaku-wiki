@@ -1,0 +1,70 @@
+name: SNS Bot Post (資格)
+
+# 資格カタログ（shikaku.antonbase.com）の投稿キューから X / Threads に投稿する。
+# 1日3回（UTC 0, 8, 16 = JST 9, 17, 1時）。ゼロ依存・認証は Secret Gist。
+# 投稿位置（certifications_state.json）はコミットして同期する。
+
+on:
+  schedule:
+    - cron: "0 0,8,16 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "true なら実投稿せず内容だけ表示"
+        type: boolean
+        default: false
+      channel:
+        description: '対象チャンネル (x / threads / all)'
+        required: false
+        default: "all"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sns-bot
+  cancel-in-progress: false
+
+jobs:
+  send-post:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run Senders
+        working-directory: sns-bot
+        env:
+          GH_GIST_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+        run: |
+          CHANNEL="${{ github.event.inputs.channel || 'all' }}"
+          PIDS=""
+          if [ "$CHANNEL" = "x" ] || [ "$CHANNEL" = "all" ]; then
+            node src/tweetSender.mjs &
+            PIDS="$PIDS $!"
+          fi
+          if [ "$CHANNEL" = "threads" ] || [ "$CHANNEL" = "all" ]; then
+            node src/threadsSender.mjs &
+            PIDS="$PIDS $!"
+          fi
+          wait $PIDS
+
+      - name: Commit and Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(sns-bot): update state [skip ci]" || echo "No changes to commit"
+          git pull --rebase
+          git push || echo "No changes to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
