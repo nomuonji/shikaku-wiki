@@ -1,71 +1,72 @@
 {
-  "lastCategoryKey": "安全・防災",
+  "lastCategoryKey": "建設",
   "categories": {
     "IT": {
-      "lastTweetIndex": 48
+      "lastIndex": 48
     },
     "法律・会計": {
-      "lastTweetIndex": 5
+      "lastIndex": 5
     },
     "金融": {
-      "lastTweetIndex": 11
+      "lastIndex": 11
     },
     "ビジネス": {
-      "lastTweetIndex": 6
+      "lastIndex": 6
     },
     "クリエイティブ": {
-      "lastTweetIndex": 10
+      "lastIndex": 10
     },
     "その他": {
-      "lastTweetIndex": 48
+      "lastIndex": 48
     },
     "データ": {
-      "lastTweetIndex": 9
+      "lastIndex": 9
     },
     "製造": {
-      "lastTweetIndex": 15
+      "lastIndex": 15
     },
     "環境": {
-      "lastTweetIndex": 11
+      "lastIndex": 11
     },
     "安全・防災": {
-      "lastTweetIndex": 10
+      "lastIndex": 10
     },
     "建設": {
-      "lastTweetIndex": 2
+      "lastIndex": 3
     },
     "科学・教育": {
-      "lastTweetIndex": 5
+      "lastIndex": 5
     },
     "不動産": {
-      "lastTweetIndex": 4
+      "lastIndex": 4
     },
     "医療": {
-      "lastTweetIndex": 6
+      "lastIndex": 6
     },
     "福祉": {
-      "lastTweetIndex": 8
+      "lastIndex": 8
     },
     "インフラ・設備": {
-      "lastTweetIndex": 13
+      "lastIndex": 13
     },
     "マーケティング": {
-      "lastTweetIndex": 9
+      "lastIndex": 9
     },
     "ライフスタイル": {
-      "lastTweetIndex": 10
+      "lastIndex": 10
     },
     "語学": {
-      "lastTweetIndex": 9
+      "lastIndex": 9
     },
     "食": {
-      "lastTweetIndex": 47
+      "lastIndex": 47
     },
     "スポーツ・レジャー": {
-      "lastTweetIndex": 0
+      "lastIndex": 0
     },
     "交通・運輸": {
-      "lastTweetIndex": 14
+      "lastIndex": 14
     }
-  }
+  },
+  "lastUrlDate": null
 }
