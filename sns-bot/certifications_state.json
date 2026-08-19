@@ -1,5 +1,5 @@
 {
-  "lastCategoryKey": "不動産",
+  "lastCategoryKey": "交通・運輸",
   "categories": {
     "IT": {
       "lastIndex": 49
@@ -65,7 +65,7 @@
       "lastIndex": 1
     },
     "交通・運輸": {
-      "lastIndex": 14
+      "lastIndex": 15
     }
   },
   "lastUrlDate": null
