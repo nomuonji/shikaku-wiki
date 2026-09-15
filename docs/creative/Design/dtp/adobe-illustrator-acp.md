@@ -1,5 +1,6 @@
 ---
 title: "Adobe Illustrator ACP"
+description: "Adobe Illustrator ACP（アドビ認定プロフェッショナル）の難易度・試験内容・勉強法。ロゴ制作のスキル証明に使える国際認定資格です。"
 ---
 
 # Adobe Illustrator ACP

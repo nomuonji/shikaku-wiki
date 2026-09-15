@@ -1,5 +1,6 @@
 ---
 title: "Adobe Certified Professional (After Effects)"
+description: "Adobe認定After Effectsの難易度・試験範囲・勉強法。モーショングラフィックスとVFXの実務スキルを証明する国際認定資格です。"
 ---
 
 # Adobe Certified Professional (After Effects)
