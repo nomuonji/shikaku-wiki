@@ -13,6 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
+    "test:seo": "python scripts/verify_blog_structured_data.py",
     "bot:draft": "node sns-bot/src/tweetSender.mjs --dry-run",
     "bot:post": "node sns-bot/src/tweetSender.mjs && node sns-bot/src/threadsSender.mjs",
     "bot:threads-draft": "node sns-bot/src/threadsSender.mjs --dry-run",
