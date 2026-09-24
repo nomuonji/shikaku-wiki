@@ -1,5 +1,6 @@
 ---
 title: "弁理士"
+unlisted: true
 ---
 
 # 弁理士

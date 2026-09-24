@@ -1,7 +1,7 @@
 ---
 title: "Professional Scrum Product Owner II"
+unlisted: true
 ---
-
 # Professional Scrum Product Owner II
 
 ## 概要

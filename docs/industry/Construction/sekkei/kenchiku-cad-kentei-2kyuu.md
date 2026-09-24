@@ -1,5 +1,6 @@
 ---
 title: "建築CAD検定 2級"
+unlisted: true
 ---
 
 # 建築CAD検定 2級

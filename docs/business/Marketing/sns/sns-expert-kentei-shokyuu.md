@@ -1,5 +1,6 @@
 ---
 title: "SNSエキスパート検定 初級"
+unlisted: true
 ---
 
 # SNSエキスパート検定 初級

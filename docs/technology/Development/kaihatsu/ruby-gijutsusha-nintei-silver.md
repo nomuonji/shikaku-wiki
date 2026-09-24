@@ -1,5 +1,6 @@
 ---
 title: "Ruby技術者認定 Silver"
+unlisted: true
 ---
 
 # Ruby技術者認定 Silver

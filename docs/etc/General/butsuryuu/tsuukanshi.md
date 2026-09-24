@@ -1,5 +1,6 @@
 ---
 title: "通関士"
+unlisted: true
 ---
 
 # 通関士

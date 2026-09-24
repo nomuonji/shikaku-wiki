@@ -1,7 +1,7 @@
 ---
 title: "AWS Machine Learning Specialty"
+unlisted: true
 ---
-
 # AWS Machine Learning Specialty
 
 ## 概要

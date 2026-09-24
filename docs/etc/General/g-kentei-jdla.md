@@ -1,5 +1,6 @@
 ---
 title: "G検定（JDLA）"
+unlisted: true
 ---
 
 # G検定（JDLA）

@@ -1,7 +1,7 @@
 ---
 title: "Juniper JNCIA-Junos"
+unlisted: true
 ---
-
 # Juniper JNCIA-Junos
 
 ## 概要

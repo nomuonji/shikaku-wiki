@@ -1,5 +1,6 @@
 ---
 title: "個人情報保護士"
+unlisted: true
 ---
 
 # 個人情報保護士

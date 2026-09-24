@@ -1,5 +1,6 @@
 ---
 title: "塗装技能士 2級"
+unlisted: true
 ---
 
 # 塗装技能士 2級

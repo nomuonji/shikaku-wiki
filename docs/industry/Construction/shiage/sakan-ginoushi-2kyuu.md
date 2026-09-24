@@ -1,5 +1,6 @@
 ---
 title: "左官技能士 2級"
+unlisted: true
 ---
 
 # 左官技能士 2級

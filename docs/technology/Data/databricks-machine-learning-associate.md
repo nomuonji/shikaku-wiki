@@ -1,7 +1,7 @@
 ---
 title: "Databricks Machine Learning Associate"
+unlisted: true
 ---
-
 # Databricks Machine Learning Associate
 
 ## 概要

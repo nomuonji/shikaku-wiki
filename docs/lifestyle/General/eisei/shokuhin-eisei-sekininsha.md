@@ -1,5 +1,6 @@
 ---
 title: "食品衛生責任者"
+unlisted: true
 ---
 
 # 食品衛生責任者

@@ -1,5 +1,6 @@
 ---
 title: "Yahoo!広告 認定資格（検索）"
+unlisted: true
 ---
 
 # Yahoo!広告 認定資格（検索）

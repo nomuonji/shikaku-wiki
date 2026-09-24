@@ -1,5 +1,6 @@
 ---
 title: "配管技能士 2級"
+unlisted: true
 ---
 
 # 配管技能士 2級

@@ -1,5 +1,6 @@
 ---
 title: "Google UX Design Certificate"
+unlisted: true
 ---
 
 # Google UX Design Certificate

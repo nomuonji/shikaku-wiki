@@ -1,5 +1,6 @@
 ---
 title: "ITストラテジスト"
+unlisted: true
 ---
 
 # ITストラテジスト

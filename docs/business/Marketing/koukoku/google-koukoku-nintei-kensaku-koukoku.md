@@ -1,5 +1,6 @@
 ---
 title: "Google 広告認定（検索広告）"
+unlisted: true
 ---
 
 # Google 広告認定（検索広告）

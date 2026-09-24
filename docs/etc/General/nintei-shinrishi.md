@@ -1,5 +1,6 @@
 ---
 title: "認定心理士"
+unlisted: true
 ---
 
 # 認定心理士

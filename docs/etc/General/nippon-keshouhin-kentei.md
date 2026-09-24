@@ -1,5 +1,6 @@
 ---
 title: "日本化粧品検定"
+unlisted: true
 ---
 
 # 日本化粧品検定

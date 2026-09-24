@@ -4,14 +4,22 @@ title: "CCNP Enterprise"
 
 # CCNP Enterprise
 
-## 概要
+## 資格の構成
+Cisco CCNP Enterpriseは、企業ネットワークを扱う技術者向けのプロフェッショナル認定です。取得にはコア試験350-401 ENCORと、候補から選ぶコンセントレーション試験1つの合格が必要です。Ciscoは受験の前提条件を定めていませんが、ネットワーク設計・運用経験とCCNA相当の基礎があると学習しやすくなります。試験に合格すれば、技術資格が実務経験を代替するわけではない点も理解しておきましょう。
 
-【CCNP Enterprise】会社の拠点どうしをつなぐネット設計に強い。回線が切れても止まりにくい仕組みを作れる。
+## コア試験と選択試験
+ENCORは120分で、Enterpriseネットワークのコア知識を評価します。Ciscoの現行案内では受験料は400米ドル相当、認定有効期間は3年です。利用可能な言語や価格・税、予約会場は地域により異なるので申込画面を確認します。コンセントレーションは専門分野を選ぶ試験で、ルーティング、SD-WAN、無線、ネットワーク自動化、クラウド接続などの方向性を選べます。試験一覧や提供状況は更新されるため、学習開始時に現行の選択肢を確認してください。
+
+選び方は、取得しやすそうな試験名ではなく、実務で担当したい領域から逆算します。拠点間接続やルーティングを深めるならその領域、ワイヤレス環境を担当するなら無線、設定の標準化や運用効率を高めるなら自動化が候補です。ひとつの試験がすべての領域を代表するものではないため、仕事内容や社内の技術スタックと合う内容を選びます。
+
+## 学習計画
+まずENCORの公式トピックを、ネットワーク基礎、仮想化、インフラ、セキュリティ、自動化に分けて確認します。Cisco機器を使った実習環境があれば、ルーティング、冗長化、ACL、監視の設定と障害解析を行います。コンセントレーション試験はコア試験の復習だけでは足りないため、選択後に専用の試験トピックを開き、構成・運用・トラブル対応を手を動かして学びます。古いBlueprintや書籍を使う場合は、試験番号と改訂日を必ず照合してください。
+
+## 認定維持
+CCNP Enterpriseは有効期間があり、期限前にCiscoの再認定要件を満たす必要があります。再認定は試験合格や継続教育クレジット等の選択肢が認定制度により定められます。取得後はCiscoのCertification Tracking Systemで認定状態と期限を確認してください。
 
 ## 公式情報
+- [Cisco CCNP Enterprise](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccnp-enterprise/index.html)
+- [Cisco 試験トピック・認定ポリシー](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-enterprise.html)
 
-- [公式サイト](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-enterprise.html)
-
-## ハッシュタグ
-
-- #資格 #CCNP #NW
+更新日：2026年9月24日（コア＋選択試験の構成・前提条件を確認。試験一覧・料金は申込時に要確認）

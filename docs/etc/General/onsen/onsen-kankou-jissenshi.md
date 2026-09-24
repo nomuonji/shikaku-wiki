@@ -1,5 +1,6 @@
 ---
 title: "温泉観光実践士"
+unlisted: true
 ---
 
 # 温泉観光実践士

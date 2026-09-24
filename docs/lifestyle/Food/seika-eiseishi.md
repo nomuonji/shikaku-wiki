@@ -1,5 +1,6 @@
 ---
 title: "製菓衛生師"
+unlisted: true
 ---
 
 # 製菓衛生師

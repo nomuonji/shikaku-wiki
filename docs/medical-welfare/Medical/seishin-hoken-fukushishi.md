@@ -1,5 +1,6 @@
 ---
 title: "精神保健福祉士"
+unlisted: true
 ---
 
 # 精神保健福祉士

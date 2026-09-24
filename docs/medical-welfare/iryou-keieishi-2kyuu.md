@@ -1,5 +1,6 @@
 ---
 title: "医療経営士 2級"
+unlisted: true
 ---
 
 # 医療経営士 2級

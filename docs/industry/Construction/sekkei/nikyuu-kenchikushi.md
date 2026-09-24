@@ -1,5 +1,6 @@
 ---
 title: "二級建築士"
+unlisted: true
 ---
 
 # 二級建築士

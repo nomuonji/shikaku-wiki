@@ -1,5 +1,6 @@
 ---
 title: "E資格（JDLA）"
+unlisted: true
 ---
 
 # E資格（JDLA）

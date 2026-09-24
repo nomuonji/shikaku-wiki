@@ -1,5 +1,6 @@
 ---
 title: "LinuC Level1"
+unlisted: true
 ---
 
 # LinuC Level1

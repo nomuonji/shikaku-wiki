@@ -1,5 +1,6 @@
 ---
 title: "乙種防火管理者"
+unlisted: true
 ---
 
 # 乙種防火管理者

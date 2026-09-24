@@ -1,5 +1,6 @@
 ---
 title: "UiPath RPA Advanced"
+unlisted: true
 ---
 
 # UiPath RPA Advanced

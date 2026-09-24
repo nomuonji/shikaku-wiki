@@ -1,5 +1,6 @@
 ---
 title: "DELE B1（スペイン語）"
+unlisted: true
 ---
 
 # DELE B1（スペイン語）

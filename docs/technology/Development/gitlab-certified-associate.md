@@ -1,7 +1,7 @@
 ---
 title: "GitLab Certified Associate"
+unlisted: true
 ---
-
 # GitLab Certified Associate
 
 ## 概要

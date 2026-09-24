@@ -1,5 +1,6 @@
 ---
 title: "建築積算士"
+unlisted: true
 ---
 
 # 建築積算士

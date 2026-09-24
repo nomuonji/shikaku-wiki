@@ -1,5 +1,6 @@
 ---
 title: "統計検定"
+unlisted: true
 ---
 
 # 統計検定

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft AI-900（AI基礎）"
+unlisted: true
 ---
-
 # Microsoft AI-900（AI基礎）
 
 ## 概要

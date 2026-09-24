@@ -1,7 +1,7 @@
 ---
 title: "CKS"
+unlisted: true
 ---
-
 # CKS
 
 ## 概要

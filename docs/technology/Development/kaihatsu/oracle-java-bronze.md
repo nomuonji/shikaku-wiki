@@ -1,5 +1,6 @@
 ---
 title: "Oracle Java Bronze"
+unlisted: true
 ---
 
 # Oracle Java Bronze

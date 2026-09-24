@@ -1,7 +1,7 @@
 ---
 title: "JNCIS-ENT"
+unlisted: true
 ---
-
 # JNCIS-ENT
 
 ## 概要

@@ -1,7 +1,7 @@
 ---
 title: "きき酒師"
+unlisted: true
 ---
-
 # きき酒師
 
 ## 概要

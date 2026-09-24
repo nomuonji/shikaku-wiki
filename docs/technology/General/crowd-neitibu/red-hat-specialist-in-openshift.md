@@ -1,7 +1,7 @@
 ---
 title: "Red Hat Specialist in OpenShift"
+unlisted: true
 ---
-
 # Red Hat Specialist in OpenShift
 
 ## 概要

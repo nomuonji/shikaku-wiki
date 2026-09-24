@@ -1,5 +1,6 @@
 ---
 title: "お肉検定 2級"
+unlisted: true
 ---
 
 # お肉検定 2級

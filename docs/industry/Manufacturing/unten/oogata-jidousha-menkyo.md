@@ -1,5 +1,6 @@
 ---
 title: "大型自動車免許"
+unlisted: true
 ---
 
 # 大型自動車免許

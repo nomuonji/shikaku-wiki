@@ -1,5 +1,6 @@
 ---
 title: "助産師"
+unlisted: true
 ---
 
 # 助産師

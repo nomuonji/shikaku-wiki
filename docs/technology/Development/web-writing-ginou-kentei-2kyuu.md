@@ -1,5 +1,6 @@
 ---
 title: "Webライティング技能検定 2級"
+unlisted: true
 ---
 
 # Webライティング技能検定 2級

@@ -1,7 +1,7 @@
 ---
 title: "Oracle Cloud Infrastructure Foundations"
+unlisted: true
 ---
-
 # Oracle Cloud Infrastructure Foundations
 
 ## 概要

@@ -1,5 +1,6 @@
 ---
 title: "HBAバーテンダー資格（民間）"
+unlisted: true
 ---
 
 # HBAバーテンダー資格（民間）

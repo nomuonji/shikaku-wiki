@@ -1,5 +1,6 @@
 ---
 title: "浄化槽管理士"
+unlisted: true
 ---
 
 # 浄化槽管理士

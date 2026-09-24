@@ -1,5 +1,6 @@
 ---
 title: "CompTIA Project+"
+unlisted: true
 ---
 
 # CompTIA Project+

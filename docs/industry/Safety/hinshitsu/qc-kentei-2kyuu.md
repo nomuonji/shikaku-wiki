@@ -1,8 +1,7 @@
 ---
----
 title: "QC検定 2級"
+unlisted: true
 ---
-
 # QC検定 2級
 
 ## 概要

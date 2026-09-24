@@ -1,5 +1,6 @@
 ---
 title: "BBQインストラクター 初級"
+unlisted: true
 ---
 
 # BBQインストラクター 初級

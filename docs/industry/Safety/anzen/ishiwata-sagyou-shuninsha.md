@@ -1,5 +1,6 @@
 ---
 title: "石綿作業主任者"
+unlisted: true
 ---
 
 # 石綿作業主任者

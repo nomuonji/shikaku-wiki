@@ -1,5 +1,6 @@
 ---
 title: "潜水士"
+unlisted: true
 ---
 
 # 潜水士

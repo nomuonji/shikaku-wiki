@@ -1,6 +1,6 @@
 ---
----
 title: "保育士"
+unlisted: true
 ---
 
 # 保育士

@@ -1,5 +1,6 @@
 ---
 title: "CAD利用技術者試験 2級"
+unlisted: true
 ---
 
 # CAD利用技術者試験 2級

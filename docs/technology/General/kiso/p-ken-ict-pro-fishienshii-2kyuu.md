@@ -1,5 +1,6 @@
 ---
 title: "P検（ICTプロフィシエンシー）2級"
+unlisted: true
 ---
 
 # P検（ICTプロフィシエンシー）2級

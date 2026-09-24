@@ -1,7 +1,7 @@
 ---
 title: "Linux Foundation Certified Sysadmin（LFCS）"
+unlisted: true
 ---
-
 # Linux Foundation Certified Sysadmin（LFCS）
 
 ## 概要

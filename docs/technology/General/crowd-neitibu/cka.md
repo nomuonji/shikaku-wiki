@@ -1,17 +1,30 @@
 ---
-title: "CKA"
+title: "Certified Kubernetes Administrator (CKA)"
 ---
 
-# CKA
+# Certified Kubernetes Administrator（CKA）
 
-## 概要
+## 対象者と資格の特徴
 
-【CKA】Kubernetesの運用力を実技で証明。サービスが止まった時に素早く戻せる。
+CKAは、Linux FoundationとCloud Native Computing Foundation（CNCF）が運営するKubernetes管理者向けの認定資格です。クラスタの構築・運用、ワークロード、ネットワーク、ストレージ、トラブル対応などを扱うインフラ担当者に向いています。受験前提資格はありませんが、Kubernetesの概念を読んだだけで解ける形式ではありません。端末で設定を調べ、コマンドを実行して結果を確認する経験が準備の土台になります。
+
+## 試験形式・費用
+
+試験はオンライン監督下で行う実技形式です。候補者はコマンドラインで複数の課題を解き、制限時間は2時間です。現在の公式ページでは受験料は445米ドル、資格の有効期間は2年、購入後12か月以内に試験を予約・受験する条件が表示されています。試験商品には2回分の受験機会とKiller.shの試験シミュレーターが含まれます。バンドル商品は講座やサービスが付く代わりに価格が異なります。
+
+価格、試験環境のKubernetesバージョン、予約条件は変わるため、購入画面で最終確認してください。試験環境はKubernetesのマイナーバージョン更新からおおむね4～8週間以内に合わせるとLinux Foundationが案内しています。公式ページに表示されるバージョンと、自分が練習している環境の差にも注意します。
+
+## CKAとCKADの違い
+
+CKAはクラスタ管理・運用を主題とします。アプリケーションをKubernetes上で構成する開発者向けのCKADとは、対象ロールと試験範囲が違います。どちらを先に取るかは、現在の担当業務と使う技能で決めます。運用の障害対応やクラスタ構成が中心ならCKA、Podやアプリの設定・デプロイが中心ならCKADの公式試験範囲を見比べてください。
+
+## 準備の進め方
+
+公式カリキュラムを読み、各分野の操作を小さな環境で繰り返します。課題では情報を確認しながら操作するため、kubectlの基本、YAMLの編集、状態確認、ログとイベントの調査に時間を使わず移れるかが重要です。単にコマンドを暗記するより、設定の変更後に望む状態になったか確認する習慣をつけます。試験問題の流出物を使わず、公式のカリキュラムとシミュレーターで練習してください。
 
 ## 公式情報
 
-- [公式サイト](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)
+- [Linux Foundation CKA認定](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)
+- [CKAカリキュラム](https://github.com/cncf/curriculum)
 
-## ハッシュタグ
-
-- #資格 #Kubernetes #CKA
+制度確認日: 2026年9月24日。価格・試験環境・有効期間は受験購入時に公式ページで再確認してください。

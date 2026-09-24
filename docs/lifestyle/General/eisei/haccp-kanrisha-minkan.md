@@ -1,5 +1,6 @@
 ---
 title: "HACCP管理者（民間）"
+unlisted: true
 ---
 
 # HACCP管理者（民間）

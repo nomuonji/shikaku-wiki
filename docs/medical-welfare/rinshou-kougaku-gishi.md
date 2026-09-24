@@ -1,5 +1,6 @@
 ---
 title: "臨床工学技士"
+unlisted: true
 ---
 
 # 臨床工学技士

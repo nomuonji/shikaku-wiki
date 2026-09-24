@@ -1,5 +1,6 @@
 ---
 title: "造園技能士 1級"
+unlisted: true
 ---
 
 # 造園技能士 1級

@@ -1,5 +1,6 @@
 ---
 title: "歯科技工士"
+unlisted: true
 ---
 
 # 歯科技工士

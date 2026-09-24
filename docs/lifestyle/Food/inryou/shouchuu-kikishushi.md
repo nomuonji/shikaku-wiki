@@ -1,5 +1,6 @@
 ---
 title: "焼酎きき酒師"
+unlisted: true
 ---
 
 # 焼酎きき酒師

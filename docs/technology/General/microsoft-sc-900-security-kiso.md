@@ -1,7 +1,7 @@
 ---
 title: "Microsoft SC-900（セキュリティ基礎）"
+unlisted: true
 ---
-
 # Microsoft SC-900（セキュリティ基礎）
 
 ## 概要

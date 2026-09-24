@@ -1,5 +1,6 @@
 ---
 title: "JDLA G検定（ジェネラリスト）"
+unlisted: true
 ---
 
 # JDLA G検定（ジェネラリスト）

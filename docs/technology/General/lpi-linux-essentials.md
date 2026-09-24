@@ -1,7 +1,7 @@
 ---
 title: "LPI Linux Essentials"
+unlisted: true
 ---
-
 # LPI Linux Essentials
 
 ## 概要

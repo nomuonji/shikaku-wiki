@@ -1,5 +1,6 @@
 ---
 title: "惣菜管理士 2級"
+unlisted: true
 ---
 
 # 惣菜管理士 2級

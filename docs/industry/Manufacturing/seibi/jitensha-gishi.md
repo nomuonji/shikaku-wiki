@@ -1,5 +1,6 @@
 ---
 title: "自転車技士"
+unlisted: true
 ---
 
 # 自転車技士

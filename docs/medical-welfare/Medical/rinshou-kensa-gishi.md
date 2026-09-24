@@ -1,5 +1,6 @@
 ---
 title: "臨床検査技師"
+unlisted: true
 ---
 
 # 臨床検査技師

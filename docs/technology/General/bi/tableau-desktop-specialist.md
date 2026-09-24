@@ -1,7 +1,7 @@
 ---
 title: "Tableau Desktop Specialist"
+unlisted: true
 ---
-
 # Tableau Desktop Specialist
 
 ## 概要

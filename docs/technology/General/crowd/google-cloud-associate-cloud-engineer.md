@@ -2,16 +2,23 @@
 title: "Google Cloud Associate Cloud Engineer"
 ---
 
-# Google Cloud Associate Cloud Engineer
+# Google Cloud Associate Cloud Engineer（ACE）
 
-## 概要
+## 対象者と仕事
+Associate Cloud Engineerは、Google Cloud上でアプリケーションやサービスをデプロイし、運用を監視し、アクセスやクラウド資源を管理する担当者を想定します。クラウド管理を初めて体系化する人や、開発チーム・運用チームの間でGCP環境を扱う人に向く認定です。専門分野の高度な設計者資格ではないため、BigQueryやFirebaseの専門知識を証明する認定と混同しないでください。
 
-【GCP ACE】GCPの基本運用に強くなる。FirebaseやBigQueryの連携提案がしやすい。
+## 試験の概要と受験準備
+Google Cloudの公式資格ページでは、試験時間は2時間、50〜60問の選択式・複数選択式、受験料は税別125米ドル、有効期間は3年と案内されています。前提資格はありませんが、Google Cloudでの実務経験を積むことが推奨されています。実際の試験言語、予約枠、本人確認、料金や税は地域・申込画面の条件を優先してください。
+
+出題内容はクラウド環境の設定、計算資源やストレージの導入、ネットワークと権限、アプリケーションのデプロイ、運用監視、障害の切り分けを含みます。学習では公式の試験ガイドのタスクを見出しにし、Google Cloud Consoleとgcloud CLIの両方で小さな手順を試します。プロジェクトとIAMロール、Compute Engine、Cloud Storage、VPC、監視機能を一通り操作し、何を確認すれば設定が有効と分かるかまで記録します。
+
+## バージョン変更への注意
+Googleは試験内容やガイドを更新します。2026年9月28日から日本語の標準試験と更新試験に新バージョンが利用可能になる予定と公式ページに告知されているため、9月28日以降に申し込む場合は新しいガイドを選んでください。旧版教材だけで準備せず、受験日のガイドと自分が予約する試験版が一致しているか確認します。
+
+## 受験後・更新
+認定の更新方法とタイミングは、現在の認定ポリシーと本人の資格有効期限に従います。標準更新試験のほか、更新用の短い試験や公式学習活動が提示される場合がありますが、適用対象は個人の認定ポータルに表示される条件を確認してください。受験前に更新制度を知っておくと、資格を長く維持するコストと学習計画を見積もれます。
 
 ## 公式情報
+- [Google Cloud Associate Cloud Engineer](https://cloud.google.com/learn/certification/cloud-engineer?hl=ja)
 
-- [公式サイト](https://cloud.google.com/learn/certification/associate-cloud-engineer?hl=ja)
-
-## ハッシュタグ
-
-- #資格 #GCP #クラウド
+更新日：2026年9月24日（試験時間・料金・有効期間・9月28日版更新の案内を確認）

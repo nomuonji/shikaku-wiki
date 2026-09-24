@@ -1,5 +1,6 @@
 ---
 title: "気象予報士"
+unlisted: true
 ---
 
 # 気象予報士

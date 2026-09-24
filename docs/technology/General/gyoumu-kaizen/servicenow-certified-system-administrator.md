@@ -1,7 +1,7 @@
 ---
 title: "ServiceNow Certified System Administrator"
+unlisted: true
 ---
-
 # ServiceNow Certified System Administrator
 
 ## 概要

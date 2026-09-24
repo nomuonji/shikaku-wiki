@@ -1,5 +1,6 @@
 ---
 title: "とび技能士 2級"
+unlisted: true
 ---
 
 # とび技能士 2級

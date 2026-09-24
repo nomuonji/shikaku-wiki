@@ -1,5 +1,6 @@
 ---
 title: "RHCSA"
+unlisted: true
 ---
 
 # RHCSA

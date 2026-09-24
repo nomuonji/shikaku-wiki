@@ -1,5 +1,6 @@
 ---
 title: "Oracle Java SE 11 Gold"
+unlisted: true
 ---
 
 # Oracle Java SE 11 Gold

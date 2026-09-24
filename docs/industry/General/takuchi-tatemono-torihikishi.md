@@ -1,5 +1,6 @@
 ---
 title: "宅地建物取引士"
+unlisted: true
 ---
 
 # 宅地建物取引士

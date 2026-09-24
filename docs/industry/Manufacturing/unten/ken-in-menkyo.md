@@ -1,5 +1,6 @@
 ---
 title: "けん引免許"
+unlisted: true
 ---
 
 # けん引免許

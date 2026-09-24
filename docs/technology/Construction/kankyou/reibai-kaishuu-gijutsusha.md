@@ -1,5 +1,6 @@
 ---
 title: "冷媒回収技術者"
+unlisted: true
 ---
 
 # 冷媒回収技術者

@@ -1,5 +1,6 @@
 ---
 title: "JCSQE（ソフトウェア品質技術者）"
+unlisted: true
 ---
 
 # JCSQE（ソフトウェア品質技術者）

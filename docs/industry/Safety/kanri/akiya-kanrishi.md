@@ -1,5 +1,6 @@
 ---
 title: "空き家管理士"
+unlisted: true
 ---
 
 # 空き家管理士

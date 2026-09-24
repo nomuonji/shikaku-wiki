@@ -1,7 +1,7 @@
 ---
 title: "Google Professional Cloud Developer"
+unlisted: true
 ---
-
 # Google Professional Cloud Developer
 
 ## 概要

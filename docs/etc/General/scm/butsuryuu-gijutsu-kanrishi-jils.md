@@ -1,5 +1,6 @@
 ---
 title: "物流技術管理士（JILS）"
+unlisted: true
 ---
 
 # 物流技術管理士（JILS）

@@ -1,5 +1,6 @@
 ---
 title: "クリーニング師"
+unlisted: true
 ---
 
 # クリーニング師

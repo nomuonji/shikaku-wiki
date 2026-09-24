@@ -1,5 +1,6 @@
 ---
 title: "全国通訳案内士"
+unlisted: true
 ---
 
 # 全国通訳案内士

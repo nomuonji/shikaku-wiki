@@ -1,5 +1,6 @@
 ---
 title: "SAFe Agilist (Leading SAFe)"
+unlisted: true
 ---
 
 # SAFe Agilist (Leading SAFe)

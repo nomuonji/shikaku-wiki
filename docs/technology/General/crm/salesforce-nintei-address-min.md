@@ -1,5 +1,6 @@
 ---
 title: "Salesforce 認定アドミン"
+unlisted: true
 ---
 
 # Salesforce 認定アドミン

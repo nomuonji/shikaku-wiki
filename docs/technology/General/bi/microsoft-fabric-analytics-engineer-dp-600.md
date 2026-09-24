@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Fabric Analytics Engineer (DP-600)"
+unlisted: true
 ---
-
 # Microsoft Fabric Analytics Engineer (DP-600)
 
 ## 概要

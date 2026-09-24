@@ -1,5 +1,6 @@
 ---
 title: "LPIC-2"
+unlisted: true
 ---
 
 # LPIC-2

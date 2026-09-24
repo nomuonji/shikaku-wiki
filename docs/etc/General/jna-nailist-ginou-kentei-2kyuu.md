@@ -1,5 +1,6 @@
 ---
 title: "JNAネイリスト技能検定 2級"
+unlisted: true
 ---
 
 # JNAネイリスト技能検定 2級

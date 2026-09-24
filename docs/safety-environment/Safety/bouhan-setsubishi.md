@@ -1,5 +1,6 @@
 ---
 title: "防犯設備士"
+unlisted: true
 ---
 
 # 防犯設備士

@@ -1,5 +1,6 @@
 ---
 title: "作業療法士"
+unlisted: true
 ---
 
 # 作業療法士

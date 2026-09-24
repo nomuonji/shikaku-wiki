@@ -1,5 +1,6 @@
 ---
 title: "BCAO 事業継続初級管理者"
+unlisted: true
 ---
 
 # BCAO 事業継続初級管理者

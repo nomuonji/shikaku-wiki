@@ -1,5 +1,6 @@
 ---
 title: "Javaプログラミング能力認定 2級"
+unlisted: true
 ---
 
 # Javaプログラミング能力認定 2級

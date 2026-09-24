@@ -1,7 +1,7 @@
 ---
 title: "Oracle Master Bronze"
+unlisted: true
 ---
-
 # Oracle Master Bronze
 
 ## 概要

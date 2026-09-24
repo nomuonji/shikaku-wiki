@@ -1,5 +1,6 @@
 ---
 title: "SnowPro Core"
+unlisted: true
 ---
 
 # SnowPro Core

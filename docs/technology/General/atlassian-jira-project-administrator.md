@@ -1,7 +1,7 @@
 ---
 title: "Atlassian Jira Project Administrator"
+unlisted: true
 ---
-
 # Atlassian Jira Project Administrator
 
 ## 概要

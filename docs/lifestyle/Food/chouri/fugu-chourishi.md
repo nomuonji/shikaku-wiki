@@ -1,5 +1,6 @@
 ---
 title: "ふぐ調理師"
+unlisted: true
 ---
 
 # ふぐ調理師

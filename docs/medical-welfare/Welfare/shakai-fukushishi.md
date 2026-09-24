@@ -1,5 +1,6 @@
 ---
 title: "社会福祉士"
+unlisted: true
 ---
 
 # 社会福祉士

@@ -1,7 +1,7 @@
 ---
 title: "JTF翻訳検定 3級"
+unlisted: true
 ---
-
 # JTF翻訳検定 3級
 
 ## 概要

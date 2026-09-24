@@ -1,5 +1,6 @@
 ---
 title: "応急手当普及員"
+unlisted: true
 ---
 
 # 応急手当普及員

@@ -1,5 +1,6 @@
 ---
 title: "Google 広告 認定（計測）"
+unlisted: true
 ---
 
 # Google 広告 認定（計測）

@@ -1,5 +1,6 @@
 ---
 title: "学芸員"
+unlisted: true
 ---
 
 # 学芸員

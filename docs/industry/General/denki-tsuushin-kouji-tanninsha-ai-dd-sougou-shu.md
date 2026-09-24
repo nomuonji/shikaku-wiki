@@ -1,5 +1,6 @@
 ---
 title: "電気通信工事担任者（AI・DD総合種）"
+unlisted: true
 ---
 
 # 電気通信工事担任者（AI・DD総合種）

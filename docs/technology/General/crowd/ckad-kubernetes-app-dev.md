@@ -1,7 +1,7 @@
 ---
 title: "CKAD（Kubernetes App Dev）"
+unlisted: true
 ---
-
 # CKAD（Kubernetes App Dev）
 
 ## 概要

@@ -1,5 +1,6 @@
 ---
 title: "QC検定（品質管理検定）"
+unlisted: true
 ---
 
 # QC検定（品質管理検定）

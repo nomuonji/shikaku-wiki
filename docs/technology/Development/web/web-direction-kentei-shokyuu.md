@@ -1,5 +1,6 @@
 ---
 title: "Webディレクション検定 初級"
+unlisted: true
 ---
 
 # Webディレクション検定 初級

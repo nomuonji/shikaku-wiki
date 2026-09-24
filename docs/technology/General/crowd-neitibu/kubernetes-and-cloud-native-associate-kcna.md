@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes and Cloud Native Associate (KCNA)"
+unlisted: true
 ---
-
 # Kubernetes and Cloud Native Associate (KCNA)
 
 ## 概要

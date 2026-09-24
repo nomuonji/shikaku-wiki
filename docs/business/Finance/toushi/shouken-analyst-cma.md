@@ -1,5 +1,6 @@
 ---
 title: "証券アナリスト（CMA）"
+unlisted: true
 ---
 
 # 証券アナリスト（CMA）

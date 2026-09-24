@@ -1,5 +1,6 @@
 ---
 title: "スポーツ指導者（JATI-ATI）"
+unlisted: true
 ---
 
 # スポーツ指導者（JATI-ATI）

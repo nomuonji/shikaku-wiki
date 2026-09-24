@@ -1,5 +1,6 @@
 ---
 title: "地質調査技士"
+unlisted: true
 ---
 
 # 地質調査技士

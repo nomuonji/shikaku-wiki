@@ -1,5 +1,6 @@
 ---
 title: "ビル経営管理士"
+unlisted: true
 ---
 
 # ビル経営管理士

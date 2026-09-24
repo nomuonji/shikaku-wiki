@@ -1,5 +1,6 @@
 ---
 title: "Webデザイン技能検定 2級"
+unlisted: true
 ---
 
 # Webデザイン技能検定 2級

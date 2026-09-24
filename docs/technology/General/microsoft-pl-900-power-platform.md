@@ -1,7 +1,7 @@
 ---
 title: "Microsoft PL-900（Power Platform）"
+unlisted: true
 ---
-
 # Microsoft PL-900（Power Platform）
 
 ## 概要

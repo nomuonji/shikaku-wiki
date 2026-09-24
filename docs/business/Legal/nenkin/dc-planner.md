@@ -1,5 +1,6 @@
 ---
 title: "DCプランナー"
+unlisted: true
 ---
 
 # DCプランナー

@@ -1,5 +1,6 @@
 ---
 title: "JavaScriptエンジニア認定 初級"
+unlisted: true
 ---
 
 # JavaScriptエンジニア認定 初級

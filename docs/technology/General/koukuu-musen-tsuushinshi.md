@@ -1,5 +1,6 @@
 ---
 title: "航空無線通信士"
+unlisted: true
 ---
 
 # 航空無線通信士

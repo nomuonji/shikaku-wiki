@@ -1,7 +1,7 @@
 ---
 title: "Kanban Management Professional (KMP)"
+unlisted: true
 ---
-
 # Kanban Management Professional (KMP)
 
 ## 概要

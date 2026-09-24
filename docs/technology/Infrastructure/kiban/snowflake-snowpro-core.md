@@ -1,5 +1,6 @@
 ---
 title: "Snowflake SnowPro Core"
+unlisted: true
 ---
 
 # Snowflake SnowPro Core

@@ -1,5 +1,6 @@
 ---
 title: "JSTQB Advanced Test Analyst"
+unlisted: true
 ---
 
 # JSTQB Advanced Test Analyst

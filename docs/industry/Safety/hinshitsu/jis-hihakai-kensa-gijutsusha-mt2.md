@@ -1,5 +1,6 @@
 ---
 title: "JIS非破壊検査 技術者 MT2"
+unlisted: true
 ---
 
 # JIS非破壊検査 技術者 MT2

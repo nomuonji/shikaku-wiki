@@ -1,5 +1,6 @@
 ---
 title: "行政書士"
+unlisted: true
 ---
 
 # 行政書士

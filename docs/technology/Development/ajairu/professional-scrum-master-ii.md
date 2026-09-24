@@ -1,5 +1,6 @@
 ---
 title: "Professional Scrum Master II"
+unlisted: true
 ---
 
 # Professional Scrum Master II

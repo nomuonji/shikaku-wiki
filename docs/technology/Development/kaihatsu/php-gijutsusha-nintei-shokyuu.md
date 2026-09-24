@@ -1,5 +1,6 @@
 ---
 title: "PHP技術者認定 初級"
+unlisted: true
 ---
 
 # PHP技術者認定 初級

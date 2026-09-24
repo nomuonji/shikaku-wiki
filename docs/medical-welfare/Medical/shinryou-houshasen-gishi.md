@@ -1,5 +1,6 @@
 ---
 title: "診療放射線技師"
+unlisted: true
 ---
 
 # 診療放射線技師

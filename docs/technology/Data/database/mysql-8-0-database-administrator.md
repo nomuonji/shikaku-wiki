@@ -1,5 +1,6 @@
 ---
 title: "MySQL 8.0 Database Administrator"
+unlisted: true
 ---
 
 # MySQL 8.0 Database Administrator

@@ -1,5 +1,6 @@
 ---
 title: "ビール検定 2級"
+unlisted: true
 ---
 
 # ビール検定 2級

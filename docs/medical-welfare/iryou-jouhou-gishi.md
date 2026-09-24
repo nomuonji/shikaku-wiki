@@ -1,5 +1,6 @@
 ---
 title: "医療情報技師"
+unlisted: true
 ---
 
 # 医療情報技師

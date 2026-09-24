@@ -1,7 +1,7 @@
 ---
 title: "Professional Scrum Product Owner I (PSPO I)"
+unlisted: true
 ---
-
 # Professional Scrum Product Owner I (PSPO I)
 
 ## 概要

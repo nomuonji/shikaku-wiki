@@ -1,5 +1,6 @@
 ---
 title: "国連英検 B級"
+unlisted: true
 ---
 
 # 国連英検 B級

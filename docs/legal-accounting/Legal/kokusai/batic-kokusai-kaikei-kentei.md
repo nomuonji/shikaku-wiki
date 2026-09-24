@@ -1,5 +1,6 @@
 ---
 title: "BATIC（国際会計検定）"
+unlisted: true
 ---
 
 # BATIC（国際会計検定）

@@ -1,7 +1,7 @@
 ---
 title: "Azure Security Engineer (AZ-500)"
+unlisted: true
 ---
-
 # Azure Security Engineer (AZ-500)
 
 ## 概要

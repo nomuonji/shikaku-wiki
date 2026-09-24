@@ -1,5 +1,6 @@
 ---
 title: "美術検定 2級"
+unlisted: true
 ---
 
 # 美術検定 2級

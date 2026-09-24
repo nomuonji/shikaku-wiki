@@ -1,5 +1,6 @@
 ---
 title: "溶接技能者（JIS）"
+unlisted: true
 ---
 
 # 溶接技能者（JIS）

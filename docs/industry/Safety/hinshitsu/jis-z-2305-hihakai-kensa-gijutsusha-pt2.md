@@ -1,5 +1,6 @@
 ---
 title: "JIS Z 2305 非破壊検査技術者 PT2"
+unlisted: true
 ---
 
 # JIS Z 2305 非破壊検査技術者 PT2

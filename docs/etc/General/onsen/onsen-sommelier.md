@@ -1,5 +1,6 @@
 ---
 title: "温泉ソムリエ"
+unlisted: true
 ---
 
 # 温泉ソムリエ

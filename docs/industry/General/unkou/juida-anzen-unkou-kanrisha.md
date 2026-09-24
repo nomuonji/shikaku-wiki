@@ -1,5 +1,6 @@
 ---
 title: "JUIDA 安全運航管理者"
+unlisted: true
 ---
 
 # JUIDA 安全運航管理者

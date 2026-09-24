@@ -1,5 +1,6 @@
 ---
 title: "NSCA-CPT（パーソナルトレーナー）"
+unlisted: true
 ---
 
 # NSCA-CPT（パーソナルトレーナー）

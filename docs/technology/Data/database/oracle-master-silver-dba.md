@@ -1,5 +1,6 @@
 ---
 title: "Oracle Master Silver (DBA)"
+unlisted: true
 ---
 
 # Oracle Master Silver (DBA)

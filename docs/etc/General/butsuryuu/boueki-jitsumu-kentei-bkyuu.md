@@ -1,5 +1,6 @@
 ---
 title: "貿易実務検定 B級"
+unlisted: true
 ---
 
 # 貿易実務検定 B級

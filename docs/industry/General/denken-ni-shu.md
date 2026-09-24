@@ -1,5 +1,6 @@
 ---
 title: "電験二種"
+unlisted: true
 ---
 
 # 電験二種
