@@ -1,4 +1,5 @@
 import React, {useMemo} from 'react';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import {usePluginData} from '@docusaurus/useGlobalData';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
@@ -77,6 +78,12 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
   };
 
   return (
+    <>
+      {current.availabilityStatus === 'check' ? (
+        <Head>
+          <meta name="robots" content="noindex,follow" />
+        </Head>
+      ) : null}
     <aside
       className={styles.panel}
       data-category={current.categoryKey}
@@ -154,5 +161,6 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
         表示値は記事本文から自動抽出した要約です。受験前は公式情報を確認してください。
       </p>
     </aside>
+    </>
   );
 }
