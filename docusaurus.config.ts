@@ -69,6 +69,7 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         sitemap: {
+          lastmod: 'date',
           changefreq: 'weekly',
           priority: 0.5,
           filename: 'sitemap.xml',
@@ -153,44 +154,38 @@ const config: Config = {
           label: 'しごと図鑑',
           position: 'left',
         },
-        {
-          href: 'https://x.com/shikaku_catalog',
-          label: 'X (Twitter)',
-          position: 'right',
-        },
-        {
-          href: 'https://www.threads.com/@certifications_catalog',
-          label: 'Threads',
-          position: 'right',
-        },
+
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: '資格カテゴリー',
+          title: '資格を探す',
           items: [
-            {
-              label: 'ビジネス',
-              to: '/docs/business/',
-            },
-            {
-              label: 'IT・技術',
-              to: '/docs/technology/',
-            },
-            {
-              label: 'ライフスタイル',
-              to: '/docs/lifestyle/',
-            },
+            { label: '資格検索・比較', to: '/explore/' },
+            { label: 'ビジネス', to: '/docs/business/' },
+            { label: 'IT・技術', to: '/docs/technology/' },
+            { label: '法律・会計', to: '/docs/legal-accounting/' },
+            { label: '医療・福祉', to: '/docs/medical-welfare/' },
           ],
         },
         {
-          title: 'コミュニティ',
+          title: 'さらに分野を見る',
+          items: [
+            { label: '安全・環境', to: '/docs/safety-environment/' },
+            { label: 'クリエイティブ', to: '/docs/creative/' },
+            { label: 'ライフスタイル', to: '/docs/lifestyle/' },
+            { label: '業界別', to: '/docs/industry/' },
+            { label: 'ブログ', to: '/blog/' },
+          ],
+        },
+        {
+          title: 'このサイトについて',
           items: [
             {
-              label: 'ブログ',
-              to: '/blog/',
+              label: '編集方針・情報の見方',
+              to: '/methodology/',
             },
             {
               label: 'しごと図鑑（資格が活きる仕事）',
@@ -203,23 +198,6 @@ const config: Config = {
             {
               label: 'Threads',
               href: 'https://www.threads.com/@certifications_catalog',
-            },
-          ],
-        },
-        {
-          title: 'その他',
-          items: [
-            {
-              label: '医療・福祉',
-              to: '/docs/medical-welfare/',
-            },
-            {
-              label: '安全・環境',
-              to: '/docs/safety-environment/',
-            },
-            {
-              label: '編集方針・情報の見方',
-              to: '/methodology/',
             },
           ],
         },
