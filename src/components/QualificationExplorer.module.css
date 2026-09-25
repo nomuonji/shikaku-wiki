@@ -456,6 +456,11 @@
   font-size: 0.75rem;
 }
 
+.compareTitle small {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.58rem;
+}
+
 .compareTableWrap {
   overflow-x: auto;
 }

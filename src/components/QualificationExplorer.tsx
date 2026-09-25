@@ -76,6 +76,18 @@ function includesQuery(item: Qualification, rawQuery: string) {
   return tokens.length > 1 && tokens.every((token) => item.searchText.includes(token));
 }
 
+function recommendationScore(item: Qualification) {
+  let score = 0;
+  if (item.updatedFor2026) score += 8;
+  if (item.credentialType !== '区分未整理') score += 2;
+  if (item.difficulty !== '未整理') score += 1;
+  if (item.studyHours.label !== '情報なし') score += 2;
+  if (item.examMethod !== '未整理') score += 2;
+  if (item.officialUrl) score += 2;
+  if (item.summary) score += 1;
+  return score;
+}
+
 function SortIcon({active}: {active: boolean}) {
   return <span aria-hidden="true">{active ? '●' : '○'}</span>;
 }
@@ -107,7 +119,10 @@ export default function QualificationExplorer({
   const [sortKey, setSortKey] = useState(
     () => initialParams.get('sort') ?? 'recommended',
   );
-  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [selectedIds, setSelectedIds] = useState<string[]>(() => {
+    const raw = initialParams.get('compare');
+    return raw ? raw.split(',').filter(Boolean).slice(0, 3) : [];
+  });
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const categories = useMemo(() => {
@@ -135,10 +150,14 @@ export default function QualificationExplorer({
       return [...result].sort((a, b) => {
         const aValue = a.studyHours.min ?? Number.MAX_SAFE_INTEGER;
         const bValue = b.studyHours.min ?? Number.MAX_SAFE_INTEGER;
-        return aValue - bValue;
+        return aValue - bValue || a.title.localeCompare(b.title, 'ja');
       });
     }
-    return result;
+    return [...result].sort(
+      (a, b) =>
+        recommendationScore(b) - recommendationScore(a) ||
+        a.title.localeCompare(b.title, 'ja'),
+    );
   }, [
     qualificationData.qualifications,
     query,
@@ -148,6 +167,7 @@ export default function QualificationExplorer({
     examMethod,
     availability,
     sortKey,
+    selectedIds,
   ]);
 
   useEffect(() => {
@@ -170,6 +190,7 @@ export default function QualificationExplorer({
     if (examMethod !== 'すべて') params.set('method', examMethod);
     if (availability !== '現行のみ') params.set('status', availability);
     if (sortKey !== 'recommended') params.set('sort', sortKey);
+    if (selectedIds.length) params.set('compare', selectedIds.join(','));
 
     const search = params.toString();
     const nextUrl = search
@@ -193,6 +214,16 @@ export default function QualificationExplorer({
         .filter((item): item is Qualification => Boolean(item)),
     [selectedIds, qualificationData.qualifications],
   );
+
+  useEffect(() => {
+    const validIds = selected.map((item) => item.id);
+    if (
+      validIds.length !== selectedIds.length ||
+      validIds.some((id, index) => id !== selectedIds[index])
+    ) {
+      setSelectedIds(validIds);
+    }
+  }, [selected, selectedIds]);
 
   const toggleCompare = (id: string) => {
     setSelectedIds((current) => {
@@ -362,7 +393,7 @@ export default function QualificationExplorer({
                   type="button"
                   className={sortKey === 'recommended' ? styles.sortActive : ''}
                   onClick={() => setSortKey('recommended')}>
-                  <SortIcon active={sortKey === 'recommended'} /> 標準
+                  <SortIcon active={sortKey === 'recommended'} /> 情報充実順
                 </button>
                 <button
                   type="button"
@@ -473,6 +504,7 @@ export default function QualificationExplorer({
               <div className={styles.compareTitle}>
                 <span>COMPARE</span>
                 <strong>{selected.length}/3件を比較</strong>
+                <small>この比較はURLに保存されます</small>
               </div>
 
               <div className={styles.compareTableWrap}>
