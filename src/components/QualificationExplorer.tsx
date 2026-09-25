@@ -363,10 +363,9 @@ export default function QualificationExplorer({
                     </article>
                   );
                 })}
-              <>
-                </div>
-                {visible.length < filtered.length ? (
-                  <div className={styles.loadMoreWrap}>
+              </div>
+              {visible.length < filtered.length ? (
+                <div className={styles.loadMoreWrap}>
                     <span>{visible.length} / {filtered.length}件を表示中</span>
                     <button
                       type="button"
@@ -377,9 +376,8 @@ export default function QualificationExplorer({
                       }>
                       さらに{Math.min(PAGE_SIZE, filtered.length - visible.length)}件表示
                     </button>
-                  </div>
-                ) : null}
-              </>
+                </div>
+              ) : null}
             ) : (
               <div className={styles.emptyState}>
                 <span aria-hidden="true">⌕</span>
