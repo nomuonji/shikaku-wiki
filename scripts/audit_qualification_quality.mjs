@@ -35,6 +35,32 @@ function parseFrontMatter(source) {
   return {frontMatter, body: source.slice(end + 4).trim()};
 }
 
+function toIsoDate(year, month, day) {
+  return [
+    String(year).padStart(4, '0'),
+    String(month).padStart(2, '0'),
+    String(day).padStart(2, '0'),
+  ].join('-');
+}
+
+function extractVerifiedAt(frontMatter, body) {
+  const explicit = String(frontMatter.verified_at || '').trim();
+  if (/^20\d{2}-\d{2}-\d{2}$/.test(explicit)) return explicit;
+
+  const label = '(?:制度確認日|確認日|更新日)';
+  const jp = body.match(new RegExp(
+    label + '\\s*[：:]\\s*(20\\d{2})年\\s*(\\d{1,2})月\\s*(\\d{1,2})日'
+  ));
+  if (jp) return toIsoDate(jp[1], jp[2], jp[3]);
+
+  const iso = body.match(new RegExp(
+    label + '\\s*[：:]\\s*(20\\d{2})-(\\d{1,2})-(\\d{1,2})'
+  ));
+  if (iso) return toIsoDate(iso[1], iso[2], iso[3]);
+
+  return null;
+}
+
 function normalizeTitle(value) {
   return String(value || '')
     .normalize('NFKC')
@@ -58,7 +84,8 @@ function scoreDoc(source, file) {
   const exam = /##\s*試験詳細|試験方式|受験料|受験資格|取得の流れ|講習/.test(body);
   const learning = /学習範囲|シラバス|勉強法|実務|活か|業務|試験科目/.test(body);
   const difficulty = /難易度|勉強時間|学習時間|競争試験型ではありません/.test(body);
-  const freshness = /確認日|2026年|2026年度|令和8年/.test(body);
+  const verifiedAt = extractVerifiedAt(frontMatter, body);
+  const freshness = Boolean(verifiedAt);
   const table = /^\|.+\|$/m.test(body);
   const hasTitle = /^#\s+.+$/m.test(body);
   const unlisted =
@@ -120,6 +147,8 @@ function scoreDoc(source, file) {
     sections: sections.length,
     hasDescription,
     freshness,
+    verifiedAt,
+    qualificationStatus: frontMatter.qualification_status || '',
     legacySocialCopy,
     riskyClaims,
     unlisted,
@@ -156,6 +185,19 @@ const duplicateTitles = [...titleGroups.values()]
     files: group.map((item) => item.file),
   }));
 
+const activePublishFailures = publicResults
+  .filter((item) => item.qualificationStatus === 'active')
+  .map((item) => {
+    const failures = [];
+    if (!item.hasDescription) failures.push('description不足');
+    if (!item.verifiedAt) failures.push('制度確認日なし');
+    if (item.issues.includes('公式URLなし')) failures.push('公式URLなし');
+    if (item.chars < 900) failures.push('本文900字未満');
+    if (item.sections < 3) failures.push('セクション3未満');
+    return {...item, publishFailures: failures};
+  })
+  .filter((item) => item.publishFailures.length);
+
 const average = publicResults.length
   ? Math.round(
       publicResults.reduce((sum, item) => sum + item.score, 0) /
@@ -177,6 +219,7 @@ const summary = {
   legacySocialCopy: publicResults.filter((item) => item.legacySocialCopy).length,
   riskyClaims: publicResults.filter((item) => item.riskyClaims > 0).length,
   duplicateTitleGroups: duplicateTitles.length,
+  activePublishFailures: activePublishFailures.length,
 };
 
 console.log('資格記事 品質監査');
@@ -211,6 +254,11 @@ console.log(
     '件',
 );
 console.log(
+  'active公開ゲート違反: ' +
+    summary.activePublishFailures +
+    '件',
+);
+console.log(
   '旧SNS投稿型: ' +
     summary.legacySocialCopy +
     '件 / 要根拠確認表現: ' +
@@ -233,6 +281,13 @@ for (const item of publicResults.slice(0, 30)) {
   );
 }
 
+if (activePublishFailures.length) {
+  console.log('\nactive公開ゲート違反');
+  for (const item of activePublishFailures) {
+    console.log('- ' + item.file + ' — ' + item.publishFailures.join(' / '));
+  }
+}
+
 if (duplicateTitles.length) {
   console.log('\n重複タイトル候補');
   for (const group of duplicateTitles.slice(0, 20)) {
@@ -242,7 +297,7 @@ if (duplicateTitles.length) {
 
 if (report) {
   await fs.mkdir(REPORTS, {recursive: true});
-  const payload = {summary, duplicateTitles, results};
+  const payload = {summary, duplicateTitles, activePublishFailures, results};
   await fs.writeFile(
     path.join(REPORTS, 'qualification-quality.json'),
     JSON.stringify(payload, null, 2) + '\n',
@@ -263,6 +318,7 @@ if (report) {
     '- 旧SNS投稿型: ' + summary.legacySocialCopy + '件',
     '- 要根拠確認表現: ' + summary.riskyClaims + '件',
     '- 重複タイトル群: ' + summary.duplicateTitleGroups + '件',
+    '- active公開ゲート違反: ' + summary.activePublishFailures + '件',
     '',
     '## 改善優先度 上位50件',
     '',
@@ -296,6 +352,15 @@ if (report) {
     markdown + '\n',
     'utf8',
   );
+}
+
+if (activePublishFailures.length) {
+  console.error(
+    '\nPUBLISH GATE: active指定ページに公開必須条件の不足が ' +
+      activePublishFailures.length +
+      ' 件あります。',
+  );
+  process.exitCode = 1;
 }
 
 if (strict) {
