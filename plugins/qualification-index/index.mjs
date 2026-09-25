@@ -315,13 +315,6 @@ export default function qualificationIndexPlugin(context) {
         exact: true,
       });
 
-      for (const categoryKey of Object.keys(CATEGORY_LABELS)) {
-        addRoute({
-          path: `/field/${categoryKey}`,
-          component: '@site/src/components/QualificationFieldPage.tsx',
-          exact: true,
-        });
-      }
     },
   };
 }

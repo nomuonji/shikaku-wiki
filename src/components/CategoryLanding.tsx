@@ -1,4 +1,5 @@
 import React, {useMemo} from 'react';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import {usePluginData} from '@docusaurus/useGlobalData';
 import Heading from '@theme/Heading';
@@ -167,8 +168,33 @@ export default function CategoryLanding({
 
   const freshCount = activeItems.filter((item) => item.updatedFor2026).length;
   const exploreUrl = `/explore?category=${encodeURIComponent(title)}`;
+  const canonicalUrl = `https://shikaku.antonbase.com/docs/${categoryKey}/`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${title}の資格・検定｜資格カタログ`,
+    description,
+    url: canonicalUrl,
+    inLanguage: 'ja-JP',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: activeItems.length,
+      itemListElement: activeItems.slice(0, 20).map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.title,
+        url: `https://shikaku.antonbase.com${item.route}/`,
+      })),
+    },
+  };
 
   return (
+    <> 
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
     <div className={styles.page} style={{'--category-accent': accent} as React.CSSProperties}>
       <section className={styles.hero}>
         <div>
@@ -254,5 +280,6 @@ export default function CategoryLanding({
         </div>
       </section>
     </div>
+    </>
   );
 }
