@@ -24,6 +24,18 @@ type QualificationIndexData = {
   items: CompactQualification[];
 };
 
+const CATEGORY_VISUALS: Record<string, {code: string; label: string}> = {
+  business: {code: 'BIZ', label: 'Business'},
+  technology: {code: 'TECH', label: 'Technology'},
+  'legal-accounting': {code: 'LAW', label: 'Legal & Accounting'},
+  'medical-welfare': {code: 'MED', label: 'Medical & Welfare'},
+  lifestyle: {code: 'LIFE', label: 'Lifestyle'},
+  'safety-environment': {code: 'SAFE', label: 'Safety & Environment'},
+  creative: {code: 'CREATE', label: 'Creative'},
+  industry: {code: 'FIELD', label: 'Industry'},
+  etc: {code: 'OTHER', label: 'Other'},
+};
+
 function normalizeRoute(value: string) {
   return value.replace(/\/+$/, '') || '/';
 }
@@ -58,9 +70,28 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
   ].filter((fact): fact is {label: string; value: string} => Boolean(fact));
 
   const browseUrl = `/explore?category=${encodeURIComponent(current.category)}`;
+  const visual = CATEGORY_VISUALS[current.categoryKey] ?? {
+    code: 'CERT',
+    label: current.category,
+  };
 
   return (
-    <aside className={styles.panel} aria-label="資格の要点">
+    <aside
+      className={styles.panel}
+      data-category={current.categoryKey}
+      aria-label="資格の要点">
+      <div className={styles.visualBand} aria-hidden="true">
+        <div className={styles.visualMark}>
+          <span>{visual.code}</span>
+          <small>{visual.label}</small>
+        </div>
+        <div className={styles.visualLines}>
+          <i />
+          <i />
+          <i />
+        </div>
+        <span className={styles.visualCategory}>{current.category}</span>
+      </div>
       <div className={styles.top}>
         <div>
           <span className={styles.kicker}>AT A GLANCE</span>
