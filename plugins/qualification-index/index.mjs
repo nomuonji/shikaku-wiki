@@ -130,6 +130,25 @@ function detectExamMethod(body) {
   return methods.length ? [...new Set(methods)].slice(0, 2).join('＋') : '未整理';
 }
 
+function detectAvailabilityStatus(title, body) {
+  const sample = `${title}\n${body.slice(0, 3200)}`;
+  if (
+    /終了済み|現在は実施されていません|新規受験[^\n]{0,20}不可|実施団体[^\n]{0,80}解散/.test(
+      sample,
+    )
+  ) {
+    return 'ended';
+  }
+  if (
+    /休止中|開催休止|新規開催案内[^\n]{0,50}確認できない|最新の開催案内[^\n]{0,50}20\d{2}年/.test(
+      sample,
+    )
+  ) {
+    return 'check';
+  }
+  return 'active';
+}
+
 function extractOfficialUrl(body) {
   const preferred = body.match(/\[(?:公式サイト|公式情報|公式ページ)[^\]]*\]\((https?:\/\/[^)]+)\)/i);
   if (preferred) return preferred[1];
@@ -178,6 +197,7 @@ export default function qualificationIndexPlugin(context) {
         const categoryKey = relativePath.split('/')[0];
         const studyHours = extractStudyHours(body);
         const summary = extractSummary(body);
+        const availabilityStatus = detectAvailabilityStatus(title, body);
 
         qualifications.push({
           id: relativePath.replace(/\.mdx?$/, ''),
@@ -192,6 +212,7 @@ export default function qualificationIndexPlugin(context) {
           examMethod: detectExamMethod(body),
           officialUrl: extractOfficialUrl(body),
           updatedFor2026: /2026年|2026年度|令和8年/.test(body),
+          availabilityStatus,
           searchText: cleanMarkdown(
             `${title} ${summary} ${CATEGORY_LABELS[categoryKey] || categoryKey} ${relativePath}`,
           ).toLowerCase(),
@@ -199,9 +220,13 @@ export default function qualificationIndexPlugin(context) {
       }
 
       qualifications.sort((a, b) => a.title.localeCompare(b.title, 'ja'));
+      const activeCount = qualifications.filter(
+        (item) => item.availabilityStatus === 'active',
+      ).length;
       return {
         generatedAt: new Date().toISOString(),
         count: qualifications.length,
+        activeCount,
         sourceCount,
         hiddenCount,
         qualifications,
@@ -213,6 +238,7 @@ export default function qualificationIndexPlugin(context) {
 
       setGlobalData({
         count: content.count,
+        activeCount: content.activeCount,
         sourceCount: content.sourceCount,
         hiddenCount: content.hiddenCount,
         items: content.qualifications.map((item) => ({
@@ -228,6 +254,7 @@ export default function qualificationIndexPlugin(context) {
           examMethod: item.examMethod,
           officialUrl: item.officialUrl,
           updatedFor2026: item.updatedFor2026,
+          availabilityStatus: item.availabilityStatus,
         })),
       });
 

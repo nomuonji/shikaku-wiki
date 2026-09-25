@@ -25,12 +25,14 @@ type Qualification = {
   examMethod: string;
   officialUrl: string | null;
   updatedFor2026: boolean;
+  availabilityStatus: 'active' | 'ended' | 'check';
   searchText: string;
 };
 
 type QualificationData = {
   generatedAt: string;
   count: number;
+  activeCount: number;
   qualifications: Qualification[];
 };
 
@@ -78,6 +80,7 @@ export default function QualificationExplorer({
   const [difficulty, setDifficulty] = useState('すべて');
   const [credentialType, setCredentialType] = useState('すべて');
   const [examMethod, setExamMethod] = useState('すべて');
+  const [availability, setAvailability] = useState('現行のみ');
   const [sortKey, setSortKey] = useState('recommended');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -94,6 +97,9 @@ export default function QualificationExplorer({
       if (difficulty !== 'すべて' && item.difficulty !== difficulty) return false;
       if (credentialType !== 'すべて' && item.credentialType !== credentialType) return false;
       if (examMethod !== 'すべて' && !item.examMethod.includes(examMethod)) return false;
+      if (availability === '現行のみ' && item.availabilityStatus !== 'active') return false;
+      if (availability === '終了済み' && item.availabilityStatus !== 'ended') return false;
+      if (availability === '開催要確認' && item.availabilityStatus !== 'check') return false;
       return true;
     });
 
@@ -115,12 +121,13 @@ export default function QualificationExplorer({
     difficulty,
     credentialType,
     examMethod,
+    availability,
     sortKey,
   ]);
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [query, category, difficulty, credentialType, examMethod, sortKey]);
+  }, [query, category, difficulty, credentialType, examMethod, availability, sortKey]);
 
   const visible = useMemo(
     () => filtered.slice(0, visibleCount),
@@ -149,6 +156,7 @@ export default function QualificationExplorer({
     setDifficulty('すべて');
     setCredentialType('すべて');
     setExamMethod('すべて');
+    setAvailability('現行のみ');
     setSortKey('recommended');
   };
 
@@ -158,6 +166,7 @@ export default function QualificationExplorer({
     difficulty !== 'すべて' ||
     credentialType !== 'すべて' ||
     examMethod !== 'すべて' ||
+    availability !== '現行のみ' ||
     sortKey !== 'recommended';
 
   return (
@@ -181,8 +190,8 @@ export default function QualificationExplorer({
             </p>
             <div className={styles.heroStats}>
               <span>
-                <strong>{qualificationData.count}</strong>
-                <small>掲載資格</small>
+                <strong>{qualificationData.activeCount}</strong>
+                <small>現行資格</small>
               </span>
               <span>
                 <strong>{categories.length}</strong>
@@ -268,6 +277,16 @@ export default function QualificationExplorer({
               </select>
             </label>
 
+            <label className={styles.field}>
+              <span>実施状況</span>
+              <select value={availability} onChange={(event) => setAvailability(event.target.value)}>
+                <option>現行のみ</option>
+                <option>すべて（終了含む）</option>
+                <option>開催要確認</option>
+                <option>終了済み</option>
+              </select>
+            </label>
+
             <div className={styles.sourceNote}>
               <strong>自動更新</strong>
               <p>
@@ -316,7 +335,11 @@ export default function QualificationExplorer({
                     <article key={item.id} className={styles.card}>
                       <div className={styles.cardTop}>
                         <span className={styles.categoryBadge}>{item.category}</span>
-                        {item.updatedFor2026 ? (
+                        {item.availabilityStatus === 'ended' ? (
+                          <span className={styles.endedBadge}>終了済み</span>
+                        ) : item.availabilityStatus === 'check' ? (
+                          <span className={styles.checkBadge}>開催要確認</span>
+                        ) : item.updatedFor2026 ? (
                           <span className={styles.freshBadge}>2026情報あり</span>
                         ) : null}
                       </div>

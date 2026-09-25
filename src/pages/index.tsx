@@ -8,6 +8,7 @@ import styles from './index.module.css';
 
 type QualificationIndexData = {
   count: number;
+  activeCount: number;
   sourceCount: number;
   hiddenCount: number;
 };
@@ -179,7 +180,7 @@ function HomepageHeader({qualificationCount}: {qualificationCount: number}): Rea
 
 export default function Home(): React.JSX.Element {
   const qualificationData = usePluginData('qualification-index') as QualificationIndexData;
-  const qualificationCount = qualificationData.count;
+  const qualificationCount = qualificationData.activeCount;
 
   return (
     <Layout
