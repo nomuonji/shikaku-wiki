@@ -69,6 +69,53 @@ for (const key of categoryKeys) {
   }
 }
 
+const redirectRows = redirects
+  .split('\n')
+  .map((line) => line.trim())
+  .filter((line) => line && !line.startsWith('#'))
+  .map((line) => {
+    const [from, to, code] = line.split(/\s+/);
+    return {from, to, code};
+  });
+
+const redirectSources = new Map();
+for (const row of redirectRows) {
+  const targets = redirectSources.get(row.from) ?? new Set();
+  targets.add(row.to);
+  redirectSources.set(row.from, targets);
+}
+
+for (const [source, targets] of redirectSources) {
+  if (targets.size > 1) {
+    fail(
+      `redirect source ${source} が複数targetを持っています: ${[...targets].join(', ')}`,
+      failures,
+    );
+  }
+}
+
+const redirectSourceSet = new Set(redirectRows.map((row) => row.from));
+for (const row of redirectRows) {
+  if (redirectSourceSet.has(row.to)) {
+    fail(`redirect chain を検出: ${row.from} -> ${row.to}`, failures);
+  }
+
+  if (row.to?.startsWith('/docs/')) {
+    const clean = row.to.replace(/^\/docs\//, '').replace(/\/+$/, '');
+    const candidates = [
+      `docs/${clean}.md`,
+      `docs/${clean}.mdx`,
+      `docs/${clean}/index.md`,
+      `docs/${clean}/index.mdx`,
+      `docs/${clean}/_category_.json`,
+    ];
+    const targetChecks = await Promise.all(candidates.map(exists));
+    if (!targetChecks.some(Boolean)) {
+      fail(`redirect target ${row.to} に対応するdoc/categoryがありません`, failures);
+    }
+  }
+}
+
 for (const key of [...categoryKeys, 'etc']) {
   const oldNoSlash = `/field/${key} /docs/${key}/ 301`;
   const oldSlash = `/field/${key}/ /docs/${key}/ 301`;
@@ -128,6 +175,7 @@ if (failures.length) {
 
 console.log('サイト構造監査: OK');
 console.log('- /docs カテゴリ正本 + /field 301 を確認');
+console.log('- 全redirectのtarget実在・競合sourceなし・redirect chainなしを確認');
 console.log('- ホーム主要内部リンクの実在と trailing slash を確認');
 console.log('- /explore noindex + sitemap除外を確認');
 console.log('- unlisted/draft/index.mdx の検索DB除外を確認');
