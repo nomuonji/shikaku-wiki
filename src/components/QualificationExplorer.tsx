@@ -577,19 +577,49 @@ export default function QualificationExplorer({
                     </tr>
                     <tr>
                       <th>区分</th>
-                      {selected.map((item) => <td key={item.id}>{item.credentialType}</td>)}
+                      {selected.map((item) => (
+                        <td key={item.id}>
+                          {item.credentialType === '区分未整理' ? '—' : item.credentialType}
+                        </td>
+                      ))}
                     </tr>
                     <tr>
                       <th>難易度</th>
-                      {selected.map((item) => <td key={item.id}>{item.difficulty}</td>)}
+                      {selected.map((item) => (
+                        <td key={item.id}>{item.difficulty === '未整理' ? '—' : item.difficulty}</td>
+                      ))}
                     </tr>
                     <tr>
                       <th>勉強時間</th>
-                      {selected.map((item) => <td key={item.id}>{item.studyHours.label}</td>)}
+                      {selected.map((item) => (
+                        <td key={item.id}>
+                          {item.studyHours.label === '情報なし' ? '—' : item.studyHours.label}
+                        </td>
+                      ))}
                     </tr>
                     <tr>
                       <th>試験方式</th>
-                      {selected.map((item) => <td key={item.id}>{item.examMethod}</td>)}
+                      {selected.map((item) => (
+                        <td key={item.id}>{item.examMethod === '未整理' ? '—' : item.examMethod}</td>
+                      ))}
+                    </tr>
+                    <tr>
+                      <th>制度確認</th>
+                      {selected.map((item) => (
+                        <td key={item.id}>{item.verifiedAt ?? '—'}</td>
+                      ))}
+                    </tr>
+                    <tr>
+                      <th>実施状況</th>
+                      {selected.map((item) => (
+                        <td key={item.id}>
+                          {item.availabilityStatus === 'active'
+                            ? '現行'
+                            : item.availabilityStatus === 'ended'
+                              ? '終了済み'
+                              : '開催要確認'}
+                        </td>
+                      ))}
                     </tr>
                   </tbody>
                 </table>

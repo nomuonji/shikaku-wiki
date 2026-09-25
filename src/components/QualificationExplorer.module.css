@@ -555,7 +555,8 @@
   }
 
   .clearCompare {
-    display: none;
+    display: inline-flex;
+    justify-self: end;
   }
 }
 
@@ -626,8 +627,12 @@
     margin-bottom: 0.4rem;
   }
 
+  .clearCompare {
+    margin-top: 0.55rem;
+  }
+
   .compareTable {
-    min-width: 560px;
+    min-width: 620px;
   }
 }
 
