@@ -70,7 +70,7 @@
 /docs/technology/General/javascript-engineer-nintei-shokyuu/ /docs/technology/Development/web/javascript-engineer-nintei-shokyuu/ 301
 /docs/technology/General/jcsqe-software-hinshitsu-gijutsusha/ /docs/technology/General/hinshitsu/jcsqe-software-hinshitsu-gijutsusha/ 301
 /docs/technology/General/jdla-e-shikaku-engineer/ /docs/technology/jdla-e-shikaku-engineer/ 301
-/docs/technology/General/jdla-g-kentei-generalist/ /docs/technology/jdla-g-kentei-generalist/ 301
+/docs/technology/General/jdla-g-kentei-generalist/ /docs/etc/General/g-kentei-jdla/ 301
 /docs/technology/General/jncis-ent/ /docs/technology/Infrastructure/network/jncis-ent/ 301
 /docs/technology/General/jstqb-advanced-test-analyst/ /docs/technology/General/hinshitsu/jstqb-advanced-test-analyst/ 301
 /docs/technology/General/juniper-jncia-junos/ /docs/technology/Infrastructure/network/juniper-jncia-junos/ 301
@@ -171,5 +171,9 @@
 /docs/technology/General/digital/kihon-jouhou-gijutsusha-fe/ /docs/technology/General/kihon-jouhou-gijutsusha-fe/ 301
 /docs/technology/General/digital/ouyou-jouhou-gijutsusha-ap/ /docs/technology/General/ouyou-jouhou-gijutsusha-ap/ 301
 /docs/technology/General/digital/python-3-engineer-nintei/ /docs/technology/General/python-3-engineer-nintei/ 301
-/docs/technology/General/kiso/it-passport/ /docs/technology/General/it-passport/ 301
+/docs/technology/General/kiso/it-passport/ /docs/technology/General/digital/it-passport-i-pass/ 301
 /docs/technology/General/gaiq-google-announcer-ritikusu/ /docs/business/Finance/bunseki/google-analytics-individual-qualification-gaiq/ 301
+/docs/technology/General/it-passport/ /docs/technology/General/digital/it-passport-i-pass/ 301
+/docs/industry/General/takuchi-tatemono-torihikishi/ /docs/business/Finance/fudousan/takuchi-tatemono-torihikishi-takkenshi/ 301
+/docs/business/Health/life/financial-planner-2kyuu/ /docs/business/Finance/fudousan/fp-ginoushi-3kyuu-2kyuu-1kyuu/ 301
+/docs/technology/jdla-g-kentei-generalist/ /docs/etc/General/g-kentei-jdla/ 301
