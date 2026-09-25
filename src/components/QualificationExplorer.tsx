@@ -308,7 +308,8 @@ export default function QualificationExplorer({
             </div>
 
             {filtered.length ? (
-              <div className={styles.cardGrid}>
+              <>
+                <div className={styles.cardGrid}>
                 {visible.map((item) => {
                   const selectedForCompare = selectedIds.includes(item.id);
                   return (
@@ -378,6 +379,7 @@ export default function QualificationExplorer({
                     </button>
                 </div>
               ) : null}
+              </>
             ) : (
               <div className={styles.emptyState}>
                 <span aria-hidden="true">⌕</span>
