@@ -140,17 +140,17 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        { to: '/explore', label: '🔎 資格検索', position: 'left' },
+        { to: '/explore', label: '資格検索', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '📚 資格一覧',
+          label: '資格一覧',
         },
-        { to: '/blog', label: '📝 ブログ', position: 'left' },
+        { to: '/blog', label: 'ブログ', position: 'left' },
         {
           href: 'https://job.antonbase.com',
-          label: '🧭 しごと図鑑',
+          label: 'しごと図鑑',
           position: 'left',
         },
         {
@@ -193,7 +193,7 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: '🧭 しごと図鑑（資格が活きる仕事）',
+              label: 'しごと図鑑（資格が活きる仕事）',
               href: 'https://job.antonbase.com',
             },
             {
@@ -224,20 +224,13 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 資格カタログ. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} 資格カタログ`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    announcementBar: {
-      id: 'support_us',
-      content:
-        '⭐️ 記事の更新や資格コラムをSNSで発信中！ <a target="_blank" rel="noopener noreferrer" href="https://x.com/shikaku_catalog">X (Twitter)</a> と <a target="_blank" rel="noopener noreferrer" href="https://www.threads.com/@certifications_catalog">Threads</a> をフォローしてね！ ⭐️',
-      backgroundColor: '#fafbfc',
-      textColor: '#091E42',
-      isCloseable: true,
-    },
+,
   } satisfies Preset.ThemeConfig,
 };
 

@@ -275,7 +275,12 @@
   height: 48px;
   border-radius: 14px;
   background: var(--ifm-color-primary-contrast-background);
-  font-size: 1.45rem;
+  color: var(--ifm-color-primary);
+}
+
+.categoryIcon svg {
+  width: 25px;
+  height: 25px;
 }
 
 .categoryCard strong {
