@@ -20,7 +20,8 @@
     "bot:threads-refresh": "node sns-bot/src/threads-refresh.mjs",
     "audit:quality": "node scripts/audit_qualification_quality.mjs --report",
     "audit:quality:strict": "node scripts/audit_qualification_quality.mjs --report --strict",
-    "prebuild": "node scripts/audit_qualification_quality.mjs --report"
+    "prebuild": "node scripts/audit_site_invariants.mjs && node scripts/audit_qualification_quality.mjs --report",
+    "audit:site": "node scripts/audit_site_invariants.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
