@@ -312,6 +312,7 @@ export default function QualificationExplorer({
 
         <section className={`container ${styles.workspace}`}>
           <aside
+            id="qualification-filters"
             className={`${styles.filters} ${filtersOpen ? styles.filtersOpen : ''}`}
             aria-label="資格の絞り込み">
             <div className={styles.filterHeader}>
@@ -329,6 +330,7 @@ export default function QualificationExplorer({
                   className={styles.mobileFilterToggle}
                   type="button"
                   aria-expanded={filtersOpen}
+                  aria-controls="qualification-filters"
                   onClick={() => setFiltersOpen((open) => !open)}>
                   {filtersOpen ? '閉じる' : `条件を開く（${filtered.length}件）`}
                 </button>
@@ -415,7 +417,7 @@ export default function QualificationExplorer({
           <div className={styles.results}>
             <div className={styles.resultToolbar}>
               <div>
-                <span className={styles.resultCount}>
+                <span className={styles.resultCount} aria-live="polite">
                   <strong>{filtered.length}</strong> 件
                 </span>
                 {query ? <span className={styles.queryLabel}>「{query}」</span> : null}
@@ -553,7 +555,7 @@ export default function QualificationExplorer({
         {selected.length ? (
           <section className={styles.compareDock} aria-label="資格比較">
             <div className={`container ${styles.compareInner}`}>
-              <div className={styles.compareTitle}>
+              <div className={styles.compareTitle} aria-live="polite">
                 <span>COMPARE</span>
                 <strong>{selected.length}/3件を比較</strong>
                 <small>この比較はURLに保存されます</small>

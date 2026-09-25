@@ -109,7 +109,7 @@ export default function QualificationRelated(): React.JSX.Element | null {
                     <dd>{item.studyHours === '情報なし' ? '—' : item.studyHours}</dd>
                   </div>
                 </dl>
-                <span className={styles.arrow} aria-hidden="true">↗</span>
+                <span className={styles.arrow} aria-hidden="true">→</span>
               </Link>
             ))}
           </div>

@@ -238,7 +238,7 @@ export default function Home(): React.JSX.Element {
                     {categoryCounts.get(category.key) ?? 0}資格
                   </em>
                 </span>
-                <span className={styles.arrow} aria-hidden="true">↗</span>
+                <span className={styles.arrow} aria-hidden="true">→</span>
               </Link>
             ))}
           </div>
