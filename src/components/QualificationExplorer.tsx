@@ -167,7 +167,6 @@ export default function QualificationExplorer({
     examMethod,
     availability,
     sortKey,
-    selectedIds,
   ]);
 
   useEffect(() => {
@@ -205,6 +204,7 @@ export default function QualificationExplorer({
     examMethod,
     availability,
     sortKey,
+    selectedIds,
   ]);
 
   const selected = useMemo(
