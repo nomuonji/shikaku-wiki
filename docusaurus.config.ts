@@ -113,11 +113,8 @@ const config: Config = {
 
   scripts: [
     {
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-PTXZKSKY58',
-      async: true,
-    },
-    {
-      src: 'https://shikaku.antonbase.com/gtag-init.js',
+      src: '/gtag-init.js',
+      defer: true,
     },
   ],
 
