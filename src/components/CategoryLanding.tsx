@@ -17,7 +17,7 @@ type Item = {
   studyHours: string;
   examMethod: string;
   verifiedAt: string | null;
-  updatedFor2026: boolean;
+  verifiedThisYear: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
 };
 
@@ -108,7 +108,7 @@ function completeness(item: Item) {
   if (item.difficulty !== '未整理') score += 1;
   if (item.studyHours !== '情報なし') score += 1;
   if (item.examMethod !== '未整理') score += 1;
-  if (item.updatedFor2026) score += 1;
+  if (item.verifiedThisYear) score += 1;
   return score;
 }
 
@@ -167,7 +167,8 @@ export default function CategoryLanding({
       }));
   }, [activeItems]);
 
-  const freshCount = activeItems.filter((item) => item.verifiedAt?.startsWith('2026-')).length;
+  const currentYear = new Date().getFullYear();
+  const freshCount = activeItems.filter((item) => item.verifiedThisYear).length;
   const exploreUrl = `/explore/?category=${encodeURIComponent(title)}`;
   const canonicalUrl = `https://shikaku.antonbase.com/docs/${categoryKey}/`;
   const structuredData = {
@@ -214,7 +215,7 @@ export default function CategoryLanding({
         <dl className={styles.stats}>
           <div><dt>{activeItems.length}</dt><dd>現行資格</dd></div>
           <div><dt>{sections.length}</dt><dd>主な領域</dd></div>
-          <div><dt>{freshCount}</dt><dd>2026年に制度確認</dd></div>
+          <div><dt>{freshCount}</dt><dd>{currentYear}年に制度確認</dd></div>
         </dl>
       </section>
 

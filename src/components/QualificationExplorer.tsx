@@ -26,7 +26,7 @@ type Qualification = {
   examMethod: string;
   officialUrl: string | null;
   verifiedAt: string | null;
-  updatedFor2026: boolean;
+  verifiedThisYear: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
   searchText: string;
 };
@@ -80,7 +80,8 @@ function includesQuery(item: Qualification, rawQuery: string) {
 
 function recommendationScore(item: Qualification) {
   let score = 0;
-  if (item.updatedFor2026) score += 8;
+  if (item.verifiedThisYear) score += 8;
+  else if (item.verifiedAt) score += 4;
   if (item.credentialType !== '区分未整理') score += 2;
   if (item.difficulty !== '未整理') score += 1;
   if (item.studyHours.label !== '情報なし') score += 2;

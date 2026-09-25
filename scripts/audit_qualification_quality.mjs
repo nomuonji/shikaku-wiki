@@ -7,6 +7,7 @@ const REPORTS = path.join(ROOT, 'reports');
 const args = new Set(process.argv.slice(2));
 const strict = args.has('--strict');
 const report = args.has('--report');
+const VERIFICATION_MAX_AGE_DAYS = 270;
 
 async function walk(dir) {
   const entries = await fs.readdir(dir, {withFileTypes: true});
@@ -59,6 +60,13 @@ function extractVerifiedAt(frontMatter, body) {
   if (iso) return toIsoDate(iso[1], iso[2], iso[3]);
 
   return null;
+}
+
+function verificationAgeDays(verifiedAt) {
+  if (!verifiedAt) return null;
+  const timestamp = Date.parse(verifiedAt + 'T00:00:00Z');
+  if (!Number.isFinite(timestamp)) return null;
+  return (Date.now() - timestamp) / 86_400_000;
 }
 
 function normalizeTitle(value) {
@@ -191,6 +199,10 @@ const activePublishFailures = publicResults
     const failures = [];
     if (!item.hasDescription) failures.push('description不足');
     if (!item.verifiedAt) failures.push('制度確認日なし');
+    const ageDays = verificationAgeDays(item.verifiedAt);
+    if (ageDays != null && ageDays > VERIFICATION_MAX_AGE_DAYS) {
+      failures.push(`制度確認から${Math.floor(ageDays)}日経過`);
+    }
     if (item.issues.includes('公式URLなし')) failures.push('公式URLなし');
     if (item.chars < 900) failures.push('本文900字未満');
     if (item.sections < 3) failures.push('セクション3未満');

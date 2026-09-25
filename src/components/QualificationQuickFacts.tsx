@@ -18,7 +18,7 @@ type CompactQualification = {
   examMethod: string;
   officialUrl: string | null;
   verifiedAt: string | null;
-  updatedFor2026: boolean;
+  verifiedThisYear: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
 };
 

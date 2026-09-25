@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+const VERIFICATION_MAX_AGE_DAYS = 270;
+
 const CATEGORY_LABELS = {
   business: 'ビジネス',
   technology: 'IT・技術',
@@ -69,6 +71,14 @@ function toIsoDate(year, month, day) {
     String(month).padStart(2, '0'),
     String(day).padStart(2, '0'),
   ].join('-');
+}
+
+function isRecentVerification(verifiedAt) {
+  if (!verifiedAt) return false;
+  const verified = Date.parse(verifiedAt + 'T00:00:00Z');
+  if (!Number.isFinite(verified)) return false;
+  const ageDays = (Date.now() - verified) / 86_400_000;
+  return ageDays >= -1 && ageDays <= VERIFICATION_MAX_AGE_DAYS;
 }
 
 function extractVerifiedAt(frontMatter, body) {
@@ -260,11 +270,15 @@ export default function qualificationIndexPlugin(context) {
           explicitStudyHours(frontMatter) ?? extractStudyHours(body);
         const summary = extractSummary(body);
         const verifiedAt = extractVerifiedAt(frontMatter, body);
-        const updatedFor2026 = verifiedAt?.startsWith('2026-') ?? false;
+        const currentYear = new Date().getUTCFullYear();
+        const verifiedThisYear =
+          verifiedAt?.startsWith(`${currentYear}-`) ?? false;
+        const detectedStatus = detectAvailabilityStatus(title, body);
+        const declaredStatus = frontMatter.qualification_status || '';
         const availabilityStatus =
-          frontMatter.qualification_status ||
-          detectAvailabilityStatus(title, body) ||
-          (updatedFor2026 ? 'active' : 'check');
+          declaredStatus === 'ended' || declaredStatus === 'check'
+            ? declaredStatus
+            : detectedStatus || (isRecentVerification(verifiedAt) ? 'active' : 'check');
 
         qualifications.push({
           id: relativePath.replace(/\.mdx?$/, ''),
@@ -283,7 +297,7 @@ export default function qualificationIndexPlugin(context) {
           officialUrl:
             frontMatter.official_url || extractOfficialUrl(body),
           verifiedAt,
-          updatedFor2026,
+          verifiedThisYear,
           availabilityStatus,
           searchText: normalizeSearchValue(
             cleanMarkdown(
@@ -329,7 +343,7 @@ export default function qualificationIndexPlugin(context) {
           examMethod: item.examMethod,
           officialUrl: item.officialUrl,
           verifiedAt: item.verifiedAt,
-          updatedFor2026: item.updatedFor2026,
+          updatedFor2026: item.verifiedThisYear,
           availabilityStatus: item.availabilityStatus,
         })),
       });
