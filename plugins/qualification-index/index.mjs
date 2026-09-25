@@ -343,7 +343,7 @@ export default function qualificationIndexPlugin(context) {
           examMethod: item.examMethod,
           officialUrl: item.officialUrl,
           verifiedAt: item.verifiedAt,
-          updatedFor2026: item.verifiedThisYear,
+          verifiedThisYear: item.verifiedThisYear,
           availabilityStatus: item.availabilityStatus,
         })),
       });
