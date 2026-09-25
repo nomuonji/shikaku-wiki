@@ -62,9 +62,18 @@ function normalizeSearchValue(value: string) {
 }
 
 function includesQuery(item: Qualification, rawQuery: string) {
-  const query = normalizeSearchValue(rawQuery);
-  if (!query) return true;
-  return item.searchText.includes(query);
+  const raw = rawQuery.normalize('NFKC').trim().toLowerCase();
+  if (!raw) return true;
+
+  const compact = normalizeSearchValue(raw);
+  if (compact && item.searchText.includes(compact)) return true;
+
+  const tokens = raw
+    .split(/\s+/)
+    .map(normalizeSearchValue)
+    .filter(Boolean);
+
+  return tokens.length > 1 && tokens.every((token) => item.searchText.includes(token));
 }
 
 function SortIcon({active}: {active: boolean}) {
