@@ -54,11 +54,17 @@ const CATEGORY_ORDER = [
   'その他',
 ];
 
+function normalizeSearchValue(value: string) {
+  return value
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[\s・･_\-‐–—/／()（）\[\]【】{}「」『』.,，。:：;；'"]/g, '');
+}
+
 function includesQuery(item: Qualification, rawQuery: string) {
-  const query = rawQuery.trim().toLowerCase();
+  const query = normalizeSearchValue(rawQuery);
   if (!query) return true;
-  const tokens = query.split(/\s+/).filter(Boolean);
-  return tokens.every((token) => item.searchText.includes(token));
+  return item.searchText.includes(query);
 }
 
 function SortIcon({active}: {active: boolean}) {

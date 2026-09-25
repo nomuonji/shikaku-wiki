@@ -56,6 +56,13 @@ function cleanMarkdown(value) {
     .trim();
 }
 
+function normalizeSearchValue(value) {
+  return String(value ?? '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[\s・･_\-‐–—/／()（）\[\]【】{}「」『』.,，。:：;；'"]/g, '');
+}
+
 function extractSummary(body) {
   const overview = body.match(/##\s*概要\s*\n+([\s\S]*?)(?=\n##\s|$)/);
   const source = overview?.[1] ?? body;
@@ -248,9 +255,11 @@ export default function qualificationIndexPlugin(context) {
             frontMatter.official_url || extractOfficialUrl(body),
           updatedFor2026: /2026年|2026年度|令和8年/.test(body),
           availabilityStatus,
-          searchText: cleanMarkdown(
-            `${title} ${summary} ${CATEGORY_LABELS[categoryKey] || categoryKey} ${relativePath}`,
-          ).toLowerCase(),
+          searchText: normalizeSearchValue(
+            cleanMarkdown(
+              `${title} ${summary} ${CATEGORY_LABELS[categoryKey] || categoryKey} ${relativePath} ${frontMatter.search_aliases || ''}`,
+            ),
+          ),
         });
       }
 
@@ -283,7 +292,7 @@ export default function qualificationIndexPlugin(context) {
           summary: item.summary,
           categoryKey: item.categoryKey,
           category: item.category,
-          section: item.id.split('/').slice(0, 2).join('/'),
+          section: item.id.split('/').slice(0, -1).join('/'),
           credentialType: item.credentialType,
           difficulty: item.difficulty,
           studyHours: item.studyHours.label,
