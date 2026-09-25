@@ -110,6 +110,24 @@
   font-size: 1.25rem;
 }
 
+.filterActions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.mobileFilterToggle {
+  display: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ifm-color-primary);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .resetButton {
   padding: 0;
   border: 0;
@@ -562,6 +580,19 @@
   .filterHeader,
   .sourceNote {
     grid-column: auto;
+  }
+
+  .filterActions {
+    margin-left: auto;
+  }
+
+  .mobileFilterToggle {
+    display: inline-flex;
+  }
+
+  .filters:not(.filtersOpen) .field,
+  .filters:not(.filtersOpen) .sourceNote {
+    display: none;
   }
 
   .resultToolbar {

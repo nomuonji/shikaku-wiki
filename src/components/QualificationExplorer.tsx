@@ -126,6 +126,7 @@ export default function QualificationExplorer({
     return raw ? raw.split(',').filter(Boolean).slice(0, 3) : [];
   });
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const categories = useMemo(() => {
     const values = new Set(qualificationData.qualifications.map((item) => item.category));
@@ -309,17 +310,28 @@ export default function QualificationExplorer({
         </section>
 
         <section className={`container ${styles.workspace}`}>
-          <aside className={styles.filters} aria-label="資格の絞り込み">
+          <aside
+            className={`${styles.filters} ${filtersOpen ? styles.filtersOpen : ''}`}
+            aria-label="資格の絞り込み">
             <div className={styles.filterHeader}>
               <div>
                 <span className={styles.filterKicker}>FILTER</span>
                 <Heading as="h2">絞り込み</Heading>
               </div>
-              {hasActiveFilters ? (
-                <button className={styles.resetButton} type="button" onClick={resetFilters}>
-                  すべて解除
+              <div className={styles.filterActions}>
+                {hasActiveFilters ? (
+                  <button className={styles.resetButton} type="button" onClick={resetFilters}>
+                    すべて解除
+                  </button>
+                ) : null}
+                <button
+                  className={styles.mobileFilterToggle}
+                  type="button"
+                  aria-expanded={filtersOpen}
+                  onClick={() => setFiltersOpen((open) => !open)}>
+                  {filtersOpen ? '閉じる' : `条件を開く（${filtered.length}件）`}
                 </button>
-              ) : null}
+              </div>
             </div>
 
             <label className={styles.field}>
