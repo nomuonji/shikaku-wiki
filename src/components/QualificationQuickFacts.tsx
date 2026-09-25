@@ -159,7 +159,7 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
       )}
 
       <p className={styles.note}>
-        表示値は記事本文から自動抽出した要約です。受験前は公式情報を確認してください。
+        表示値は記事の構造化メタを優先し、未定義項目のみ本文から補助抽出しています。受験前は公式情報を確認してください。
       </p>
     </aside>
     </>
