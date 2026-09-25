@@ -181,7 +181,7 @@ function detectAvailabilityStatus(title, body) {
   ) {
     return 'check';
   }
-  return 'active';
+  return null;
 }
 
 function extractOfficialUrl(body) {
@@ -233,9 +233,11 @@ export default function qualificationIndexPlugin(context) {
         const studyHours =
           explicitStudyHours(frontMatter) ?? extractStudyHours(body);
         const summary = extractSummary(body);
+        const updatedFor2026 = /2026年|2026年度|令和8年/.test(body);
         const availabilityStatus =
           frontMatter.qualification_status ||
-          detectAvailabilityStatus(title, body);
+          detectAvailabilityStatus(title, body) ||
+          (updatedFor2026 ? 'active' : 'check');
 
         qualifications.push({
           id: relativePath.replace(/\.mdx?$/, ''),
@@ -253,7 +255,7 @@ export default function qualificationIndexPlugin(context) {
             frontMatter.exam_method || detectExamMethod(body),
           officialUrl:
             frontMatter.official_url || extractOfficialUrl(body),
-          updatedFor2026: /2026年|2026年度|令和8年/.test(body),
+          updatedFor2026,
           availabilityStatus,
           searchText: normalizeSearchValue(
             cleanMarkdown(
