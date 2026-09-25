@@ -1,6 +1,10 @@
 ---
 title: "CISA（Certified Information Systems Auditor）"
 description: "CISAの試験方式、受験料、5ドメイン、認定に必要な実務経験をISACAの現行公式情報ベースで整理します。"
+credential_type: "国際資格"
+exam_method: "CBT"
+qualification_status: "active"
+official_url: "https://www.isaca.org/credentialing/cisa"
 ---
 
 # CISA（Certified Information Systems Auditor）

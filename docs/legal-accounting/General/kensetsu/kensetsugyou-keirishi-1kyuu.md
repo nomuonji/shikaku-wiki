@@ -1,6 +1,10 @@
 ---
 title: "建設業経理士 1級"
 description: "建設業経理士1級は原価計算・財務諸表・財務分析の3科目を5年以内に合格して取得する登録経理試験です。2026年度日程、制度、経営事項審査との関係を公式情報から整理します。"
+credential_type: "公的資格"
+exam_method: "筆記"
+qualification_status: "active"
+official_url: "https://www.keiri-kentei.jp/exam/"
 ---
 
 # 建設業経理士 1級

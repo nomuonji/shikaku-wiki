@@ -1,6 +1,10 @@
 ---
 title: "CISSP（Certified Information Systems Security Professional）"
 description: "CISSPのCAT試験、100〜150問・3時間、8ドメイン、5年の実務経験要件をISC2の現行公式情報から整理します。"
+credential_type: "国際資格"
+exam_method: "CBT"
+qualification_status: "active"
+official_url: "https://www.isc2.org/certifications/cissp"
 ---
 
 # CISSP（Certified Information Systems Security Professional）

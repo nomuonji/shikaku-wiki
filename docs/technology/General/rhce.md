@@ -1,6 +1,10 @@
 ---
 title: "RHCE（Red Hat Certified Engineer in Ansible）"
 description: "2026年のRed Hat認定体系ではRHCE in Ansibleは現行RHCSAとEX294合格が要件です。Ansible実技試験、学習範囲、3年のcurrent期間を公式情報から整理します。"
+credential_type: "民間資格"
+exam_method: "実技"
+qualification_status: "active"
+official_url: "https://www.redhat.com/en/services/certification/red-hat-certified-engineer-in-ansible"
 ---
 
 # RHCE（Red Hat Certified Engineer in Ansible）

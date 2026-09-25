@@ -1,6 +1,10 @@
 ---
 title: "第一級陸上無線技術士（一陸技）"
 description: "第一級陸上無線技術士は放送局・無線局等の技術操作を扱う国家資格です。2026年度の試験日、4科目、科目合格制度、2026年10月の手数料改定注意を公式情報から整理します。"
+credential_type: "国家資格"
+exam_method: "筆記"
+qualification_status: "active"
+official_url: "https://www.nichimu.or.jp/kshiken/index.html"
 ---
 
 # 第一級陸上無線技術士（一陸技）

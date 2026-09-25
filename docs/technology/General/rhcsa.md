@@ -1,6 +1,10 @@
 ---
 title: "RHCSA（Red Hat Certified System Administrator）"
 description: "RHCSAのEX200実技試験、RHEL 10対応範囲、学習項目、推奨前提をRed Hatの現行公式情報から整理します。"
+credential_type: "民間資格"
+exam_method: "実技"
+qualification_status: "active"
+official_url: "https://www.redhat.com/en/services/certification/rhcsa"
 ---
 
 # RHCSA（Red Hat Certified System Administrator）
