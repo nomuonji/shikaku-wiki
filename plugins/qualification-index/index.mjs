@@ -72,10 +72,16 @@ function detectCredentialType(body) {
   const types = [
     ['国家資格', '国家資格'],
     ['国家試験', '国家資格'],
+    ['国家免許', '国家資格'],
+    ['国家検定', '国家資格'],
     ['公的資格', '公的資格'],
+    ['登録経理試験', '公的資格'],
     ['民間資格', '民間資格'],
+    ['民間検定', '民間資格'],
     ['民間認定', '民間資格'],
+    ['ベンダー認定', '民間資格'],
     ['国際資格', '国際資格'],
+    ['国際認定資格', '国際資格'],
   ];
   for (const [needle, label] of types) {
     if (sample.includes(needle)) return label;
@@ -92,6 +98,28 @@ function detectDifficulty(body) {
   if (hits.length === 1) return hits[0];
   if (/難関|極めて高度|非常に高/.test(sample)) return '上級';
   return '未整理';
+}
+
+function explicitStudyHours(frontMatter) {
+  const label = frontMatter.study_hours_label;
+  const rawMin = frontMatter.study_hours_min;
+  const rawMax = frontMatter.study_hours_max;
+
+  if (!label && rawMin == null && rawMax == null) return null;
+
+  const min = rawMin == null || rawMin === '' ? null : Number(rawMin);
+  const max = rawMax == null || rawMax === '' ? min : Number(rawMax);
+  return {
+    min: Number.isFinite(min) ? min : null,
+    max: Number.isFinite(max) ? max : null,
+    label: label || (
+      Number.isFinite(min) && Number.isFinite(max)
+        ? min === max
+          ? `約${min}時間`
+          : `${min}〜${max}時間`
+        : '情報なし'
+    ),
+  };
 }
 
 function extractStudyHours(body) {
@@ -195,9 +223,12 @@ export default function qualificationIndexPlugin(context) {
         const heading = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
         const title = frontMatter.title || heading || path.basename(file, path.extname(file));
         const categoryKey = relativePath.split('/')[0];
-        const studyHours = extractStudyHours(body);
+        const studyHours =
+          explicitStudyHours(frontMatter) ?? extractStudyHours(body);
         const summary = extractSummary(body);
-        const availabilityStatus = detectAvailabilityStatus(title, body);
+        const availabilityStatus =
+          frontMatter.qualification_status ||
+          detectAvailabilityStatus(title, body);
 
         qualifications.push({
           id: relativePath.replace(/\.mdx?$/, ''),
@@ -206,11 +237,15 @@ export default function qualificationIndexPlugin(context) {
           categoryKey,
           category: CATEGORY_LABELS[categoryKey] || categoryKey,
           summary,
-          credentialType: detectCredentialType(body),
-          difficulty: detectDifficulty(body),
+          credentialType:
+            frontMatter.credential_type || detectCredentialType(body),
+          difficulty:
+            frontMatter.difficulty || detectDifficulty(body),
           studyHours,
-          examMethod: detectExamMethod(body),
-          officialUrl: extractOfficialUrl(body),
+          examMethod:
+            frontMatter.exam_method || detectExamMethod(body),
+          officialUrl:
+            frontMatter.official_url || extractOfficialUrl(body),
           updatedFor2026: /2026年|2026年度|令和8年/.test(body),
           availabilityStatus,
           searchText: cleanMarkdown(

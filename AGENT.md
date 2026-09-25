@@ -16,3 +16,22 @@
 - **公開ゲート:** 70点未満の記事を新たに公開しない。未改稿の旧ページは `unlisted: true` のまま保持し、改稿後に解除する。
 - **重複・旧SNS型:** 同一資格の重複タイトル、`## ハッシュタグ` を含む旧SNS投稿型、短い宣伝文だけの概要を放置しない。正本へ統合して旧URLを301へ寄せる。
 - **SEO記述:** 公開記事は原則としてfront matterに具体的な `description` を持たせる。「合格率・勉強時間・必須」等の断定は、公式根拠または明確な出典・条件がない限り書かない。
+
+
+## 構造化front matter
+大幅改稿する資格ページでは、検索・比較の精度を上げるため、根拠を確認できる項目だけ以下を明示してよい。本文推定よりfront matterが優先される。
+
+```yaml
+credential_type: "国家資格" # 国家資格 / 公的資格 / 民間資格 / 国際資格
+exam_method: "CBT" # 筆記 / CBT / 実技 / 面接 / オンライン等
+qualification_status: "active" # active / check / ended
+official_url: "https://..."
+study_hours_label: "約100〜150時間" # 根拠がある場合だけ
+study_hours_min: 100 # 根拠がある場合だけ
+study_hours_max: 150 # 根拠がある場合だけ
+difficulty: "中級" # 客観的な基準・明示的な根拠がある場合だけ
+```
+
+- 不明な値を埋めるために推測しない。
+- 特に `difficulty` と `study_hours_*` は、スクール広告などの単一二次情報をそのまま事実化しない。
+- 終了済み資格は `qualification_status: "ended"`、新規開催が長期間確認できないものは `check` を使う。

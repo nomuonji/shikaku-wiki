@@ -392,19 +392,19 @@ export default function QualificationExplorer({
                       <dl className={styles.facts}>
                         <div>
                           <dt>区分</dt>
-                          <dd>{item.credentialType}</dd>
+                          <dd>{item.credentialType === '区分未整理' ? '—' : item.credentialType}</dd>
                         </div>
                         <div>
                           <dt>難易度</dt>
-                          <dd>{item.difficulty}</dd>
+                          <dd>{item.difficulty === '未整理' ? '—' : item.difficulty}</dd>
                         </div>
                         <div>
                           <dt>勉強時間</dt>
-                          <dd>{item.studyHours.label}</dd>
+                          <dd>{item.studyHours.label === '情報なし' ? '—' : item.studyHours.label}</dd>
                         </div>
                         <div>
                           <dt>方式</dt>
-                          <dd>{item.examMethod}</dd>
+                          <dd>{item.examMethod === '未整理' ? '—' : item.examMethod}</dd>
                         </div>
                       </dl>
 
