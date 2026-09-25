@@ -63,6 +63,32 @@ function normalizeSearchValue(value) {
     .replace(/[\s・･_\-‐–—/／()（）\[\]【】{}「」『』.,，。:：;；'"]/g, '');
 }
 
+function toIsoDate(year, month, day) {
+  return [
+    String(year).padStart(4, '0'),
+    String(month).padStart(2, '0'),
+    String(day).padStart(2, '0'),
+  ].join('-');
+}
+
+function extractVerifiedAt(frontMatter, body) {
+  const explicit = String(frontMatter.verified_at || '').trim();
+  if (/^20\d{2}-\d{2}-\d{2}$/.test(explicit)) return explicit;
+
+  const label = '(?:制度確認日|確認日|更新日)';
+  const jp = body.match(new RegExp(
+    label + '\\s*[：:]\\s*(20\\d{2})年\\s*(\\d{1,2})月\\s*(\\d{1,2})日'
+  ));
+  if (jp) return toIsoDate(jp[1], jp[2], jp[3]);
+
+  const iso = body.match(new RegExp(
+    label + '\\s*[：:]\\s*(20\\d{2})-(\\d{1,2})-(\\d{1,2})'
+  ));
+  if (iso) return toIsoDate(iso[1], iso[2], iso[3]);
+
+  return null;
+}
+
 function extractSummary(body) {
   const overview = body.match(/##\s*概要\s*\n+([\s\S]*?)(?=\n##\s|$)/);
   const source = overview?.[1] ?? body;
@@ -233,7 +259,8 @@ export default function qualificationIndexPlugin(context) {
         const studyHours =
           explicitStudyHours(frontMatter) ?? extractStudyHours(body);
         const summary = extractSummary(body);
-        const updatedFor2026 = /2026年|2026年度|令和8年/.test(body);
+        const verifiedAt = extractVerifiedAt(frontMatter, body);
+        const updatedFor2026 = verifiedAt?.startsWith('2026-') ?? false;
         const availabilityStatus =
           frontMatter.qualification_status ||
           detectAvailabilityStatus(title, body) ||
@@ -255,6 +282,7 @@ export default function qualificationIndexPlugin(context) {
             frontMatter.exam_method || detectExamMethod(body),
           officialUrl:
             frontMatter.official_url || extractOfficialUrl(body),
+          verifiedAt,
           updatedFor2026,
           availabilityStatus,
           searchText: normalizeSearchValue(
@@ -300,6 +328,7 @@ export default function qualificationIndexPlugin(context) {
           studyHours: item.studyHours.label,
           examMethod: item.examMethod,
           officialUrl: item.officialUrl,
+          verifiedAt: item.verifiedAt,
           updatedFor2026: item.updatedFor2026,
           availabilityStatus: item.availabilityStatus,
         })),

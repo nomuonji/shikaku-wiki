@@ -16,6 +16,7 @@ type Item = {
   difficulty: string;
   studyHours: string;
   examMethod: string;
+  verifiedAt: string | null;
   updatedFor2026: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
 };
@@ -166,7 +167,7 @@ export default function CategoryLanding({
       }));
   }, [activeItems]);
 
-  const freshCount = activeItems.filter((item) => item.updatedFor2026).length;
+  const freshCount = activeItems.filter((item) => item.verifiedAt?.startsWith('2026-')).length;
   const exploreUrl = `/explore/?category=${encodeURIComponent(title)}`;
   const canonicalUrl = `https://shikaku.antonbase.com/docs/${categoryKey}/`;
   const structuredData = {
@@ -250,7 +251,7 @@ export default function CategoryLanding({
             <Link className={styles.card} key={item.id} to={item.route}>
               <div className={styles.cardTop}>
                 <span>{item.credentialType === '区分未整理' ? '資格・検定' : item.credentialType}</span>
-                {item.updatedFor2026 ? <em>2026</em> : null}
+                {item.verifiedAt ? <em>{item.verifiedAt}</em> : null}
               </div>
               <strong>{item.title}</strong>
               <dl>

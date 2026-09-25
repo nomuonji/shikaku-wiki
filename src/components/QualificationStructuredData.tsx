@@ -12,6 +12,7 @@ type Qualification = {
   category: string;
   credentialType: string;
   officialUrl: string | null;
+  verifiedAt: string | null;
   availabilityStatus: 'active' | 'ended' | 'check';
 };
 
@@ -51,6 +52,7 @@ export default function QualificationStructuredData(): React.JSX.Element | null 
         url: pageUrl,
         name: `${current.title}｜資格カタログ`,
         description,
+        ...(current.verifiedAt ? {dateModified: current.verifiedAt} : {}),
         inLanguage: 'ja-JP',
         isPartOf: {
           '@type': 'WebSite',

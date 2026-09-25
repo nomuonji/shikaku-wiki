@@ -17,6 +17,7 @@ type CompactQualification = {
   studyHours: string;
   examMethod: string;
   officialUrl: string | null;
+  verifiedAt: string | null;
   updatedFor2026: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
 };
@@ -144,10 +145,10 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
               <dd>{fact.value}</dd>
             </div>
           ))}
-          {current.updatedFor2026 ? (
+          {current.verifiedAt ? (
             <div className={styles.fresh}>
-              <dt>更新</dt>
-              <dd>2026情報あり</dd>
+              <dt>制度確認</dt>
+              <dd>{current.verifiedAt}</dd>
             </div>
           ) : null}
         </dl>

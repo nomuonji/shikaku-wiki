@@ -24,6 +24,7 @@ type Qualification = {
   studyHours: StudyHours;
   examMethod: string;
   officialUrl: string | null;
+  verifiedAt: string | null;
   updatedFor2026: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
   searchText: string;
@@ -423,8 +424,8 @@ export default function QualificationExplorer({
                           <span className={styles.endedBadge}>終了済み</span>
                         ) : item.availabilityStatus === 'check' ? (
                           <span className={styles.checkBadge}>開催要確認</span>
-                        ) : item.updatedFor2026 ? (
-                          <span className={styles.freshBadge}>2026情報あり</span>
+                        ) : item.verifiedAt ? (
+                          <span className={styles.freshBadge}>確認 {item.verifiedAt}</span>
                         ) : null}
                       </div>
 
