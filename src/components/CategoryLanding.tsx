@@ -214,7 +214,7 @@ export default function CategoryLanding({
         <dl className={styles.stats}>
           <div><dt>{activeItems.length}</dt><dd>現行資格</dd></div>
           <div><dt>{sections.length}</dt><dd>主な領域</dd></div>
-          <div><dt>{freshCount}</dt><dd>2026情報あり</dd></div>
+          <div><dt>{freshCount}</dt><dd>2026年に制度確認</dd></div>
         </dl>
       </section>
 
