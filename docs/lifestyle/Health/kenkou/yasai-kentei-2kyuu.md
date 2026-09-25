@@ -1,6 +1,9 @@
 ---
 title: "野菜検定 2級（プロフェッショナル）"
 description: "野菜検定2級の試験内容、80問・正答率70%目安、過去の受験料と、2026年時点で新規開催案内が確認できない点を公式サイトから整理します。"
+credential_type: "民間資格"
+qualification_status: "check"
+official_url: "https://www.kentei-uketsuke.com/yasai/"
 ---
 
 # 野菜検定 2級（プロフェッショナル）

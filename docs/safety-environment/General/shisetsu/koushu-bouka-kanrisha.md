@@ -1,6 +1,10 @@
 ---
 title: "甲種防火管理者"
 description: "甲種防火管理者は試験合格型ではなく、防火管理講習等で資格を得る制度です。2026年の対面・オンライン講習、10時間・8,000円、選任が必要な施設との関係を公式情報から整理します。"
+credential_type: "公的資格"
+exam_method: "講習"
+qualification_status: "active"
+official_url: "https://www.nbouka.com/"
 ---
 
 # 甲種防火管理者

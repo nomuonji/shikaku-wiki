@@ -1,6 +1,10 @@
 ---
 title: "潜水士"
 description: "潜水士は潜水器を使う業務に必要な労働安全衛生法上の免許です。受験資格なし、40問・4時間、8,800円、科目別40%かつ総合60%の合格基準を公式情報から整理します。"
+credential_type: "国家資格"
+exam_method: "筆記"
+qualification_status: "active"
+official_url: "https://www.exam.or.jp/introduction/h_shokai611/"
 ---
 
 # 潜水士

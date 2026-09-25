@@ -311,6 +311,7 @@ export default function QualificationExplorer({
                 <option>実技</option>
                 <option>面接</option>
                 <option>オンライン</option>
+                <option>講習</option>
               </select>
             </label>
 

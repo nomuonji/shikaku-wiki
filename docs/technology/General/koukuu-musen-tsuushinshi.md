@@ -1,6 +1,10 @@
 ---
 title: "航空無線通信士"
 description: "航空無線通信士は航空機・航空局の無線通信に関する国家資格です。無線工学・法規・英語・電気通信術の4科目、2027年2月の次回試験、手数料改定注意を公式情報から整理します。"
+credential_type: "国家資格"
+exam_method: "筆記＋実技"
+qualification_status: "active"
+official_url: "https://www.nichimu.or.jp/kshiken/index.html"
 ---
 
 # 航空無線通信士

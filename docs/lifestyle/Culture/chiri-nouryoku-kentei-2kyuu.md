@@ -1,6 +1,9 @@
 ---
 title: "地理能力検定 2級（終了済み）"
 description: "地理能力検定2級は実施団体解散により現在は実施されていません。過去資格としての位置づけと、現行の地図地理検定を案内します。"
+credential_type: "民間資格"
+qualification_status: "ended"
+official_url: "https://www.mlit.go.jp/kankocho/content/810002312.pdf"
 ---
 
 # 地理能力検定 2級（終了済み）
