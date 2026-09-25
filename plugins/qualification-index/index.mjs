@@ -207,7 +207,7 @@ export default function qualificationIndexPlugin(context) {
 
       for (const file of files) {
         const relativePath = path.relative(docsDir, file).replace(/\\/g, '/');
-        if (relativePath === 'intro.md') continue;
+        if (relativePath === 'intro.md' || /(^|\/)index\.mdx?$/.test(relativePath)) continue;
 
         sourceCount += 1;
         const source = await fs.readFile(file, 'utf8');

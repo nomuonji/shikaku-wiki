@@ -127,7 +127,7 @@ function scoreDoc(source, file) {
   };
 }
 
-const files = (await walk(DOCS)).filter((file) => path.basename(file) !== 'intro.md');
+const files = (await walk(DOCS)).filter((file) => !['intro.md', 'index.md', 'index.mdx'].includes(path.basename(file)));
 const results = [];
 for (const file of files) {
   const source = await fs.readFile(file, 'utf8');
