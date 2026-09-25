@@ -78,10 +78,11 @@ const config: Config = {
   ],
 
   plugins: [
+    './plugins/qualification-index/index.mjs',
     [
       '@docusaurus/plugin-pwa',
       {
-        debug: true,
+        debug: false,
         offlineModeActivationStrategies: [
           'appInstalled',
           'standalone',
@@ -138,6 +139,7 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
+        { to: '/explore', label: '🔎 資格検索', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',

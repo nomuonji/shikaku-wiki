@@ -134,8 +134,8 @@ function HomepageHeader(): React.JSX.Element {
             600以上の資格・検定から、自分に合う候補を探索できます。
           </p>
           <div className={styles.heroActions}>
-            <Link className="button button--primary button--lg" to="/docs/intro">
-              資格一覧から探す
+            <Link className="button button--primary button--lg" to="/explore">
+              条件から資格を探す
             </Link>
             <Link className={styles.textLink} to="/blog">
               勉強法・比較記事を見る <span aria-hidden="true">→</span>

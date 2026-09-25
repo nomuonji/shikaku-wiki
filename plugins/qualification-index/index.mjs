@@ -1,0 +1,213 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const CATEGORY_LABELS = {
+  business: 'ビジネス',
+  technology: 'IT・技術',
+  'legal-accounting': '法律・会計',
+  'medical-welfare': '医療・福祉',
+  lifestyle: 'ライフスタイル',
+  'safety-environment': '安全・環境',
+  creative: 'クリエイティブ',
+  industry: '業界別',
+  etc: 'その他',
+};
+
+async function walk(dir) {
+  const entries = await fs.readdir(dir, {withFileTypes: true});
+  const files = [];
+  for (const entry of entries) {
+    const absolute = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...(await walk(absolute)));
+    } else if (/\.mdx?$/.test(entry.name) && !entry.name.startsWith('_')) {
+      files.push(absolute);
+    }
+  }
+  return files;
+}
+
+function parseFrontMatter(source) {
+  if (!source.startsWith('---')) {
+    return {frontMatter: {}, body: source};
+  }
+  const end = source.indexOf('\n---', 3);
+  if (end === -1) {
+    return {frontMatter: {}, body: source};
+  }
+  const block = source.slice(3, end).trim();
+  const frontMatter = {};
+  for (const line of block.split('\n')) {
+    const match = line.match(/^([A-Za-z0-9_-]+):\s*(.+)$/);
+    if (!match) continue;
+    const [, key, rawValue] = match;
+    frontMatter[key] = rawValue.trim().replace(/^['"]|['"]$/g, '');
+  }
+  return {frontMatter, body: source.slice(end + 4).trim()};
+}
+
+function cleanMarkdown(value) {
+  return value
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/[*_~`>#]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractSummary(body) {
+  const overview = body.match(/##\s*概要\s*\n+([\s\S]*?)(?=\n##\s|$)/);
+  const source = overview?.[1] ?? body;
+  const paragraphs = source
+    .split(/\n\s*\n/)
+    .map(cleanMarkdown)
+    .filter((text) => text && !/^[-|]/.test(text) && text.length >= 18);
+  const summary = paragraphs[0] ?? '';
+  return summary.length > 170 ? `${summary.slice(0, 167)}…` : summary;
+}
+
+function detectCredentialType(body) {
+  const sample = body.slice(0, 2200);
+  const types = [
+    ['国家資格', '国家資格'],
+    ['国家試験', '国家資格'],
+    ['公的資格', '公的資格'],
+    ['民間資格', '民間資格'],
+    ['民間認定', '民間資格'],
+    ['国際資格', '国際資格'],
+  ];
+  for (const [needle, label] of types) {
+    if (sample.includes(needle)) return label;
+  }
+  return '区分未整理';
+}
+
+function detectDifficulty(body) {
+  const section = body.match(/##\s*難易度[^\n]*\n([\s\S]{0,700}?)(?=\n##\s|$)/)?.[1] ?? '';
+  const nearby = body.match(/難易度[\s\S]{0,250}/)?.[0] ?? '';
+  const sample = `${section}\n${nearby}`;
+  const hits = ['初級', '中級', '上級'].filter((label) => sample.includes(label));
+  if (hits.length > 1) return '複数レベル';
+  if (hits.length === 1) return hits[0];
+  if (/難関|極めて高度|非常に高/.test(sample)) return '上級';
+  return '未整理';
+}
+
+function extractStudyHours(body) {
+  const samples = [
+    body.match(/勉強時間[\s\S]{0,420}/)?.[0] ?? '',
+    body.match(/学習時間[\s\S]{0,420}/)?.[0] ?? '',
+  ];
+  for (const sample of samples) {
+    const range = sample.match(/(\d{1,4})\s*(?:時間)?\s*[～〜~\-–—]\s*(\d{1,4})\s*時間/);
+    if (range) {
+      const first = Number(range[1]);
+      const second = Number(range[2]);
+      const min = Math.min(first, second);
+      const max = Math.max(first, second);
+      return {min, max, label: `${min}〜${max}時間`};
+    }
+    const single = sample.match(/(\d{1,4})\s*時間/);
+    if (single) {
+      const value = Number(single[1]);
+      return {min: value, max: value, label: `約${value}時間`};
+    }
+  }
+  return {min: null, max: null, label: '情報なし'};
+}
+
+function detectExamMethod(body) {
+  const section =
+    body.match(/(?:試験方式|試験詳細)[\s\S]{0,900}/)?.[0] ??
+    body.slice(0, 1800);
+  const methods = [];
+  if (/CBT|コンピュータ|パソコン受験/i.test(section)) methods.push('CBT');
+  if (/筆記|マークシート|択一/.test(section)) methods.push('筆記');
+  if (/実技|実地/.test(section)) methods.push('実技');
+  if (/面接|口述/.test(section)) methods.push('面接');
+  if (/オンライン|IBT/.test(section)) methods.push('オンライン');
+  return methods.length ? [...new Set(methods)].slice(0, 2).join('＋') : '未整理';
+}
+
+function extractOfficialUrl(body) {
+  const preferred = body.match(/\[(?:公式サイト|公式情報|公式ページ)[^\]]*\]\((https?:\/\/[^)]+)\)/i);
+  if (preferred) return preferred[1];
+  const section = body.match(/##\s*公式情報[\s\S]{0,500}/)?.[0] ?? '';
+  const fallback = section.match(/\((https?:\/\/[^)]+)\)/);
+  return fallback?.[1] ?? null;
+}
+
+function toRoute(relativePath, slug) {
+  if (slug) {
+    const clean = String(slug).replace(/^\/+|\/+$/g, '');
+    return clean ? `/docs/${clean}` : '/docs';
+  }
+  return `/docs/${relativePath.replace(/\\/g, '/').replace(/\.mdx?$/, '').replace(/\/index$/, '')}`;
+}
+
+export default function qualificationIndexPlugin(context) {
+  const docsDir = path.join(context.siteDir, 'docs');
+
+  return {
+    name: 'qualification-index',
+
+    async loadContent() {
+      const files = await walk(docsDir);
+      const qualifications = [];
+
+      for (const file of files) {
+        const relativePath = path.relative(docsDir, file).replace(/\\/g, '/');
+        if (relativePath === 'intro.md') continue;
+
+        const source = await fs.readFile(file, 'utf8');
+        const {frontMatter, body} = parseFrontMatter(source);
+        const heading = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
+        const title = frontMatter.title || heading || path.basename(file, path.extname(file));
+        const categoryKey = relativePath.split('/')[0];
+        const studyHours = extractStudyHours(body);
+        const summary = extractSummary(body);
+
+        qualifications.push({
+          id: relativePath.replace(/\.mdx?$/, ''),
+          title,
+          route: toRoute(relativePath, frontMatter.slug),
+          categoryKey,
+          category: CATEGORY_LABELS[categoryKey] || categoryKey,
+          summary,
+          credentialType: detectCredentialType(body),
+          difficulty: detectDifficulty(body),
+          studyHours,
+          examMethod: detectExamMethod(body),
+          officialUrl: extractOfficialUrl(body),
+          updatedFor2026: /2026年|2026年度|令和8年/.test(body),
+          searchText: cleanMarkdown(
+            `${title} ${summary} ${CATEGORY_LABELS[categoryKey] || categoryKey} ${relativePath}`,
+          ).toLowerCase(),
+        });
+      }
+
+      qualifications.sort((a, b) => a.title.localeCompare(b.title, 'ja'));
+      return {
+        generatedAt: new Date().toISOString(),
+        count: qualifications.length,
+        qualifications,
+      };
+    },
+
+    async contentLoaded({content, actions}) {
+      const {createData, addRoute} = actions;
+      const dataPath = await createData(
+        'qualifications.json',
+        JSON.stringify(content),
+      );
+
+      addRoute({
+        path: '/explore',
+        component: '@site/src/components/QualificationExplorer.tsx',
+        modules: {qualificationData: dataPath},
+        exact: true,
+      });
+    },
+  };
+}
