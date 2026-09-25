@@ -155,13 +155,24 @@ export default function qualificationIndexPlugin(context) {
     async loadContent() {
       const files = await walk(docsDir);
       const qualifications = [];
+      let sourceCount = 0;
+      let hiddenCount = 0;
 
       for (const file of files) {
         const relativePath = path.relative(docsDir, file).replace(/\\/g, '/');
         if (relativePath === 'intro.md') continue;
 
+        sourceCount += 1;
         const source = await fs.readFile(file, 'utf8');
         const {frontMatter, body} = parseFrontMatter(source);
+        const isHidden =
+          String(frontMatter.unlisted ?? '').toLowerCase() === 'true' ||
+          String(frontMatter.draft ?? '').toLowerCase() === 'true';
+        if (isHidden) {
+          hiddenCount += 1;
+          continue;
+        }
+
         const heading = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
         const title = frontMatter.title || heading || path.basename(file, path.extname(file));
         const categoryKey = relativePath.split('/')[0];
@@ -191,6 +202,8 @@ export default function qualificationIndexPlugin(context) {
       return {
         generatedAt: new Date().toISOString(),
         count: qualifications.length,
+        sourceCount,
+        hiddenCount,
         qualifications,
       };
     },
@@ -200,6 +213,8 @@ export default function qualificationIndexPlugin(context) {
 
       setGlobalData({
         count: content.count,
+        sourceCount: content.sourceCount,
+        hiddenCount: content.hiddenCount,
         items: content.qualifications.map((item) => ({
           id: item.id,
           title: item.title,

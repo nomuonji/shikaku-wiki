@@ -3,7 +3,14 @@ import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import {usePluginData} from '@docusaurus/useGlobalData';
 import styles from './index.module.css';
+
+type QualificationIndexData = {
+  count: number;
+  sourceCount: number;
+  hiddenCount: number;
+};
 
 const categories = [
   { icon: '💼', title: 'ビジネス', description: '営業・人事・経営・マーケティング', to: '/docs/business' },
@@ -75,7 +82,7 @@ const structuredData = {
       '@id': 'https://shikaku.antonbase.com/#website',
       url: 'https://shikaku.antonbase.com/',
       name: '資格カタログ',
-      description: '難易度・合格率・勉強時間から資格・検定を探せる総合情報サイト',
+      description: '公式情報を確認しながら、難易度・勉強時間・試験方式から資格・検定を探せる総合情報サイト',
       inLanguage: 'ja-JP',
       potentialAction: {
         '@type': 'SearchAction',
@@ -126,7 +133,7 @@ function QualificationMap(): React.JSX.Element {
   );
 }
 
-function HomepageHeader(): React.JSX.Element {
+function HomepageHeader({qualificationCount}: {qualificationCount: number}): React.JSX.Element {
   return (
     <header className={styles.hero}>
       <div className={`container ${styles.heroInner}`}>
@@ -139,7 +146,7 @@ function HomepageHeader(): React.JSX.Element {
           </Heading>
           <p className={styles.heroLead}>
             難易度・勉強時間・試験方式・活かせる仕事を整理。
-            600以上の資格・検定から、自分に合う候補を探索できます。
+            公開品質を満たした{qualificationCount}件の資格・検定から、自分に合う候補を探索できます。
           </p>
           <div className={styles.heroActions}>
             <Link className="button button--primary button--lg" to="/explore">
@@ -151,8 +158,8 @@ function HomepageHeader(): React.JSX.Element {
           </div>
           <dl className={styles.stats}>
             <div>
-              <dt>600+</dt>
-              <dd>資格・検定</dd>
+              <dt>{qualificationCount}</dt>
+              <dd>公開中の資格・検定</dd>
             </div>
             <div>
               <dt>8</dt>
@@ -171,10 +178,13 @@ function HomepageHeader(): React.JSX.Element {
 }
 
 export default function Home(): React.JSX.Element {
+  const qualificationData = usePluginData('qualification-index') as QualificationIndexData;
+  const qualificationCount = qualificationData.count;
+
   return (
     <Layout
       title="資格・検定を難易度・勉強時間から探す"
-      description="600以上の資格・検定を、難易度・合格率・勉強時間・試験方式・活かせる仕事から探せる資格カタログ。IT、法律、会計、医療、語学など幅広く掲載しています。">
+      description="公式情報を重視し、難易度・勉強時間・試験方式・活かせる仕事から資格を探せる資格カタログ。IT、法律、会計、医療、語学など幅広く掲載しています。">
       <Head>
         <meta
           name="robots"
@@ -185,7 +195,7 @@ export default function Home(): React.JSX.Element {
         </script>
       </Head>
 
-      <HomepageHeader />
+      <HomepageHeader qualificationCount={qualificationCount} />
 
       <main className={styles.main}>
         <section className={`container ${styles.section}`} aria-labelledby="category-heading">

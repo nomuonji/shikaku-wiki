@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: '資格カタログ',
-  tagline: '難易度・合格率・勉強法がわかる、資格・検定の総合情報サイト',
+  tagline: '公式情報を重視し、難易度・勉強時間・試験方式から探せる資格・検定カタログ',
   favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -124,8 +124,8 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/og-default.png',
     metadata: [
-      { name: 'keywords', content: '資格, 検定, 試験, 勉強法, 難易度, 合格率, 過去問, 独学, キャリアアップ, 転職, 就職' },
-      { name: 'description', content: '資格カタログは、さまざまな資格・検定試験の情報を提供する総合情報サイトです。難易度、合格率、勉強法、試験日程など、資格取得に役立つ最新情報を提供します。' },
+      { name: 'keywords', content: '資格, 検定, 試験, 勉強時間, 難易度, 受験資格, 試験方式, 独学, キャリアアップ, 転職, 就職' },
+      { name: 'description', content: '資格カタログは、公式情報を重視しながら、受験資格・試験方式・日程・難易度・勉強時間の目安を整理する資格・検定の情報サイトです。' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@shikaku_catalog' },
       { name: 'twitter:creator', content: '@shikaku_catalog' },

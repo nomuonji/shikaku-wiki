@@ -37,6 +37,7 @@ function scoreDoc(source, file) {
   const freshness = /確認日|2026年|2026年度|令和8年/.test(body);
   const table = /^\|.+\|$/m.test(body);
   const hasTitle = /^#\s+.+$/m.test(body);
+  const unlisted = /^unlisted:\s*true\s*$/mi.test(source);
 
   let score = 0;
   if (hasTitle) score += 5;
@@ -59,6 +60,7 @@ function scoreDoc(source, file) {
   if (!official) issues.push('公式URLなし');
   if (text.length < 700) issues.push('本文が薄い');
   if (sections.length < 3) issues.push('セクション不足');
+  if (unlisted) issues.push('unlisted（公開カタログ対象外）');
 
   return {
     file: path.relative(ROOT, file).replace(/\\/g, '/'),
@@ -66,6 +68,7 @@ function scoreDoc(source, file) {
     grade: score >= 85 ? 'A' : score >= 70 ? 'B' : score >= 50 ? 'C' : 'D',
     chars: text.length,
     sections: sections.length,
+    unlisted,
     issues,
   };
 }
@@ -90,11 +93,12 @@ const summary = {
   grades,
   below50: results.filter((item) => item.score < 50).length,
   below70: results.filter((item) => item.score < 70).length,
+  unlisted: results.filter((item) => item.unlisted).length,
 };
 
 console.log('資格記事 品質監査');
 console.log('対象: ' + summary.count + '件 / 平均: ' + summary.average + '点 / A:' + (grades.A || 0) + ' B:' + (grades.B || 0) + ' C:' + (grades.C || 0) + ' D:' + (grades.D || 0));
-console.log('70点未満: ' + summary.below70 + '件 / 50点未満: ' + summary.below50 + '件');
+console.log('70点未満: ' + summary.below70 + '件 / 50点未満: ' + summary.below50 + '件 / unlisted: ' + summary.unlisted + '件');
 console.log('\n改善優先度 上位20件');
 for (const item of results.slice(0, 20)) {
   console.log(String(item.score).padStart(3) + ' [' + item.grade + '] ' + item.file + ' — ' + (item.issues.join(' / ') || '問題なし'));
