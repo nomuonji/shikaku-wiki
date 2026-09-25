@@ -59,6 +59,31 @@ export default function QualificationStructuredData(): React.JSX.Element | null 
           name: '資格カタログ',
         },
         mainEntity: {'@id': `${pageUrl}#credential`},
+        breadcrumb: {'@id': `${pageUrl}#breadcrumb`},
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${pageUrl}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: '資格カタログ',
+            item: 'https://shikaku.antonbase.com/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: current.category,
+            item: `https://shikaku.antonbase.com/docs/${current.categoryKey}/`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: current.title,
+            item: pageUrl,
+          },
+        ],
       },
       {
         '@type': 'EducationalOccupationalCredential',
@@ -77,6 +102,9 @@ export default function QualificationStructuredData(): React.JSX.Element | null 
 
   return (
     <Head>
+      {current.availabilityStatus === 'check' ? (
+        <meta name="robots" content="noindex,follow" />
+      ) : null}
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
