@@ -5,6 +5,7 @@ credential_type: "国家資格"
 exam_method: "筆記"
 qualification_status: "active"
 official_url: "https://www.gyosei-shiken.or.jp/"
+search_aliases: "行政書士 行書"
 ---
 
 # 行政書士

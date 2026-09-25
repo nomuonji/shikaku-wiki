@@ -5,6 +5,7 @@ credential_type: "国家資格"
 exam_method: "CBT"
 qualification_status: "active"
 official_url: "https://www.ipa.go.jp/shiken/kubun/ip.html"
+search_aliases: "ITパスポート iパス アイパス"
 ---
 
 # ITパスポート（iパス）

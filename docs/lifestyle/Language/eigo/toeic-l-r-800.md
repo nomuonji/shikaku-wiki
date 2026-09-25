@@ -4,6 +4,7 @@ description: "TOEIC L&R 800点は合格資格ではなくスコア目標です�
 exam_method: "筆記"
 qualification_status: "active"
 official_url: "https://www.iibc-global.org/toeic/test/lr.html"
+search_aliases: "TOEIC TOEIC800 TOEIC800点 トーイック"
 ---
 
 # TOEIC L&R 800点

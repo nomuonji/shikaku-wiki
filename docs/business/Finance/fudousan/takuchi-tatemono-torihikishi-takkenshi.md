@@ -5,6 +5,7 @@ credential_type: "国家資格"
 exam_method: "筆記"
 qualification_status: "active"
 official_url: "https://www.retio.or.jp/exam/"
+search_aliases: "宅建 宅建士 宅地建物取引士"
 ---
 
 # 宅地建物取引士（宅建士）

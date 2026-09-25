@@ -5,6 +5,7 @@ credential_type: "国家資格"
 exam_method: "CBT＋筆記"
 qualification_status: "active"
 official_url: "https://www.jafp.or.jp/exam/"
+search_aliases: "FP FP1級 FP2級 FP3級 ファイナンシャルプランナー"
 ---
 
 # ファイナンシャル・プランニング技能士（FP）1級・2級・3級

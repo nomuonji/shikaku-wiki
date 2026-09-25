@@ -5,6 +5,7 @@ credential_type: "国際資格"
 exam_method: "CBT＋実技"
 qualification_status: "active"
 official_url: "https://mos.odyssey-com.co.jp/"
+search_aliases: "MOS Microsoft Office Specialist Microsoft365 Office"
 ---
 
 # Microsoft Office Specialist（MOS）

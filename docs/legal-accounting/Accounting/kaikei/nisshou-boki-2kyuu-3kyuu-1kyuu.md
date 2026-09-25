@@ -4,6 +4,7 @@ description: "日商簿記1〜3級の2026年度日程、受験料、統一試験
 exam_method: "筆記＋CBT"
 qualification_status: "active"
 official_url: "https://www.kentei.ne.jp/bookkeeping"
+search_aliases: "日商簿記 簿記1級 簿記2級 簿記3級 日商簿記1級 日商簿記2級 日商簿記3級"
 ---
 
 # 日商簿記 1級・2級・3級

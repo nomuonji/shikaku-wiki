@@ -5,6 +5,7 @@ credential_type: "国家資格"
 exam_method: "CBT"
 qualification_status: "active"
 official_url: "https://www.ipa.go.jp/shiken/kubun/fe.html"
+search_aliases: "基本情報 FE 基本情報技術者"
 ---
 
 # 基本情報技術者試験（FE）
