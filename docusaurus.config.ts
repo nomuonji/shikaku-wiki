@@ -119,6 +119,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     // Replace with your project's social card
     image: 'img/og-default.png',
     metadata: [
