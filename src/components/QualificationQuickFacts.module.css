@@ -187,3 +187,37 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+
+.statusNotice,
+.statusEnded {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0.7rem 1.05rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  font-size: 0.68rem;
+}
+
+.statusNotice {
+  background: rgba(168, 112, 22, 0.08);
+}
+
+.statusEnded {
+  background: rgba(110, 110, 110, 0.08);
+}
+
+.statusNotice strong {
+  color: #8a5a12;
+}
+
+.statusEnded strong {
+  color: var(--ifm-color-content-secondary);
+}
+
+.statusNotice span,
+.statusEnded span {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.6rem;
+  line-height: 1.55;
+}

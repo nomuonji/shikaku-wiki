@@ -77,11 +77,21 @@ export default function QualificationExplorer({
   const [category, setCategory] = useState(
     () => initialParams.get('category') ?? 'すべて',
   );
-  const [difficulty, setDifficulty] = useState('すべて');
-  const [credentialType, setCredentialType] = useState('すべて');
-  const [examMethod, setExamMethod] = useState('すべて');
-  const [availability, setAvailability] = useState('現行のみ');
-  const [sortKey, setSortKey] = useState('recommended');
+  const [difficulty, setDifficulty] = useState(
+    () => initialParams.get('difficulty') ?? 'すべて',
+  );
+  const [credentialType, setCredentialType] = useState(
+    () => initialParams.get('type') ?? 'すべて',
+  );
+  const [examMethod, setExamMethod] = useState(
+    () => initialParams.get('method') ?? 'すべて',
+  );
+  const [availability, setAvailability] = useState(
+    () => initialParams.get('status') ?? '現行のみ',
+  );
+  const [sortKey, setSortKey] = useState(
+    () => initialParams.get('sort') ?? 'recommended',
+  );
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
@@ -133,6 +143,33 @@ export default function QualificationExplorer({
     () => filtered.slice(0, visibleCount),
     [filtered, visibleCount],
   );
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const params = new URLSearchParams();
+    if (query) params.set('q', query);
+    if (category !== 'すべて') params.set('category', category);
+    if (difficulty !== 'すべて') params.set('difficulty', difficulty);
+    if (credentialType !== 'すべて') params.set('type', credentialType);
+    if (examMethod !== 'すべて') params.set('method', examMethod);
+    if (availability !== '現行のみ') params.set('status', availability);
+    if (sortKey !== 'recommended') params.set('sort', sortKey);
+
+    const search = params.toString();
+    const nextUrl = search
+      ? `${window.location.pathname}?${search}`
+      : window.location.pathname;
+    window.history.replaceState(window.history.state, '', nextUrl);
+  }, [
+    query,
+    category,
+    difficulty,
+    credentialType,
+    examMethod,
+    availability,
+    sortKey,
+  ]);
 
   const selected = useMemo(
     () =>

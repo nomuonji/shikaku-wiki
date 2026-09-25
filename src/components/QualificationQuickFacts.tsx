@@ -17,6 +17,7 @@ type CompactQualification = {
   examMethod: string;
   officialUrl: string | null;
   updatedFor2026: boolean;
+  availabilityStatus: 'active' | 'ended' | 'check';
 };
 
 type QualificationIndexData = {
@@ -92,6 +93,24 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
         </div>
         <span className={styles.visualCategory}>{current.category}</span>
       </div>
+      {current.availabilityStatus !== 'active' ? (
+        <div
+          className={
+            current.availabilityStatus === 'ended'
+              ? styles.statusEnded
+              : styles.statusNotice
+          }>
+          <strong>
+            {current.availabilityStatus === 'ended'
+              ? 'この資格・検定は終了済みです'
+              : '現在の開催状況は公式情報で要確認です'}
+          </strong>
+          <span>
+            比較用の過去情報として掲載しています。新規受験を考える場合は公式情報を確認してください。
+          </span>
+        </div>
+      ) : null}
+
       <div className={styles.top}>
         <div>
           <span className={styles.kicker}>AT A GLANCE</span>
