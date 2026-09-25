@@ -572,3 +572,93 @@ html[data-theme='dark'] .theme-code-block {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* ────────────────────────────
+   資格詳細ページ：読みやすさと情報の塊を強調
+   ──────────────────────────── */
+.theme-doc-markdown {
+  counter-reset: qualification-section;
+}
+
+.theme-doc-markdown > h1:first-child {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1.15rem 1.35rem 1.2rem;
+  border: 1px solid rgba(31, 58, 95, 0.1);
+  border-radius: 0.85rem;
+  background:
+    linear-gradient(135deg, rgba(31, 58, 95, 0.08), rgba(31, 58, 95, 0.015)),
+    var(--ifm-background-surface-color);
+}
+
+.theme-doc-markdown > h1:first-child::before {
+  content: 'QUALIFICATION GUIDE';
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.theme-doc-markdown > h2 {
+  counter-increment: qualification-section;
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  margin-top: 2.8rem;
+  padding: 0.75rem 0 0.55rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.theme-doc-markdown > h2::before {
+  content: counter(qualification-section, decimal-leading-zero);
+  flex: 0 0 auto;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.theme-doc-markdown > h2:first-of-type + p {
+  margin: 0.8rem 0 1.8rem;
+  padding: 1.1rem 1.2rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 0 0.65rem 0.65rem 0;
+  background: var(--ifm-color-primary-contrast-background);
+  text-align: left;
+}
+
+.theme-doc-markdown > ul,
+.theme-doc-markdown > ol {
+  padding-left: 1.35rem;
+}
+
+.theme-doc-markdown > ul li,
+.theme-doc-markdown > ol li {
+  margin: 0.38rem 0;
+}
+
+.theme-doc-markdown > table {
+  width: 100%;
+  margin: 1.15rem 0 2rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 5px 18px rgba(31, 58, 95, 0.04);
+}
+
+@media (max-width: 768px) {
+  .theme-doc-markdown > h1:first-child {
+    padding: 1rem;
+  }
+
+  .theme-doc-markdown > h2 {
+    margin-top: 2.35rem;
+  }
+
+  .theme-doc-markdown > h2::before {
+    font-size: 0.66rem;
+  }
+}
