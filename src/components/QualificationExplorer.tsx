@@ -4,6 +4,7 @@ import {useLocation} from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import {trackEvent} from '@site/src/utils/analytics';
 import styles from './QualificationExplorer.module.css';
 
 type StudyHours = {
@@ -174,6 +175,20 @@ export default function QualificationExplorer({
     setVisibleCount(PAGE_SIZE);
   }, [query, category, difficulty, credentialType, examMethod, availability, sortKey]);
 
+  useEffect(() => {
+    const searchTerm = query.trim();
+    if (searchTerm.length < 2) return;
+
+    const timer = window.setTimeout(() => {
+      trackEvent('qualification_search', {
+        search_term: searchTerm,
+        result_count: filtered.length,
+      });
+    }, 800);
+
+    return () => window.clearTimeout(timer);
+  }, [query]);
+
   const visible = useMemo(
     () => filtered.slice(0, visibleCount),
     [filtered, visibleCount],
@@ -228,8 +243,12 @@ export default function QualificationExplorer({
 
   const toggleCompare = (id: string) => {
     setSelectedIds((current) => {
-      if (current.includes(id)) return current.filter((item) => item !== id);
+      if (current.includes(id)) {
+        trackEvent('qualification_compare', {action: 'remove', qualification_id: id});
+        return current.filter((item) => item !== id);
+      }
       if (current.length >= 3) return current;
+      trackEvent('qualification_compare', {action: 'add', qualification_id: id});
       return [...current, id];
     });
   };
@@ -430,7 +449,17 @@ export default function QualificationExplorer({
                       </div>
 
                       <Heading as="h3">
-                        <Link to={item.route}>{item.title}</Link>
+                        <Link
+                          to={item.route}
+                          onClick={() =>
+                            trackEvent('qualification_open', {
+                              source: 'explorer_title',
+                              qualification_id: item.id,
+                              qualification_name: item.title,
+                            })
+                          }>
+                          {item.title}
+                        </Link>
                       </Heading>
 
                       <p className={styles.summary}>
@@ -457,7 +486,16 @@ export default function QualificationExplorer({
                       </dl>
 
                       <div className={styles.cardActions}>
-                        <Link className={styles.detailLink} to={item.route}>
+                        <Link
+                          className={styles.detailLink}
+                          to={item.route}
+                          onClick={() =>
+                            trackEvent('qualification_open', {
+                              source: 'explorer_card',
+                              qualification_id: item.id,
+                              qualification_name: item.title,
+                            })
+                          }>
                           詳細を見る <span aria-hidden="true">→</span>
                         </Link>
                         <button

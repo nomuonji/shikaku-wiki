@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import {usePluginData} from '@docusaurus/useGlobalData';
 import CategoryGlyph from '@site/src/components/CategoryGlyph';
+import {trackEvent} from '@site/src/utils/analytics';
 import styles from './index.module.css';
 
 type QualificationIndexData = {
@@ -217,7 +218,16 @@ export default function Home(): React.JSX.Element {
 
           <div className={styles.categoryGrid}>
             {categories.map((category) => (
-              <Link key={category.title} className={styles.categoryCard} to={category.to}>
+              <Link
+                key={category.title}
+                className={styles.categoryCard}
+                to={category.to}
+                onClick={() =>
+                  trackEvent('qualification_category_open', {
+                    category: category.key,
+                    source: 'home',
+                  })
+                }>
                 <span className={styles.categoryIcon} aria-hidden="true">
                   <CategoryGlyph name={category.icon} />
                 </span>
@@ -251,7 +261,13 @@ export default function Home(): React.JSX.Element {
                 <Link
                   key={qualification.name}
                   className={styles.qualificationCard}
-                  to={qualification.to}>
+                  to={qualification.to}
+                  onClick={() =>
+                    trackEvent('qualification_open', {
+                      source: 'home_featured',
+                      qualification_name: qualification.name,
+                    })
+                  }>
                   <span className={styles.cardNumber}>{String(index + 1).padStart(2, '0')}</span>
                   <span className={styles.cardMeta}>{qualification.meta}</span>
                   <strong>{qualification.name}</strong>
