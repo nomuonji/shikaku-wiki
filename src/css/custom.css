@@ -662,3 +662,19 @@ html[data-theme='dark'] .theme-code-block {
     font-size: 0.66rem;
   }
 }
+
+
+/* 分野別ランディングは資格詳細より広いキャンバスを使う */
+.category-landing-doc .theme-doc-markdown {
+  max-width: 100%;
+}
+
+.category-landing-doc .theme-doc-markdown > header,
+.category-landing-doc .theme-doc-markdown > .theme-doc-toc-mobile {
+  display: none;
+}
+
+/* カテゴリ名自体が入口になるため、同じindex docを子項目として重複表示しない */
+.category-landing-sidebar-item {
+  display: none;
+}
