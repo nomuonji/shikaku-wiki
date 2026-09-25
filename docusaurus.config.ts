@@ -173,15 +173,15 @@ const config: Config = {
           items: [
             {
               label: 'ビジネス',
-              to: '/docs/business',
+              to: '/field/business',
             },
             {
               label: 'IT・技術',
-              to: '/docs/technology',
+              to: '/field/technology',
             },
             {
               label: 'ライフスタイル',
-              to: '/docs/lifestyle',
+              to: '/field/lifestyle',
             },
           ],
         },
@@ -211,11 +211,11 @@ const config: Config = {
           items: [
             {
               label: '医療・福祉',
-              to: '/docs/medical-welfare',
+              to: '/field/medical-welfare',
             },
             {
               label: '安全・環境',
-              to: '/docs/safety-environment',
+              to: '/field/safety-environment',
             },
             {
               label: '編集方針・情報の見方',

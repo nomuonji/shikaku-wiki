@@ -15,14 +15,14 @@ type QualificationIndexData = {
 };
 
 const categories = [
-  { icon: 'business', title: 'ビジネス', description: '営業・人事・経営・マーケティング', to: '/docs/business' },
-  { icon: 'technology', title: 'IT・技術', description: '情報処理・クラウド・データ・開発', to: '/docs/technology' },
-  { icon: 'legal', title: '法律・会計', description: '士業・法務・簿記・会計・金融', to: '/docs/legal-accounting' },
-  { icon: 'medical', title: '医療・福祉', description: '医療・介護・福祉・ヘルスケア', to: '/docs/medical-welfare' },
-  { icon: 'lifestyle', title: 'ライフスタイル', description: '語学・食・暮らし・教養', to: '/docs/lifestyle' },
-  { icon: 'safety', title: '安全・環境', description: '安全衛生・設備・環境・防災', to: '/docs/safety-environment' },
-  { icon: 'creative', title: 'クリエイティブ', description: 'デザイン・写真・映像・メディア', to: '/docs/creative' },
-  { icon: 'industry', title: '業界別', description: '不動産・物流・製造など業界特化', to: '/docs/industry' },
+  { icon: 'business', title: 'ビジネス', description: '営業・人事・経営・マーケティング', to: '/field/business' },
+  { icon: 'technology', title: 'IT・技術', description: '情報処理・クラウド・データ・開発', to: '/field/technology' },
+  { icon: 'legal', title: '法律・会計', description: '士業・法務・簿記・会計・金融', to: '/field/legal-accounting' },
+  { icon: 'medical', title: '医療・福祉', description: '医療・介護・福祉・ヘルスケア', to: '/field/medical-welfare' },
+  { icon: 'lifestyle', title: 'ライフスタイル', description: '語学・食・暮らし・教養', to: '/field/lifestyle' },
+  { icon: 'safety', title: '安全・環境', description: '安全衛生・設備・環境・防災', to: '/field/safety-environment' },
+  { icon: 'creative', title: 'クリエイティブ', description: 'デザイン・写真・映像・メディア', to: '/field/creative' },
+  { icon: 'industry', title: '業界別', description: '不動産・物流・製造など業界特化', to: '/field/industry' },
 ];
 
 const popularQualifications = [

@@ -280,6 +280,7 @@ export default function qualificationIndexPlugin(context) {
           id: item.id,
           title: item.title,
           route: item.route,
+          summary: item.summary,
           categoryKey: item.categoryKey,
           category: item.category,
           section: item.id.split('/').slice(0, 2).join('/'),
@@ -304,6 +305,14 @@ export default function qualificationIndexPlugin(context) {
         modules: {qualificationData: dataPath},
         exact: true,
       });
+
+      for (const categoryKey of Object.keys(CATEGORY_LABELS)) {
+        addRoute({
+          path: `/field/${categoryKey}`,
+          component: '@site/src/components/QualificationFieldPage.tsx',
+          exact: true,
+        });
+      }
     },
   };
 }
