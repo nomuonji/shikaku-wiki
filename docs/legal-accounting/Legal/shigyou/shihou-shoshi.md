@@ -1,6 +1,10 @@
 ---
 title: "司法書士"
 description: "2026年度司法書士試験は筆記7月5日、筆記合格発表10月1日、口述10月13日。受験料8,000円、試験科目・仕事・難易度を法務省公式情報から整理します。"
+credential_type: "国家資格"
+exam_method: "筆記＋口述"
+qualification_status: "active"
+official_url: "https://www.moj.go.jp/shikaku_saiyo_index3.html"
 ---
 
 # 司法書士

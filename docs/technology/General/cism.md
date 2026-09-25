@@ -1,6 +1,10 @@
 ---
 title: "CISM（Certified Information Security Manager）"
 description: "CISMの試験方式、受験料、4ドメイン、認定に必要な実務経験、2026年11月3日の試験範囲改定をISACA公式情報ベースで整理します。"
+credential_type: "国際資格"
+exam_method: "CBT"
+qualification_status: "active"
+official_url: "https://www.isaca.org/credentialing/cism"
 ---
 
 # CISM（Certified Information Security Manager）

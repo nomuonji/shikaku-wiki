@@ -1,6 +1,10 @@
 ---
 title: "社会福祉士"
 description: "第39回社会福祉士国家試験は2027年2月7日、申込は2026年9月3日〜10月2日、受験料24,300円です。受験資格・19科目・合格基準を公式情報で整理します。"
+credential_type: "国家資格"
+exam_method: "筆記"
+qualification_status: "active"
+official_url: "https://www.sssc.or.jp/shakai/"
 ---
 
 # 社会福祉士

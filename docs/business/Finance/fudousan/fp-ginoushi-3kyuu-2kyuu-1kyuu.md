@@ -1,6 +1,10 @@
 ---
 title: "ファイナンシャル・プランニング技能士（FP）1級・2級・3級"
 description: "FP技能検定は国家検定です。2026年度の2級・3級CBT、受検料、1級学科・実技、6分野、受検資格を日本FP協会・きんざい公式情報から整理します。"
+credential_type: "国家資格"
+exam_method: "CBT＋筆記"
+qualification_status: "active"
+official_url: "https://www.jafp.or.jp/exam/"
 ---
 
 # ファイナンシャル・プランニング技能士（FP）1級・2級・3級

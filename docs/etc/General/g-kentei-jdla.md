@@ -1,6 +1,10 @@
 ---
 title: "G検定（JDLA Deep Learning for GENERAL）"
 description: "G検定の2026年最新日程、オンライン100分・約145問、受験料、受験資格、出題範囲をJDLA公式情報から整理します。"
+credential_type: "民間資格"
+exam_method: "オンライン＋会場"
+qualification_status: "active"
+official_url: "https://www.jdla.org/certificate/general/"
 ---
 
 # G検定（JDLA Deep Learning for GENERAL）

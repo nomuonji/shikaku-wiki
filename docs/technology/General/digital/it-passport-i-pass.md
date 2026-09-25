@@ -1,6 +1,10 @@
 ---
 title: "ITパスポート（iパス）"
 description: "ITパスポートはCBTで随時実施される国家試験です。100問・120分、7,500円、総合600点かつ3分野300点以上。2027年度の制度変更予定までIPA公式情報で整理します。"
+credential_type: "国家資格"
+exam_method: "CBT"
+qualification_status: "active"
+official_url: "https://www.ipa.go.jp/shiken/kubun/ip.html"
 ---
 
 # ITパスポート（iパス）
