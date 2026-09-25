@@ -24,7 +24,17 @@ const principles = [
   {
     number: '04',
     title: '比較データの正本を一つにする',
-    body: '資格検索・比較画面のデータは、各資格記事のMarkdown本文からビルド時に自動生成します。同じ情報を別DBへ手入力して、更新ずれを生む設計を避けています。',
+    body: '資格検索・比較画面のデータは、各資格記事のMarkdownを正本としてビルド時に自動生成します。同じ情報を別DBへ手入力して、更新ずれを生む設計を避けています。',
+  },
+  {
+    number: '05',
+    title: '薄いまま公開しない',
+    body: '旧データや短いストック原稿は、公式情報・試験制度・学習範囲などを確認して記事として整うまで、資格検索・関連記事・公開件数の対象に含めません。',
+  },
+  {
+    number: '06',
+    title: '「今も受けられるか」を分ける',
+    body: '現行資格、開催状況を再確認すべき資格、終了済み資格を同列に扱いません。通常の資格検索では現行資格を優先し、過去資格は状態を明示して残します。',
   },
 ];
 
@@ -115,13 +125,14 @@ export default function Methodology(): React.JSX.Element {
               <p className={styles.kicker}>HOW TO READ</p>
               <Heading as="h2">検索・比較画面の数字について</Heading>
               <p>
-                「区分」「難易度」「勉強時間」「試験方式」などの比較項目は、資格記事の本文から自動抽出しています。
-                記事に明記されていない項目は「未整理」「情報なし」と表示し、空欄を推測で埋めません。
+                「区分」「難易度」「勉強時間」「試験方式」などの比較項目は、資格記事の構造化メタデータを優先し、
+                明示がない項目だけ本文から補助的に抽出します。確認できない値は「—」とし、空欄を推測で埋めません。
               </p>
               <p>
-                自動抽出は候補を探すための補助機能です。受験申込や資格の法的効力を判断するときは、各記事からリンクしている公式情報を最終確認してください。
+                検索・比較は候補を探すための補助機能です。受験申込や資格の法的効力を判断するときは、
+                各記事の確認日と実施状況を見たうえで、リンクしている公式情報を最終確認してください。
               </p>
-              <Link className="button button--primary button--md" to="/explore">
+              <Link className="button button--primary button--md" to="/explore/">
                 資格検索・比較を開く
               </Link>
             </div>
@@ -138,6 +149,11 @@ export default function Methodology(): React.JSX.Element {
               <i aria-hidden="true" />
               <div>
                 <small>STEP 3</small>
+                <strong>公開状態を判定</strong>
+              </div>
+              <i aria-hidden="true" />
+              <div>
+                <small>STEP 4</small>
                 <strong>検索データを自動生成</strong>
               </div>
             </div>
