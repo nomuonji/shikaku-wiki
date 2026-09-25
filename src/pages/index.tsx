@@ -86,14 +86,6 @@ const structuredData = {
       name: '資格カタログ',
       description: '公式情報を確認しながら、難易度・勉強時間・試験方式から資格・検定を探せる総合情報サイト',
       inLanguage: 'ja-JP',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: 'https://shikaku.antonbase.com/explore?q={search_term_string}',
-        },
-        'query-input': 'required name=search_term_string',
-      },
     },
     {
       '@type': 'CollectionPage',

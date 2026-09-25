@@ -213,7 +213,7 @@ export default function QualificationExplorer({
       <Head>
         <meta
           name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1"
+          content="noindex,follow"
         />
       </Head>
 
