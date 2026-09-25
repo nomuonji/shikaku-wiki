@@ -196,7 +196,23 @@ export default function qualificationIndexPlugin(context) {
     },
 
     async contentLoaded({content, actions}) {
-      const {createData, addRoute} = actions;
+      const {createData, addRoute, setGlobalData} = actions;
+
+      setGlobalData({
+        count: content.count,
+        items: content.qualifications.map((item) => ({
+          id: item.id,
+          title: item.title,
+          route: item.route,
+          categoryKey: item.categoryKey,
+          category: item.category,
+          section: item.id.split('/').slice(0, 2).join('/'),
+          credentialType: item.credentialType,
+          difficulty: item.difficulty,
+          studyHours: item.studyHours.label,
+        })),
+      });
+
       const dataPath = await createData(
         'qualifications.json',
         JSON.stringify(content),

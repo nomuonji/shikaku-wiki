@@ -1,0 +1,131 @@
+.section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ifm-table-border-color);
+}
+
+.headingRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4rem;
+  align-items: end;
+  margin-bottom: 1.2rem;
+}
+
+.kicker {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.headingRow h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.35rem;
+}
+
+.headingRow h2::before {
+  display: none;
+}
+
+.exploreLink {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  position: relative;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid rgba(31, 58, 95, 0.1);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.card:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: rgba(31, 58, 95, 0.24);
+  box-shadow: 0 9px 24px rgba(31, 58, 95, 0.08);
+}
+
+.category {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.card strong {
+  display: block;
+  padding-right: 1.5rem;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card dl {
+  display: flex;
+  gap: 1rem;
+  margin: 0.8rem 0 0;
+}
+
+.card dl div {
+  min-width: 0;
+}
+
+.card dt {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.56rem;
+}
+
+.card dd {
+  margin: 0.1rem 0 0;
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.arrow {
+  position: absolute;
+  right: 0.85rem;
+  top: 0.85rem;
+  color: var(--ifm-color-primary);
+}
+
+.empty {
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--ifm-color-primary-contrast-background);
+  font-size: 0.78rem;
+}
+
+.empty p {
+  margin: 0 0 0.35rem;
+}
+
+@media (max-width: 700px) {
+  .headingRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
