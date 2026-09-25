@@ -1,5 +1,6 @@
 import React, {useMemo, useState} from 'react';
 import Head from '@docusaurus/Head';
+import {useLocation} from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
@@ -63,8 +64,15 @@ function SortIcon({active}: {active: boolean}) {
 export default function QualificationExplorer({
   qualificationData,
 }: Props): React.JSX.Element {
-  const [query, setQuery] = useState('');
-  const [category, setCategory] = useState('すべて');
+  const location = useLocation();
+  const initialParams = useMemo(
+    () => new URLSearchParams(location.search),
+    [location.search],
+  );
+  const [query, setQuery] = useState(() => initialParams.get('q') ?? '');
+  const [category, setCategory] = useState(
+    () => initialParams.get('category') ?? 'すべて',
+  );
   const [difficulty, setDifficulty] = useState('すべて');
   const [credentialType, setCredentialType] = useState('すべて');
   const [examMethod, setExamMethod] = useState('すべて');

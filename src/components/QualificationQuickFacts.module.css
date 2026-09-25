@@ -1,0 +1,106 @@
+.panel {
+  margin: 0 0 1.4rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(31, 58, 95, 0.11);
+  border-radius: 12px;
+  background:
+    linear-gradient(130deg, rgba(31, 58, 95, 0.055), transparent 58%),
+    var(--ifm-background-surface-color);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.top > div:first-child {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.kicker {
+  color: var(--ifm-color-primary);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.top strong {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.actions a {
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0.9rem 0 0;
+  border-top: 1px solid var(--ifm-table-border-color);
+  border-left: 1px solid var(--ifm-table-border-color);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.facts div {
+  min-width: 0;
+  padding: 0.55rem 0.6rem;
+  border-right: 1px solid var(--ifm-table-border-color);
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  background: color-mix(in srgb, var(--ifm-background-color) 82%, transparent);
+}
+
+.facts dt {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.54rem;
+  letter-spacing: 0.05em;
+}
+
+.facts dd {
+  margin: 0.12rem 0 0;
+  overflow: hidden;
+  font-size: 0.67rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.facts .fresh dd {
+  color: var(--ifm-color-success-dark);
+}
+
+.note,
+.pending {
+  margin: 0.55rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.6rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .actions {
+    justify-content: flex-start;
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

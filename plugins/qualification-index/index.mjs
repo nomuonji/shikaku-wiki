@@ -210,6 +210,9 @@ export default function qualificationIndexPlugin(context) {
           credentialType: item.credentialType,
           difficulty: item.difficulty,
           studyHours: item.studyHours.label,
+          examMethod: item.examMethod,
+          officialUrl: item.officialUrl,
+          updatedFor2026: item.updatedFor2026,
         })),
       });
 
