@@ -7,6 +7,8 @@ image: /img/og-default.png
 description: "MOS資格は役に立つのかを、2026年の公式試験情報から整理。受験料12,980円、50分の実技CBT、科目の選び方、独学の進め方、取得が向く人・向かない人を解説します。"
 hide_table_of_contents: false
 date: 2025-11-22T10:00:00Z
+last_update:
+  date: 2026-09-25
 ---
 
 MOS（Microsoft Office Specialist）を取るべきかは、「有名な資格だから」ではなく、**Word・Excel・PowerPointなどの操作力を証明する必要があるか**で判断するのが合理的です。
