@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import Head from '@docusaurus/Head';
 import {useLocation} from '@docusaurus/router';
 import Link from '@docusaurus/Link';
@@ -37,6 +37,8 @@ type QualificationData = {
 type Props = {
   qualificationData: QualificationData;
 };
+
+const PAGE_SIZE = 48;
 
 const CATEGORY_ORDER = [
   'ビジネス',
@@ -78,6 +80,7 @@ export default function QualificationExplorer({
   const [examMethod, setExamMethod] = useState('すべて');
   const [sortKey, setSortKey] = useState('recommended');
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const categories = useMemo(() => {
     const values = new Set(qualificationData.qualifications.map((item) => item.category));
@@ -114,6 +117,15 @@ export default function QualificationExplorer({
     examMethod,
     sortKey,
   ]);
+
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [query, category, difficulty, credentialType, examMethod, sortKey]);
+
+  const visible = useMemo(
+    () => filtered.slice(0, visibleCount),
+    [filtered, visibleCount],
+  );
 
   const selected = useMemo(
     () =>
@@ -297,7 +309,7 @@ export default function QualificationExplorer({
 
             {filtered.length ? (
               <div className={styles.cardGrid}>
-                {filtered.map((item) => {
+                {visible.map((item) => {
                   const selectedForCompare = selectedIds.includes(item.id);
                   return (
                     <article key={item.id} className={styles.card}>
@@ -351,7 +363,23 @@ export default function QualificationExplorer({
                     </article>
                   );
                 })}
-              </div>
+              <>
+                </div>
+                {visible.length < filtered.length ? (
+                  <div className={styles.loadMoreWrap}>
+                    <span>{visible.length} / {filtered.length}件を表示中</span>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setVisibleCount((current) =>
+                          Math.min(current + PAGE_SIZE, filtered.length),
+                        )
+                      }>
+                      さらに{Math.min(PAGE_SIZE, filtered.length - visible.length)}件表示
+                    </button>
+                  </div>
+                ) : null}
+              </>
             ) : (
               <div className={styles.emptyState}>
                 <span aria-hidden="true">⌕</span>

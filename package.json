@@ -17,7 +17,10 @@
     "bot:draft": "node sns-bot/src/tweetSender.mjs --dry-run",
     "bot:post": "node sns-bot/src/tweetSender.mjs && node sns-bot/src/threadsSender.mjs",
     "bot:threads-draft": "node sns-bot/src/threadsSender.mjs --dry-run",
-    "bot:threads-refresh": "node sns-bot/src/threads-refresh.mjs"
+    "bot:threads-refresh": "node sns-bot/src/threads-refresh.mjs",
+    "audit:quality": "node scripts/audit_qualification_quality.mjs --report",
+    "audit:quality:strict": "node scripts/audit_qualification_quality.mjs --report --strict",
+    "prebuild": "node scripts/audit_qualification_quality.mjs --report"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
