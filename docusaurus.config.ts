@@ -217,6 +217,10 @@ const config: Config = {
               label: '安全・環境',
               to: '/docs/safety-environment',
             },
+            {
+              label: '編集方針・情報の見方',
+              to: '/methodology',
+            },
           ],
         },
       ],

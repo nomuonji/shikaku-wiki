@@ -1,0 +1,222 @@
+.page {
+  background: var(--ifm-background-color);
+}
+
+.hero {
+  padding: 6rem 0 5.4rem;
+  border-bottom: 1px solid rgba(31, 58, 95, 0.08);
+  background:
+    radial-gradient(circle at 82% 20%, rgba(31, 58, 95, 0.08), transparent 28%),
+    var(--ifm-background-surface-color);
+}
+
+.eyebrow,
+.kicker {
+  margin: 0 0 0.7rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.55rem, 5vw, 4.45rem);
+  line-height: 1.18;
+}
+
+.lead {
+  max-width: 760px;
+  margin: 1.5rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.principleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.principle {
+  min-height: 250px;
+  padding: 1.7rem;
+  border: 1px solid rgba(31, 58, 95, 0.1);
+  border-radius: 18px;
+  background: var(--ifm-background-surface-color);
+}
+
+.principle > span {
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+}
+
+.principle h2 {
+  margin: 1.4rem 0 0;
+  font-size: 1.3rem;
+}
+
+.principle p {
+  margin: 0.75rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.86rem;
+  line-height: 1.9;
+}
+
+.sourceSection {
+  background:
+    linear-gradient(135deg, rgba(31, 58, 95, 0.04), transparent 60%),
+    var(--ifm-background-surface-color);
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.65fr) minmax(0, 1.35fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.twoColumn h2,
+.explainer h2,
+.noticeSection h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+}
+
+.sourceList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: source;
+}
+
+.sourceList li {
+  counter-increment: source;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 0.4rem 1rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.sourceList li::before {
+  content: counter(source, decimal-leading-zero);
+  grid-row: 1 / 3;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+}
+
+.sourceList strong {
+  font-size: 0.9rem;
+}
+
+.sourceList span {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.explainer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.explainer p:not(.kicker) {
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.9;
+}
+
+.explainer :global(.button) {
+  margin-top: 0.7rem;
+}
+
+.diagram {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: #172f4e;
+}
+
+.diagram div {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.diagram small {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+}
+
+.diagram strong {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+}
+
+.diagram i {
+  width: 1px;
+  height: 18px;
+  margin: -0.1rem 0 -0.1rem 1.4rem;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.noticeSection {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(31, 58, 95, 0.08);
+  background: var(--ifm-color-primary-contrast-background);
+}
+
+.noticeSection h2 {
+  font-size: 1.25rem;
+}
+
+.noticeSection p {
+  max-width: 880px;
+  margin: 0.7rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.82rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .principleGrid,
+  .twoColumn,
+  .explainer {
+    grid-template-columns: 1fr;
+  }
+
+  .twoColumn,
+  .explainer {
+    gap: 2.2rem;
+  }
+
+  .principle {
+    min-height: 0;
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

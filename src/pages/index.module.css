@@ -535,3 +535,68 @@
     width: 20px;
   }
 }
+
+
+.trustSection {
+  border-top: 1px solid rgba(31, 58, 95, 0.07);
+  border-bottom: 1px solid rgba(31, 58, 95, 0.07);
+  background:
+    linear-gradient(135deg, rgba(31, 58, 95, 0.025), transparent 55%),
+    var(--ifm-background-surface-color);
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.trustCard {
+  min-height: 210px;
+  padding: 1.4rem;
+  border: 1px solid rgba(31, 58, 95, 0.1);
+  border-radius: 16px;
+  background: var(--ifm-background-color);
+}
+
+.trustCard > span {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+}
+
+.trustCard strong {
+  display: block;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1rem;
+}
+
+.trustCard p {
+  margin: 0.65rem 0 0;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+.trustFooter {
+  margin-top: 1.4rem;
+  text-align: right;
+}
+
+.trustFooter a {
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+@media (max-width: 996px) {
+  .trustGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .trustCard {
+    min-height: 0;
+  }
+}

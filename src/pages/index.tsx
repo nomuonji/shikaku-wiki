@@ -246,6 +246,44 @@ export default function Home(): React.JSX.Element {
           </div>
         </section>
 
+        <section className={styles.trustSection} aria-labelledby="trust-heading">
+          <div className={`container ${styles.section}`}>
+            <div className={styles.sectionHeading}>
+              <div>
+                <p className={styles.sectionKicker}>RESEARCH STANDARD</p>
+                <Heading as="h2" id="trust-heading">
+                  数字の出どころを、曖昧にしない。
+                </Heading>
+              </div>
+              <p>
+                資格選びでは、試験日や受験料のような公式情報と、勉強時間のような目安を分けて読むことが重要です。
+              </p>
+            </div>
+
+            <div className={styles.trustGrid}>
+              <div className={styles.trustCard}>
+                <span>01</span>
+                <strong>公式情報を優先</strong>
+                <p>試験制度・日程・受験料・受験資格は、実施団体や公的機関の情報を優先して確認します。</p>
+              </div>
+              <div className={styles.trustCard}>
+                <span>02</span>
+                <strong>目安は目安として表示</strong>
+                <p>勉強時間や難易度は個人差があります。公式値と推定・一般的な目安を混同しない方針です。</p>
+              </div>
+              <div className={styles.trustCard}>
+                <span>03</span>
+                <strong>記事から比較データを自動生成</strong>
+                <p>検索・比較画面は資格記事を正本として生成し、別データベースとの情報ずれを減らします。</p>
+              </div>
+            </div>
+
+            <div className={styles.trustFooter}>
+              <Link to="/methodology">編集方針と情報の見方を詳しく読む →</Link>
+            </div>
+          </div>
+        </section>
+
         <section className={`container ${styles.section}`}>
           <div className={styles.routePanel}>
             <div className={styles.routeVisual} aria-hidden="true">
