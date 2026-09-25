@@ -297,6 +297,16 @@
   line-height: 1.45;
 }
 
+.categoryCount {
+  display: inline-block;
+  margin-top: 0.48rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.64rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 .arrow {
   color: var(--ifm-color-primary);
   font-size: 1rem;
