@@ -1,7 +1,5 @@
 import React, {useMemo} from 'react';
-import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {usePluginData} from '@docusaurus/useGlobalData';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Heading from '@theme/Heading';
@@ -53,7 +51,6 @@ function scoreRelated(
 
 export default function QualificationRelated(): React.JSX.Element | null {
   const {metadata} = useDoc();
-  const {siteConfig} = useDocusaurusContext();
   const data = usePluginData('qualification-index') as QualificationIndexData;
 
   const current = useMemo(
@@ -82,41 +79,7 @@ export default function QualificationRelated(): React.JSX.Element | null {
 
   if (!current) return null;
 
-  const canonicalUrl = new URL(
-    metadata.permalink,
-    siteConfig.url,
-  ).toString();
-
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: metadata.title,
-    description: metadata.description,
-    url: canonicalUrl,
-    inLanguage: 'ja-JP',
-    isPartOf: {
-      '@type': 'WebSite',
-      name: '資格カタログ',
-      url: siteConfig.url,
-    },
-    mainEntity: {
-      '@type': 'EducationalOccupationalCredential',
-      name: metadata.title,
-      credentialCategory:
-        current.credentialType === '区分未整理'
-          ? undefined
-          : current.credentialType,
-    },
-  };
-
   return (
-    <>
-      <Head>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Head>
-
       <section className={styles.section} aria-labelledby="related-qualifications">
         <div className={styles.headingRow}>
           <div>
@@ -139,11 +102,11 @@ export default function QualificationRelated(): React.JSX.Element | null {
                 <dl>
                   <div>
                     <dt>難易度</dt>
-                    <dd>{item.difficulty}</dd>
+                    <dd>{item.difficulty === '未整理' ? '—' : item.difficulty}</dd>
                   </div>
                   <div>
                     <dt>勉強時間</dt>
-                    <dd>{item.studyHours}</dd>
+                    <dd>{item.studyHours === '情報なし' ? '—' : item.studyHours}</dd>
                   </div>
                 </dl>
                 <span className={styles.arrow} aria-hidden="true">↗</span>
@@ -157,6 +120,5 @@ export default function QualificationRelated(): React.JSX.Element | null {
           </div>
         )}
       </section>
-    </>
   );
 }
