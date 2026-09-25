@@ -195,9 +195,9 @@ function extractOfficialUrl(body) {
 function toRoute(relativePath, slug) {
   if (slug) {
     const clean = String(slug).replace(/^\/+|\/+$/g, '');
-    return clean ? `/docs/${clean}` : '/docs';
+    return clean ? `/docs/${clean}/` : '/docs/';
   }
-  return `/docs/${relativePath.replace(/\\/g, '/').replace(/\.mdx?$/, '').replace(/\/index$/, '')}`;
+  return `/docs/${relativePath.replace(/\\/g, '/').replace(/\.mdx?$/, '').replace(/\/index$/, '')}/`;
 }
 
 export default function qualificationIndexPlugin(context) {

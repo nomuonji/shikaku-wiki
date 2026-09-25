@@ -15,14 +15,14 @@ type QualificationIndexData = {
 };
 
 const categories = [
-  { icon: 'business', title: 'ビジネス', description: '営業・人事・経営・マーケティング', to: '/field/business' },
-  { icon: 'technology', title: 'IT・技術', description: '情報処理・クラウド・データ・開発', to: '/field/technology' },
-  { icon: 'legal', title: '法律・会計', description: '士業・法務・簿記・会計・金融', to: '/field/legal-accounting' },
-  { icon: 'medical', title: '医療・福祉', description: '医療・介護・福祉・ヘルスケア', to: '/field/medical-welfare' },
-  { icon: 'lifestyle', title: 'ライフスタイル', description: '語学・食・暮らし・教養', to: '/field/lifestyle' },
-  { icon: 'safety', title: '安全・環境', description: '安全衛生・設備・環境・防災', to: '/field/safety-environment' },
-  { icon: 'creative', title: 'クリエイティブ', description: 'デザイン・写真・映像・メディア', to: '/field/creative' },
-  { icon: 'industry', title: '業界別', description: '不動産・物流・製造など業界特化', to: '/field/industry' },
+  { icon: 'business', title: 'ビジネス', description: '営業・人事・経営・マーケティング', to: '/docs/business/' },
+  { icon: 'technology', title: 'IT・技術', description: '情報処理・クラウド・データ・開発', to: '/docs/technology/' },
+  { icon: 'legal', title: '法律・会計', description: '士業・法務・簿記・会計・金融', to: '/docs/legal-accounting/' },
+  { icon: 'medical', title: '医療・福祉', description: '医療・介護・福祉・ヘルスケア', to: '/docs/medical-welfare/' },
+  { icon: 'lifestyle', title: 'ライフスタイル', description: '語学・食・暮らし・教養', to: '/docs/lifestyle/' },
+  { icon: 'safety', title: '安全・環境', description: '安全衛生・設備・環境・防災', to: '/docs/safety-environment/' },
+  { icon: 'creative', title: 'クリエイティブ', description: 'デザイン・写真・映像・メディア', to: '/docs/creative/' },
+  { icon: 'industry', title: '業界別', description: '不動産・物流・製造など業界特化', to: '/docs/industry/' },
 ];
 
 const popularQualifications = [
@@ -30,49 +30,49 @@ const popularQualifications = [
     name: 'ITパスポート',
     note: 'ITの基礎を広く学ぶ国家試験',
     meta: 'IT・入門',
-    to: '/docs/technology/General/digital/it-passport-i-pass',
+    to: '/docs/technology/General/digital/it-passport-i-pass/',
   },
   {
     name: '基本情報技術者',
     note: 'エンジニアの土台になる国家試験',
     meta: 'IT・定番',
-    to: '/docs/technology/General/kihon-jouhou-gijutsusha-fe',
+    to: '/docs/technology/General/kihon-jouhou-gijutsusha-fe/',
   },
   {
     name: '宅地建物取引士（宅建）',
     note: '不動産業界の代表的な国家資格',
     meta: '法律・不動産',
-    to: '/docs/business/Finance/fudousan/takuchi-tatemono-torihikishi-takkenshi',
+    to: '/docs/business/Finance/fudousan/takuchi-tatemono-torihikishi-takkenshi/',
   },
   {
     name: '日商簿記',
     note: '会計・経理の基礎から実務まで',
     meta: '会計・経理',
-    to: '/docs/legal-accounting/Accounting/kaikei/nisshou-boki-2kyuu-3kyuu-1kyuu',
+    to: '/docs/legal-accounting/Accounting/kaikei/nisshou-boki-2kyuu-3kyuu-1kyuu/',
   },
   {
     name: '行政書士',
     note: '許認可・法務分野の国家資格',
     meta: '法律・士業',
-    to: '/docs/legal-accounting/Legal/shigyou/gyousei-shoshi',
+    to: '/docs/legal-accounting/Legal/shigyou/gyousei-shoshi/',
   },
   {
     name: 'FP技能士',
     note: 'お金・保険・税・相続を体系化',
     meta: '金融・生活',
-    to: '/docs/business/Finance/fudousan/fp-ginoushi-3kyuu-2kyuu-1kyuu',
+    to: '/docs/business/Finance/fudousan/fp-ginoushi-3kyuu-2kyuu-1kyuu/',
   },
   {
     name: 'MOS',
     note: 'Word・Excelなどの操作スキルを証明',
     meta: 'PC・実務',
-    to: '/docs/technology/General/mos',
+    to: '/docs/technology/General/mos/',
   },
   {
     name: 'TOEIC L&R 800',
     note: '英語力の目標ラインを具体化',
     meta: '語学・英語',
-    to: '/docs/lifestyle/Language/eigo/toeic-l-r-800',
+    to: '/docs/lifestyle/Language/eigo/toeic-l-r-800/',
   },
 ];
 
@@ -100,7 +100,7 @@ const structuredData = {
           '@type': 'ListItem',
           position: index + 1,
           name: item.name,
-          url: `https://shikaku.antonbase.com${item.to}/`,
+          url: `https://shikaku.antonbase.com${item.to}`,
         })),
       },
     },
@@ -143,10 +143,10 @@ function HomepageHeader({qualificationCount}: {qualificationCount: number}): Rea
             公開品質を満たした{qualificationCount}件の資格・検定から、自分に合う候補を探索できます。
           </p>
           <div className={styles.heroActions}>
-            <Link className="button button--primary button--lg" to="/explore">
+            <Link className="button button--primary button--lg" to="/explore/">
               条件から資格を探す
             </Link>
-            <Link className={styles.textLink} to="/blog">
+            <Link className={styles.textLink} to="/blog/">
               勉強法・比較記事を見る <span aria-hidden="true">→</span>
             </Link>
           </div>

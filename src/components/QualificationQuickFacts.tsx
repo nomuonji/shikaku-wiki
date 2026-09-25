@@ -70,7 +70,7 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
       : null,
   ].filter((fact): fact is {label: string; value: string} => Boolean(fact));
 
-  const browseUrl = `/explore?category=${encodeURIComponent(current.category)}`;
+  const browseUrl = `/explore/?category=${encodeURIComponent(current.category)}`;
   const visual = CATEGORY_VISUALS[current.categoryKey] ?? {
     code: 'CERT',
     label: current.category,

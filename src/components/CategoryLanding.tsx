@@ -131,9 +131,9 @@ export default function CategoryLanding({
 
   const featured = useMemo(() => {
     const preferred = FEATURED[categoryKey] ?? [];
-    const byRoute = new Map(activeItems.map((item) => [item.route, item]));
+    const byRoute = new Map(activeItems.map((item) => [item.route.replace(/\/+$/, ''), item]));
     const selected = preferred
-      .map((route) => byRoute.get(route))
+      .map((route) => byRoute.get(route.replace(/\/+$/, '')))
       .filter((item): item is Item => Boolean(item));
 
     if (selected.length >= 4) return selected.slice(0, 4);
@@ -167,7 +167,7 @@ export default function CategoryLanding({
   }, [activeItems]);
 
   const freshCount = activeItems.filter((item) => item.updatedFor2026).length;
-  const exploreUrl = `/explore?category=${encodeURIComponent(title)}`;
+  const exploreUrl = `/explore/?category=${encodeURIComponent(title)}`;
   const canonicalUrl = `https://shikaku.antonbase.com/docs/${categoryKey}/`;
   const structuredData = {
     '@context': 'https://schema.org',
@@ -183,7 +183,7 @@ export default function CategoryLanding({
         '@type': 'ListItem',
         position: index + 1,
         name: item.title,
-        url: `https://shikaku.antonbase.com${item.route}/`,
+        url: `https://shikaku.antonbase.com${item.route}`,
       })),
     },
   };
@@ -205,7 +205,7 @@ export default function CategoryLanding({
             <Link className="button button--primary button--md" to={exploreUrl}>
               この分野を条件検索
             </Link>
-            <Link className={styles.secondaryLink} to="/explore">
+            <Link className={styles.secondaryLink} to="/explore/">
               全資格から探す →
             </Link>
           </div>

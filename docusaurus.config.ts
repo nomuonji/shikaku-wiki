@@ -140,14 +140,14 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        { to: '/explore', label: '資格検索', position: 'left' },
+        { to: '/explore/', label: '資格検索', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: '資格一覧',
         },
-        { to: '/blog', label: 'ブログ', position: 'left' },
+        { to: '/blog/', label: 'ブログ', position: 'left' },
         {
           href: 'https://job.antonbase.com',
           label: 'しごと図鑑',
@@ -190,7 +190,7 @@ const config: Config = {
           items: [
             {
               label: 'ブログ',
-              to: '/blog',
+              to: '/blog/',
             },
             {
               label: 'しごと図鑑（資格が活きる仕事）',
@@ -219,7 +219,7 @@ const config: Config = {
             },
             {
               label: '編集方針・情報の見方',
-              to: '/methodology',
+              to: '/methodology/',
             },
           ],
         },

@@ -125,7 +125,7 @@ export default function QualificationRelated(): React.JSX.Element | null {
               この資格とあわせて見る
             </Heading>
           </div>
-          <Link className={styles.exploreLink} to="/explore">
+          <Link className={styles.exploreLink} to="/explore/">
             条件から探す <span aria-hidden="true">→</span>
           </Link>
         </div>
@@ -153,7 +153,7 @@ export default function QualificationRelated(): React.JSX.Element | null {
         ) : (
           <div className={styles.empty}>
             <p>近い資格は検索画面から条件を変えて探せます。</p>
-            <Link to="/explore">資格検索を開く →</Link>
+            <Link to="/explore/">資格検索を開く →</Link>
           </div>
         )}
       </section>
