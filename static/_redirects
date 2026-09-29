@@ -195,3 +195,8 @@
 /field/industry/ /docs/industry/ 301
 /field/etc /docs/etc/ 301
 /field/etc/ /docs/etc/ 301
+
+# 2026-09-29 canonical trailing-slash normalization
+/blog/mos-qualification-guide /blog/mos-qualification-guide/ 301
+/docs/business/Marketing/hanbaishi-retail-marketing-kentei /docs/business/Marketing/hanbaishi-retail-marketing-kentei/ 301
+/docs/business/Marketing/seo-kentei-2kyuu /docs/business/Marketing/seo-kentei-2kyuu/ 301
