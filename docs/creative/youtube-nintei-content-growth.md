@@ -76,7 +76,7 @@ YouTube 認定資格は、条件を満たしたクリエイターやパートナ
     - 公式は学習時間の固定値を公開していません。教材を自分のペースで完了してから試験を受けます。
 
 ## 公式情報
-- [制度確認日](制度確認日): 2026年10月1日
+- 制度確認日: 2026年10月1日
 - [YouTube 認定資格プログラムの概要](https://support.google.com/youtube/answer/6145904?hl=ja)
 - [YouTube 認定資格コースの受講](https://support.google.com/youtube/answer/7380223?hl=ja)
 - [YouTube クリエイターアカデミー](https://www.youtube.com/creators/)
