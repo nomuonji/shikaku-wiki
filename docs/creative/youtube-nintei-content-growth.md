@@ -1,5 +1,7 @@
 ---
 title: "YouTube 認定資格 (YouTube Certified)"
+description: "YouTube Certifiedは一般のYouTuber資格ではなく、パートナー経由の制限付きコースです。公式は推奨や能力保証をせず、個人バッジは無効、企業認定は中断中です。"
+verified_at: "2026-10-01"
 ---
 
 # YouTube 認定資格 (YouTube Certified)
@@ -36,7 +38,7 @@ YouTube 認定資格は、条件を満たしたクリエイターやパートナ
 | 合格ライン | 正答率 75% 以上 |
 | 受験料 | 公式ヘルプに受験料の記載なし（参加は招待・パートナー経路） |
 | 受験資格 | パートナー マネージャーのサポート、または Content ID へのアクセス権を持つクリエイター／パートナー。加えて Google アカウントと現行の YouTube ポリシー遵守 |
-| 有効期限 | 修了証は 18 か月間有効。その後は再受験が必要 |
+| 有効期限 | 修了証は 18 ヶ月間有効。その後は再受験が必要 |
 | 再受験 | 不合格の場合は 24 時間後以降に再受験可能。回数制限の記載なし |
 | 試験方式 | オンライン |
 
@@ -74,6 +76,7 @@ YouTube 認定資格は、条件を満たしたクリエイターやパートナ
     - 公式は学習時間の固定値を公開していません。教材を自分のペースで完了してから試験を受けます。
 
 ## 公式情報
+- [制度確認日](制度確認日): 2026年10月1日
 - [YouTube 認定資格プログラムの概要](https://support.google.com/youtube/answer/6145904?hl=ja)
 - [YouTube 認定資格コースの受講](https://support.google.com/youtube/answer/7380223?hl=ja)
 - [YouTube クリエイターアカデミー](https://www.youtube.com/creators/)
