@@ -167,6 +167,7 @@ for (const rawUrl of sitemapUrls) {
 
 const requiredInSitemap = [
   '/',
+  '/qualifications/',
   '/docs/business/',
   '/docs/technology/',
   '/docs/legal-accounting/',
@@ -188,6 +189,11 @@ for (const pathname of requiredInSitemap) {
 if (sitemapSet.has(ORIGIN + '/explore/')) {
   fail('/explore/ must not be in sitemap');
 }
+
+await verifyPage('/qualifications/', {
+  indexable: true,
+  schemaTypes: ['ItemList'],
+});
 
 const home = await verifyPage('/', {
   indexable: true,
