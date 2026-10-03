@@ -177,6 +177,7 @@ const requiredInSitemap = [
   '/docs/industry/',
   '/docs/technology/General/aws-cloud-practitioner/',
   '/docs/business/Marketing/seo-kentei-2kyuu/',
+  '/docs/business/Marketing/hubspot-inbound-marketing/',
   '/blog/mos-qualification-guide/',
 ];
 for (const pathname of requiredInSitemap) {
@@ -218,11 +219,20 @@ for (const pathname of [
 for (const pathname of [
   '/docs/technology/General/aws-cloud-practitioner/',
   '/docs/business/Marketing/seo-kentei-2kyuu/',
+  '/docs/business/Marketing/hubspot-inbound-marketing/',
 ]) {
   await verifyPage(pathname, {
     indexable: true,
     schemaTypes: ['WebPage', 'EducationalOccupationalCredential', 'BreadcrumbList'],
   });
+}
+
+await verifyPage('/docs/lifestyle/Culture/chiri-nouryoku-kentei-2kyuu/', {
+  noindex: true,
+  schemaTypes: ['WebPage', 'EducationalOccupationalCredential', 'BreadcrumbList'],
+});
+if (sitemapSet.has(ORIGIN + '/docs/lifestyle/Culture/chiri-nouryoku-kentei-2kyuu/')) {
+  fail('Ended qualification must not be in sitemap');
 }
 
 const mosBlog = await verifyPage('/blog/mos-qualification-guide/', {
