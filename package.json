@@ -22,7 +22,7 @@
     "audit:quality:strict": "node scripts/audit_qualification_quality.mjs --report --strict",
     "prebuild": "node scripts/audit_site_invariants.mjs && node scripts/audit_qualification_quality.mjs --report",
     "audit:site": "node scripts/audit_site_invariants.mjs",
-    "postbuild": "node scripts/verify_built_site.mjs"
+    "postbuild": "node scripts/prune_noindex_sitemap.mjs && node scripts/verify_built_site.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
