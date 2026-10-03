@@ -21,12 +21,15 @@ function fail(message, failures) {
 }
 
 const failures = [];
-const [home, plugin, config, redirects, explorer] = await Promise.all([
+const [home, plugin, config, redirects, explorer, quickFacts, packageJson, verifier] = await Promise.all([
   read('src/pages/index.tsx'),
   read('plugins/qualification-index/index.mjs'),
   read('docusaurus.config.ts'),
   read('static/_redirects'),
   read('src/components/QualificationExplorer.tsx'),
+  read('src/components/QualificationQuickFacts.tsx'),
+  read('package.json'),
+  read('scripts/verify_built_site.mjs'),
 ]);
 
 // 廃止した /field/* は redirect の正本以外へ戻さない。
@@ -156,6 +159,26 @@ if (home.includes('SearchAction')) {
   fail('終了済みのサイトリンク検索ボックス用 SearchAction が残っています', failures);
 }
 
+// DB登録と検索index可否は必ず分離する。
+if (!plugin.includes('const indexReady =')) {
+  fail('資格インデックスに indexReady 判定がありません', failures);
+}
+if (!plugin.includes("availabilityStatus === 'active'") || !plugin.includes('Boolean(officialUrl)')) {
+  fail('indexReady が現行性 + 公式URLを要求していません', failures);
+}
+if (!home.includes('qualificationData.indexReadyCount')) {
+  fail('ホーム公開件数が indexReadyCount を使っていません', failures);
+}
+if (!quickFacts.includes('!current.indexReady')) {
+  fail('個別資格ページのrobotsが indexReady と連動していません', failures);
+}
+if (!packageJson.includes('prune_noindex_sitemap.mjs')) {
+  fail('postbuildからnoindex sitemap剪定が外れています', failures);
+}
+if (!verifier.includes('Noindex page leaked into sitemap')) {
+  fail('build監査がnoindex sitemap混入を検知しません', failures);
+}
+
 // カテゴリindexや非公開ストックを資格1件として検索DBへ混ぜない。
 if (!plugin.includes("/(^|\\/)index\\.mdx?$/")) {
   fail('資格インデックスがカテゴリ index.mdx を除外していません', failures);
@@ -179,3 +202,5 @@ console.log('- 全redirectのtarget実在・競合sourceなし・redirect chain�
 console.log('- ホーム主要内部リンクの実在と trailing slash を確認');
 console.log('- /explore noindex + sitemap除外を確認');
 console.log('- unlisted/draft/index.mdx の検索DB除外を確認');
+console.log('- indexReady = 現行 + 最近の制度確認 + 公式URL を確認');
+console.log('- 個別robots / ホーム件数 / sitemap剪定の連動を確認');
