@@ -87,7 +87,9 @@ function scoreDoc(source, file) {
     body.match(/^#\s+(.+)$/m)?.[1]?.trim() ||
     path.basename(file, path.extname(file));
 
-  const official = /##\s*公式情報/.test(body) && /https?:\/\//.test(body);
+  const official =
+    Boolean(String(frontMatter.official_url || '').trim()) ||
+    (/##\s*公式情報/.test(body) && /https?:\/\//.test(body));
   const overview = /##\s*概要/.test(body);
   const exam = /##\s*試験詳細|試験方式|受験料|受験資格|取得の流れ|講習/.test(body);
   const learning = /学習範囲|シラバス|勉強法|実務|活か|業務|試験科目/.test(body);
