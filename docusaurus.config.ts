@@ -144,12 +144,13 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
+        { to: '/qualifications/', label: '資格一覧', position: 'left' },
         { to: '/explore/', label: '資格検索', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '資格一覧',
+          label: '分野別',
         },
         { to: '/blog/', label: 'ブログ', position: 'left' },
         {
@@ -166,6 +167,7 @@ const config: Config = {
         {
           title: '資格を探す',
           items: [
+            { label: '資格一覧', to: '/qualifications/' },
             { label: '資格検索・比較', to: '/explore/' },
             { label: 'ビジネス', to: '/docs/business/' },
             { label: 'IT・技術', to: '/docs/technology/' },
