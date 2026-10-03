@@ -28,6 +28,7 @@ type Qualification = {
   verifiedAt: string | null;
   verifiedThisYear: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
+  indexReady: boolean;
   searchText: string;
 };
 
@@ -87,6 +88,7 @@ function recommendationScore(item: Qualification) {
   if (item.studyHours.label !== '情報なし') score += 2;
   if (item.examMethod !== '未整理') score += 2;
   if (item.officialUrl) score += 2;
+  if (item.indexReady) score += 4;
   if (item.summary) score += 1;
   return score;
 }
@@ -409,7 +411,7 @@ export default function QualificationExplorer({
             <div className={styles.sourceNote}>
               <strong>自動更新</strong>
               <p>
-                この検索データは資格記事のMarkdownからビルド時に生成されます。別DBへの二重入力はありません。
+                この検索データは資格記事のMarkdownからビルド時に生成されます。検索エンジンへの公開可否は、現行性・確認日・公式URLの3条件で別判定します。
               </p>
             </div>
           </aside>
@@ -458,6 +460,8 @@ export default function QualificationExplorer({
                           <span className={styles.endedBadge}>終了済み</span>
                         ) : item.availabilityStatus === 'check' ? (
                           <span className={styles.checkBadge}>開催要確認</span>
+                        ) : !item.indexReady ? (
+                          <span className={styles.checkBadge}>公式情報確認待ち</span>
                         ) : item.verifiedAt ? (
                           <span className={styles.freshBadge}>確認 {item.verifiedAt}</span>
                         ) : null}
