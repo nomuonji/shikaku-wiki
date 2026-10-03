@@ -16,6 +16,7 @@ type CompactQualification = {
   difficulty: string;
   studyHours: string;
   availabilityStatus: 'active' | 'ended' | 'check';
+  indexReady: boolean;
 };
 
 type QualificationIndexData = {
@@ -66,8 +67,8 @@ export default function QualificationRelated(): React.JSX.Element | null {
     return data.items
       .filter((item) => item.id !== current.id)
       .filter((item) =>
-        current.availabilityStatus === 'active'
-          ? item.availabilityStatus === 'active'
+        current.indexReady
+          ? item.indexReady
           : item.availabilityStatus === current.availabilityStatus,
       )
       .map((item) => ({item, score: scoreRelated(current, item)}))

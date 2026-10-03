@@ -20,6 +20,7 @@ type CompactQualification = {
   verifiedAt: string | null;
   verifiedThisYear: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
+  indexReady: boolean;
 };
 
 type QualificationIndexData = {
@@ -80,7 +81,7 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
 
   return (
     <>
-      {current.availabilityStatus === 'check' ? (
+      {!current.indexReady ? (
         <Head>
           <meta name="robots" content="noindex,follow" />
         </Head>
@@ -101,7 +102,7 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
         </div>
         <span className={styles.visualCategory}>{current.category}</span>
       </div>
-      {current.availabilityStatus !== 'active' ? (
+      {!current.indexReady ? (
         <div
           className={
             current.availabilityStatus === 'ended'
@@ -111,10 +112,12 @@ export default function QualificationQuickFacts(): React.JSX.Element | null {
           <strong>
             {current.availabilityStatus === 'ended'
               ? 'この資格・検定は終了済みです'
-              : '現在の開催状況は公式情報で要確認です'}
+              : current.availabilityStatus === 'check'
+                ? '現在の開催状況は公式情報で要確認です'
+                : '公式情報の確認が完了するまで検索公開の対象外です'}
           </strong>
           <span>
-            比較用の過去情報として掲載しています。新規受験を考える場合は公式情報を確認してください。
+            ページは比較・調査用に維持しています。受験判断では、確認日と公式情報リンクを優先してください。
           </span>
         </div>
       ) : null}

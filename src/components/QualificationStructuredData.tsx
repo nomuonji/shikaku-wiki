@@ -14,6 +14,7 @@ type Qualification = {
   officialUrl: string | null;
   verifiedAt: string | null;
   availabilityStatus: 'active' | 'ended' | 'check';
+  indexReady: boolean;
 };
 
 type QualificationIndexData = {
@@ -104,7 +105,7 @@ export default function QualificationStructuredData(): React.JSX.Element | null 
 
   return (
     <Head>
-      {current.availabilityStatus === 'check' ? (
+      {!current.indexReady ? (
         <meta name="robots" content="noindex,follow" />
       ) : null}
       <script type="application/ld+json">

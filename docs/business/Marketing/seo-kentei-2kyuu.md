@@ -1,5 +1,11 @@
 ---
 title: "SEO検定 2級"
+description: "SEO検定2級の受験資格、出題形式、試験時間、受験料、現行テキスト範囲を公式情報ベースで整理。"
+verified_at: "2026-09-28"
+official_url: "https://www.ajsa.or.jp/kentei/seo/2nd/test.html"
+credential_type: "民間資格"
+qualification_status: "active"
+search_aliases: "SEO資格 SEO検定2級 SEO 2級"
 ---
 
 # SEO検定 2級

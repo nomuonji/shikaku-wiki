@@ -1,5 +1,12 @@
 ---
 title: "HubSpot Inbound Marketing"
+description: "HubSpot AcademyのInbound Certification Courseを、受講料、構成、学習時間、日本語対応、学習内容から公式情報ベースで整理。"
+verified_at: "2026-10-03"
+official_url: "https://academy.hubspot.com/courses/inbound"
+credential_type: "民間資格"
+qualification_status: "active"
+exam_method: "オンライン"
+search_aliases: "HubSpot Inbound Certification インバウンド認定 HubSpot資格"
 ---
 
 # HubSpot Inbound Marketing
@@ -8,7 +15,7 @@ title: "HubSpot Inbound Marketing"
 
 HubSpot Academy の **Inbound Certification Course** は、顧客を「集める → 関係を築く → 満足につなげる」というインバウンドの考え方を体系的に学ぶ無料の認定コースです。ファネルだけでなく、顧客中心の **flywheel（フライホイール）**、buyer persona、buyer journey まで扱います。
 
-## 2026年9月時点の公式コース構成
+## 2026年10月3日時点の公式コース構成
 
 | 項目 | 公式情報 |
 | --- | --- |
@@ -43,6 +50,5 @@ HubSpot Academy には別に **Inbound Marketing Optimization Certification** �
 - [Inbound Certification Course（HubSpot Academy）](https://academy.hubspot.com/courses/inbound)
 - [Inbound Marketing Optimization Certification（HubSpot Academy）](https://academy.hubspot.com/courses/inbound-marketing-optimization)
 
-## ハッシュタグ
 
-- #資格 #HubSpot #CRM
+確認日：2026年10月3日。コース構成・対応言語は変更される可能性があるため、受講前に公式ページを確認してください。

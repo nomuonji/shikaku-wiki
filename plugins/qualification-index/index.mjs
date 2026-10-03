@@ -279,6 +279,12 @@ export default function qualificationIndexPlugin(context) {
           declaredStatus === 'ended' || declaredStatus === 'check'
             ? declaredStatus
             : detectedStatus || (isRecentVerification(verifiedAt) ? 'active' : 'check');
+        const officialUrl =
+          frontMatter.official_url || extractOfficialUrl(body);
+        const indexReady =
+          availabilityStatus === 'active' &&
+          Boolean(verifiedAt) &&
+          Boolean(officialUrl);
 
         qualifications.push({
           id: relativePath.replace(/\.mdx?$/, ''),
@@ -294,11 +300,11 @@ export default function qualificationIndexPlugin(context) {
           studyHours,
           examMethod:
             frontMatter.exam_method || detectExamMethod(body),
-          officialUrl:
-            frontMatter.official_url || extractOfficialUrl(body),
+          officialUrl,
           verifiedAt,
           verifiedThisYear,
           availabilityStatus,
+          indexReady,
           searchText: normalizeSearchValue(
             cleanMarkdown(
               `${title} ${summary} ${CATEGORY_LABELS[categoryKey] || categoryKey} ${relativePath} ${frontMatter.search_aliases || ''}`,
@@ -311,10 +317,18 @@ export default function qualificationIndexPlugin(context) {
       const activeCount = qualifications.filter(
         (item) => item.availabilityStatus === 'active',
       ).length;
+      const officialSourceCount = qualifications.filter(
+        (item) => Boolean(item.officialUrl),
+      ).length;
+      const indexReadyCount = qualifications.filter(
+        (item) => item.indexReady,
+      ).length;
       return {
         generatedAt: new Date().toISOString(),
         count: qualifications.length,
         activeCount,
+        officialSourceCount,
+        indexReadyCount,
         sourceCount,
         hiddenCount,
         qualifications,
@@ -327,6 +341,8 @@ export default function qualificationIndexPlugin(context) {
       setGlobalData({
         count: content.count,
         activeCount: content.activeCount,
+        officialSourceCount: content.officialSourceCount,
+        indexReadyCount: content.indexReadyCount,
         sourceCount: content.sourceCount,
         hiddenCount: content.hiddenCount,
         items: content.qualifications.map((item) => ({
@@ -345,6 +361,7 @@ export default function qualificationIndexPlugin(context) {
           verifiedAt: item.verifiedAt,
           verifiedThisYear: item.verifiedThisYear,
           availabilityStatus: item.availabilityStatus,
+          indexReady: item.indexReady,
         })),
       });
 

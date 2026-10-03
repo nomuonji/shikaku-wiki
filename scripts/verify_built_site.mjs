@@ -152,13 +152,22 @@ for (const rawUrl of sitemapUrls) {
   const url = new URL(rawUrl);
   if (url.origin !== ORIGIN) fail('Unexpected sitemap origin: ' + rawUrl);
   if (!url.pathname.endsWith('/')) fail('Sitemap URL missing trailing slash: ' + rawUrl);
-  if (!(await exists(pageTarget(url.pathname)))) {
+  const target = pageTarget(url.pathname);
+  if (!(await exists(target))) {
     fail('Sitemap URL has no generated page: ' + rawUrl);
+  }
+  const sitemapHtml = await fs.readFile(target, 'utf8');
+  const sitemapRobots = tags(sitemapHtml, 'meta')
+    .filter((tag) => (tag.attrs.name || '').toLowerCase() === 'robots')
+    .map((tag) => tag.attrs.content || '');
+  if (sitemapRobots.some((value) => /\bnoindex\b/i.test(value))) {
+    fail('Noindex page leaked into sitemap: ' + rawUrl);
   }
 }
 
 const requiredInSitemap = [
   '/',
+  '/qualifications/',
   '/docs/business/',
   '/docs/technology/',
   '/docs/legal-accounting/',
@@ -167,7 +176,9 @@ const requiredInSitemap = [
   '/docs/creative/',
   '/docs/lifestyle/',
   '/docs/industry/',
-  '/docs/technology/General/mos/',
+  '/docs/technology/General/aws-cloud-practitioner/',
+  '/docs/business/Marketing/seo-kentei-2kyuu/',
+  '/docs/business/Marketing/hubspot-inbound-marketing/',
   '/blog/mos-qualification-guide/',
 ];
 for (const pathname of requiredInSitemap) {
@@ -178,6 +189,11 @@ for (const pathname of requiredInSitemap) {
 if (sitemapSet.has(ORIGIN + '/explore/')) {
   fail('/explore/ must not be in sitemap');
 }
+
+await verifyPage('/qualifications/', {
+  indexable: true,
+  schemaTypes: ['ItemList'],
+});
 
 const home = await verifyPage('/', {
   indexable: true,
@@ -207,19 +223,22 @@ for (const pathname of [
 }
 
 for (const pathname of [
-  '/docs/technology/General/digital/it-passport-i-pass/',
-  '/docs/technology/General/kihon-jouhou-gijutsusha-fe/',
-  '/docs/business/Finance/fudousan/takuchi-tatemono-torihikishi-takkenshi/',
-  '/docs/legal-accounting/Accounting/kaikei/nisshou-boki-2kyuu-3kyuu-1kyuu/',
-  '/docs/legal-accounting/Legal/shigyou/gyousei-shoshi/',
-  '/docs/business/Finance/fudousan/fp-ginoushi-3kyuu-2kyuu-1kyuu/',
-  '/docs/technology/General/mos/',
-  '/docs/lifestyle/Language/eigo/toeic-l-r-800/',
+  '/docs/technology/General/aws-cloud-practitioner/',
+  '/docs/business/Marketing/seo-kentei-2kyuu/',
+  '/docs/business/Marketing/hubspot-inbound-marketing/',
 ]) {
   await verifyPage(pathname, {
     indexable: true,
     schemaTypes: ['WebPage', 'EducationalOccupationalCredential', 'BreadcrumbList'],
   });
+}
+
+await verifyPage('/docs/lifestyle/Culture/chiri-nouryoku-kentei-2kyuu/', {
+  noindex: true,
+  schemaTypes: ['WebPage', 'EducationalOccupationalCredential', 'BreadcrumbList'],
+});
+if (sitemapSet.has(ORIGIN + '/docs/lifestyle/Culture/chiri-nouryoku-kentei-2kyuu/')) {
+  fail('Ended qualification must not be in sitemap');
 }
 
 const mosBlog = await verifyPage('/blog/mos-qualification-guide/', {
