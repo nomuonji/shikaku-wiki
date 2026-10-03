@@ -11,7 +11,6 @@ type Qualification = {
   route: string;
   categoryKey: string;
   category: string;
-  credentialType: string;
   verifiedAt: string | null;
   indexReady: boolean;
 };
@@ -102,8 +101,7 @@ export default function QualificationsPage(): React.JSX.Element {
                         <Link to={item.route}>{item.title}</Link>
                       </Heading>
                       <p className="margin-bottom--none">
-                        {item.credentialType !== '区分未整理' ? item.credentialType : '資格・検定'}
-                        {item.verifiedAt ? ` · 制度確認 ${item.verifiedAt}` : ''}
+                        {item.verifiedAt ? `制度確認 ${item.verifiedAt}` : '公式情報を確認済み'}
                       </p>
                     </div>
                   </article>
