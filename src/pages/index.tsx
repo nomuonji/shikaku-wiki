@@ -11,11 +11,15 @@ import styles from './index.module.css';
 type QualificationIndexData = {
   count: number;
   activeCount: number;
+  officialSourceCount: number;
+  indexReadyCount: number;
   sourceCount: number;
   hiddenCount: number;
   items: Array<{
+    route: string;
     categoryKey: string;
     availabilityStatus: 'active' | 'ended' | 'check';
+    indexReady: boolean;
   }>;
 };
 
@@ -101,10 +105,10 @@ const structuredData = {
       about: { '@type': 'Thing', name: '資格・検定' },
       mainEntity: {
         '@type': 'ItemList',
-        itemListElement: popularQualifications.map((item, index) => ({
+        itemListElement: categories.map((item, index) => ({
           '@type': 'ListItem',
           position: index + 1,
-          name: item.name,
+          name: item.title,
           url: `https://shikaku.antonbase.com${item.to}`,
         })),
       },
@@ -178,11 +182,24 @@ function HomepageHeader({qualificationCount}: {qualificationCount: number}): Rea
 
 export default function Home(): React.JSX.Element {
   const qualificationData = usePluginData('qualification-index') as QualificationIndexData;
-  const qualificationCount = qualificationData.activeCount;
+  const qualificationCount = qualificationData.indexReadyCount;
+  const indexReadyRoutes = React.useMemo(
+    () =>
+      new Set(
+        qualificationData.items
+          .filter((item) => item.indexReady)
+          .map((item) => item.route),
+      ),
+    [qualificationData.items],
+  );
+  const featuredQualifications = React.useMemo(
+    () => popularQualifications.filter((item) => indexReadyRoutes.has(item.to)),
+    [indexReadyRoutes],
+  );
   const categoryCounts = React.useMemo(() => {
     const counts = new Map<string, number>();
     for (const item of qualificationData.items) {
-      if (item.availabilityStatus !== 'active') continue;
+      if (!item.indexReady) continue;
       counts.set(item.categoryKey, (counts.get(item.categoryKey) ?? 0) + 1);
     }
     return counts;
@@ -253,11 +270,11 @@ export default function Home(): React.JSX.Element {
                   まず見ておきたい定番資格
                 </Heading>
               </div>
-              <p>知名度が高く、比較の基準にしやすい資格から全体像をつかめます。</p>
+              <p>公式情報と制度確認日が揃った資格だけを、比較の入口として表示しています。</p>
             </div>
 
             <div className={styles.qualificationGrid}>
-              {popularQualifications.map((qualification, index) => (
+              {featuredQualifications.map((qualification, index) => (
                 <Link
                   key={qualification.name}
                   className={styles.qualificationCard}
