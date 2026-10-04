@@ -1,6 +1,10 @@
 ---
 title: "AWS認定 クラウドプラクティショナー"
 description: "AWS Certified Cloud Practitioner（CLF-C02）の試験範囲、90分・65問の試験仕様、3年の有効期間と再認定経路、Foundational試験の受験料15,000円と申込前の確認事項を整理。"
+verified_at: "2026-10-03"
+official_url: "https://aws.amazon.com/jp/certification/certified-cloud-practitioner/"
+credential_type: "民間資格"
+qualification_status: "active"
 ---
 
 # AWS認定 クラウドプラクティショナー（CLF-C02）
@@ -44,7 +48,7 @@ AWS公式の資格ページでは、CLF-C02は**90分・65問**と案内され�
 3. Associate レベルの試験のいずれかに合格する。
 4. Professional レベルの試験のいずれかに合格する。
 
-試験による再認定は、AWS Certification Account の50%割引バウチャーを使える場合があると同ページが案内しています。適用できるかどうかと支払額はアカウントと予約画面を優先し、この記事では割引後の固定額を計算しません。過去の Cloud Quest ベータ期限や終了済みキャンペーンは、現行条件として転記しません。
+試験による再認定は、AWS Certification Account の50%割引バウチャーを使える場合があると同ページが案内しています。適用できるかどうかと支払額はアカウントと予約画面を優先し、この記事では割引後の固定額を計算しません。過去の Cloud Quest ベータ期限や、すでに終わった期間限定キャンペーンは、現行条件として転記しません。
 
 ## 受験料・申し込み前の確認
 
