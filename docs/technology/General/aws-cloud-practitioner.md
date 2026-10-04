@@ -1,6 +1,6 @@
 ---
 title: "AWS認定 クラウドプラクティショナー"
-description: "AWS Certified Cloud Practitioner（CLF-C02）の試験範囲、90分・65問の試験仕様、Foundational試験の受験料15,000円と申込前の確認事項を整理。"
+description: "AWS Certified Cloud Practitioner（CLF-C02）の試験範囲、90分・65問の試験仕様、3年の有効期間と再認定経路、Foundational試験の受験料15,000円と申込前の確認事項を整理。"
 ---
 
 # AWS認定 クラウドプラクティショナー（CLF-C02）
@@ -33,6 +33,19 @@ AWSは試験ガイドで合格をスケールドスコア700以上として説�
 
 AWS公式の資格ページでは、CLF-C02は**90分・65問**と案内されています。受験前には、[AWS Certified Cloud Practitioner公式ページ](https://aws.amazon.com/jp/certification/certified-cloud-practitioner/)で現行試験コードと試験仕様を再確認してください。
 
+## 有効期間と再認定
+
+2026年10月3日に確認した[AWS公式の再認定ページ](https://aws.amazon.com/certification/recertification/)では、AWS認定は**3年間**有効です。有効な認定を維持するには、期限前に再認定します。同ページは、再認定の対象は有効な認定であり、失効した認定は再認定の対象外と案内しています。期限を過ぎた後に再度認定を取得する手続きは、予約時の公式案内を確認してください。
+
+同ジに記されている、AWS Certified Cloud Practitioner の再認定経路は次の4つです。
+
+1. AWS Cloud Quest: Recertify Cloud Practitioner を完了する。試験は不要で、公式ページは無料と案内しています。対象は、認定の失効まで6か月以内になった保有者です。完了すると有効期間が3年延びます。
+2. 最新版の AWS Certified Cloud Practitioner 試験に合格する。
+3. Associate レベルの試験のいずれかに合格する。
+4. Professional レベルの試験のいずれかに合格する。
+
+試験による再認定は、AWS Certification Account の50%割引バウチャーを使える場合があると同ページが案内しています。適用できるかどうかと支払額はアカウントと予約画面を優先し、この記事では割引後の固定額を計算しません。過去の Cloud Quest ベータ期限や終了済みキャンペーンは、現行条件として転記しません。
+
 ## 受験料・申し込み前の確認
 
 AWSの[認定試験料金ページ](https://aws.amazon.com/jp/certification/policies/before-testing/)を2026年9月28日に確認した時点で、Foundational試験の日本円表示価格は**15,000円**です。
@@ -41,11 +54,12 @@ AWSの[認定試験料金ページ](https://aws.amazon.com/jp/certification/poli
 
 資格取得者向けの割引・特典が利用できる場合がありますが、適用資格や条件はアカウント状況によって確認が必要です。この記事では割引を前提に実質料金を計算せず、予約時にAWS Certification Account側の利用可能な特典を確認する方針にします。
 
-また、有効期間や再認定条件、受験可能な言語・会場も変更される可能性があります。受験枠を選ぶ前に、CLF-C02が引き続き現行版か、希望する受験方法と日時が選べるかを公式ページで確認してください。
+受験可能な言語・会場も変更される可能性があります。受験枠を選ぶ前に、CLF-C02が引き続き現行版か、希望する受験方法と日時が選べるかを公式ページで確認してください。有効期間と再認定の現行案内は、上の「有効期間と再認定」を見てください。
 
 ## 公式情報
 
 - [AWS Certified Cloud Practitioner](https://aws.amazon.com/jp/certification/certified-cloud-practitioner/)
 - [CLF-C02公式試験ガイド](https://docs.aws.amazon.com/ja_jp/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html)
+- [AWS Recertification](https://aws.amazon.com/certification/recertification/)
 
-更新日：2026年9月28日（試験仕様・Foundational試験の日本円料金を確認。税・割引・予約時の最終金額は公式予約画面を優先）
+更新日：2026年10月3日（有効期間3年と再認定経路を公式再認定ページで確認。税・割引・予約時の最終金額は公式予約画面を優先）
