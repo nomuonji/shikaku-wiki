@@ -1,5 +1,5 @@
 {
-  "lastCategoryKey": "交通・運輸",
+  "lastCategoryKey": "医療",
   "categories": {
     "IT": {
       "lastIndex": 55
@@ -41,7 +41,7 @@
       "lastIndex": 0
     },
     "医療": {
-      "lastIndex": 12
+      "lastIndex": 13
     },
     "福祉": {
       "lastIndex": 2
