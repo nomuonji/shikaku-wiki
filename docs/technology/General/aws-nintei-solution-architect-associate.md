@@ -1,50 +1,44 @@
 ---
 title: "AWS認定 ソリューションアーキテクト アソシエイト"
+description: "AWS Certified Solutions Architect – Associateの対象者、SAA-C03の出題領域、130分・65問、公式料金150 USD、3年の有効期間を公式確認先つきで整理。"
+verified_at: "2026-10-08"
+official_url: "https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/"
+credential_type: "民間資格"
+qualification_status: "active"
 ---
 
 # AWS認定 ソリューションアーキテクト アソシエイト (SAA)
 
-## 概要
-AWS認定ソリューションアーキテクト – アソシエイト (AWS Certified Solutions Architect – Associate) は、AWSにおける分散システムの可用性、コスト効率、高耐障害性、スケーラビリティの設計に関する1年以上の実務経験を持つ個人を対象としています。
-クラウドエンジニアやアーキテクトとして、AWSのテクノロジーを使用して安全で堅牢なアプリケーションを構築およびデプロイするための知識を証明する、最も人気のあるAWS認定資格の一つです。
+## まず判断したいこと
 
-取得することで、顧客の要件に基づいたアーキテクチャ設計能力や、既存のオンプレミス環境からのリフトアンドシフト、コスト最適化の提案能力などが評価されます。
+AWS Certified Solutions Architect – Associateは、コストとパフォーマンスを踏まえてAWS上のソリューションを設計する知識を検証するAssociate試験です。2026年10月8日の[公式試験ページ](https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/)は、AWSクラウドまたはオンプレミスITの経験がある受験者向けの出発点であり、深いコーディング経験は必須ではないと説明しています。最初にどれを取るかは[AWS認定の選び方](/docs/technology/General/aws-certification-path/)で、経験と職務から見てください。
+
+この認定だけで設計実務の実績や就職結果は保証されません。
 
 ## 試験詳細
 
+2026年10月8日に確認した公式ページの値です。予約画面と現行試験ガイドが優先です。
+
 | 項目 | 内容 |
 | --- | --- |
+| 試験 | AWS Certified Solutions Architect – Associate |
 | 試験時間 | 130分 |
-| 問題数 | 65問 |
-| 合格ライン | 720点 / 1000点満点 |
-| 受験料 | 20,000円（税別） ※為替レートにより変動の可能性あり |
-| 受験資格 | なし（AWSに関する実務経験1年程度推奨） |
-| 有効期限 | 3年間（再認定が必要） |
-| 試験方式 | CBT（テストセンターまたはオンラインプロクタリング） |
+| 問題数 | 65問（択一または複数選択） |
+| 受験料 | 150 USD。円額は[試験の料金](https://aws.amazon.com/jp/certification/policies/before-testing/#Exam_pricing)と予約画面を確認 |
+| 受験資格 | 公式ページは受験資格の事前取得を要求していない。推奨経験は上記 |
+| 有効期限 | 3年。再認定は[公式の再認定案内](https://aws.amazon.com/certification/recertification/)を確認 |
 
-## 学習範囲・シラバス
-主な出題範囲（バージョン SAA-C03）は以下の通りです。
+## 学習範囲
 
-- **セキュアなアーキテクチャの設計 (30%)**
-    - AWSリソースへのセキュアなアクセスの設計
-    - 安全なワークロードとアプリケーションの設計
-    - 適切なデータセキュリティ制御の設計
-- **弾力性に優れたアーキテクチャの設計 (26%)**
-    - スケーラブルで疎結合なアーキテクチャの設計
-    - 高可用性およびフォールトトレラントなアーキテクチャの設計
-- **高性能なアーキテクチャの設計 (24%)**
-    - 高性能なストレージとデータベースの設計
-    - 高性能なネットワーキングとコンピューティングの設計
-- **コストを最適化したアーキテクチャの設計 (20%)**
-    - コスト効率の高いストレージとデータベースの設計
-    - コスト効率の高いコンピューティングとネットワーキングの設計
+現行版として案内されているSAA-C03の主な出題領域は次のとおりです。比率は試験ガイドの更新で変わるため、受験前に公式ガイドを再確認してください。
 
-## 難易度・勉強時間目安
-- **難易度**: 中級
-    - クラウドの基礎知識（サーバー、ネットワーク、データベース）に加え、AWS特有のサービス（EC2, S3, RDS, VPC, IAMなど）の深い理解が求められます。
-- **勉強時間**:
-    - 初学者（IT基礎あり）: およそ 80 ～ 120 時間
-    - AWS実務経験者: およそ 20 ～ 40 時間
+- セキュアなアーキテクチャの設計（30%）
+- 弾力性に優れたアーキテクチャの設計（26%）
+- 高性能なアーキテクチャの設計（24%）
+- コストを最適化したアーキテクチャの設計（20%）
+
+勉強時間の固定値は公式にはありません。試験ガイドのタスク文と公式練習問題で不足を確認してください。
 
 ## 公式情報
-- [公式サイト (AWS Certified Solutions Architect – Associate)](https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/)
+
+- [AWS Certified Solutions Architect – Associate](https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/)

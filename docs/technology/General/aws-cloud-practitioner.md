@@ -11,7 +11,7 @@ qualification_status: "active"
 
 ## まず判断したいこと
 
-AWS Certified Cloud Practitioner（CLF）は、特定の職種の実装力を証明する試験ではなく、AWSクラウドを使う組織で共通言語を持つための基礎認定です。営業、企画、調達、管理部門など、AWSを使った提案や費用・リスクの説明を受ける人にも向いています。サービスを設計・運用する仕事を目指すなら、この認定だけで実務力が示せるとは考えず、Developer、Solutions Architect、SysOpsなどの職種別学習へ進む入口として使うのが現実的です。
+AWS Certified Cloud Practitioner（CLF）は、特定の職種の実装力を証明する試験ではなく、AWSクラウドを使う組織で共通言語を持つための基礎認定です。営業、企画、調達、管理部門など、AWSを使った提案や費用・リスクの説明を受ける人にも向いています。サービスを設計・運用する仕事を目指すなら、この認定だけで実務力が示せるとは考えず、Developer、Solutions Architect、CloudOps Engineerなどの職種別学習へ進む入口として使うのが現実的です。旧称のSysOps Administrator – Associateは、2026年10月8日の公式一覧では AWS Certified CloudOps Engineer – Associate です。経験と職務からの選び方は[AWS認定の選び方](/docs/technology/General/aws-certification-path/)にまとめています。
 
 ## 現行試験で問われる範囲
 
