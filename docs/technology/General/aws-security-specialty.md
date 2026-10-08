@@ -1,24 +1,36 @@
 ---
-title: "AWS Security Specialty"
+title: "AWS Certified Security – Specialty"
+description: "AWS Certified Security – Specialtyの対象経験、170分・300 USD、脅威検出とデータ保護などの範囲を公式ページ基準で整理。"
+verified_at: "2026-10-08"
+official_url: "https://aws.amazon.com/jp/certification/certified-security-specialty/"
+credential_type: "民間資格"
+qualification_status: "active"
 ---
 
-# AWS Security Specialty
+# AWS Certified Security – Specialty
 
-## 概要
+## まず判断したいこと
 
-【AWS セキュリティ】鍵管理や監視のコツが分かる。監査や社内ルール対応がスムーズ。
+AWS Certified Security – Specialtyは、AWS上のセキュリティソリューションの作成と実装に関する専門知識を検証するSpecialty試験です。2026年10月8日の[公式ページ](https://aws.amazon.com/jp/certification/certified-security-specialty/)は、対象者をITセキュリティ経験5年、AWSワークロードの保護経験2年以上としています。最初のAWS認定にする試験ではなく、設計または運用のAssociateのあとに検討する補完です。選び方は[AWS認定の選び方](/docs/technology/General/aws-certification-path/)を見てください。
+
+認定だけでは監査やインシデント対応の経験は証明できません。
+
+## 試験詳細
+
+2026年10月8日に確認した公式ページの値です。
+
+| 項目 | 内容 |
+| --- | --- |
+| 試験時間 | 170分 |
+| 受験料 | 300 USD。円額は[試験の料金](https://aws.amazon.com/jp/certification/policies/before-testing/#Exam_pricing)を確認 |
+| 対象経験 | ITセキュリティ5年、AWSワークロード保護2年以上（公式の対象者説明） |
+
+試験コード、出題比率、言語、再認定条件は現行試験ガイドと予約画面を優先してください。
+
+## 試験範囲から分かる対象者
+
+公式の試験案内では、データ分類、データ保護、暗号化方式、安全なプロトコルと、それらをAWSで実装する理解が検証されます。AWSを触り始めたばかりの人には、サービス名の暗記だけでは対応しにくい内容です。先にIAM、ネットワーク、暗号化、ログを扱う経験を作り、ガイドのタスクで不足を確認する方が向いています。
 
 ## 公式情報
 
-- [公式サイト](https://aws.amazon.com/jp/certification/certified-security-specialty/)
-
-## ハッシュタグ
-
-- #資格 #AWS #Security
-## 試験範囲から分かる対象者
-AWS Certified Security – Specialtyは、AWS上でシステムを設計・運用する中で、セキュリティ制御を選び、設定し、調査する担当者向けの専門資格です。AWS公式の試験ガイドでは、脅威検出とインシデント対応、ログ記録・監視、インフラストラクチャセキュリティ、アイデンティティとアクセス管理、データ保護といった領域が扱われます。AWSを触り始めたばかりの人にとっては、サービス名の暗記だけで問題に対応しにくい内容です。まずIAM、ネットワーク、暗号化、ログの基本を実際に扱った経験を作り、ガイドのタスクを読んで不足を見つける方法が向いています。
-
-## 取得前に比較する資格
-AWS全体の設計・運用に関わる職務ならSolutions ArchitectやCloudOps系認定が先に役立つ場合があります。セキュリティ担当としてAWSの設定や脅威対応を深く示したい場合にSecurity Specialtyを選ぶ、という順序が一つの考え方です。会社が認定費用を負担する場合は、職務要件・資格期限・再認定制度を確認してください。認定だけで監査やインシデント対応の経験を証明できるわけではなく、担当した構成や判断を説明できる実績と組み合わせて評価されます。
-
-試験コード、出題比率、受験料、言語、再認定条件は更新されるため、[AWS Certified Security – Specialtyの試験案内](https://aws.amazon.com/jp/certification/certified-security-specialty/)と現行試験ガイドを基準にしてください。確認日: 2026-09-24。
+- [AWS Certified Security – Specialty](https://aws.amazon.com/jp/certification/certified-security-specialty/)
