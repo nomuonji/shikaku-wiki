@@ -49,18 +49,18 @@ jobs:
         run: node scripts/pages_deploy_ci.mjs
 
       - name: Skip sns-bot state only
-        if: ${{ steps.decision.outputs.action != 'deploy' }}
-        run: echo "Skipping production deploy: ${{ steps.decision.outputs.reason }}"
+        if: "${{ steps.decision.outputs.action != 'deploy' }}"
+        run: 'echo "Skipping production deploy: ${{ steps.decision.outputs.reason }}"'
 
       - name: Install, test decision, and build
-        if: ${{ steps.decision.outputs.action == 'deploy' }}
+        if: "${{ steps.decision.outputs.action == 'deploy' }}"
         run: |
           npm ci
           node scripts/pages_deploy_decision.test.mjs
           npm run build
 
       - name: Deploy production with Wrangler
-        if: ${{ steps.decision.outputs.action == 'deploy' }}
+        if: "${{ steps.decision.outputs.action == 'deploy' }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
