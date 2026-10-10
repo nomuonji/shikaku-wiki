@@ -14,6 +14,7 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "test:seo": "node scripts/verify_built_site.mjs",
+    "test:pages-decision": "node scripts/pages_deploy_decision.test.mjs",
     "bot:draft": "node sns-bot/src/tweetSender.mjs --dry-run",
     "bot:post": "node sns-bot/src/tweetSender.mjs && node sns-bot/src/threadsSender.mjs",
     "bot:threads-draft": "node sns-bot/src/threadsSender.mjs --dry-run",
