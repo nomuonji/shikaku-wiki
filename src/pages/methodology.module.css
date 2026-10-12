@@ -220,3 +220,29 @@
     padding-bottom: 4rem;
   }
 }
+
+/* Glass Atlas — 編集方針 */
+.page {background:transparent;}
+.hero {
+  border-bottom: 1px solid var(--sk-glass-border);
+  background:
+    radial-gradient(ellipse at 83% 18%,rgba(137,193,255,.28),transparent 35%),
+    linear-gradient(117deg,rgba(255,255,255,.42),rgba(216,231,255,.14));
+}
+.principle {
+  border:1px solid var(--sk-glass-border);
+  border-radius:1.3rem;
+  background:var(--sk-glass);
+  box-shadow:var(--sk-glass-shadow);
+  -webkit-backdrop-filter:blur(17px);
+  backdrop-filter:blur(17px);
+}
+.sourceSection {background:rgba(165,199,250,.09);border-block:1px solid var(--sk-glass-border);}
+.sourceList li {border-bottom-color:var(--ifm-table-border-color);}
+.diagram {
+  border:1px solid rgba(255,255,255,.45);
+  background:radial-gradient(ellipse at 22% 12%,rgba(150,205,255,.22),transparent 66%),#193f75;
+  box-shadow:0 18px 42px rgba(13,46,99,.21);
+}
+.diagram div {background:rgba(231,242,255,.1);border-color:rgba(227,242,255,.33);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);}
+.noticeSection {background:var(--sk-glass);border-top-color:var(--sk-glass-border);}

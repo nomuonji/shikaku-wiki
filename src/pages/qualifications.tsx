@@ -3,6 +3,7 @@ import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import styles from './qualifications.module.css';
 import {usePluginData} from '@docusaurus/useGlobalData';
 
 type Qualification = {
@@ -74,9 +75,9 @@ export default function QualificationsPage(): React.JSX.Element {
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Head>
 
-      <main className="container margin-vert--lg">
-        <header className="margin-bottom--lg">
-          <p><strong>QUALIFICATION DIRECTORY</strong></p>
+      <main className={`container ${styles.page}`}>
+        <header className={styles.hero}>
+          <p className={styles.eyebrow}>QUALIFICATION DIRECTORY</p>
           <Heading as="h1">資格・検定一覧</Heading>
           <p>
             DBに登録されている資格をそのまま全部並べるページではありません。
@@ -90,17 +91,17 @@ export default function QualificationsPage(): React.JSX.Element {
         </header>
 
         {groups.map((group) => (
-          <section key={group.category} className="margin-bottom--xl">
+          <section key={group.category} className={styles.group}>
             <Heading as="h2">{group.category} <small>（{group.items.length}件）</small></Heading>
-            <div className="row">
+            <div className={styles.grid}>
               {group.items.map((item) => (
-                <div key={item.id} className="col col--6 margin-bottom--md">
-                  <article className="card">
-                    <div className="card__body">
+                <div key={item.id} className={styles.item}>
+                  <article className={styles.card}>
+                    <div className={styles.cardBody}>
                       <Heading as="h3">
                         <Link to={item.route}>{item.title}</Link>
                       </Heading>
-                      <p className="margin-bottom--none">
+                      <p className={styles.date}>
                         {item.verifiedAt ? `制度確認 ${item.verifiedAt}` : '公式情報を確認済み'}
                       </p>
                     </div>
@@ -111,7 +112,7 @@ export default function QualificationsPage(): React.JSX.Element {
           </section>
         ))}
 
-        <aside className="alert alert--secondary">
+        <aside className={styles.notice}>
           <strong>一覧にない資格について</strong>
           <p className="margin-bottom--none">
             サイト内にページが存在しても、開催状況・確認日・公式情報のいずれかが不足している場合は

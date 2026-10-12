@@ -221,3 +221,23 @@
   font-size: 0.6rem;
   line-height: 1.55;
 }
+
+/* Glass Atlas — 事実データは明瞭なコントラストを保つ */
+.panel {
+  border: 1px solid var(--sk-glass-border);
+  border-radius: 1.3rem;
+  background: var(--sk-glass-strong);
+  box-shadow: var(--sk-glass-shadow);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+.visualBand {
+  background:
+    radial-gradient(circle at 15% 25%,rgba(255,255,255,.24),transparent 44%),
+    linear-gradient(110deg,var(--q-accent),color-mix(in srgb,var(--q-accent) 75%,#123c6c));
+}
+.visualMark {border-color:rgba(255,255,255,.43);background:rgba(255,255,255,.13);}
+.facts {border-radius:.8rem; border-color:var(--ifm-table-border-color);}
+.facts div {background:var(--ifm-color-primary-contrast-background);}
+html[data-theme='dark'] .facts div {background:rgba(98,142,199,.12);}
+.actions a {text-underline-offset:3px;}
