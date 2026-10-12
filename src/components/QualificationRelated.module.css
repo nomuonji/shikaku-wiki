@@ -129,3 +129,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Glass Atlas — 関連資格カード */
+.card {
+  border: 1px solid var(--sk-glass-border);
+  border-radius: 1.1rem;
+  background: var(--sk-glass);
+  box-shadow: var(--sk-glass-shadow);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+.card:hover {border-color:var(--ifm-color-primary-light);box-shadow:0 17px 35px rgba(36,77,142,.17);}
+.empty {border:1px solid var(--sk-glass-border);border-radius:1rem;background:var(--sk-glass);}

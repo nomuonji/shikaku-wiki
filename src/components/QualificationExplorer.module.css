@@ -666,3 +666,95 @@
 .loadMoreWrap button:hover {
   background: var(--ifm-color-primary-contrast-background);
 }
+
+/* Glass Atlas — 絞り込みは操作性を優先し、フィールドの背景は不透明寄り */
+.page {
+  background:
+    radial-gradient(ellipse at 93% 6%,rgba(156,194,255,.22),transparent 34%),
+    transparent;
+}
+.hero {
+  background:
+    radial-gradient(ellipse at 88% 14%,rgba(157,191,247,.26),transparent 37%),
+    linear-gradient(112deg,rgba(255,255,255,.44),rgba(224,237,255,.25));
+  border-bottom-color: var(--sk-glass-border);
+}
+.hero::after { border-color: rgba(107,160,233,.23); }
+.hero h1 { text-wrap: balance; }
+.workspace { gap: clamp(1.25rem,3vw,2.6rem); }
+.filters {
+  border: 1px solid var(--sk-glass-border);
+  border-radius: 1.4rem;
+  background: var(--sk-glass-strong);
+  box-shadow: var(--sk-glass-shadow);
+  -webkit-backdrop-filter: blur(24px) saturate(130%);
+  backdrop-filter: blur(24px) saturate(130%);
+}
+.field input,.field select {
+  border: 1px solid var(--ifm-table-border-color);
+  border-radius: .78rem;
+  background: var(--ifm-background-surface-color);
+  min-height: 44px;
+}
+.field input:focus,.field select:focus {
+  border-color: var(--ifm-color-primary);
+  outline-color: var(--ifm-color-primary-contrast-background);
+}
+.sourceNote {
+  border: 1px solid var(--sk-glass-border);
+  background: var(--ifm-color-primary-contrast-background);
+  border-radius: .95rem;
+}
+.sortGroup button { border: 1px solid transparent; }
+.sortGroup .sortActive {
+  border-color: var(--sk-glass-border);
+  background: var(--sk-glass-strong);
+  box-shadow: 0 4px 15px rgba(34,82,157,.11);
+}
+.card {
+  border: 1px solid var(--sk-glass-border);
+  border-radius: 1.4rem;
+  background: var(--sk-glass);
+  box-shadow: var(--sk-glass-shadow);
+  -webkit-backdrop-filter: blur(15px) saturate(135%);
+  backdrop-filter: blur(15px) saturate(135%);
+}
+.card:hover {
+  border-color: var(--ifm-color-primary-light);
+  box-shadow: 0 21px 42px rgba(44,87,151,.18);
+  transform: translateY(-3px);
+}
+.facts {
+  border-color: var(--ifm-table-border-color);
+  border-radius: .85rem;
+}
+.facts div {
+  border-color: var(--ifm-table-border-color);
+  background: rgba(205,225,255,.2);
+}
+html[data-theme='dark'] .facts div { background: rgba(103,149,209,.1); }
+.compareButton,.compareSelected,.clearCompare,.loadMoreWrap button {
+  border-radius: .75rem;
+  border-color: var(--sk-glass-border);
+  background: var(--sk-glass-strong);
+}
+.compareSelected { color: var(--ifm-color-primary); border-color: var(--ifm-color-primary); }
+.emptyState {
+  border: 1px dashed rgba(112,160,223,.4);
+  border-radius: 1.35rem;
+  background: var(--sk-glass);
+}
+.compareDock {
+  border-top: 1px solid var(--sk-glass-border);
+  background: var(--sk-glass-strong);
+  box-shadow: 0 -12px 40px rgba(32,74,137,.15);
+  -webkit-backdrop-filter: blur(23px) saturate(160%);
+  backdrop-filter: blur(23px) saturate(160%);
+}
+@media(max-width:700px) {
+  .hero {padding:3.2rem 0 2.7rem;}
+  .filters {border-radius:1.1rem;}
+  .card {border-radius:1.15rem;}
+  .compareDock {padding-bottom:calc(.85rem + env(safe-area-inset-bottom));}
+}
+@media(prefers-reduced-motion:reduce){ .card:hover {transform:none;} }
