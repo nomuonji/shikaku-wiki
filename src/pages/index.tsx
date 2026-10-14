@@ -2,365 +2,109 @@ import React from 'react';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
 import {usePluginData} from '@docusaurus/useGlobalData';
-import CategoryGlyph from '@site/src/components/CategoryGlyph';
 import QualificationAtlas from '@site/src/components/QualificationAtlas';
 import {trackEvent} from '@site/src/utils/analytics';
-import styles from './index.module.css';
+import styles from './workspace.module.css';
 
-type QualificationIndexData = {
-  count: number;
-  activeCount: number;
-  officialSourceCount: number;
-  indexReadyCount: number;
-  sourceCount: number;
-  hiddenCount: number;
-  items: Array<{
-    route: string;
-    categoryKey: string;
-    availabilityStatus: 'active' | 'ended' | 'check';
-    indexReady: boolean;
-  }>;
-};
-
-const categories = [
-  { key: 'business', icon: 'business', title: 'ビジネス', description: '営業・人事・経営・マーケティング', to: '/docs/business/' },
-  { key: 'technology', icon: 'technology', title: 'IT・技術', description: '情報処理・クラウド・データ・開発', to: '/docs/technology/' },
-  { key: 'legal-accounting', icon: 'legal', title: '法律・会計', description: '士業・法務・簿記・会計・金融', to: '/docs/legal-accounting/' },
-  { key: 'medical-welfare', icon: 'medical', title: '医療・福祉', description: '医療・介護・福祉・ヘルスケア', to: '/docs/medical-welfare/' },
-  { key: 'lifestyle', icon: 'lifestyle', title: 'ライフスタイル', description: '語学・食・暮らし・教養', to: '/docs/lifestyle/' },
-  { key: 'safety-environment', icon: 'safety', title: '安全・環境', description: '安全衛生・設備・環境・防災', to: '/docs/safety-environment/' },
-  { key: 'creative', icon: 'creative', title: 'クリエイティブ', description: 'デザイン・写真・映像・メディア', to: '/docs/creative/' },
-  { key: 'industry', icon: 'industry', title: '業界別', description: '不動産・物流・製造など業界特化', to: '/docs/industry/' },
+type Item = {route:string; title:string; category:string; categoryKey:string; difficulty:string; studyHours:string; indexReady:boolean; availabilityStatus:string};
+type Data = {indexReadyCount:number;items:Item[]};
+const fields = [
+  {key:'technology',label:'IT・技術',hint:'デジタル・情報処理',symbol:'01',to:'/docs/technology/'},
+  {key:'legal-accounting',label:'法律・会計',hint:'制度・専門職',symbol:'02',to:'/docs/legal-accounting/'},
+  {key:'business',label:'ビジネス',hint:'経営・不動産・金融',symbol:'03',to:'/docs/business/'},
+  {key:'medical-welfare',label:'医療・福祉',hint:'医療・介護・ケア',symbol:'04',to:'/docs/medical-welfare/'},
+  {key:'lifestyle',label:'ライフスタイル',hint:'語学・食・暮らし',symbol:'05',to:'/docs/lifestyle/'},
+  {key:'safety-environment',label:'安全・環境',hint:'防災・設備・安全',symbol:'06',to:'/docs/safety-environment/'},
+  {key:'creative',label:'クリエイティブ',hint:'デザイン・映像・表現',symbol:'07',to:'/docs/creative/'},
+  {key:'industry',label:'業界別',hint:'製造・物流・専門業界',symbol:'08',to:'/docs/industry/'},
 ];
-
-const popularQualifications = [
-  {
-    name: 'ITパスポート',
-    note: 'ITの基礎を広く学ぶ国家試験',
-    meta: 'IT・入門',
-    to: '/docs/technology/General/digital/it-passport-i-pass/',
-  },
-  {
-    name: '基本情報技術者',
-    note: 'エンジニアの土台になる国家試験',
-    meta: 'IT・定番',
-    to: '/docs/technology/General/kihon-jouhou-gijutsusha-fe/',
-  },
-  {
-    name: '宅地建物取引士（宅建）',
-    note: '不動産業界の代表的な国家資格',
-    meta: '法律・不動産',
-    to: '/docs/business/Finance/fudousan/takuchi-tatemono-torihikishi-takkenshi/',
-  },
-  {
-    name: '日商簿記',
-    note: '会計・経理の基礎から実務まで',
-    meta: '会計・経理',
-    to: '/docs/legal-accounting/Accounting/kaikei/nisshou-boki-2kyuu-3kyuu-1kyuu/',
-  },
-  {
-    name: '行政書士',
-    note: '許認可・法務分野の国家資格',
-    meta: '法律・士業',
-    to: '/docs/legal-accounting/Legal/shigyou/gyousei-shoshi/',
-  },
-  {
-    name: 'FP技能士',
-    note: 'お金・保険・税・相続を体系化',
-    meta: '金融・生活',
-    to: '/docs/business/Finance/fudousan/fp-ginoushi-3kyuu-2kyuu-1kyuu/',
-  },
-  {
-    name: 'MOS',
-    note: 'Word・Excelなどの操作スキルを証明',
-    meta: 'PC・実務',
-    to: '/docs/technology/General/mos/',
-  },
-  {
-    name: 'TOEIC L&R 800',
-    note: '英語力の目標ラインを具体化',
-    meta: '語学・英語',
-    to: '/docs/lifestyle/Language/eigo/toeic-l-r-800/',
-  },
-];
-
+const website='https://shikaku.antonbase.com';
 const structuredData = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebSite',
-      '@id': 'https://shikaku.antonbase.com/#website',
-      url: 'https://shikaku.antonbase.com/',
-      name: '資格カタログ',
-      description: '公式情報を確認しながら、難易度・勉強時間・試験方式から資格・検定を探せる総合情報サイト',
-      inLanguage: 'ja-JP',
-    },
-    {
-      '@type': 'CollectionPage',
-      '@id': 'https://shikaku.antonbase.com/#webpage',
-      url: 'https://shikaku.antonbase.com/',
-      name: '資格・検定を難易度・勉強時間から探す｜資格カタログ',
-      isPartOf: { '@id': 'https://shikaku.antonbase.com/#website' },
-      about: { '@type': 'Thing', name: '資格・検定' },
-      mainEntity: {
-        '@type': 'ItemList',
-        itemListElement: categories.map((item, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: item.title,
-          url: `https://shikaku.antonbase.com${item.to}`,
-        })),
-      },
-    },
-  ],
+  '@context':'https://schema.org','@graph':[
+    {'@type':'WebSite','@id':website+'/#website',url:website+'/',name:'資格カタログ',inLanguage:'ja-JP',
+      description:'資格・検定の公式情報、勉強時間の目安、難易度、試験方式を調べて比較する'},
+    {'@type':'CollectionPage','@id':website+'/#webpage',url:website+'/',
+      name:'資格・検定を難易度・勉強時間から探す｜資格カタログ',
+      isPartOf:{'@id':website+'/#website'},
+      mainEntity:{'@type':'ItemList',itemListElement:fields.map((f,i)=>({
+        '@type':'ListItem',position:i+1,name:f.label,url:website+f.to
+      }))}}
+  ]
 };
-
-function QualificationMap(): React.JSX.Element {
-  return (
-    <div className={styles.mapVisual} aria-label="資格ジャンルのイメージ図">
-      <div className={styles.mapGrid} aria-hidden="true" />
-      <div className={`${styles.orbit} ${styles.orbitOne}`} aria-hidden="true" />
-      <div className={`${styles.orbit} ${styles.orbitTwo}`} aria-hidden="true" />
-      <div className={styles.mapCenter}>
-        <span>資格</span>
-        <strong>CATALOG</strong>
-      </div>
-      <span className={`${styles.mapChip} ${styles.chipIt}`}>IT</span>
-      <span className={`${styles.mapChip} ${styles.chipLaw}`}>法律</span>
-      <span className={`${styles.mapChip} ${styles.chipMoney}`}>会計</span>
-      <span className={`${styles.mapChip} ${styles.chipLanguage}`}>語学</span>
-      <span className={`${styles.mapChip} ${styles.chipMedical}`}>医療</span>
-      <span className={`${styles.mapChip} ${styles.chipCreative}`}>創作</span>
-    </div>
-  );
-}
-
-function HomepageHeader({qualificationCount}: {qualificationCount: number}): React.JSX.Element {
-  return (
-    <header className={styles.hero}>
-      <div className={`container ${styles.heroInner}`}>
-        <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>資格を「名前」ではなく「目的」から探す</p>
-          <Heading as="h1" className={styles.heroTitle}>
-            次に取る資格が、
-            <br />
-            ちゃんと見えてくる。
-          </Heading>
-          <p className={styles.heroLead}>
-            難易度・勉強時間・試験方式・活かせる仕事を整理。
-            公開品質を満たした{qualificationCount}件の資格・検定から、自分に合う候補を探索できます。
-          </p>
-          <div className={styles.heroActions}>
-            <Link className="button button--primary button--lg" to="/explore/">
-              条件から資格を探す
-            </Link>
-            <Link className={styles.textLink} to="/blog/">
-              勉強法・比較記事を見る <span aria-hidden="true">→</span>
-            </Link>
+export default function Home():React.JSX.Element {
+  const data=usePluginData('qualification-index') as Data;
+  const items=React.useMemo(()=>data.items.filter(item=>item.indexReady && item.availabilityStatus==='active'),[data.items]);
+  const counts=React.useMemo(()=>{
+    const m=new Map<string,number>();
+    items.forEach(item=>m.set(item.categoryKey,(m.get(item.categoryKey)||0)+1));
+    return m;
+  },[items]);
+  const [mode,setMode]=React.useState<'discover'|'compare'|'read'>('discover');
+  const paths={
+    discover:{number:'01',title:'知らない資格に出会う',summary:'ジャンルも名前も決めずに、選択肢の全体像から探す。',cta:'分布を探索する',href:'#atlas'},
+    compare:{number:'02',title:'候補を並べて判断する',summary:'難易度・勉強時間・方式の差から、取る資格を絞る。',cta:'比較ツールへ',href:'/explore/'},
+    read:{number:'03',title:'制度を確かめてから決める',summary:'公式情報と編集上の目安を区別して、資格の詳細へ。',cta:'資格一覧へ',href:'/qualifications/'}
+  };
+  const current=paths[mode];
+  return <Layout title="資格・検定を難易度・勉強時間から探す" description="難易度・勉強時間・試験方式・活かせる仕事から資格を探索できる資格カタログ。">
+    <Head><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
+      <script type="application/ld+json">{JSON.stringify(structuredData)}</script></Head>
+    <main className={styles.page}>
+      <section className={styles.masthead} aria-labelledby="home-title">
+        <div className={styles.topline}><span>SHIKAKU / INDEX</span><span>資格選択のためのナビゲーション</span><span>NO. 001—008 / FIELD GUIDE</span></div>
+        <div className={styles.mastGrid}>
+          <div className={styles.bigCopy}><span className={styles.pretitle}>YOUR NEXT QUALIFICATION</span>
+            <h1 id="home-title">資格を、<br/><em>選べる</em>知識に。</h1>
+            <p>名前を知っている資格だけで決めない。分野の広がり、学ぶ時間、試験の違い。資格選びを、一覧から判断できる体験へ。</p>
+            <a className={styles.primaryLink} href="#atlas">資格の地図をひらく <span>↘</span></a>
           </div>
-          <dl className={styles.stats}>
-            <div>
-              <dt>{qualificationCount}</dt>
-              <dd>公開中の資格・検定</dd>
-            </div>
-            <div>
-              <dt>8</dt>
-              <dd>主要カテゴリ</dd>
-            </div>
-            <div>
-              <dt>無料</dt>
-              <dd>登録不要</dd>
-            </div>
-          </dl>
+          <div className={styles.indexPanel}>
+            <div className={styles.panelTop}><span>LIVE CATALOG</span><span>公式情報を確認できたページ</span></div>
+            <strong className={styles.total}>{data.indexReadyCount}<small>件</small></strong>
+            <div className={styles.panelLine}><span>08 FIELDS</span><span>閲覧・比較は登録不要</span></div>
+            <div className={styles.fieldPreview} aria-hidden="true">{fields.map(f=><span key={f.key} style={{flex:Math.max(1,counts.get(f.key)||0)}} />)}</div>
+            <small>帯の幅は分野別の公開対象件数に対応します。</small>
+          </div>
         </div>
-        <QualificationMap />
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): React.JSX.Element {
-  const qualificationData = usePluginData('qualification-index') as QualificationIndexData;
-  const qualificationCount = qualificationData.indexReadyCount;
-  const indexReadyRoutes = React.useMemo(
-    () =>
-      new Set(
-        qualificationData.items
-          .filter((item) => item.indexReady)
-          .map((item) => item.route),
-      ),
-    [qualificationData.items],
-  );
-  const featuredQualifications = React.useMemo(
-    () => popularQualifications.filter((item) => indexReadyRoutes.has(item.to)),
-    [indexReadyRoutes],
-  );
-  const categoryCounts = React.useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const item of qualificationData.items) {
-      if (!item.indexReady) continue;
-      counts.set(item.categoryKey, (counts.get(item.categoryKey) ?? 0) + 1);
-    }
-    return counts;
-  }, [qualificationData.items]);
-
-  return (
-    <Layout
-      title="資格・検定を難易度・勉強時間から探す"
-      description="公式情報を重視し、難易度・勉強時間・試験方式・活かせる仕事から資格を探せる資格カタログ。IT、法律、会計、医療、語学など幅広く掲載しています。">
-      <Head>
-        <meta
-          name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
-        />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Head>
-
-      <HomepageHeader qualificationCount={qualificationCount} />
-
-      <main className={styles.main}>
-        <div className="container" style={{paddingTop:'2.5rem',paddingBottom:'2.5rem'}}><QualificationAtlas /></div>
-        <section className={`container ${styles.section}`} aria-labelledby="category-heading">
-          <div className={styles.sectionHeading}>
-            <div>
-              <p className={styles.sectionKicker}>EXPLORE BY FIELD</p>
-              <Heading as="h2" id="category-heading">
-                分野から探す
-              </Heading>
-            </div>
-            <p>まずは興味のある分野へ。各カテゴリから関連資格を一覧できます。</p>
+        <div className={styles.scrollLabel}>EXPLORE DOWNWARD <span>↓</span></div>
+      </section>
+      <section className={styles.choose} aria-label="目的から探す">
+        <div className={styles.eyebrow}><span>START WITH A QUESTION</span><strong>資格探しの入口</strong></div>
+        <div className={styles.modeGrid}>
+          <div className={styles.modes}>{(Object.keys(paths) as Array<keyof typeof paths>).map(key=><button
+            key={key} className={mode===key?styles.modeActive:styles.mode}
+            type="button" aria-pressed={mode===key} onClick={()=>setMode(key)}>
+            <span>{paths[key].number}</span><strong>{paths[key].title}</strong><span>↗</span>
+          </button>)}</div>
+          <div className={styles.modeDetail} aria-live="polite">
+            <span>PATH / {current.number}</span><h2>{current.title}</h2>
+            <p>{current.summary}</p>
+            <Link to={current.href} onClick={()=>trackEvent('qualification_path_open',{path:mode})}>
+              {current.cta} <span aria-hidden="true">↗</span>
+            </Link>
           </div>
-
-          <div className={styles.categoryGrid}>
-            {categories.map((category) => (
-              <Link
-                key={category.title}
-                className={styles.categoryCard}
-                to={category.to}
-                onClick={() =>
-                  trackEvent('qualification_category_open', {
-                    category: category.key,
-                    source: 'home',
-                  })
-                }>
-                <span className={styles.categoryIcon} aria-hidden="true">
-                  <CategoryGlyph name={category.icon} />
-                </span>
-                <span>
-                  <strong>{category.title}</strong>
-                  <small>{category.description}</small>
-                  <em className={styles.categoryCount}>
-                    {categoryCounts.get(category.key) ?? 0}資格
-                  </em>
-                </span>
-                <span className={styles.arrow} aria-hidden="true">→</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className={styles.popularSection} aria-labelledby="popular-heading">
-          <div className={`container ${styles.section}`}>
-            <div className={styles.sectionHeading}>
-              <div>
-                <p className={styles.sectionKicker}>START HERE</p>
-                <Heading as="h2" id="popular-heading">
-                  まず見ておきたい定番資格
-                </Heading>
-              </div>
-              <p>公式情報と制度確認日が揃った資格だけを、比較の入口として表示しています。</p>
-            </div>
-
-            <div className={styles.qualificationGrid}>
-              {featuredQualifications.map((qualification, index) => (
-                <Link
-                  key={qualification.name}
-                  className={styles.qualificationCard}
-                  to={qualification.to}
-                  onClick={() =>
-                    trackEvent('qualification_open', {
-                      source: 'home_featured',
-                      qualification_name: qualification.name,
-                    })
-                  }>
-                  <span className={styles.cardNumber}>{String(index + 1).padStart(2, '0')}</span>
-                  <span className={styles.cardMeta}>{qualification.meta}</span>
-                  <strong>{qualification.name}</strong>
-                  <p>{qualification.note}</p>
-                  <span className={styles.cardCta}>
-                    詳細を見る <span aria-hidden="true">→</span>
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.trustSection} aria-labelledby="trust-heading">
-          <div className={`container ${styles.section}`}>
-            <div className={styles.sectionHeading}>
-              <div>
-                <p className={styles.sectionKicker}>RESEARCH STANDARD</p>
-                <Heading as="h2" id="trust-heading">
-                  数字の出どころを、曖昧にしない。
-                </Heading>
-              </div>
-              <p>
-                資格選びでは、試験日や受験料のような公式情報と、勉強時間のような目安を分けて読むことが重要です。
-              </p>
-            </div>
-
-            <div className={styles.trustGrid}>
-              <div className={styles.trustCard}>
-                <span>01</span>
-                <strong>公式情報を優先</strong>
-                <p>試験制度・日程・受験料・受験資格は、実施団体や公的機関の情報を優先して確認します。</p>
-              </div>
-              <div className={styles.trustCard}>
-                <span>02</span>
-                <strong>目安は目安として表示</strong>
-                <p>勉強時間や難易度は個人差があります。公式値と推定・一般的な目安を混同しない方針です。</p>
-              </div>
-              <div className={styles.trustCard}>
-                <span>03</span>
-                <strong>記事から比較データを自動生成</strong>
-                <p>検索・比較画面は資格記事を正本として生成し、別データベースとの情報ずれを減らします。</p>
-              </div>
-            </div>
-
-            <div className={styles.trustFooter}>
-              <Link to="/methodology">編集方針と情報の見方を詳しく読む →</Link>
-            </div>
-          </div>
-        </section>
-
-        <section className={`container ${styles.section}`}>
-          <div className={styles.routePanel}>
-            <div className={styles.routeVisual} aria-hidden="true">
-              <span>資格</span>
-              <i />
-              <span>スキル</span>
-              <i />
-              <span>仕事</span>
-            </div>
-            <div className={styles.routeCopy}>
-              <p className={styles.sectionKicker}>QUALIFICATION → CAREER</p>
-              <Heading as="h2">資格を取った先の仕事まで見る</Heading>
-              <p>
-                「取れそう」だけで資格を選ばず、その資格がどんな仕事につながるかもセットで確認。
-                しごと図鑑では、職種や業界を別の角度から探索できます。
-              </p>
-              <Link className="button button--secondary button--md" to="https://job.antonbase.com">
-                しごと図鑑へ
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
-    </Layout>
-  );
+        </div>
+      </section>
+      <section id="atlas" className={styles.atlasWrap}>
+        <div className={styles.sectionLine}><span>THE QUALIFICATION LANDSCAPE</span><span>01 — INTERACTIVE INDEX</span></div>
+        <QualificationAtlas />
+      </section>
+      <section className={styles.fieldSection} aria-labelledby="fields-heading">
+        <div className={styles.sectionLine}><span>EXPLORE THE DISCIPLINES</span><span>02 — ALL FIELDS</span></div>
+        <div className={styles.fieldHead}><h2 id="fields-heading">専門分野を<br/>横断する。</h2><p>気になる領域が見つかったら、分野別の記事へ。ここから先は詳細を読み込む。</p></div>
+        <div className={styles.fieldRows}>{fields.map(f=><Link to={f.to} key={f.key} className={styles.fieldRow}
+          onClick={()=>trackEvent('qualification_category_open',{category:f.key,source:'home_workspace'})}>
+          <span className={styles.fieldNumber}>{f.symbol}</span><strong>{f.label}</strong><span>{f.hint}</span>
+          <span className={styles.fieldCount}>{counts.get(f.key)||0} 件</span><span className={styles.fieldArrow}>↗</span>
+        </Link>)}</div>
+      </section>
+      <section className={styles.closing}>
+        <div><span className={styles.closingTag}>THE FINAL CHECK</span><h2>数字だけで、<br/>決めない。</h2></div>
+        <div><p>勉強時間や難易度は参考値。受験資格・試験方式・費用は公式情報を確認する。資格ごとの根拠と更新状況を明示し、情報が不足するページを検索公開対象から分けています。</p>
+          <div className={styles.closingLinks}><Link to="/methodology/">情報の見方・編集方針 ↗</Link><Link to="https://job.antonbase.com/">資格の先にある仕事を探す ↗</Link><Link to="/blog/">比較・勉強法の記事 ↗</Link></div>
+        </div>
+      </section>
+    </main>
+  </Layout>;
 }
