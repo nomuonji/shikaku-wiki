@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import {usePluginData} from '@docusaurus/useGlobalData';
 import CategoryGlyph from '@site/src/components/CategoryGlyph';
+import QualificationAtlas from '@site/src/components/QualificationAtlas';
 import {trackEvent} from '@site/src/utils/analytics';
 import styles from './index.module.css';
 
@@ -222,6 +223,7 @@ export default function Home(): React.JSX.Element {
       <HomepageHeader qualificationCount={qualificationCount} />
 
       <main className={styles.main}>
+        <div className="container" style={{paddingTop:'2.5rem',paddingBottom:'2.5rem'}}><QualificationAtlas /></div>
         <section className={`container ${styles.section}`} aria-labelledby="category-heading">
           <div className={styles.sectionHeading}>
             <div>
