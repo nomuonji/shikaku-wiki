@@ -43,6 +43,11 @@ for (const [name, source] of [
   }
 }
 
+// Match route literals semantically, not their whitespace style. Home uses
+// compact TSX object props (to:'/docs/.../') and formatted props alike.
+const homeDocRoutes = [...home.matchAll(/\bto\s*:\s*['"](\/docs\/[^'"]+)['"]/g)]
+  .map((match) => match[1]);
+
 const categoryKeys = [
   'business',
   'technology',
@@ -61,7 +66,7 @@ for (const key of categoryKeys) {
   if (!(await exists(`docs/${key}/_category_.json`))) {
     fail(`docs/${key}/_category_.json がありません`, failures);
   }
-  if (!home.includes(`to: '/docs/${key}/'`)) {
+  if (!homeDocRoutes.includes(`/docs/${key}/`)) {
     fail(`ホームの ${key} 導線が canonical /docs URL ではありません`, failures);
   }
 
@@ -128,9 +133,7 @@ for (const key of [...categoryKeys, 'etc']) {
 }
 
 // ホームで直接紹介する資格リンクは実ファイルを必ず持つ。
-const docLinks = [...home.matchAll(/to:\s*['"](\/docs\/[^'"]+)['"]/g)].map(
-  (match) => match[1],
-);
+const docLinks = homeDocRoutes;
 for (const route of new Set(docLinks)) {
   const clean = route.replace(/^\/docs\//, '').replace(/\/+$/, '');
   const candidates = [
@@ -166,7 +169,7 @@ if (!plugin.includes('const indexReady =')) {
 if (!plugin.includes("availabilityStatus === 'active'") || !plugin.includes('Boolean(officialUrl)')) {
   fail('indexReady が現行性 + 公式URLを要求していません', failures);
 }
-if (!home.includes('qualificationData.indexReadyCount')) {
+if (!/\b(?:data|qualificationData)\s*\.\s*indexReadyCount\b/.test(home)) {
   fail('ホーム公開件数が indexReadyCount を使っていません', failures);
 }
 if (!quickFacts.includes('!current.indexReady')) {
