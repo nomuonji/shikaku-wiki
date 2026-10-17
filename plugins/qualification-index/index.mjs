@@ -165,12 +165,17 @@ function explicitStudyHours(frontMatter) {
   };
 }
 
+const NEGATIVE_STUDY_HOURS = /見つから|削除し|掲載しな|情報なし|確認できな|不明|載せませ|採用しな|撤回|過去の/;
+
 function extractStudyHours(body) {
   const samples = [
     body.match(/勉強時間[\s\S]{0,420}/)?.[0] ?? '',
     body.match(/学習時間[\s\S]{0,420}/)?.[0] ?? '',
   ];
   for (const sample of samples) {
+    if (!sample || NEGATIVE_STUDY_HOURS.test(sample)) continue;
+    // Skip if this looks like exam duration rather than study time
+    if (/試験時間|試験の時間|学科\s*\d+\s*題/.test(sample) && !/勉強時間|学習時間/.test(sample.slice(0, 50))) continue;
     const range = sample.match(/(\d{1,4})\s*(?:時間)?\s*[～〜~\-–—]\s*(\d{1,4})\s*時間/);
     if (range) {
       const first = Number(range[1]);
