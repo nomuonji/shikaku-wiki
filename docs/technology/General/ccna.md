@@ -2,8 +2,9 @@
 title: "CCNA (Cisco Certified Network Associate)"
 description: "CCNA 200-301の2027年2月のv1.1・v2.0切替日、受験日別の教材選択、公式出題範囲、120分・300米ドルの料金、予約と再認定を確認するガイド。"
 official_url: "https://www.cisco.com/web/go/ccna/"
-qualification_status: active
-verified_at: 2026-10-21
+qualification_status: "active"
+verified_at: "2026-10-21"
+id: technology/General/ccna
 ---
 
 # CCNA (Cisco Certified Network Associate)
@@ -53,7 +54,7 @@ Ciscoは合格判定をPass/Failで案内しています。**固定の合格点�
 2027年2月2日までのv1.1は、次の6分野で構成されます。詳細な技術項目は必ず[公式v1.1 Exam Topics](https://learningnetwork.cisco.com/s/ccna-exam-topics)で確認してください。
 
 | 分野 | 配点比率 |
-| --- | ---: |
+| --- | --- |
 | Network Fundamentals（ネットワークの基礎） | 20% |
 | Network Access（ネットワークアクセス） | 20% |
 | IP Connectivity（IP接続） | 25% |
@@ -68,12 +69,12 @@ v1.1では、IPv4/IPv6、VLAN、ルーティング、DHCP/NAT、ACLなどに加�
 v2.0では分野の再編が行われ、Ciscoの[公式v2.0 Exam Topics](https://learningnetwork.cisco.com/s/ccna-v2-exam-topics)は**以下の5つの番号付き配点区分**を掲載しています。概要で挙げられる「IP routing」「AI」などの話題名の数と、配点区分の数は同じではありません。
 
 | v2.0の配点区分 | 配点比率 | 学習時の着眼点 |
-| --- | ---: | --- |
+| --- | --- | --- |
 | Network Infrastructure and Connectivity | 25% | ケーブル・インターフェース障害、IPv4/IPv6設定、クライアント接続の診断 |
 | Switching and Network Access | 25% | VLAN・トランク・LACP・STP、接続確認とトラブルシューティング |
 | IP Routing | 20% | ルーティングテーブル、静的経路、OSPFv2/v3、冗長化 |
 | Network Services and Security | 20% | AAA、NAT/PAT、DNS、VPN、ACL、L2セキュリティ |
-| AI, and Network Operations and Management | 10% | ネットワーク運用におけるAI、プロンプト、SNMP、Ansible、syslog |
+| AI and Network Operations and Management | 10% | ネットワーク運用におけるAI、プロンプト、SNMP、Ansible、syslog |
 
 **差分の読み方：** v1.1の6分野が、v2.0で5つの配点区分に再構成されています。特にv2.0は障害切り分け・設定の検証などの実務的な作業や、ネットワーク運用でのAIの利用を明示しています。「旧版の全項目がなくなった」「新しい5分野だけを丸暗記すればよい」という意味ではありません。各分野の**小項目**を公式blueprintで照合してください。
 
