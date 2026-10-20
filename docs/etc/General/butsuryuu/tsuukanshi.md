@@ -5,7 +5,6 @@ official_url: "https://www.customs.go.jp/tsukanshi/60_shiken.htm"
 qualification_status: "active"
 credential_type: "national_exam"
 verified_at: "2026-10-21"
-id: etc/General/butsuryuu/tsuukanshi
 ---
 
 # 通関士
