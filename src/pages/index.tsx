@@ -86,6 +86,15 @@ export default function Home():React.JSX.Element {
           </div>
         </div>
       </section>
+      <section className={styles.fieldSection} aria-labelledby="seo-decision-heading">
+        <div className={styles.sectionLine}><span>START FROM YOUR SITUATION</span><span>受験条件・仕事・比較から探す</span></div>
+        <div className={styles.fieldHead}><h2 id="seo-decision-heading">資格の名前より、<br/>いまの条件から。</h2><p>すでに持っている免状、担当したい仕事、二つの資格の違い。受験前の具体的な疑問から調べられます。</p></div>
+        <div className={styles.fieldRows}>
+          <Link to="/juken-shikaku/" className={styles.fieldRow}><span className={styles.fieldNumber}>A</span><strong>受験資格から探す</strong><span>学歴・免状・実務経験を確認</span><span>条件を調べる</span><span className={styles.fieldArrow}>↗</span></Link>
+          <Link to="/shikaku-hikaku/" className={styles.fieldRow}><span className={styles.fieldNumber}>B</span><strong>資格の違いを比べる</strong><span>甲種・乙種、電工、クラウド資格</span><span>比較する</span><span className={styles.fieldArrow}>↗</span></Link>
+          <Link to="/shikaku-shigoto/" className={styles.fieldRow}><span className={styles.fieldNumber}>C</span><strong>仕事から逆引き</strong><span>担当業務から資格の範囲を見る</span><span>仕事で探す</span><span className={styles.fieldArrow}>↗</span></Link>
+        </div>
+      </section>
       <section id="atlas" className={styles.atlasWrap}>
         <div className={styles.sectionLine}><span>THE QUALIFICATION LANDSCAPE</span><span>01 — INTERACTIVE INDEX</span></div>
         <QualificationAtlas />

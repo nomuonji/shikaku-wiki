@@ -147,6 +147,8 @@ const config: Config = {
         { to: '/qualifications/', label: '資格一覧', position: 'left' },
         { to: '/explore/', label: '資格検索', position: 'left' },
         { to: '/juken-shikaku/', label: '受験条件から探す', position: 'left' },
+        { to: '/shikaku-hikaku/', label: '資格を比較', position: 'left' },
+        { to: '/shikaku-shigoto/', label: '仕事から探す', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
