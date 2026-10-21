@@ -4,7 +4,6 @@ description: "CCNA 200-301の2027年2月のv1.1・v2.0切替日、受験日別�
 official_url: "https://www.cisco.com/web/go/ccna/"
 qualification_status: "active"
 verified_at: "2026-10-21"
-id: technology/General/ccna
 ---
 
 # CCNA (Cisco Certified Network Associate)
