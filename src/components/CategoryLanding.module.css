@@ -41,3 +41,16 @@
   background: var(--sk-glass-strong);
 }
 @media(max-width:640px) {.hero {border-radius:1.25rem;}.guide{padding:1.3rem;}}
+
+/* Static category index: all index-ready qualification anchors are present in SSR HTML. */
+.indexGroup{margin-top:.5rem}
+.indexGroup h3{display:flex;gap:.6rem;align-items:baseline;margin:0 0 .75rem;font-size:1.05rem}
+.indexGroup h3 small{font-size:.75rem;font-weight:500;color:var(--ifm-color-content-secondary)}
+.indexList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;list-style:none;margin:0;padding:0}
+.indexList li{margin:0;padding:0;min-width:0}
+.indexLink{height:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.85rem 1rem;border:1px solid var(--sk-glass-border,var(--ifm-table-border-color));border-radius:.85rem;background:var(--sk-glass,var(--ifm-background-surface-color));color:var(--ifm-font-color-base);text-decoration:none;transition:border-color .15s}
+.indexLink:hover{border-color:var(--category-accent);text-decoration:none}
+.indexTitle{min-width:0;overflow-wrap:anywhere;font-weight:650;line-height:1.5;font-size:.91rem}
+.indexMeta{flex-shrink:0;white-space:nowrap;color:var(--ifm-color-content-secondary);font-size:.67rem}
+@media(max-width:850px){.indexList{grid-template-columns:1fr}}
+@media(max-width:480px){.indexLink{align-items:flex-start;flex-direction:column;gap:.25rem}.indexMeta{white-space:normal}}

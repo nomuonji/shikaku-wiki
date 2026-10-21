@@ -169,6 +169,26 @@ export default function CategoryLanding({
       }));
   }, [activeItems]);
 
+  // Render actual anchor links for *every* index-ready article at build time.
+  // This is deliberately not a JS-only search widget: crawlers and no-JS users
+  // must be able to reach the qualification corpus from each field landing page.
+  const indexGroups = useMemo(() => {
+    const groups = new Map<string, Item[]>();
+    for (const item of activeItems) {
+      const segment = item.id.split('/')[1] || item.section || 'General';
+      const group = groups.get(segment) ?? [];
+      group.push(item);
+      groups.set(segment, group);
+    }
+    return [...groups.entries()]
+      .map(([key, groupItems]) => ({
+        key,
+        label: SECTION_LABELS[key] ?? key,
+        items: groupItems.sort((a, b) => a.title.localeCompare(b.title, 'ja')),
+      }))
+      .sort((a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label, 'ja'));
+  }, [activeItems]);
+
   const currentYear = new Date().getFullYear();
   const freshCount = activeItems.filter((item) => item.verifiedThisYear).length;
   const exploreUrl = `/explore/?category=${encodeURIComponent(title)}`;
@@ -279,6 +299,30 @@ export default function CategoryLanding({
           <p><Link to="/shikaku-hikaku/">資格の比較ガイド一覧 →</Link></p>
         </section>
       ) : null}
+      <section className={styles.section} aria-labelledby="all-index-ready-heading">
+        <div className={styles.sectionHead}>
+          <div>
+            <span>ALL VERIFIED ENTRIES</span>
+            <Heading as="h2" id="all-index-ready-heading">公式情報を確認できた資格を一覧する</Heading>
+          </div>
+          <p>この分野の検索公開対象となる全資格に、ここから直接進めます。公式情報未確認や終了済みなど、公開条件を満たさないレコードは含めません。</p>
+        </div>
+        {indexGroups.map(group => (
+          <div key={group.key} className={styles.indexGroup}>
+            <h3>{group.label} <small>{group.items.length}件</small></h3>
+            <ul className={styles.indexList}>
+              {group.items.map(item => (
+                <li key={item.id}>
+                  <Link className={styles.indexLink} to={item.route}>
+                    <span className={styles.indexTitle}>{item.title}</span>
+                    <span className={styles.indexMeta}>{item.verifiedAt ? `制度確認 ${item.verifiedAt}` : '制度・試験情報'} <span aria-hidden="true">↗</span></span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
       <section className={styles.guide}>
         <div>
           <p className={styles.kicker}>HOW TO CHOOSE</p>
