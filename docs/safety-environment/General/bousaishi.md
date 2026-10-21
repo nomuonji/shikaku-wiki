@@ -1,5 +1,6 @@
 ---
 title: "防災士"
+description: "防災士になるための研修・試験・救急救命講習・認証登録の流れと、修了証の5年要件・費用を日本防災士機構の公式情報から整理。"
 official_url: "https://bousaisi.jp/"
 verified_at: "2026-10-19"
 qualification_status: "active"
