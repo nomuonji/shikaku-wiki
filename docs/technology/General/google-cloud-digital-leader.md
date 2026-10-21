@@ -1,5 +1,10 @@
 ---
 title: "Google Cloud Digital Leader"
+description: "Google Cloud Digital Leaderの現行試験範囲、受験料、更新経路とAWS Cloud Practitionerとの違いを公式情報で比較。"
+verified_at: "2026-10-02"
+official_url: "https://cloud.google.com/learn/certification/cloud-digital-leader"
+credential_type: "民間資格"
+qualification_status: "active"
 ---
 
 # Google Cloud Digital Leader

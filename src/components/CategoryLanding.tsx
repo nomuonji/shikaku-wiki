@@ -18,6 +18,7 @@ type Item = {
   examMethod: string;
   verifiedAt: string | null;
   verifiedThisYear: boolean;
+  indexReady: boolean;
   availabilityStatus: 'active' | 'ended' | 'check';
 };
 
@@ -125,7 +126,8 @@ export default function CategoryLanding({
       data.items.filter(
         (item) =>
           item.categoryKey === categoryKey &&
-          item.availabilityStatus === 'active',
+          item.availabilityStatus === 'active' &&
+          item.indexReady,
       ),
     [data.items, categoryKey],
   );
@@ -265,6 +267,18 @@ export default function CategoryLanding({
         </div>
       </section>
 
+      {['safety-environment','industry','technology','business'].includes(categoryKey) ? (
+        <section className={styles.section}>
+          <div className={styles.sectionHead}><div><span>COMPARE & DECIDE</span><Heading as="h2">受験前の具体的な疑問から探す</Heading></div></div>
+          <p>
+            {categoryKey==='technology' ? <><Link to="/cloud-shikaku-hikaku/">AWSとGoogle Cloudの基礎認定を比較</Link>してから資格を選べます。</>
+            : categoryKey==='safety-environment' ? <><Link to="/kikenbutsu-otsu4-kou-chigai/">乙4と甲種の違い</Link>や<Link to="/denki-shoubou-chigai/">電気工事士・消防設備士の業務範囲</Link>を確認できます。</>
+            : categoryKey==='industry' ? <><Link to="/birumen-shikaku/">ビル設備管理の資格選び</Link>で職場の担当業務から探せます。</>
+            : <><Link to="/shikaku-shigoto/">仕事から資格を逆引き</Link>して、受験条件と必要性を整理できます。</>}
+          </p>
+          <p><Link to="/shikaku-hikaku/">資格の比較ガイド一覧 →</Link></p>
+        </section>
+      ) : null}
       <section className={styles.guide}>
         <div>
           <p className={styles.kicker}>HOW TO CHOOSE</p>

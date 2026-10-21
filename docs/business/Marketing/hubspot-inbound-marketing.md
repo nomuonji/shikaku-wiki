@@ -11,6 +11,8 @@ search_aliases: "HubSpot Inbound Certification インバウンド認定 HubSpot�
 
 # HubSpot Inbound Marketing
 
+SEO検定やGoogle Analytics認定との違いを知りたい場合は、[SEO関連資格の比較ガイド](/seo-shikaku/)で学習目的を分けて確認できます。
+
 ## 概要
 
 HubSpot Academy の **Inbound Certification Course** は、顧客を「集める → 関係を築く → 満足につなげる」というインバウンドの考え方を体系的に学ぶ無料の認定コースです。ファネルだけでなく、顧客中心の **flywheel（フライホイール）**、buyer persona、buyer journey まで扱います。
