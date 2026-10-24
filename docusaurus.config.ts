@@ -1,6 +1,24 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { execSync } from 'node:child_process';
+
+// Page dates (sitemap <lastmod>, "last updated") come from git history. A shallow
+// build checkout stamps every page with the single fetched commit's date, which is
+// worse than no date at all. Try to fetch full history; if that is not possible,
+// omit the dates rather than publish inaccurate ones.
+function gitHistoryComplete(): boolean {
+  const shallow = () => execSync('git rev-parse --is-shallow-repository', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() === 'true';
+  try {
+    if (!shallow()) return true;
+    execSync('git fetch --unshallow --quiet', { stdio: 'ignore', timeout: 180_000 });
+    return !shallow();
+  } catch {
+    return false;
+  }
+}
+const accurateGitDates = gitHistoryComplete();
+if (!accurateGitDates) console.warn('[sitemap] git history unavailable or shallow: omitting lastmod/last-updated dates');
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -44,7 +62,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          showLastUpdateTime: true,
+          showLastUpdateTime: accurateGitDates,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -69,7 +87,7 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         sitemap: {
-          lastmod: 'date',
+          lastmod: accurateGitDates ? 'date' : null,
           changefreq: 'weekly',
           priority: 0.5,
           filename: 'sitemap.xml',
