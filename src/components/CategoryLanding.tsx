@@ -191,13 +191,38 @@ export default function CategoryLanding({
 
   const currentYear = new Date().getFullYear();
   const freshCount = activeItems.filter((item) => item.verifiedThisYear).length;
+  // meta description はビルド時の実データ（掲載件数・領域の内訳・制度確認の年）から組む。
+  // 件数を手で書くと、資格を足した日に数字が古くなる。
+  const metaDescription = useMemo(() => {
+    const MAX_LENGTH = 135;
+    const areaText = sections
+      .filter((section) => section.label !== section.key)
+      .slice(0, 3)
+      .map((section) => `${section.label}${section.count}件`)
+      .join('、');
+    const parts = [
+      description,
+      areaText
+        ? `現行${activeItems.length}件を${areaText}などの${sections.length}領域に分けて掲載。`
+        : `現行${activeItems.length}件を${sections.length}領域に分けて掲載。`,
+      freshCount > 0
+        ? `うち${freshCount}件は${currentYear}年に制度を確認済みです。`
+        : '公式情報を確認できた資格だけを一覧しています。',
+    ];
+    let composed = '';
+    for (const part of parts) {
+      if ([...(composed + part)].length > MAX_LENGTH) break;
+      composed += part;
+    }
+    return composed;
+  }, [description, sections, activeItems.length, freshCount, currentYear]);
   const exploreUrl = `/explore/?category=${encodeURIComponent(title)}`;
   const canonicalUrl = `https://shikaku.antonbase.com/docs/${categoryKey}/`;
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: `${title}の資格・検定｜資格カタログ`,
-    description,
+    description: metaDescription,
     url: canonicalUrl,
     inLanguage: 'ja-JP',
     mainEntity: {
@@ -215,6 +240,9 @@ export default function CategoryLanding({
   return (
     <> 
       <Head>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
+        <meta name="twitter:description" content={metaDescription} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

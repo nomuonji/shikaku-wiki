@@ -1,6 +1,6 @@
 ---
 title: "CISA（Certified Information Systems Auditor）"
-description: "CISAの試験方式、受験料、5ドメイン、認定に必要な実務経験をISACAの現行公式情報ベースで整理します。"
+description: "CISAの試験方式、受験料、5ドメイン、認定に必要な実務経験をISACAの現行公式情報ベースで整理します。認定には原則5年以上の専門実務経験が必要で、試験合格と認定は別の手続きです。"
 credential_type: "国際資格"
 exam_method: "CBT"
 qualification_status: "active"

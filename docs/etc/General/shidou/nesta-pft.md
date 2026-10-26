@@ -1,6 +1,6 @@
 ---
 title: "NESTA-PFT"
-description: "NESTA-PFTの受験要件、直接受験ルート、教材・試験・登録費用をNESTA JAPANの公式情報から整理します。"
+description: "NESTA-PFTの受験要件、直接受験ルート、教材・試験・登録費用をNESTA JAPANの公式情報から整理します。NESTA-PFTはパーソナルフィットネストレーナーの認定で、運動指導・トレーニング・安全管理に必要な知識を扱います。"
 ---
 
 # NESTA-PFT

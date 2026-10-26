@@ -47,7 +47,7 @@ export default function Home():React.JSX.Element {
     read:{number:'03',title:'制度を確かめてから決める',summary:'公式情報と編集上の目安を区別して、資格の詳細へ。',cta:'資格一覧へ',href:'/qualifications/'}
   };
   const current=paths[mode];
-  return <Layout title="資格・検定を難易度・勉強時間から探す" description="難易度・勉強時間・試験方式・活かせる仕事から資格を探索できる資格カタログ。">
+  return <Layout title="資格・検定を難易度・勉強時間から探す" description={`難易度・勉強時間・試験方式・活かせる仕事から資格を探索できる資格カタログ。${fields.length}分野・${data.indexReadyCount}件の資格を、公式情報を確認できたページに絞って掲載し、分野の広がりと学ぶ時間の違いから比較できます。`}>
     <Head><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
       <script type="application/ld+json">{JSON.stringify(structuredData)}</script></Head>
     <main className={styles.page}>
