@@ -91,7 +91,19 @@ const config: Config = {
           changefreq: 'weekly',
           priority: 0.5,
           filename: 'sitemap.xml',
-          ignorePatterns: ['/search/**', '/explore', '/explore/**'],
+          // ブログのアーカイブ・タグ・著者ページは中身が一覧だけで、
+          // 検索から来る意図を持たない。クロール配分を資格ページに寄せるため除外する。
+          ignorePatterns: [
+            '/search/**',
+            '/explore',
+            '/explore/**',
+            '/blog/archive',
+            '/blog/archive/**',
+            '/blog/authors',
+            '/blog/authors/**',
+            '/blog/tags',
+            '/blog/tags/**',
+          ],
         },
       } satisfies Preset.Options,
     ],
