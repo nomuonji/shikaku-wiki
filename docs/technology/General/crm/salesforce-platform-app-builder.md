@@ -1,5 +1,6 @@
 ---
 title: "Salesforce Platform App Builder"
+description: "Salesforce Platform App Builderは、Salesforce Platform上のデータモデル、ユーザー向け画面、自動化、セキュリティなどを、宣言型の機能を中心に組み立てる知識を示す認定です。"
 ---
 
 # Salesforce Platform App Builder

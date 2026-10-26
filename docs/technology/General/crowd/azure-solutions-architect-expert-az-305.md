@@ -1,5 +1,6 @@
 ---
 title: "Azure Solutions Architect Expert (AZ-305)"
+description: "AZ-305はAzure上のソリューションを設計する試験で、アイデンティティ・ガバナンス・監視、データ保存、事業継続、インフラストラクチャ設計などを扱います。AZ-305試験を先に受けること自体は可能ですが、前提となる認定を満たすまでExpert称号は付与されません。"
 ---
 
 # Azure Solutions Architect Expert (AZ-305)

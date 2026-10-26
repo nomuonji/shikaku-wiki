@@ -1,5 +1,6 @@
 ---
 title: "CCNP Enterprise"
+description: "CCNP Enterpriseは有効期間があり、期限前にCiscoの再認定要件を満たす必要があります。再認定は試験合格や継続教育クレジット等の選択肢が認定制度により定められます。ENCORは120分で、Enterpriseネットワークのコア知識を評価します。"
 ---
 
 # CCNP Enterprise

@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import styles from './eligibility-guides.module.css';
+import StaticPageStructuredData from '@site/src/components/StaticPageStructuredData';
 
 const source='https://www.shoubo-shiken.or.jp/kikenbutsu/qualified01.html';
 const groups=[{title:'第1類 または 第6類',hint:'酸化性固体／酸化性液体',choices:[1,6]},{title:'第2類 または 第4類',hint:'可燃性固体／引火性液体',choices:[2,4]},{title:'第3類',hint:'自然発火性物質・禁水性物質',choices:[3]},{title:'第5類',hint:'自己反応性物質',choices:[5]}];
@@ -15,6 +16,7 @@ export default function KikenbutsuRoute():React.JSX.Element{
  const remaining=groups.filter((_,i)=>!covered[i]);
  return <Layout title="甲種危険物取扱者の受験資格｜乙4から進む4種類・実務2年・化学単位" description="乙4だけで甲種を受験できる？4種類の免状の組み合わせをチェック。実務経験2年、化学15単位、化学系学位による受験ルートと必要書類を公式制度から整理。">
  <Head><link rel="canonical" href="https://shikaku.antonbase.com/kikenbutsu-kou-juken-shikaku/"/></Head>
+ <StaticPageStructuredData path="/kikenbutsu-kou-juken-shikaku/" title="甲種危険物取扱者の受験資格｜乙4から進む4種類・実務2年・化学単位" description="乙4だけで甲種を受験できる？4種類の免状の組み合わせをチェック。実務経験2年、化学15単位、化学系学位による受験ルートと必要書類を公式制度から整理。" />
  <main className={styles.shell}><div className={styles.crumbs}><Link to="/juken-shikaku/">受験資格を調べる</Link> / 危険物取扱者 甲種</div>
  <header className={styles.hero}><span className={styles.kicker}>Dangerous materials / 受験資格</span><h1>乙4だけで甲種を受けられる？<br/>保有免状から確認する受験経路</h1><p className={styles.lead}>結論からいうと、乙4の免状だけでは甲種の「4種類ルート」は満たしません。しかし、乙種免状の交付後に所定の危険物取扱いを2年以上経験した場合や、化学に関する学歴・単位などの別の受験経路があります。以下では条件を混ぜずに分けます。</p></header>
  <div className={styles.layout}>

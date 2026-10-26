@@ -1,5 +1,6 @@
 ---
 title: "Scrum Master（CSM）"
+description: "Scrum AllianceのCertified ScrumMaster（CSM）は、スクラムフレームワークとスクラムマスターの役割を学ぶ入門認定です。コースを受けずに試験だけを申し込む経路はなく、既に持っている別のアジャイル資格や過去の経験で免除されません。"
 ---
 
 # Scrum Master（CSM）

@@ -69,6 +69,11 @@ const config: Config = {
             'https://github.com/nomuonji/shikaku-wiki/tree/main/',
         },
         blog: {
+          // 一覧ページ（/blog/）が既定値の "Blog" を title/description に流用していたため、
+          // サイトの日本語表記と記事内容に合わせた文言を明示する。
+          blogTitle: 'ブログ',
+          blogDescription:
+            '資格の選び方や試験制度の変更点、独学の進め方を、公式情報をもとに整理した記事を掲載しています。受験前に確認したい費用・出題範囲・制度改正のポイントを、資格ページの調査メモとしてまとめました。',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],

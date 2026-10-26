@@ -23,6 +23,8 @@
     "audit:quality:strict": "node scripts/audit_qualification_quality.mjs --report --strict",
     "prebuild": "node scripts/audit_site_invariants.mjs && node scripts/audit_qualification_quality.mjs --report",
     "audit:site": "node scripts/audit_site_invariants.mjs",
+    "seo:descriptions": "node scripts/generate_page_descriptions.mjs",
+    "seo:descriptions:dry": "node scripts/generate_page_descriptions.mjs --dry-run",
     "postbuild": "node scripts/prune_noindex_sitemap.mjs && node scripts/verify_built_site.mjs"
   },
   "dependencies": {

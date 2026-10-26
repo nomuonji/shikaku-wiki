@@ -1,5 +1,6 @@
 ---
 title: "Microsoft DP-900（Data基礎）"
+description: "DP-900: Microsoft Azure Data Fundamentalsは、クラウドデータの基本概念とAzure上のデータサービスへの理解を示す初級認定です。認定を採用条件として求める企業は多様なので、職務要件と実際のスキルを照らして取得優先度を決めましょう。"
 ---
 
 # Microsoft DP-900（Data基礎）

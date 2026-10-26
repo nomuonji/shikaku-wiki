@@ -1,5 +1,6 @@
 ---
 title: "HashiCorp Terraform Associate"
+description: "Terraform Associateは、Infrastructure as Codeの基本を理解し、Terraformの設定・計画・適用を扱えることを示す初級認定です。秘密情報をコードへ直書きしないことや、stateの保護も実務上の重要点です。"
 ---
 
 # HashiCorp Terraform Associate（004）

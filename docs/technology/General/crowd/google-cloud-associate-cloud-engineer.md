@@ -1,5 +1,6 @@
 ---
 title: "Google Cloud Associate Cloud Engineer"
+description: "Associate Cloud Engineerは、Google Cloud上でアプリケーションやサービスをデプロイし、運用を監視し、アクセスやクラウド資源を管理する担当者を想定します。Googleは試験内容やガイドを更新します。"
 ---
 
 # Google Cloud Associate Cloud Engineer（ACE）

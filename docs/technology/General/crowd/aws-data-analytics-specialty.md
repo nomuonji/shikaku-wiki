@@ -1,5 +1,6 @@
 ---
 title: "AWS Data Analytics Specialty"
+description: "大量データの集め方・まとめ方を理解。レポート作りが速くなる。AWSはデータ分析・データエンジニアリング領域で別の認定や学習教材を提供しています。分析基盤の構築を目指すのか、AWS上の分析サービス運用を目指すのかで学習範囲を決めます。"
 ---
 
 # AWS Data Analytics Specialty

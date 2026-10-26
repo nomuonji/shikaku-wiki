@@ -1,5 +1,6 @@
 ---
 title: "PRINCE2 Practitioner"
+description: "PRINCE2 Practitionerは、PRINCE2のプロジェクト管理方法を実際のプロジェクト状況に合わせて適用・調整する能力を評価する認定です。プロジェクトマネージャー、PMO、チームリーダーなど、計画・リスク・変更・品質・進捗を管理する人に向きます。"
 ---
 
 # PRINCE2 Project Management Practitioner（Version 7）

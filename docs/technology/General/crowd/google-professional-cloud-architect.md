@@ -1,5 +1,6 @@
 ---
 title: "Google Cloud Professional Cloud Architect"
+description: "Professional Cloud Architectは、Google Cloud上で事業要件に沿ったクラウド設計を行うプロフェッショナル認定です。可用性、セキュリティ、性能、費用、運用を考慮し、要件に合う構成を選ぶ力を評価します。"
 ---
 
 # Google Cloud Professional Cloud Architect

@@ -1,5 +1,6 @@
 ---
 title: "Azure Fundamentals (AZ-900)"
+description: "Azure FundamentalsはMicrosoftの初級認定で、クラウドの基本概念、Azureの主要サービス、管理とガバナンスの基礎を扱います。Azureを使う職種に進む前に全体像を学びたい人や、クラウド用語を事業・営業の場で説明する人に向いています。"
 ---
 
 # Azure Fundamentals（AZ-900）

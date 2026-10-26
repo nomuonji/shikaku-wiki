@@ -1,5 +1,6 @@
 ---
 title: "AWS Developer Associate"
+description: "この認定は、AWS上でアプリケーションを開発・テスト・デプロイ・デバッグする開発者を想定しています。AWSサービスを使う開発職へ進む人や、すでに開発経験がありAWS運用も担当する人が、クラウドアプリの実装知識を整理するのに向きます。"
 ---
 
 # AWS Certified Developer – Associate（DVA-C02）

@@ -1,5 +1,6 @@
 ---
 title: "AWS Certified Solutions Architect - Professional"
+description: "AWS Certified Solutions Architect - Professionalは、複雑なクラウド要件を設計に落とし込む上級認定です。AWS公式は、AWSを使ったクラウドソリューションの設計・実装経験が2年以上ある候補者を推奨しています。"
 ---
 
 # AWS Certified Solutions Architect - Professional（SAP）

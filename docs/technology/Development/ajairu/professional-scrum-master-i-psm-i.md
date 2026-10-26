@@ -1,5 +1,6 @@
 ---
 title: "Professional Scrum Master I (PSM I)"
+description: "Professional Scrum Master I（PSM I）はScrum.orgの基礎レベル認定です。認定トレーニングを受けずに評価を申し込めるため、スクラムガイドと公式教材で独学して受験する方法があります。"
 ---
 
 # Professional Scrum Master I (PSM I)

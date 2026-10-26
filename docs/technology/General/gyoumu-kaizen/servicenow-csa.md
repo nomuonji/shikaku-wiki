@@ -1,5 +1,6 @@
 ---
 title: "ServiceNow CSA"
+description: "ServiceNow Certified System Administrator（CSA）は、ServiceNowプラットフォームの基本設定や管理に必要な知識を確認する認定です。ServiceNowは認定体系と学習経路を更新することがあります。"
 ---
 
 # ServiceNow CSA

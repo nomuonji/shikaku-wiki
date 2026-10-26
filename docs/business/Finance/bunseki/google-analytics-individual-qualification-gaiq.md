@@ -1,5 +1,6 @@
 ---
 title: "Google アナリティクス認定資格（旧GAIQ・GA4）"
+description: "GAIQはGoogle Analytics Individual Qualificationの略称です。検索では今も「GAIQ」と呼ばれることがありますが、Universal Analytics時代の旧資格名を含む表記です。"
 ---
 
 # Google アナリティクス認定資格（旧GAIQ・GA4）

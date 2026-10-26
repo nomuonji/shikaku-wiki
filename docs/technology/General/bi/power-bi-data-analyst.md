@@ -1,5 +1,6 @@
 ---
 title: "Power BI Data Analyst"
+description: "Microsoft認定「Power BI データ アナリスト アソシエイト」（PL-300）は、中級レベルのデータ分析資格です。Microsoft公式の評価領域は、データの準備、モデル化、視覚化・分析、Power BIの管理・セキュリティです。"
 ---
 
 # Power BI Data Analyst

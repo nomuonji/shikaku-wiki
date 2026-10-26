@@ -1,5 +1,6 @@
 ---
 title: "CKAD"
+description: "CKADはKubernetes環境でアプリケーションを定義・配備・運用する開発者向け認定です。Linux Foundationの現行案内では、アプリ設計・構築、デプロイ、可観測性・保守、環境設定・セキュリティ、サービスとネットワークを評価します。"
 ---
 
 # CKAD

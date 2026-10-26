@@ -1,5 +1,6 @@
 ---
 title: "AWS SysOps Administrator"
+description: "旧SysOps認定を保有していて有効期間中の場合、名称変更だけを理由に新試験を取り直す必要があるとは限りません。AWSの説明では、旧認定を取得した人はCloudOps Engineer認定を改めて取得しなくても旧資格を保持できます。"
 ---
 
 # AWS SysOps Administrator

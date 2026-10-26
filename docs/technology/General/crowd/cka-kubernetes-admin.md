@@ -1,5 +1,6 @@
 ---
 title: "CKA（Kubernetes Admin）"
+description: "CKAはKubernetesクラスターの管理者を想定した実技認定です。運用・SRE・プラットフォーム担当者が、クラスタ構築、ワークロード管理、ストレージ、ネットワーク、障害調査をコマンドラインで実行できるかを確認します。"
 ---
 
 # Certified Kubernetes Administrator（CKA）

@@ -1,5 +1,6 @@
 ---
 title: "LinuC Level 2"
+description: "LinuC Level 2は、Linuxシステムの構築、運用、保守、トラブルシューティング、キャパシティプランニングなどの高度なスキルを証明する資格です。Webサーバー、メールサーバー、DNSサーバーなどの主要なサーバー構築スキルが含まれます。"
 ---
 
 # LinuC Level 2

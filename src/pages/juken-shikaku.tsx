@@ -4,10 +4,12 @@ import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import styles from './eligibility-guides.module.css';
+import StaticPageStructuredData from '@site/src/components/StaticPageStructuredData';
 
 export default function EligibilityHome():React.JSX.Element{
 return <Layout title="受験資格を調べる｜免状・学歴・実務経験から逆引き" description="資格名を選ぶ前に、手持ちの免状、学歴、実務経験から受験できる経路と必要書類を整理。消防設備士甲種4類と甲種危険物取扱者の公式制度を確認する。">
 <Head><link rel="canonical" href="https://shikaku.antonbase.com/juken-shikaku/"/></Head>
+<StaticPageStructuredData path="/juken-shikaku/" title="受験資格を調べる｜免状・学歴・実務経験から逆引き" description="資格名を選ぶ前に、手持ちの免状、学歴、実務経験から受験できる経路と必要書類を整理。消防設備士甲種4類と甲種危険物取扱者の公式制度を確認する。" />
 <main className={styles.shell}>
 <header className={styles.hero}><span className={styles.kicker}>Eligibility / 資格選択の入口</span><h1>何を持っていれば、<br/>次の資格を受けられる？</h1><p className={styles.lead}>合格した、免状が交付された、実務経験がある。この3つは制度上、同じ意味ではありません。資格名だけでなく、今ある証明書や経歴から受験経路を確認するための入口です。</p></header>
 <section className={styles.cards} aria-label="受験条件を調べる">

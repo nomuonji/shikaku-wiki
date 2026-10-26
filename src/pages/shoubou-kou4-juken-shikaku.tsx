@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import styles from './eligibility-guides.module.css';
+import StaticPageStructuredData from '@site/src/components/StaticPageStructuredData';
 
 const routes=[
  {value:'electric',label:'第一種・第二種電気工事士の免状が交付されている',result:'電気工事士免状は、甲種4類（特類以外）の受験資格となる経路の一つです。',next:'免状の写しを用意し、科目免除の申請をするか別途確認します。電気工事士試験に合格しただけで免状未交付の場合は、この選択肢では確定できません。'},
@@ -17,6 +18,7 @@ export default function ShoubouRoute():React.JSX.Element{
  const found=routes.find(r=>r.value===chosen)||routes[4];
  return <Layout title="消防設備士甲種4類の受験資格と科目免除｜電気工事士・乙種から進める？" description="電気工事士免状や別類の甲種免状、乙種取得後の整備経験で消防設備士甲種4類を受験できるか。受験資格と試験科目免除の違い、甲4・乙4の試験範囲を公式資料から確認。">
  <Head><link rel="canonical" href="https://shikaku.antonbase.com/shoubou-kou4-juken-shikaku/"/></Head>
+ <StaticPageStructuredData path="/shoubou-kou4-juken-shikaku/" title="消防設備士甲種4類の受験資格と科目免除｜電気工事士・乙種から進める？" description="電気工事士免状や別類の甲種免状、乙種取得後の整備経験で消防設備士甲種4類を受験できるか。受験資格と試験科目免除の違い、甲4・乙4の試験範囲を公式資料から確認。" />
  <main className={styles.shell}><div className={styles.crumbs}><Link to="/juken-shikaku/">受験資格を調べる</Link> / 消防設備士甲種4類</div>
  <header className={styles.hero}><span className={styles.kicker}>Fire equipment / 受験資格</span><h1>電気工事士があれば、<br/>消防設備士の甲4を受けられる？</h1><p className={styles.lead}>電気工事士の免状は甲種4類の受験資格の一つです。ただし「受験できること」と「試験の一部が免除されること」は別の判定です。乙種4類との違いも含め、保有資格ごとに確認します。</p></header>
  <div className={styles.layout}><div>

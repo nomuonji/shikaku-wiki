@@ -1,5 +1,6 @@
 ---
 title: "Google Professional Data Engineer"
+description: "集める・ためる・分析するの流れを設計できる。数字で意思決定がしやすくなる。Google Cloud Professional Data Engineerは、データを取り込み、変換・処理し、安全に保存・提供するクラウドデータ基盤の設計・運用を評価する認定です。"
 ---
 
 # Google Professional Data Engineer

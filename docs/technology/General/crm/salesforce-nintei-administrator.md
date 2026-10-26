@@ -1,5 +1,6 @@
 ---
 title: "Salesforce 認定 Platform アドミニストレーター"
+description: "Salesforce認定 Platform アドミニストレーターは、Salesforce組織の設定やユーザー管理、データ、レポート、自動化などを扱う管理者向けのベンダー資格です。利用部門の要望を標準機能で実現し、組織の使い方を整える人が対象です。"
 ---
 
 # Salesforce 認定 Platform アドミニストレーター

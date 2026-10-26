@@ -1,5 +1,6 @@
 ---
 title: "Azure Administrator (AZ-104)"
+description: "AZ-104は、Azure環境の日常運用を担う管理者向けの認定です。IDとガバナンス、ストレージ、コンピューティング資源、仮想ネットワーク、監視とバックアップなどを管理する知識を確認します。設計専門職や開発者資格とは対象タスクが異なります。"
 ---
 
 # Azure Administrator Associate（AZ-104）

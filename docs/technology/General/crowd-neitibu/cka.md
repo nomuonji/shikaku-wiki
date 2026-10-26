@@ -1,5 +1,6 @@
 ---
 title: "Certified Kubernetes Administrator (CKA)"
+description: "CKAは、Linux FoundationとCloud Native Computing Foundation（CNCF）が運営するKubernetes管理者向けの認定資格です。端末で設定を調べ、コマンドを実行して結果を確認する経験が準備の土台になります。"
 ---
 
 # Certified Kubernetes Administrator（CKA）

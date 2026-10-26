@@ -1,5 +1,6 @@
 ---
 title: "Cisco CyberOps Associate"
+description: "Cisco公式ページは、従来の「Cisco Certified CyberOps Associate」から「CCNA Cybersecurity」へ名称を更新しています。英語提供、120分、前提資格なし、有効期間3年と公式ページに記載されています。"
 ---
 
 # Cisco CyberOps Associate

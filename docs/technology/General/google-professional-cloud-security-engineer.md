@@ -1,5 +1,6 @@
 ---
 title: "Google Professional Cloud Security Engineer"
+description: "Professional Cloud Security Engineerは、Google Cloud上のワークロードや基盤を安全に設計・運用する専門職向け認定です。公式試験はアクセス制御、通信の保護と境界防御、データ保護、運用監視、コンプライアンス対応を評価します。"
 ---
 
 # Google Professional Cloud Security Engineer

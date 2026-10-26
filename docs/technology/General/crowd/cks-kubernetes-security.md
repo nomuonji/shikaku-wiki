@@ -1,5 +1,6 @@
 ---
 title: "CKS（Kubernetes Security）"
+description: "Certified Kubernetes Security Specialist（CKS）は、Kubernetesクラスターのセキュリティを構築・運用する技術者向けの認定です。CKAを持っていない場合、CKSの学習内容に進む前にクラスター管理の基礎を固めてください。"
 ---
 
 # CKS（Kubernetes Security）

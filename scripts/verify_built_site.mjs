@@ -148,6 +148,9 @@ const sitemapUrls = [...sitemapXml.matchAll(/<loc>([\s\S]*?)<\/loc>/g)].map((m) 
 if (!sitemapUrls.length) fail('sitemap.xml contains no URLs');
 
 const sitemapSet = new Set(sitemapUrls);
+// description はページ固有でなければならない。同一文言が複数ページに出ると
+// 「どのページの説明か」が検索結果から分からなくなるため、公開URL全体で重複を禁じる。
+const descriptionOwners = new Map();
 for (const rawUrl of sitemapUrls) {
   const url = new URL(rawUrl);
   if (url.origin !== ORIGIN) fail('Unexpected sitemap origin: ' + rawUrl);
@@ -163,6 +166,26 @@ for (const rawUrl of sitemapUrls) {
   if (sitemapRobots.some((value) => /\bnoindex\b/i.test(value))) {
     fail('Noindex page leaked into sitemap: ' + rawUrl);
   }
+
+  const h1Count = tags(sitemapHtml, 'h1').length;
+  if (h1Count !== 1) {
+    fail('Expected exactly one h1 (' + h1Count + '): ' + rawUrl);
+  }
+
+  const description = tags(sitemapHtml, 'meta')
+    .filter((tag) => (tag.attrs.name || '').toLowerCase() === 'description')
+    .map((tag) => (tag.attrs.content || '').trim())
+    .find((value) => value);
+  if (!description) fail('Missing meta description: ' + rawUrl);
+  const owner = descriptionOwners.get(description);
+  if (owner) {
+    fail('Duplicate meta description: ' + rawUrl + ' と ' + owner);
+  } else {
+    descriptionOwners.set(description, rawUrl);
+  }
+
+  const sitemapNodes = jsonLdNodes(sitemapHtml);
+  if (!sitemapNodes.length) fail('Missing JSON-LD: ' + rawUrl);
 }
 
 const requiredInSitemap = [

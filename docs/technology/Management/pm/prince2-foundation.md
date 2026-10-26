@@ -1,5 +1,6 @@
 ---
 title: "PRINCE2 Foundation"
+description: "PRINCE2 Project Management Foundation（Version 7）は、プロジェクトを開始から終結まで進めるための原則・プラクティス・プロセス・役割を学ぶ認定です。PRINCE2はプロセスに沿って役割と管理成果物を整理する方法論です。"
 ---
 
 # PRINCE2 Foundation
