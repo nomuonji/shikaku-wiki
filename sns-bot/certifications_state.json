@@ -1,5 +1,5 @@
 {
-  "lastCategoryKey": "医療",
+  "lastCategoryKey": "安全・防災",
   "categories": {
     "IT": {
       "lastIndex": 58
@@ -29,7 +29,7 @@
       "lastIndex": 3
     },
     "安全・防災": {
-      "lastIndex": 19
+      "lastIndex": 20
     },
     "建設": {
       "lastIndex": 12
